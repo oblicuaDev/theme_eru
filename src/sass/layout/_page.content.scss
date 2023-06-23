@@ -1,0 +1,1464 @@
+// Page: Content
+// -----------------------------------------------------------------------------
+.page__content {
+	margin-bottom: 3em;
+
+	h2 {
+		margin-bottom: 1.5em;
+	}
+
+	img.img-thumbnail {
+		border: none !important;
+		padding: 0 !important;
+		border-radius: 0;
+	}
+
+	.views-field-created,
+	.views-field-field-textual-transcription {
+		font-weight: 600;
+	}
+
+	.project-block {
+		.views-field-title {
+			margin-top: 1rem;
+
+			a {
+				font-size: 0.6em;
+				font-weight: bold;
+				color: #000;
+				text-transform: uppercase;
+
+				&:hover {
+					color: $primary  !important;
+					text-decoration: none;
+				}
+
+				&:focus {
+					outline: 2px dotted $primary  !important;
+					padding: 5px;
+					left: -5px;
+					position: relative;
+					color: $blue  !important;
+				}
+			}
+		}
+	}
+
+	.more-link {
+		display: flex;
+		justify-content: center;
+		margin: 2rem 0;
+		text-transform: uppercase;
+
+		a {
+			color: #fff;
+			background-color: $verde-claro;
+			border-color: $verde-claro;
+			border: 1px solid transparent;
+			padding: 0.375rem 0.75rem;
+			font-size: 1em;
+			line-height: 1.5;
+			border-radius: 0.25rem;
+			transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+			&:hover {
+				color: #fff;
+				background-color: $naranja;
+				border-color: $naranja;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.transparencia-block {
+		margin: 5rem 0;
+
+		#bkg-transparencia {
+			background: url("../images/bkg-transparencia.png"), #003250;
+			background-repeat: no-repeat;
+			padding: 60px 225px;
+			float: left;
+		}
+
+		.textos {
+			background-color: #003250;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+
+			h2 {
+				line-height: 1.5em;
+				margin-bottom: 0.5em !important;
+				text-align: left;
+
+				&::after {
+					content: none;
+				}
+
+				a {
+					color: #fff;
+					font-weight: 600;
+					text-transform: initial;
+				}
+			}
+
+			p {
+				color: #F7931E;
+				font-weight: 500;
+			}
+		}
+	}
+
+	.news-home,
+	.page-search {
+		h3 {
+			line-height: 0.6em !important;
+			font-size: 1.75rem;
+			border-bottom: none;
+
+			a {
+				font-size: 0.55em;
+				font-weight: 600;
+				color: #000;
+
+				&::after {
+					content: none;
+				}
+			}
+
+			&::after {
+				content: none;
+			}
+		}
+
+		.title-one {
+			margin: 20px 0 20px 0;
+			height: 100px;
+
+			&::after {
+				content: "";
+				width: 40px;
+				height: 40px;
+				border-bottom: 2px solid $verde-oscuro;
+				position: absolute;
+				left: 3%;
+			}
+		}
+
+		.row-news {
+			display: inline-block;
+			width: 100%;
+		}
+	}
+
+	.page-search {
+		h3 {
+			margin-bottom: 0.5em !important;
+		}
+
+		.views-field-type {
+			text-transform: uppercase;
+			font-weight: 500;
+			float: left;
+			border-right: 2px solid #0A6EC8;
+			padding-right: 1em;
+		}
+
+		.views-field-created {
+			padding-left: 1em;
+			display: flex;
+			font-weight: normal !important;
+		}
+
+		.resultado {
+			border-bottom: 1px solid #C8C8C8;
+			text-align: justify;
+		}
+
+		nav {
+			clear: inline-start;
+		}
+	}
+
+	.video-home {
+		margin-bottom: 2rem;
+
+		h3 {
+			font-size: 1.3em;
+			padding: 20px 0;
+
+			a {
+				color: #000;
+			}
+
+			&::after {
+				content: "";
+				width: 40px;
+				height: 40px;
+				border-bottom: 2px solid #0A6EC8;
+				position: absolute;
+				left: 72%;
+			}
+		}
+
+		.views-field-body {
+			display: block;
+			margin-top: 1.5em;
+		}
+
+	}
+
+	.fila1,
+	.fila2,
+	.fila3 {
+		flex-direction: row;
+		justify-content: center;
+		text-align: center;
+
+		.link-item {
+			width: 18%;
+			border: 1px solid #efefef;
+			border-radius: 8px;
+			margin: 10px;
+			padding: 10px;
+			justify-content: center !important;
+			align-items: center !important;
+
+			&:hover,
+			&:focus {
+				background-color: #ededed;
+			}
+
+			a {
+				padding: unset !important;
+
+				&:hover {
+					padding: unset !important;
+					background-color: unset !important;
+					border: unset;
+				}
+			}
+		}
+
+		.title {
+			text-transform: none !important;
+
+			a {
+				color: #212529 !important;
+			}
+		}
+
+		i {
+			padding: 50px !important;
+		}
+
+		.contacto-transparencia-ico {
+			background: url("../images/iconos-transparencia.png"), transparent;
+		}
+
+		.info-transparencia-ico {
+			background: url("../images/iconos-transparencia.png"), transparent;
+			background-position: -120px 0;
+		}
+
+		.estructura-transparencia-ico {
+			background: url("../images/iconos-transparencia.png"), transparent;
+			background-position: -230px 0;
+		}
+
+		.normatividad-ico {
+			background: url("../images/iconos-transparencia.png"), transparent;
+			background-position: -355px 0;
+		}
+
+		.presupuesto-ico {
+			background: url("../images/iconos-transparencia.png"), transparent;
+			background-position: -480px 0;
+		}
+
+		.planeacion-ico {
+			background: url("../images/iconos-transparencia.png"), transparent;
+			background-position: 917px 0;
+		}
+
+		.control-ico {
+			background: url("../images/iconos-transparencia.png"), transparent;
+			background-position: 798px 0;
+		}
+
+		.contratacion-ico {
+			background: url("../images/iconos-transparencia.png"), transparent;
+			background-position: 686px 0;
+		}
+
+		.tramites-ico {
+			background: url("../images/iconos-transparencia.png"), transparent;
+			background-position: 564px 0;
+		}
+
+		.instrumentos-ico {
+			background: url("../images/iconos-transparencia.png"), transparent;
+			background-position: 444px 0;
+		}
+
+		.transparencia-pasiva-ico {
+			background: url("../images/iconos-transparencia.png"), transparent;
+			background-position: 337px 0;
+		}
+
+		.accesibilidad-ico {
+			background: url("../images/iconos-transparencia.png"), transparent;
+			background-position: 226px 0;
+		}
+
+		.habeas-data-ico {
+			background: url("../images/iconos-transparencia.png"), transparent;
+			background-position: 117px 0;
+		}
+	}
+
+	.link-item {
+		display: flex;
+		text-align: center;
+		margin-bottom: 3rem;
+
+		a {
+			color: #212529 !important;
+			padding: 10px 0 10px 0;
+
+			&:hover {
+				background-color: #ededed;
+				text-decoration: none;
+				padding: 10px 0 8px 0;
+				border-bottom: 2px solid $verde-claro;
+			}
+		}
+
+		.fas {
+			padding: 44px;
+		}
+
+		.fa-one-class {
+			background: url("../images/ico-01.png"), transparent;
+		}
+
+		.fa-two-class {
+			background: url("../images/ico-02.png"), transparent;
+		}
+
+		.fa-tree-class {
+			background: url("../images/ico-03.png"), transparent;
+		}
+
+		.fa-four-class {
+			background: url("../images/ico-04.png"), transparent;
+		}
+
+		.fa-five-class {
+			background: url("../images/ico-05.png"), transparent;
+		}
+
+		.fa-six-class {
+			background: url("../images/ico-06.png"), transparent;
+		}
+
+		.fa-seven-class {
+			background: url("../images/ico-07.png"), transparent;
+		}
+
+		.fa-eight-class {
+			background: url("../images/ico-08.png"), transparent;
+		}
+
+		.fa-nine-class {
+			background: url("../images/ico-09.png"), transparent;
+		}
+		.fa-ten-class {
+			background: url("../images/ico-10.png"), transparent;
+		}
+
+		.description {
+			text-align: center;
+			margin-top: 1rem;
+
+			&:hover {
+				text-decoration: none !important;
+			}
+		}
+
+		.title {
+			display: block;
+			text-transform: uppercase;
+			color: #000;
+			font-weight: bold;
+			margin-top: 1rem;
+		}
+	}
+
+	.listado-transparencia {
+		i {
+			display: none;
+		}
+
+		ul {
+			background-color: #f7f7f7ee;
+			padding-left: 0;
+
+			li {
+				margin-bottom: 0;
+
+				a {
+					display: block;
+					padding: 1em;
+					border-bottom: 1px solid #c7c7c7dd;
+					cursor: pointer;
+
+					&:hover {
+						background-color: #d6d6d6;
+					}
+				}
+			}
+		}
+	}
+	.table{
+		thead{
+			th{
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+/**Estilos Layout brenham **/
+
+.brenham .panel-panel {
+	margin-bottom: 2em;
+}
+
+.video_data {
+	display: flex;
+	justify-content: center;
+	margin-top: 2em;
+	align-items: center;
+
+	.item_data {
+		margin: 0 20px;
+	}
+}
+
+/** Estilos proyectos**/
+
+.project__field-infografia {
+	display: block;
+	margin: 40px;
+}
+
+.image-project a.active img {
+	display: none;
+}
+
+.views-field-field-image-evento-hover img {
+	display: none;
+}
+
+.container-project {
+	#myTab {
+		margin-bottom: 2em;
+	}
+
+	.nav-link {
+		font-size: 1.1em;
+	}
+
+	.caracteristica-general {
+		display: flex;
+		align-items: center;
+		width: inherit;
+		margin-bottom: 1.5rem !important;
+		margin: auto;
+
+		.cifra {
+			font-weight: 600;
+		}
+
+		i {
+			margin-right: 15px;
+			padding: 34px;
+			background-repeat: no-repeat;
+			background: url(../images/proyectos-sala-negocios-iconos.png), transparent;
+		}
+
+		.acueducto-icono {
+			background-position: 71px 0;
+		}
+
+		.obra-gris-icono {
+			background-position: 0;
+		}
+
+		.energia-icono {
+			background-position: 138px 0;
+		}
+
+		.titulo-cifra {
+			width: 100px;
+		}
+	}
+
+	.dato-general {
+		display: flex;
+		align-items: center;
+		width: inherit;
+		margin-bottom: 1.5rem !important;
+
+		.cifra {
+			font-weight: 600;
+		}
+
+		i {
+			padding: 32px;
+			background-repeat: no-repeat;
+			background: url(../images/proyectos-iconos-2.png), transparent;
+		}
+
+		.area-icono {
+			background-position: -72px 0;
+		}
+
+		.inversion-icono {
+			background-position: -140px 0;
+		}
+
+		.arte-icono {
+			background-position: -212px 0;
+		}
+
+		.comercio-icono {
+			background-position: -282px 0;
+		}
+
+		.educacion-icono {
+			background-position: -350px 0;
+		}
+
+		.vivienda-icono {
+			background-position: -422px 0;
+		}
+
+		.espacio-publico-icono {
+			background-position: -490px 0;
+		}
+
+		.vias-icono {
+			background-position: -562px 0;
+		}
+
+		.cultura-icono {
+			background-position: -633px 0;
+		}
+
+		.area-construida-icono {
+			background-position: -772px 0;
+		}
+
+		.parques-icono {
+			background-position: -702px 0;
+		}
+
+		.recreacion-icono {
+			background-position: -842px 0;
+		}
+
+		.deporte-icono {
+			background-position: -914px 0;
+		}
+
+		.agua-icono {
+			background-position: -984px 0;
+		}
+
+		.transporte-icono {
+			background-position: -1052px 0;
+		}
+
+		.etapas-icono {
+			background-position: -1124px 0;
+		}
+
+		.poblacion-icono {
+			background-position: -1195px 0;
+		}
+
+		.titulo-cifra {
+			font-size: 0.9em;
+		}
+	}
+}
+
+.news .date-social {
+	display: block;
+}
+
+/*.container-project h3{
+	margin-bottom: 1.5em;
+}*/
+aside {
+	background-color: #fbfbfb;
+	padding-top: 1em;
+	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .1), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .1), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .1), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+
+	h2 {
+		font-weight: 700;
+		margin-left: 15px;
+		margin-bottom: 0.5em !important;
+		font-size: 1.4em;
+		border-left: 2px solid $naranja;
+		padding-left: .5em;
+	}
+
+	ul {
+		display: flex;
+		flex-flow: column;
+
+		li {
+			margin-bottom: 0 !important;
+			border-bottom: 1px solid #dcdcdc;
+
+			a {
+				margin: 0.5em 0;
+				color: #212529;
+				margin: 0;
+				padding: 1rem !important;
+
+				&:hover {
+					background-color: #dcdcdc;
+				}
+			}
+		}
+
+		li.active {
+			border-bottom: 2px solid $naranja;
+		}
+	}
+}
+
+.eru-medios {
+
+	.views-field-field-image-main,
+	.views-field-field-cover-img {
+		img {
+			display: block;
+			height: 220px;
+			overflow: hidden;
+		}
+	}
+}
+
+.news-home {
+	.img-thumbnail-100 img {
+		height: 100px !important;
+		width: 145px !important;
+		overflow: hidden !important;
+	}
+}
+
+/*Estilos normatividad*/
+h4.titulo {
+	margin-bottom: 8px;
+
+	a {
+		font-size: 1.1rem;
+		font-weight: 400;
+		line-height: 1.4;
+		margin-bottom: 0;
+	}
+}
+
+.recuadro .views-field-created {
+	font-size: .8rem;
+	font-weight: 300;
+}
+
+ul li.recuadro {
+	list-style: disc;
+
+	&::marker {
+		color: #ffa800;
+		font-size: 150%;
+	}
+}
+
+
+/*Estilos Juntos Construimos*/
+.card-proyect {
+	padding: 0 20px;
+
+	.title-one {
+		margin: 20px 0 0 0 !important;
+		padding-left: 25px;
+
+		&::after {
+			content: "";
+			display: none;
+		}
+	}
+
+	.card-container {
+		border: 1px solid $gray-400;
+	}
+
+	.proyect-type {
+		padding-left: 25px;
+		color: $gray-900;
+		font-size: 1em;
+	}
+
+	.estado-proyecto div {
+		width: 90%;
+		height: 25px;
+		margin: 10px auto;
+		border: 1px solid $gray-400;
+		color: $white;
+		padding: 12px 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.estado-proyecto {
+		.curso {
+			background: linear-gradient(90deg, #e7d705 80%, #fff 0%);
+			background-repeat: no-repeat;
+		}
+
+		.finalizado {
+			background: $verde-claro;
+		}
+
+		.proximo {
+
+			background: linear-gradient(90deg, #077fff 25%, #fff 0%);
+			background-repeat: no-repeat;
+			color: #077fff;
+		}
+	}
+
+	.pry-btn {
+		display: flex;
+		justify-content: center;
+		margin: auto;
+
+		a {
+			color: $white;
+			font-size: .8em;
+			background-color: $gray-800;
+			padding: 5px 20px;
+			border-radius: 5px;
+		}
+	}
+}
+
+.bogota-abierta-block {
+	background: url(../images/bogota-abiertaBG.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: $white;
+	padding: 30px 10px;
+	margin: 5rem 0;
+}
+
+.bogota-abierta-block h2 {
+	font-size: 4rem;
+	margin: 0;
+}
+
+.my-btn {
+	background: $white;
+	color: $gray-700;
+	padding: 1px 25px;
+	border-radius: 5px;
+}
+
+/*Pagina Taller*/
+.participacion {
+	.addtoany_list {
+		position: absolute;
+		bottom: 15px
+	}
+
+	h2 {
+		text-align: left !important;
+		margin-bottom: 0;
+	}
+
+	h3 {
+		border-bottom: none;
+	}
+
+	h3::after {
+		border-bottom: 2px solid $jc-principal;
+		left: calc(50% - 20px);
+	}
+}
+
+.documentos-taller {
+	a {
+		color: #444;
+		text-transform: uppercase;
+		letter-spacing: .13em;
+	}
+
+	.icon-lg {
+		margin-right: 15px;
+		font-size: 40px;
+		color: $verde-claro;
+	}
+}
+
+/*Página proyecto participación*/
+#tabs-proyecto-participacion {
+	.nav-link {
+		color: $gray-800;
+
+		.active {
+			color: $gray-900;
+			font-weight: 800;
+		}
+	}
+
+}
+
+.proyecto h2 {
+	width: 85%;
+	color: $gray-800;
+	line-height: 1.2em;
+	font-size: 2em;
+}
+
+.participacion .tab-content {
+	width: 95%;
+	margin: auto;
+}
+
+a.btn-taller {
+	background-color: #ffffff;
+	padding: 0.375rem 0.75rem;
+	border-radius: 0.25rem;
+	color: #0e3b2b;
+}
+
+.btn-proyecto {
+	background-color: $jc-secundario;
+	border: none;
+
+	a {
+		color: $white;
+	}
+}
+
+.dato-general {
+	display: flex;
+	align-items: center;
+	width: inherit;
+	margin-bottom: 1.5rem !important;
+
+	.cifra {
+		font-weight: 600;
+	}
+
+	i {
+		padding: 32px;
+		background-repeat: no-repeat;
+		background: url(../images/proyectos-iconos-2.png), transparent;
+	}
+}
+
+.talleres {
+	h3 {
+		line-height: 0.7em !important;
+		font-size: 1.75rem;
+		border-bottom: none;
+
+		a {
+			font-size: 0.65em;
+			font-weight: 600;
+			color: $gray-800;
+
+			&::after {
+				content: none;
+			}
+		}
+
+		&::after {
+			content: none;
+		}
+
+	}
+
+	.title-one {
+		margin: 20px 0 25px 0;
+		height: 85px;
+
+		&::after {
+			content: "";
+			width: 60px;
+			border-bottom: 2px solid $jc-principal;
+			position: absolute;
+			left: 3%;
+		}
+	}
+}
+
+//IDEAS PARTICIPANTES
+.ideas-container {
+	columns: 2 320px;
+}
+
+.idea-card {
+	width: 100%;
+	background: #e5f4ea;
+	box-shadow: 2px 2px 3px rgba(72, 77, 81, 0.2);
+	box-sizing: border-box;
+	margin: 0;
+	margin-bottom: 30px;
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid-column;
+	display: table;
+	float: left;
+	padding: 20px;
+}
+
+.participante {
+	font-size: 1em;
+	text-align: right;
+	color: $gray-800;
+}
+
+// FORMULARIO
+.webform-juntos-construimos {
+	label {
+		font-weight: 700;
+	}
+
+	input[type=text],
+	input[type=tel] {
+		border-radius: 10px;
+
+	}
+}
+
+//Estilos proyectos sala de negocios
+#block-salaNegocios {
+	.textos-salaNegocios {
+		h2 {
+			margin-bottom: 10px !important;
+			color: #274D3F;
+			font-size: 3em !important;
+			line-height: 1;
+			text-align: center;
+		}
+
+		p {
+			color: #606060;
+			font-size: 1.8em;
+			line-height: 1;
+			text-align: center;
+			width: 70%;
+			margin: auto;
+		}
+	}
+}
+
+//Iconos header
+.infoProyecto {
+	position: relative;
+	left: 0;
+	bottom: 70px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: start;
+	width: 96%;
+	margin: 0 auto;
+	max-width: 1200px;
+
+	.proyectoIconos {
+		display: grid;
+		gap: 0 20px;
+		grid-template-columns: 210px 1fr;
+	}
+
+	.bookmarks {
+		display: flex;
+		justify-content: center;
+		border-right: 2px solid rgba(255, 255, 255, 1);
+
+		a i {
+			transition: .8s;
+			z-index: 3;
+		}
+
+		a:hover i {
+			transform: rotateY(360deg);
+			color: $verde-oscuro;
+		}
+
+		a:before {
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			transition: .8s;
+		}
+
+		a:hover:before {
+			top: 0;
+			background: $naranja;
+		}
+
+
+	}
+
+	span a {
+		// border: 2px solid #fff;
+		// width: 40px;
+		// text-align: center;
+		// border-radius: 100%;
+		// line-height: 1em;
+		// height: 40px;
+		// align-items: center;
+		// display: grid;
+		// justify-content: center;
+		// color: #fff !important;
+		// font-size: 19px;
+
+		width: 40px;
+		height: 40px;
+		background-color: transparent;
+		text-align: center;
+		line-height: 40px;
+		font-size: 20px;
+		margin: 0 10px;
+		display: block;
+		border-radius: 50%;
+		position: relative;
+		overflow: hidden;
+		border: 2px solid #fff;
+		color: #fff !important;
+		z-index: 1;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.contact {
+		color: #ffffff;
+	}
+}
+
+.cardProject {
+	.card-project {
+		padding: 0;
+		border-radius: 20px;
+		box-shadow: 0 30px 70px 0 rgb(195 195 195 / 50%);
+
+		.img-fluid {
+			border-radius: 15px 15px 0 0;
+		}
+
+		h3 {
+			color: #274D3F;
+			font-size: 1.7em;
+			font-weight: 500;
+			text-align: center;
+			margin-top: 15px;
+			border: none;
+			line-height: 1 !important;
+			margin-bottom: 0;
+			padding: 0;
+
+			&::after {
+				content: none;
+			}
+			span{
+				a{
+					color: #274D3F;
+				}
+			}
+		}
+
+		h4 {
+			text-align: center;
+			color: #274D3F;
+			border-bottom: 1px solid $verde-oscuro;
+			font-size: 1.1em;
+			font-weight: 300;
+			padding-bottom: 13px;
+		}
+
+		p {
+			font-size: 1em;
+			padding: 3px 20px;
+		}
+
+		p span {
+			font-weight: 600;
+		}
+
+		.more-link {
+			margin: 0;
+			padding-bottom: 2rem;
+		}
+	}
+}
+
+.proyecto-sala-de-negocios {
+	h3 {
+		font-size: 1.8em;
+		border-bottom: none;
+	}
+
+	.proyectoVideo {
+		iframe {
+			border-radius: 40px;
+		}
+	}
+
+	.separador {
+		background-color: $verde-oscuro;
+		color: white;
+
+		h3 {
+			font-size: 2.5em;
+
+			&::after {
+				content: none;
+			}
+		}
+
+		.icono {
+			/*display: flex;		
+			align-items: center;
+			width: inherit;
+			margin-bottom: 1.5rem !important;*/
+			height: 70px;
+			width: 70px;
+			margin: auto;
+			background-position: 0;
+			background-repeat: no-repeat;
+			background: url(../images/proyectos-sala-negocios-iconos.png), transparent;
+		}
+	}
+
+	.plano {
+		h3 {
+			&::after {
+				left: 19%;
+			}
+		}
+	}
+
+	.descripcionGeneral {
+		i {
+			font-size: 2em;
+			color: $naranja;
+			padding-left: 0.5em;
+			margin-bottom: 15px;
+		}
+	}
+
+	.contacto i {
+		margin-right: 15px;
+		padding: 34px;
+		background-repeat: no-repeat;
+		background: url(../images/icono-contacto.svg), transparent;
+		background-position: 1px 0;
+	}
+
+	//Estilos formulario contacto
+	#sala_de_negocios_contacto {
+		border-radius: 41px;
+		box-shadow: 0 30px 70px 0 rgb(166 166 166 / 50%);
+		padding: 20px;
+	}
+
+	.soliInfoTitulo {
+		display: grid;
+		gap: 0 20px;
+		grid-template-columns: 60px 1fr;
+		align-items: center;
+		padding: 10px 0;
+	}
+
+	.soliInfoTitulo h3 {
+		font-size: 1.7em;
+		margin: 0;
+		padding: 0;
+	}
+
+	.soliInfoTitulo h3::after {
+		content: none;
+	}
+
+	.soliInfoTitulo h4 {
+		color: #343a3f;
+		font-size: 1.5em;
+		margin: 0;
+	}
+}
+
+//Estilos Bodegas Sala de negocios
+.tooltp {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltp .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: rgba(0, 142, 127, .8);
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.tooltp .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgba(0, 142, 127, .5) transparent transparent transparent;
+}
+
+.tooltp:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+.cruces {
+	.planos {
+		background-color: #eaf6fb;
+	}
+}
+
+.villaJavier {
+	.planos {
+		background-color: #f9af21;
+	}
+}
+
+.cruces .separadorBodegas {
+	background: $white url("../images/separadorCruces.svg") right top no-repeat;
+	background-size: cover;
+
+	h3 span {
+		font-size: 1.4em;
+	}
+}
+
+.bodegas {
+	.caracteristicas {
+		.titleCenter {
+			width: 50%;
+			margin-right: auto;
+			margin-left: auto;
+			text-align: center;
+		}
+
+		h3 {
+			&::after {
+				left: 70px;
+			}
+		}
+	}
+
+	.separadorBodegas {
+		padding: 75px 0;
+		color: $white;
+
+		h3 {
+			&::after {
+				content: none;
+			}
+		}
+
+		.valorComercializacion {
+			width: 60%;
+
+			.iconoAvaluo {
+				text-align: center;
+
+				.icono {
+					background: transparent url("../images/iconoAvaluo.svg") center center no-repeat;
+					background-size: contain;
+				}
+
+				h4 {
+					color: $naranja;
+					text-align: center;
+					font-size: 1.5em;
+					line-height: 1em;
+					font-weight: 700;
+					margin-bottom: 0;
+				}
+
+				.proyecto-sala-de-negocios__field-valor-de-comercializacion {
+					font-size: 1.8em;
+					font-weight: 700;
+				}
+			}
+		}
+
+		ol li {
+			margin-bottom: 20px;
+			font-size: 1.3em;
+			font-weight: 600;
+
+			&::marker {
+				color: $naranja;
+				font-weight: 800;
+				font-size: 1.3em;
+			}
+		}
+	}
+
+	.usos {
+		color: #343a3f;
+		font-weight: 500;
+		line-height: 1.2em;
+		font-size: 1.1em;
+
+		h4 {
+			color: #ffa800;
+			font-weight: 700;
+			margin-bottom: 0;
+		}
+
+		i {
+			margin-right: 15px;
+			padding: 54px;
+			background-repeat: no-repeat;
+			background: url(../images/UsosProyectos-Iconos.png), transparent;
+		}
+
+		.area-icono {
+			background-position: 0 0 !important;
+		}
+
+		.altura-icono {
+			background-position: 226px 0 !important;
+		}
+
+		.fachada-icono {
+			background-position: 108px 0 !important;
+		}
+	}
+
+	.dato-general {
+		i {
+			margin-right: 15px;
+			padding: 34px;
+			background-repeat: no-repeat;
+			background: url(../images/iconosBodegas.png), transparent;
+		}
+
+		.tratamiento-icono {
+			background-position: 0 0;
+		}
+
+		.indiceOcupacion-icono {
+			background-position: 372px 0;
+		}
+
+		.indiceConstruccion-icono {
+			background-position: 147px 0;
+		}
+
+		.alturaMax-icono {
+			background-position: 447px 0;
+		}
+
+		.antejardin-icono {
+			background-position: 297px 0;
+		}
+
+		.semisotano-icono {
+			background-position: 72px 0;
+		}
+
+		.usos-icono {
+			background-position: 222px 0;
+		}
+
+	}
+}
+.lotes{
+	.dato-general {
+		i {
+			margin-right: 15px;
+			padding: 34px;
+			background-repeat: no-repeat;
+			background: url(../images/iconosLotes.png), transparent;
+		}
+		.area-icono {
+			background-position: 459px 0;
+		}
+		.lote-cerramiento-icono {
+			background-position: 382px 0;
+		}
+		.transporte-icono {
+			background-position: 306px 0;
+		}
+		.ubicacion-icono {
+			background-position: 230px 0;
+		}
+		.altura-icono {
+			background-position: 153px 0;
+		}
+		.parque-icono {
+			background-position: 75px 0;
+		}
+	}
+}
+
+.villaJavier {
+
+	.separadorBodegas {
+		background: $white url("../images/separadorVillaJavier.svg") right top no-repeat;
+		background-size: cover;
+
+		h3 span {
+			color: $naranja;
+			font-size: 2em;
+		}
+	}
+
+	.usos i {
+		background: url(../images/UsosProyectos-IconosMorados.png), transparent !important;
+	}
+
+	.dato-general {
+		i {
+			background: url(../images/iconosBodegasMorados.png), transparent;
+		}
+	}
+
+}

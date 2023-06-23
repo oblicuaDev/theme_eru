@@ -1,0 +1,358 @@
+@import "typography";
+
+// Headings
+// -----------------------------------------------------------------------------
+h1,
+h2 {
+	font-family: $lato;
+}
+
+h3,
+h4,
+h5,
+h6 {
+	font-family: $poppins;
+	margin-bottom: 1em;
+}
+
+.home h2,
+.container-project h2 {
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.5;
+	font-size: 1.8em;
+
+	&::after {
+		content: "";
+		width: 40px;
+		height: 52px;
+		border-bottom: 2px solid $primary;
+		position: absolute;
+		left: 49%;
+	}
+}
+
+h2 {
+	font-weight: 900;
+	text-transform: none;
+	text-align: left;
+	line-height: 1.5;
+	font-size: 1.8em;
+}
+
+h3,
+#titulo-busqueda {
+	font-size: 1.4em;
+	border-bottom: 1px #ddd solid;
+	padding: 0.3em;
+	position: relative;
+	margin-bottom: 1em;
+	line-height: 1.2 !important;
+
+	&::after {
+		content: "";
+		width: 40px;
+		height: 40px;
+		border-bottom: 2px solid $naranja;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+}
+
+.home h3 {
+	font-size: 1.75rem;
+	border-bottom: none;
+
+	&::after {
+		content: none;
+	}
+}
+
+h4 {
+	color: $verde-oscuro;
+}
+
+h6 {
+	padding-bottom: 0.3em;
+	border-bottom: 1px dashed #979797;
+	display: inline-block;
+}
+
+// Text
+// -----------------------------------------------------------------------------
+p {
+	font-size: 1.1em;
+}
+
+// Links & Buttons
+// -----------------------------------------------------------------------------
+a {
+
+	@include hover {}
+}
+
+.btn-secondary {
+	background-color: $verde-claro  !important;
+	border-color: $verde-claro  !important;
+	padding-right: 40px;
+	padding-left: 40px;
+
+	&:hover {
+		background-color: $naranja  !important;
+		border-color: $naranja  !important;
+		color: #fff !important;
+	}
+
+	a {
+		color: #fff;
+	}
+}
+
+.news__body a,
+.project__body a {
+	border-bottom: 1px solid $naranja;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		background-color: $naranja;
+		color: #fff;
+		transition: background-color .5s;
+	}
+}
+
+// Lists
+// -----------------------------------------------------------------------------
+ol,
+ul,
+dl {}
+
+.news li,
+.project-content li {
+	font-size: 1.1em;
+	margin-bottom: 1.1em;
+
+	ul {
+		margin-top: 1em;
+
+		li {
+			font-size: 1em;
+		}
+	}
+
+}
+
+.page ul li,
+.news ul li,
+.project-content ul li {
+	list-style: none;
+	position: relative;
+}
+
+.page ol li,
+.news ol li {
+	padding-left: 5px;
+}
+
+// Image
+// -----------------------------------------------------------------------------
+img {}
+
+figure {}
+
+figcaption {}
+
+// Other
+// -----------------------------------------------------------------------------
+blockquote {
+	padding: 0.6em 1.5em;
+	background-color: #F2F2F2;
+	border-left: 4px solid #0A6EC8;
+}
+
+strong {}
+
+small {}
+
+hr {
+	border-style: dashed;
+	border-color: #979797;
+}
+
+body {
+	background-color: white;
+	font-family: "Poppins", Arial, Sans-serif;
+	font-size: 15px;
+}
+
+// Botones
+// -----
+
+.btn-primary {
+	cursor: pointer;
+
+	a {
+		color: #fff !important;
+
+		&:hover {
+			text-decoration: none;
+			background-color: $naranja  !important;
+		}
+	}
+
+	&:hover,
+	&:focus {
+		background-color: $naranja;
+		border-color: $naranja;
+	}
+}
+
+// Tablas
+// ------
+table {
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+
+	tbody {
+		tr {
+			.views-field-field-file-download {
+				display: flex;
+				flex-direction: row;
+				gap: 0 2em;
+				width: 85%;
+				place-items: center;
+				justify-content: center;
+			}
+		}
+	}
+	.descargar-ico{
+		height: 30px;
+	}
+}
+
+caption {
+	text-align: center !important;
+	color: #596066;
+}
+
+th,
+td {
+	padding: 20px;
+}
+
+thead {
+	background-color: $primary;
+	border-bottom: solid 5px $naranja;
+	color: white;
+	text-align: center;
+}
+
+.descargar-icn i {
+	color: $verde-claro;
+	font-size: 2em;
+
+	&:hover {
+		color: $naranja;
+	}
+}
+
+tr:nth-child(even) {
+	background-color: #ddd;
+}
+
+// Breadcrumbs
+// ------
+.breadcrumb {
+	border-radius: 0;
+	border-bottom: 1px solid #c8c8c8;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	background: none !important;
+	margin-top: 2em;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+	@include fa-icon;
+	@extend .fas;
+	color: $azul-oscuro;
+	margin-right: 5px;
+	content: fa-content($fa-var-angle-double-right);
+	font-weight: 900;
+}
+
+// Forms
+// -------
+.views-exposed-form {
+	margin-bottom: 3em;
+}
+
+//paginador
+.pager__item {
+	display: inline-block;
+	margin: 0;
+	padding: 0 0.4em;
+	font-size: 1.08em;
+}
+
+.hight-contrast {
+	-webkit-filter: invert(1);
+	filter: invert(1);
+	background-color: #fff;
+}
+
+.f0 {
+	font-size: 0.5rem;
+}
+
+.f1 {
+	font-size: 0.6rem;
+}
+
+.f2 {
+	font-size: 0.7rem;
+}
+
+.f3 {
+	font-size: 0.8rem;
+}
+
+.f4 {
+	font-size: 0.9rem;
+}
+
+.f5 {
+	font-size: 1rem;
+}
+
+.f6 {
+	font-size: 1.1rem;
+}
+
+.f7 {
+	font-size: 1.2rem;
+}
+
+.f8 {
+	font-size: 1.3rem;
+}
+
+.f9 {
+	font-size: 1.4rem;
+}
+
+.f10 {
+	font-size: 1.5rem;
+}
+
+.line-down {
+	padding-bottom: 0.8em;
+	border-bottom: 1px solid $gray-900;
+}
+
+.bs-bg-light-border {
+	border: 1px solid $gray-900;
+}

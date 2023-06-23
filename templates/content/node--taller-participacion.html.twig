@@ -1,0 +1,72 @@
+{#
+/**
+ * @file
+ * Template for a Node.
+ */
+#}
+{%
+  set classes = [
+  'node',
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+  'participacion'
+]
+%}
+
+<article{{attributes.addClass(classes)}}>
+  {% block content %}
+    <div class="container mt-5">
+        <div class="row mt-5">
+          <div class="col-md-7 col-12">
+              {{ content.field_cover_img }}
+          </div>
+          <div class="col-md-5 col-12">
+          <div class="align-self-center">
+            <h2 class="text-center">{{ label }}</h2>
+            {{ content.field_fecha}}
+          </div>
+          <div class="align-self-baseline">  
+            {{ content.addtoany }}
+          </div>
+          </div>
+        </div>
+        <div class="mt-5 descripcion-taller text-center">
+          {{ content.body}}
+        </div>
+        
+         <div class="documentos-taller mt-5 w-75 mx-auto">
+          <h3 class="text-center">Documentos descargables</h3> 
+          {{content.field_blocks}}
+        </div> 
+        
+        <div class="text-center mt-5 galeria-taller">
+          <h3 >La participación en imagenes</h3>
+          {{ content.field_image }}
+        </div> 
+        
+          
+        
+    {% if not page %}
+      <h2{{title_attributes}}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+    {% endif %}
+
+    {% if display_submitted %}
+      <footer>
+        {{ author_picture }}
+        <div{{author_attributes}}>
+          {% trans %}Submitted by
+          {{ author_name }}
+          on
+          {{ date }}{% endtrans %}
+          {{ metadata }}
+        </div>
+      </footer>
+    {% endif %}
+  </div>
+  {% endblock %}
+</article>

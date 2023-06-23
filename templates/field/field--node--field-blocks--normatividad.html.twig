@@ -1,0 +1,17 @@
+{#
+/**
+ * @file
+ * Template for field-attach-file in node taller-participacion.
+ */
+#}
+<div class="row"{{ attributes }}>
+<div class ="documentos-taller col-12">
+  {% for item in items %}
+  <div class="mt-4 col-12 d-flex align-items-center">
+      <span class="icon-lg fa fa-file"></span>
+      {{ item.content }}
+  </div>
+  <hr class="w-75"/>
+  {% endfor %}
+  <div>
+</div>

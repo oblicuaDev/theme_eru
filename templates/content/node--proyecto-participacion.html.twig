@@ -1,0 +1,265 @@
+{#
+/**
+ * @file
+ * Template for a Node.
+ */
+#}
+{%
+  set classes = [
+  'node',
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+  'participacion proyecto'
+]
+%}
+{# {{ kint(content|keys)}} #}
+<article{{attributes.addClass(classes)}}>
+{% set proyecto = label['#items'].0.value %}
+  {% block content %}
+    <div class="container  mt-5">
+      <div class="row mt-5">
+          <div class="col-md-7 col-12">
+              <div class="{{attributes.class.0}}"></div>
+              {{ content.field_cover_img }}
+          </div>
+          <div class="col-md-5 col-12 pt-4 pl-4">
+            <div class="align-self-center">
+              <h2>{{ label }}</h2>
+              <div class="dato-general mt-3">
+                <i class="location-icon"></i>
+                <div class="cifra"><span>{{ content.field_ubicacion }}</span></div>
+              </div>
+            </div>
+            <div class="align-self-baseline">
+              {{ content.addtoany }}
+            </div>
+          </div>
+      </div>
+    {##}
+    <ul class="nav nav-tabs mb-3 mt-5" id="tabs-proyecto-participacion" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="contexto-tab" data-toggle="tab" href="#contexto" role="tab" aria-controls="contexto" aria-selected="true">Contexto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="eventos-tab" data-toggle="tab" href="#eventos" role="tab" aria-controls="eventos" aria-selected="false">Eventos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="talleres-tab" data-toggle="tab" href="#talleres" role="tab" aria-controls="talleres" aria-selected="false">Talleres</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="juntos-construimos-tab" data-toggle="tab" href="#juntos-construimos" role="tab" aria-controls="juntos-construimos" aria-selected="false">Juntos Construimos</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+    {#Contexto#}
+      <div class="tab-pane fade show active" id="contexto" role="tabpanel" aria-labelledby="contexto-tab">
+        
+        {% if content.field_video_eru|render %}
+        <div class="row mt-5">
+          <div class="col-lg-6 align-self-center">
+            <h3 class="mb-3 text-center">Descripción de proyecto</h3>
+            {{content.body}}
+            <div class="btn btn-proyecto d-flex justify-content-center w-75 mx-auto">{{content.field_url_of_the_publication}}</div>
+            </div>
+          <div class="col-lg-6 align-self-center">
+            {{content.field_video_eru}}
+          </div>
+        </div>
+        {% else %}
+        <div class="row mt-5">
+          <div class="col-12 align-self-center">
+            <h3 class="mb-3 text-center">Descripción de proyecto</h3>
+            {{content.body}}
+            <div class="btn btn-proyecto d-flex justify-content-center w-50 mx-auto">{{content.field_url_of_the_publication}}</div>
+          </div>
+        </div>
+        {% endif %}
+        
+        <div class="row">
+        <div class="w-75 mx-auto">
+          {% if proyecto == 'Complejo Hospitalario San Juan de Dios' %}
+            {{ drupal_entity('webform', 'juntos_construimos_chsjd') }}
+          {% endif %}
+
+          {% if proyecto == 'Voto Nacional - La Estanzuela' %}
+            {{ drupal_entity('webform', 'juntos_construimos_voto_nacional') }}
+          {% endif %}
+          {% if proyecto == 'San Bernardo - Tercer Milenio' %}
+            {{ drupal_entity('webform', 'juntos_construimos_san_bernardo') }}
+          {% endif %}
+          {% if proyecto == 'Centro Internacional de Comercio Mayorista San Victorino' %}
+            {{ drupal_entity('webform', 'juntos_construimos_san_victorino') }}
+          {% endif %}
+          {% if proyecto == 'Cinemateca de Bogotá' %}
+            {{ drupal_entity('webform', 'juntos_construimos_cinemateca') }}
+          {% endif %}
+          {% if proyecto == 'Estación Metro 26' %}
+            {{ drupal_entity('webform', 'juntos_construimos_metro_26') }}
+          {% endif %}
+          {% if proyecto == 'Tres Quebradas - UG1' %}
+            {{ drupal_entity('webform', 'juntos_construimos_tres_quebrada') }}
+          {% endif %}
+          {% if proyecto == 'El Porvenir' %}
+            {{ drupal_entity('webform', 'juntos_construimos_el_porvenir') }}
+          {% endif %}
+        </div>
+        
+        </div>
+      </div>
+    {#Eventos#}
+      <div class="tab-pane fade" id="eventos" role="tabpanel" aria-labelledby="eventos-tab">
+        <h3 class="mb-5 mt-5 text-center">Eventos para construir juntos</h3>
+        {{content.field_benefits_of_project}}
+        {% if proyecto == 'Voto Nacional - La Estanzuela' %}
+            <div class="mt-5 mb-5">
+            {{ drupal_entity('webform', 'juntos_construimos_voto_nacional') }}
+            </div>
+          {% endif %}
+          {% if proyecto == 'San Bernardo - Tercer Milenio' %}
+            <div class="mt-5 mb-5">
+            {{ drupal_entity('webform', 'juntos_construimos_san_bernardo') }}
+            </div>
+          {% endif %}
+          {% if proyecto == 'Centro Internacional de Comercio Mayorista San Victorino' %}
+            <div class="mt-5 mb-5">
+            {{ drupal_entity('webform', 'juntos_construimos_san_victorino') }}
+            </div>
+          {% endif %}
+          {% if proyecto == 'Cinemateca de Bogotá' %}
+            <div class="mt-5 mb-5">
+            {{ drupal_entity('webform', 'juntos_construimos_cinemateca') }}
+            </div>
+          {% endif %}
+          {% if proyecto == 'Estación Metro 26' %}
+            <div class="mt-5 mb-5">
+            {{ drupal_entity('webform', 'juntos_construimos_metro_26') }}
+            </div>
+          {% endif %}
+          {% if proyecto == 'Tres Quebradas - UG1' %}
+            <div class="mt-5 mb-5">
+            {{ drupal_entity('webform', 'juntos_construimos_tres_quebrada') }}
+            </div>
+          {% endif %}
+          {% if proyecto == 'El Porvenir' %}
+            <div class="mt-5 mb-5">
+            {{ drupal_entity('webform', 'juntos_construimos_el_porvenir') }}
+            </div>
+          {% endif %}
+      </div>
+      <div class="tab-pane fade" id="talleres" role="tabpanel" aria-labelledby="talleres-tab">
+        <div class="w-75 mx-auto">
+          <h3 class="mb-3 mt-5 text-center">Talleres</h3>
+        </div>
+        
+          {% if proyecto == 'Complejo Hospitalario San Juan de Dios' %}
+            {{ drupal_block('views_block:juntos_construimos-block_talleres_chsjd') }}
+          {% endif %}
+          {% if proyecto == 'Voto Nacional - La Estanzuela' %}
+            {{ drupal_block('views_block:juntos_construimos-block_talleres_voto') }}
+            <div class="mt-5 mb-5">
+            {{ drupal_entity('webform', 'juntos_construimos_voto_nacional') }}
+            </div>
+          {% endif %}
+          {% if proyecto == 'San Bernardo - Tercer Milenio' %}
+            {{ drupal_block('views_block:juntos_construimos-block_talleres_san_bernardo') }}
+            {#<div class="mt-5 mb-5">
+            {{ drupal_entity('webform', 'juntos_construimos_san_bernardo') }}
+            </div>#}
+          {% endif %}
+          {% if proyecto == 'Centro Internacional de Comercio Mayorista San Victorino' %}
+            {{ drupal_block('views_block:juntos_construimos-block_talleres_san_victorino') }}
+            <div class="mt-5 mb-5">
+            {{ drupal_entity('webform', 'juntos_construimos_san_victorino') }}
+            </div>
+          {% endif %}
+          {% if proyecto == 'Cinemateca de Bogotá' %}
+            {{ drupal_block('views_block:juntos_construimos-block_talleres_cinemateca') }}
+            <div class="mt-5 mb-5">
+            {{ drupal_entity('webform', 'juntos_construimos_cinemateca') }}
+            </div>
+          {% endif %}
+          {% if proyecto == 'Estación Metro 26' %}
+            {{ drupal_block('views_block:juntos_construimos-block_talleres_metro_26') }}
+            <div class="mt-5 mb-5">
+            {{ drupal_entity('webform', 'juntos_construimos_metro_26') }}
+            </div>
+          {% endif %}
+          {% if proyecto == 'Tres Quebradas - UG1' %}
+            {{ drupal_block('views_block:juntos_construimos-block_talleres_tres_quebradas') }}
+            <div class="mt-5 mb-5">
+            {{ drupal_entity('webform', 'juntos_construimos_tres_quebrada') }}
+            </div>
+          {% endif %}
+          {% if proyecto == 'El Porvenir' %}
+            {{ drupal_block('views_block:juntos_construimos-block_talleres_porvenir') }}
+            <div class="mt-5 mb-5">
+            {{ drupal_entity('webform', 'juntos_construimos_el_porvenir') }}
+            </div>
+          {% endif %}
+
+      </div>
+      
+      {# #}
+      <div class="tab-pane fade" id="juntos-construimos" role="tabpanel" aria-labelledby="juntos-construimos-tab">
+        <div class="w-90 mx-auto">
+          <h3 class="mb-3 mt-5 text-center">Ideas de nuestros participantes</h3>
+            
+            {% if proyecto == 'Complejo Hospitalario San Juan de Dios' %}
+            {{ drupal_block('views_block:juntos_construimos-block_ideas_chsjd') }}
+          {% endif %}
+          {% if proyecto == 'Voto Nacional - La Estanzuela' %}
+            {{ drupal_block('views_block:juntos_construimos-block_ideas_voto') }}
+          {% endif %}
+          {% if proyecto == 'San Bernardo - Tercer Milenio' %}
+            {{ drupal_block('views_block:juntos_construimos-block_ideas_san_bernardo') }}
+          {% endif %}
+          {% if proyecto == 'Centro Internacional de Comercio Mayorista San Victorino' %}
+            {{ drupal_block('views_block:juntos_construimos-block_ideas_san_victorino') }}
+          {% endif %}
+          {% if proyecto == 'Cinemateca de Bogotá' %}
+            {{ drupal_block('views_block:juntos_construimos-block_ideas_cinemateca') }}
+          {% endif %}
+          {% if proyecto == 'Estación Metro 26' %}
+            {{ drupal_block('views_block:juntos_construimos-block_ideas_metro_26') }}
+          {% endif %}
+          {% if proyecto == 'Tres Quebradas - UG1' %}
+            {{ drupal_block('views_block:juntos_construimos-block_ideas_tres_quebradas') }}
+          {% endif %}
+          {% if proyecto == 'El Porvenir' %}
+            {{ drupal_block('views_block:juntos_construimos-block_ideas_porvenir') }}
+          {% endif %}
+        </div>
+      </div> 
+      {##}
+    </div>
+    {##}
+    {% if not page %}
+      <h2{{title_attributes}}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+    {% endif %}
+    
+    <script>
+      
+      (function(val) {
+        console.log(val);
+      })('test');
+    </script> 
+    {% if display_submitted %}
+      <footer>
+        {{ author_picture }}
+        <div{{author_attributes}}>
+          {% trans %}Submitted by
+          {{ author_name }}
+          on
+          {{ date }}{% endtrans %}
+          {{ metadata }}
+        </div>
+      </footer>
+    {% endif %}
+  </div>
+  {% endblock %}
+</article>

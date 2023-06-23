@@ -1,0 +1,249 @@
+{#
+/**
+ * @file
+ * Template for a Node.
+ */
+#}
+
+{% set url = path('<current>') %}
+
+  {% if 'javier' in url %}
+    {% set urlClass = 'bodegas villaJavier' %}
+  {% else %}
+    {% set urlClass = 'lotes' %}
+  {% endif %}
+
+{%
+  set classes = [
+  'node', urlClass,
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  node.bundle|clean_class ~  view_mode|clean_class
+]
+%}
+
+{# {{ kint(content|keys)}} #}
+<article{{attributes.addClass(classes)}}>
+  {% block content %}
+  {##}
+  <div class="cabezeraProyecto">
+    {{content.field_blocks}}
+    <div class="infoProyecto">
+      <div class="proyectoIconos">
+        <div class="bookmarks">
+        <div class="tooltp"><span><a onclick="scrollSmoothTo('info')" data-toggle="tooltip" title="Información" data-placement="top"><i class="fas fa-info"></i></a><span class="tooltiptext">Información</span></span></div>
+        {% if content.field_recorrido_virtual|render %}
+          <div class="tooltp"><span><a href="{{ content.field_recorrido_virtual[0]['#url'] }}" target="_blank"><i class="fab fa-react"></i></a><span class="tooltiptext">Recorrido 360</span></span></div>
+        {% endif %}
+        <div class="tooltp"><span><a onclick="scrollSmoothTo('mapa')"><i class="fas fa-map"></i></a><span class="tooltiptext">Ubicación</span></span></div>
+        </div>
+        <div class="contact">
+        <a class="btn btn-primary" target="_blank" onclick="scrollSmoothTo('contacto')">Solicitar información</a>
+        </div>      
+      </div>
+    </div>
+  </div>
+  {##}  
+    <div class="container mt-3" id="info">
+      <div class="row d-flex align-items-center mb-4">
+        <div class="col-sm-6 descripcionGeneral">
+          <div class="text-center">
+            {{content.field_image}}
+          </div>
+          <div class="row d-flex align-items-top">
+            {# <i class="fas fa-map-marked-alt"></i> #}
+            <div class="col-11">
+              {{content.body}}
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 proyectoVideo">
+          <h3>{{content.field_url_video_yt_['#title']}}</h3>
+          {{content.field_url_video_yt_}}
+        </div>
+      </div>
+      <div class="row d-flex align-items-center" id="mapa">
+        <div class="col-sm-6 text-center">
+          {# {{content.field_ubicacion_general}} #}
+          {{content.field_gmap}}
+        </div>
+        <div class="col-sm-6 mt-3">
+          <h3>{{content.field_ubicacion_estrategica['#title']}}</h3>
+          {{content.field_ubicacion_estrategica}}
+          {% if content.field_file_download|render %}
+          <div class="float-right mt-3">
+            <a class="btn btn-primary" target="_blank" href="{{ content.field_file_download.0 }}">Descargar Brochure</a>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+      {% if node.field_local_comercial.value %}
+        <div class="separador py-4 mt-4">
+        <div class="container container-project">
+          <div class="row d-flex align-items-center">
+            <div class="col-sm-6">
+              <h3>Acabados:</h3>
+              <div class="row">
+                <div class="acabados col-md-3 col-4 text-center">
+                  <div class="icono">
+                    <i class="obra-gris-icono"></i>
+                  </div>
+                  <div class="titulo-cifra">
+                    <span>Se entrega en obra gris</span>
+                  </div>
+                </div>
+                <div class="acabados col-md-9 col-8">
+                  {{content.field_informacion_adicional_}}
+                </div>
+              </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h3>Servicios:</h3>
+                  </div>
+                  {{content.field_general_data}}
+                </div> 
+            </div>
+            <div class="col-sm-6">
+              <h3 class="text-center">Áreas y precios</h3>
+              {{content.field_image_main}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="plano row justify-content-md-center">
+          <div class="w-50 mx-auto">
+            <h3 class="text-center">Escoge la mejor ubicación</h3>
+          </div>
+          <div class="col-sm-12">
+            {{content.field_plano_del_proyecto}}
+          </div>
+        </div>
+      </div>
+
+      {% elseif node.field_bodega.value %}
+      {% if content.field_scope_of_project|render %}
+      <div class="separadorBodegas mt-5">
+        <div class="container">
+          <div class="row d-flex align-items-center mt-4">
+            <div class="col-sm-6">
+              <h3>Construya en el mejor lugar<br><span>en el centro de Bogotá</span></h3>              
+            </div>
+            <div class="col-sm-6">
+              {{content.field_scope_of_project}}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      <div class="container my-5 caracteristicas">
+          {% if content.field_altura|render %}
+          <div class="titleCenter mb-5">
+            <h3>¿Con qué cuenta el inmueble?</h3>
+          </div>
+        <div class="row usos">
+
+          <div class="col-sm-4 d-flex align-items-center">
+          <i class="area-icono"></i>
+            <div class="usoInfo">
+              <h4>{{content.field_area['#title']}}</h4>
+              {{content.field_area}}
+            </div>
+          </div>
+
+          <div class="col-sm-5 d-flex align-items-center">
+          <i class="altura-icono"></i>
+            <div class="usoInfo">
+              <h4>{{content.field_altura['#title']}}</h4>
+              {{content.field_altura}}
+            </div>
+          </div>
+
+          <div class="col-sm-3 d-flex align-items-center">
+          <i class="fachada-icono"></i>
+            <div class="usoInfo w-75">
+              <h4>{{content.field_fachada['#title']}}</h4>
+              {{content.field_fachada}}
+            </div>
+          </div>
+        </div>
+        {% endif %}
+        <div class="row mt-5">
+          <div class="col-md-5">
+            {% if urlClass == 'lotes' %}
+              <h3>¿Con qué cuenta el inmueble?</h3>
+            {% else %}
+              <h3>{{content.field_datos_generales['#title']}}</h3>
+            {% endif %}
+            {{ content.field_datos_generales}}
+          </div>
+          <div class="col-md-7">
+            {% if urlClass == 'lotes' %}
+              <h3>{{content.field_datos_generales['#title']}}</h3>
+              {% else %}
+              <h3>{{content.field_benefits_of_project['#title']}}</h3>
+            {% endif %}
+            {{content.field_benefits_of_project}}
+          </div>
+        </div>
+      </div>
+      {% if content.field_plano_del_proyecto|render %}
+      <div class="mt-5 planos">
+          <div class="py-2 text-center">
+            {{content.field_plano_del_proyecto}}
+          </div>
+      </div>
+      {% endif %}
+      {% endif %}
+      <div class="container mt-5" id="contacto">
+        <div class="row mt-4">
+          <div class="col-sm-7 mb-4">
+            <h3>{{content.field_gallery['#title']}}</h3>
+            {{content.field_gallery	}}
+          </div>
+          <div class="col-sm-5">
+          <div id="sala_de_negocios_contacto">
+            
+            {{content.field_formulario}}
+          </div>
+          </div>
+        </div>
+      </div>
+    
+    {% if not page %}
+      <h2{{title_attributes}}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+    {% endif %}
+
+    {% if display_submitted %}
+      <footer>
+        {{ author_picture }}
+        <div{{author_attributes}}>
+          {% trans %}Submitted by
+          {{ author_name }}
+          on
+          {{ date }}{% endtrans %}
+          {{ metadata }}
+        </div>
+      </footer>
+    {% endif %}
+    
+  {% endblock %}
+</article>
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
+function scrollSmoothTo(elementId) {
+    var element = document.getElementById(elementId);
+    const yOffset = -130; 
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({top: y, behavior: 'smooth'});
+  }
+</script>

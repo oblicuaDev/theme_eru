@@ -1,0 +1,13 @@
+{#
+/**
+ * @file
+ * Template for field-attach-file in node taller-participacion.
+ */
+#}
+<div class="row photos"{{ attributes }}>
+  {% for item in items %}
+    <div class ="col-lg-4 text-center mt-5">
+      {{ item.content }}
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Template for field-attach-file in node taller-participacion.
+ */
+#}
+<div class="row"{{ attributes }}>
+  {% for item in items %}
+  {% if items|length == 1  %}
+    <div class ="col-xl-12 text-center documentos-taller-descargable d-flex align-items-center justify-content-center mt-4">
+      <span class="icon-lg fa fa-file"></span>
+      {{ item.content }}
+    </div>
+  {% endif %}
+  {% if items|length == 2  %}
+    <div class ="col-lg-6 text-center documentos-taller-descargable d-flex align-items-center justify-content-center mt-4">
+      <span class="icon-lg fa fa-file"></span>
+        {{item.content}}
+   
+      
+    </div>
+  {% endif %}
+  {% if items|length > 2  %}
+    <div class ="col-lg-4 text-center documentos-taller-descargable d-flex align-items-center justify-content-center mt-4">
+      <span class="icon-lg fa fa-file"></span>
+      {{ item.content }}
+    </div>
+  {% endif %}
+  {% endfor %}
+</div>
