@@ -1,21 +1,3 @@
-{#
-/**
- * @file
- * Template for a Node.
- */
-#}
-{%
-  set classes = [
-  'node',
-  node.isPromoted() ? 'node--promoted',
-  node.isSticky() ? 'node--sticky',
-  not node.isPublished() ? 'node--unpublished',
-  node.bundle|clean_class,
-  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
-  'project'
-]
-%}
-{# {{ kint(content|keys)}} #}
 <article>
 <p>TEST TEXT</p>
 </article>
