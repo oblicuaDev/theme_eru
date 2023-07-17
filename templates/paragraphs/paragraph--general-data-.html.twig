@@ -50,7 +50,7 @@
             <div class="container row">
                 {% for key, item in content.field_general_data %}
                     {% if key matches '/^\\d+$/' %}
-                        {% set class_icon = item['#paragraph'].field_class_icon.value %}
+                        {% set class_icon = item['#paragraph'].field_class_icon.label %}
                         {% set title = item['#paragraph'].field_title.value %}
                         {% set  description = item['#paragraph'].field_description.value %}
                         <div class="dato-general mb-4">
