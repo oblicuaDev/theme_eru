@@ -88,19 +88,19 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         role="tabpanel"
       >
         <div class="oblicua-flex">
-          {{ content.field_intern_img}}
+          {{ content.field_intern_img }}
           <div class="right">
             <h2 class="text-center">{{ label }}</h2>
-            {{ content.field_introduccion}}
+            {{ content.field_introduccion }}
           </div>
         </div>
         <div class="oblicua-general_data">
           <h2>Datos Generales</h2>
-          {{ content.field_general_data}}
+          {{ content.field_general_data }}
         </div>
         <div class="oblicua-description">
           <h2>Descripción</h2>
-          {{ content.body}}
+          {{ content.body }}
         </div>
       </div>
       <div
@@ -109,15 +109,15 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         id="benefits"
         role="tabpanel"
       >
-      <div class="oblicua-flex">
-        <div class="left">
-          <h2>Beneficios del proyecto</h2>
-          {{ content.field_benefits_of_project}}
+        <div class="oblicua-flex">
+          <div class="left">
+            <h2>Beneficios del proyecto</h2>
+            {{ content.field_benefits_of_project }}
+          </div>
+          <div class="right">
+            {{ content.field_imagen_beneficios }}
+          </div>
         </div>
-        <div class="right">
-          {{ content.field_imagen_beneficios}}
-        </div>
-      </div>
       </div>
       <div
         aria-labelledby="status-tab"
@@ -125,8 +125,8 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         id="status"
         role="tabpanel"
       >
-      <h2>Estado</h2>
-        {{ content.field_status_of_project}}
+        <h2>Estado</h2>
+        {{ content.field_status_of_project }}
       </div>
       <div
         aria-labelledby="scope-tab"
@@ -134,13 +134,16 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         id="scope"
         role="tabpanel"
       >
-      <h2>Alcance</h2>
-      <div class="oblicua-flex">
-      <div class="left">
-        {{ content.field_scope_of_project}}
-      </div>
-        <img src="/sites/default/files/2023-07/alcance_img.png" alt="Alcance">
-      </div>
+        <div class="oblicua-flex">
+          <div class="left">
+            <h2>Alcance</h2>
+            {{ content.field_scope_of_project }}
+          </div>
+          <img
+            src="/sites/default/files/2023-07/alcance_img.png"
+            alt="Alcance"
+          />
+        </div>
       </div>
       <div
         aria-labelledby="photos-tab"
@@ -148,10 +151,10 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         id="photos"
         role="tabpanel"
       >
-      <h2>Multimedia</h2>
+        <h2>Multimedia</h2>
         <div class="oblicua-gallery">
-          {{ content.field_gallery}}
-          {{ content.field_videos}}
+          {{ content.field_gallery }}
+          {{ content.field_videos }}
         </div>
       </div>
       <div
@@ -160,13 +163,16 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         id="regulatory"
         role="tabpanel"
       >
-      <div class="oblicua-flex">
-        <div class="left">
-          <h2>Marco Normativo</h2>
-          {{ content.field_regulatory_framework}}
+        <div class="oblicua-flex">
+          <div class="left">
+            <h2>Marco Normativo</h2>
+            {{ content.field_regulatory_framework }}
+          </div>
+          <img
+            src="/sites/default/files/2023-07/marco_normativo_img.png"
+            alt="Marco Normativo"
+          />
         </div>
-        <img src="/sites/default/files/2023-07/marco_normativo_img.png" alt="Marco Normativo">
-      </div>
       </div>
     </div>
   </div>
