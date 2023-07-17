@@ -50,15 +50,12 @@
             <div class="container row">
                 {% for key, item in content.field_general_data %}
                     {% if key matches '/^\\d+$/' %}
+                        {% set class_icon = item['#paragraph'].field_class.value %}
                         {% set title = item['#paragraph'].field_title.value %}
                         {% set  description = item['#paragraph'].field_description.value %}
                         <div class="dato-general mb-4">
                             <div class="dato-info">
-                                {% set class_icon = item['#paragraph'].field_class_icon.value %}
-                                <p>Valor del campo:
-                                    {{ class_icon }}</p>
-                                <p>Etiqueta del campo:
-                                    {{ field_label('paragraph', 'field_class_icon') }}</p>
+                                <img src="/sites/default/files/2023-05/{{ class_icon }}.png"/>
                                 <div class="cifra">
                                     <span>{{ description }}</span>
                                 </div>
