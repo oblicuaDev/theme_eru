@@ -94,8 +94,14 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
             {{ content.field_introduccion }}
           </div>
         </div>
-        {{ content.field_general_data }}
-        {{ content.body }}
+        <div class="oblicua-general_data">
+          <h2>Datos Generales</h2>
+          {{ content.field_general_data }}
+        </div>
+        <div class="oblicua-description">
+          <h2>Descripción</h2>
+          {{ content.body }}
+        </div>
       </div>
       <div
         aria-labelledby="benefits-tab"
@@ -103,8 +109,15 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         id="benefits"
         role="tabpanel"
       >
-        {{ content.field_benefits_of_project }}
-        {{ content.field_imagen_beneficios }}
+      <div class="oblicua-flex">
+        <div class="left">
+          <h2>Beneficios del proyecto</h2>
+          {{ content.field_benefits_of_project }}
+        </div>
+        <div class="right">
+          {{ content.field_imagen_beneficios }}
+        </div>
+      </div>
       </div>
       <div
         aria-labelledby="status-tab"
@@ -112,6 +125,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         id="status"
         role="tabpanel"
       >
+      <h2>Estado</h2>
         {{ content.field_status_of_project }}
       </div>
       <div
@@ -120,6 +134,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         id="scope"
         role="tabpanel"
       >
+      <h2>Alcance</h2>
         {{ content.field_scope_of_project }}
       </div>
       <div
@@ -128,6 +143,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         id="photos"
         role="tabpanel"
       >
+      <h2>Multimedia</h2>
         <div class="oblicua-gallery">
           {{ content.field_gallery }}
         </div>
@@ -138,6 +154,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         id="regulatory"
         role="tabpanel"
       >
+      <h2>Marco Normativo</h2>
         {{ content.field_regulatory_framework }}
       </div>
     </div>
