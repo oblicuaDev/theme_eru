@@ -57,25 +57,14 @@
                   {{ content.field_status_of_project }}
                 </div>
                 <div aria-labelledby="scope-tab" class="tab-pane fade project-content" id="scope" role="tabpanel">{{ content.field_scope_of_project }}</div>
-                <div aria-labelledby="photos-tab" class="tab-pane fade row" id="photos" role="tabpanel">
+                <!-- <div aria-labelledby="photos-tab" class="tab-pane fade row" id="photos" role="tabpanel">
                     {{ content.field_gallery }}
                     {{ content.field_videos }}
-                </div>
+                </div> -->
                 <div aria-labelledby="regulatory-tab" class="tab-pane fade project-content" id="regulatory" role="tabpanel">
-                    {{ content.field_regulatory_framework }}</div>
+                    {{ content.field_regulatory_framework }}
+                </div>
             </div>
-            {% if display_submitted %}
-            <footer>
-              {{ author_picture }}
-              <div{{author_attributes}}>
-                {% trans %}Submitted by
-                {{ author_name }}
-                on
-                {{ date }}{% endtrans %}
-                {{ metadata }}
-              </div>
-            </footer>
-          {% endif %}
         </div>
 {% endblock %}
 </article>
