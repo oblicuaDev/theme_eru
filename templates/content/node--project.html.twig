@@ -135,7 +135,10 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         role="tabpanel"
       >
       <h2>Alcance</h2>
+      <div class="oblicua-flex">
         {{ content.field_scope_of_project }}
+        <img src="/sites/default/files/2023-07/alcance_img.png" alt="Alcance">
+      </div>
       </div>
       <div
         aria-labelledby="photos-tab"
@@ -154,8 +157,13 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         id="regulatory"
         role="tabpanel"
       >
-      <h2>Marco Normativo</h2>
-        {{ content.field_regulatory_framework }}
+      <div class="oblicua-flex">
+        <div class="left">
+          <h2>Marco Normativo</h2>
+          {{ content.field_regulatory_framework }}
+        </div>
+        <img src="/sites/default/files/2023-07/marco_normativo_img.png" alt="Marco Normativo">
+      </div>
       </div>
     </div>
   </div>
