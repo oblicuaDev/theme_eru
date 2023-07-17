@@ -38,34 +38,36 @@
  * @ingroup themeable
  */
 #}
-{%
-  set classes = [
+{% set classes = [
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished'
-  ]
-%}
+  ] %}
 {% block paragraph %}
-  <div{{attributes.addClass(classes)}}>
-    {% block content %}
-      <div class="container row">
-        {% for key, item in content.field_general_data %}
-          {% if key matches '/^\\d+$/' %}
-            {% set class_icon = item['#paragraph'].field_class.value  %}
-            {% set title = item['#paragraph'].field_title.value %}
-            {% set  description = item['#paragraph'].field_description.value %}
-            <div class="dato-general mb-4">
-              <i class="{{ class_icon }}"></i>
-              <div class="dato-info">
-                <div class="cifra"><span>{{description}}</span></div>
-                <div class="titulo-cifra"><span>{{title}}</span></div>
-              </div>
+    <div{{ attributes.addClass(classes) }}>
+        {% block content %}
+            <div class="container row">
+                {% for key, item in content.field_general_data %}
+                    {% if key matches '/^\\d+$/' %}
+                        {% set class_icon = item['#paragraph'].field_class.value %}
+                        {% set title = item['#paragraph'].field_title.value %}
+                        {% set  description = item['#paragraph'].field_description.value %}
+                        <div
+                            class="dato-general mb-4">
+                            {# <i class="{{ class_icon }}"></i> #}
+                            <div class="dato-info">
+                                <div class="cifra">
+                                    <span>{{ description }}</span>
+                                </div>
+                                <div class="titulo-cifra">
+                                    <span>{{ title }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
             </div>
-          {% endif %}
-        {% endfor %}
-      </div>
-    {% endblock %}
-  </div>
+        {% endblock %}
+    </div>
 {% endblock paragraph %}
-
