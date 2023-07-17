@@ -17,31 +17,30 @@
 %}
 {# {{ kint(content|keys)}} #}
 <article {{attributes.addClass(classes)}}>
-<p>Test Text</p>
   {% block content %}
-  {{content.field_scope_of_project}}
-{{content.field_benefits_of_project}}
-{{content.field_general_data}}
-{{content.field_enlaces_adicionales}}
-{{content.field_links_of_interest}}
-{{content.field_status_of_project}}
-{{content.field_labels}}
-{{content.field_externa}}
-{{content.field_external_link}}
-{{content.field_formulario}}
-{{content.field_gallery}}
-{{content.field_imagen_beneficios}}
-{{content.field_image}}
-{{content.field_image_evento_hover}}
-{{content.field_end_img}}
-{{content.field_intern_img}}
-{{content.field_infografia}}
-{{content.field_introduccion}}
-{{content.field_regulatory_framework}}
-{{content.field_type_of_project}}
-{{content.field_location}}
-{{content.field_ver_en_el_home}}
-{{content.field_videos}}
+  {{content.field_scope_of_project.content}}
+{{content.field_benefits_of_project.content}}
+{{content.field_general_data.content}}
+{{content.field_enlaces_adicionales.content}}
+{{content.field_links_of_interest.content}}
+{{content.field_status_of_project.content}}
+{{content.field_labels.content}}
+{{content.field_externa.content}}
+{{content.field_external_link.content}}
+{{content.field_formulario.content}}
+{{content.field_gallery.content}}
+{{content.field_imagen_beneficios.content}}
+{{content.field_image.content}}
+{{content.field_image_evento_hover.content}}
+{{content.field_end_img.content}}
+{{content.field_intern_img.content}}
+{{content.field_infografia.content}}
+{{content.field_introduccion.content}}
+{{content.field_regulatory_framework.content}}
+{{content.field_type_of_project.content}}
+{{content.field_location.content}}
+{{content.field_ver_en_el_home.content}}
+{{content.field_videos.content}}
 {{content.body}}
     {# {{ title_prefix }}
     {{ title_suffix }}
