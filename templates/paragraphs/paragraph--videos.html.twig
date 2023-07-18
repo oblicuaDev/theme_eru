@@ -68,14 +68,8 @@
                                     {% set video = item['#paragraph'].field_media.entity %}
                                     {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_video_file.entity.uri.value) %}
                                     <video controls width="100%" src="{{ img_url }}" data-target="{{video.bundle.value.0.target_id}}"></video>
-                                    {% comment %} {% if video.bundle.value.0.target_id == 'video' %} {% endcomment %}
-                                    {% comment %} {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_video_file.entity.uri.value) %} {% endcomment %}
                                     <video controls width="100%" src="{{ img_url }}"></video>
-                                    {% comment %} {% endif %} {% endcomment %}
-                                    {% comment %} {% if video.bundle.value.0.target_id == 'remote_video' %} {% endcomment %}
-                                    {% comment %} {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_oembed_video.entity.uri.value) %} {% endcomment %}
                                     <iframe width="1300" height="700" src="{{ video.field_media_oembed_video.value }}"></iframe>
-                                    {% comment %} {% endif %} {% endcomment %}
                                     {% if item['#paragraph'].field_description.value %}
                                         <div class="carousel-caption d-none d-md-block">
                                             <h3>{{ item['#paragraph'].field_title.value }}</h3>
