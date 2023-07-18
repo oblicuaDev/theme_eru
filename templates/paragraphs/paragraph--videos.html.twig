@@ -65,9 +65,9 @@
                                 {% else %}
                                     <div class="carousel-item">
                                     {% endif %}
-                                    
+                                    {% set video = item['#paragraph'].field_media.entity %}
                                     {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_video_file.entity.uri.value) %}
-                                    <video controls width="100%" src="{{ img_url }}"></video>
+                                    <video controls width="100%" src="{{ img_url }}" data-target="{{video.bundle.value.0.target_id}}"></video>
                                     {% if video.bundle.value.0.target_id == 'video' %}
                                     {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_video_file.entity.uri.value) %}
                                     <video controls width="100%" src="{{ img_url }}"></video>
