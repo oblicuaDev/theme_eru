@@ -67,6 +67,7 @@
                                     {% endif %}
                                     {% set video = item['#paragraph'].field_media.entity %}
                                     {% set img_url = file_url(video.field_media_video_file.entity.uri.value) %}
+                                    <p>asdasdasd</p>
                                     <p>{{ video.field_media_oembed_video.value }}</p>
                                     <iframe width="1300" height="700" src="{{ video.field_media_oembed_video.value }}"></iframe>
                                     <video controls width="100%" src="{{ img_url }}"></video>
