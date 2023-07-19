@@ -45,80 +45,14 @@
     not paragraph.isPublished() ? 'paragraph--unpublished'
   ] %}
 {% block paragraph %}
-<p>VIDEO YOUTUBE</p>
+
     <div{{ attributes.addClass(classes) }}>
         {% block content %}
-            <div id="eru-slide" class="carousel slide" {#data-ride="carousel"#}>
-                {% if is_front %}
-                    <ol class="carousel-indicators">
-                        {% for key, item in content.field_videos %}
-                            {% if key matches '/^\\d+$/' %}
-                                <li data-target="#eru-slide" data-slide-to="{{ key }}" {% if key == 0 %} class="active" {% endif %}></li>
-                            {% endif %}
-                        {% endfor %}
-                    </ol>
-                {% endif %}
-                <div class="carousel-inner">
-                    {% for key, item in content.field_videos %}
-                        {% if key matches '/^\\d+$/' %}
-                            {% if key == 0 %}
-                                <div class="carousel-item active">
-                                {% else %}
-                                    <div class="carousel-item">
-                                    {% endif %}
-                                    {% set video = item['#paragraph'].field_media.entity %}
-                                    {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_video_file.entity.uri.value) %}
-                                   
-                                    <video controls width="100%" src="{{ img_url }}" data-videourl="{{video.field_media_oembed_video.value}}" data-target="{{video.bundle.value.0.target_id}}"></video>
-                                    {% if item['#paragraph'].field_description.value %}
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h3>{{ item['#paragraph'].field_title.value }}</h3>
-                                            <p>
-                                                {{ item['#paragraph'].field_description.value }}
-                                            </p>
-                                        </div>
-                                    {% endif %}
-                                    {% if item['#paragraph'].field_link.value %}
-                                        <div class="transcription-caption d-none d-md-block">
-                                            <a class="btn btn-primary" href="{{ item['#paragraph'].field_link.0.url }}" {% if item['#paragraph'].field_external_link.value == 1 %} target="_blank" class="alert-leave-page" {% endif %}>
-                                                <span class="fa fa-download"></span>
-                                                Descargar transcripción
-                                                {% if item['#paragraph'].field_external_link.value == 1 %}, Abre en una nueva ventana
-                                                {% endif %}
-                                            </span>
-                                        </a>
-                                    </div>
-                                {% endif %}
-                            </div>
-                        {% endif %}
-                    {% endfor %}
-                </div>
-                {% if is_front %}
-                    <div class="controles">
-                        <a class="carousel-control-prev" role="button" {#data-slide="prev"#}>
-                            <i class="fas fa-chevron-circle-left"></i>
-                            <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
-                            <span class="sr-only">Ir a la imagen Anterior</span>
-                        </a>
-                        <div id="carouselButtons">
-                            <button id="playButton" type="button" class="btn btn-default btn-xs active">
-                                <i class="far fa-play-circle"></i>
-                                <span class="sr-only">Reproducir</span>
-                            </button>
-                            <button id="pauseButton" type="button" class="btn btn-default btn-xs">
-                                <i class="fas fa-pause-circle"></i>
-                                <span class="sr-only">Pausar</span>
-                            </button>
-                        </div>
-                        <a
-                            class="carousel-control-next" role="button" {#data-slide="next"#}>
-                            <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
-                            <i class="fas fa-chevron-circle-right"></i>
-                            <span class="sr-only">Ir a la imagen siguiente</span>
-                        </a>
-                    </div>
-                {% endif %}
-            </div>
+            {% for key, item in content.field_videos %}
+            {% set video = item['#paragraph'].field_media.entity %}
+            {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_video_file.entity.uri.value) %}
+            <video controls width="100%" src="{{ img_url }}" data-videourl="{{video.field_media_oembed_video.value}}" data-target="{{video.bundle.value.0.target_id}}"></video>
+            {% endfor %}
         {% endblock %}
     </div>
 {% endblock paragraph %}
