@@ -161,7 +161,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
           <p>{{ key }}</p>
             {% set paragraph = item['#paragraph'] %}
             {% if paragraph.entity.field_media %}
-            <p>{{ item }}</p>
+            <p>{{ item['#title'] }}</p>
             <p>{{ paragraph }}</p>
               {% set media = paragraph.entity.field_media.entity %}
               <p>{{ media }}</p>
