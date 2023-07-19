@@ -51,7 +51,7 @@
             {% for key, item in content.field_videos %}
             {% set video = item['#paragraph'].field_media.entity %}
             {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_video_file.entity.uri.value) %}
-            <video controls width="100%" src="{{ img_url }}" data-videourl="{{video.field_media_oembed_video.value}}" data-target="{{video.bundle.value.0.target_id}}"></video>
+            <video controls width="100%" src="{{ img_url }}" data-key="{{key}}" data-videourl="{{video.field_media_oembed_video.value}}" data-target="{{video.bundle.value.0.target_id}}"></video>
             {% endfor %}
         {% endblock %}
     </div>
