@@ -66,6 +66,7 @@
                                     <div class="carousel-item">
                                     {% endif %}
                                     {{item['#paragraph'].field_media.entity.field_media_oembed_video.entity.uri.value}}
+                                    {{item['#paragraph'].field_media.entity.field_media_oembed_video}}
                                     {% set video = item['#paragraph'].field_media.entity %}
                                     {% if video.bundle.value.0.target_id == 'video' %}
                                     {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_video_file.entity.uri.value) %}
