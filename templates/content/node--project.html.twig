@@ -165,6 +165,9 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
               {% if media.field_media_video_file.entity %}
                 {% set video_uri = media.field_media_video_file.entity.uri.value %}
                 {% set video_url = file_url(video_uri) %}
+                <p>{{ media }}</p>
+                <p>{{ video_uri }}</p>
+                <p>{{ paragraph }}</p>
                 <p>{{ video_url }}</p>
                 <video controls width="100%" src="{{ video_url }}"></video>
               {% endif %}
