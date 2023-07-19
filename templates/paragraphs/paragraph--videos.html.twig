@@ -69,11 +69,10 @@
                                     {% if video.bundle.value.0.target_id == 'video' %}
                                     {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_video_file.entity.uri.value) %}
                                     <video controls width="100%" src="{{ img_url }}"></video>
-                                    {% endif %}
-                                    {% if video.bundle.value.0.target_id == 'remote_video' %}
+                                    {% else %}
                                     {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_oembed_video.entity.uri.value) %}
                                     xxxx
-                                        <iframe width="1300" height="700" src="{{ video.field_media_oembed_video.value }}"></iframe>
+                                    <iframe width="1300" height="700" src="{{ video.field_media_oembed_video.value }}"></iframe>
                                     {% endif %}
                                     {% if item['#paragraph'].field_description.value %}
                                         <div class="carousel-caption d-none d-md-block">
