@@ -45,6 +45,7 @@
     not paragraph.isPublished() ? 'paragraph--unpublished'
   ] %}
 {% block paragraph %}
+<p>VIDEO YOUTUBE</p>
     <div{{ attributes.addClass(classes) }}>
         {% block content %}
             <div id="eru-slide" class="carousel slide" {#data-ride="carousel"#}>
@@ -67,7 +68,7 @@
                                     {% endif %}
                                     {% set video = item['#paragraph'].field_media.entity %}
                                     {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_video_file.entity.uri.value) %}
-                                    <p>{{video.field_media_oembed_video.value}}</p>
+                                   
                                     <video controls width="100%" src="{{ img_url }}" data-videourl="{{video.field_media_oembed_video.value}}" data-target="{{video.bundle.value.0.target_id}}"></video>
                                     {% if item['#paragraph'].field_description.value %}
                                         <div class="carousel-caption d-none d-md-block">
