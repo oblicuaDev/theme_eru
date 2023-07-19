@@ -160,10 +160,10 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
           {% for key, item in content.field_videos %}
           <p>{{ key }}</p>
             {% set paragraph = item['#paragraph'] %}
-            {% if paragraph.entity.field_media %}
-            <p>{{ item}}</p>
+            <p>{{ item }}</p>
             <p>{{ item['#title'] }}</p>
             <p>{{ paragraph }}</p>
+            {% if paragraph.entity.field_media %}
               {% set media = paragraph.entity.field_media.entity %}
               <p>{{ media }}</p>
               {% if media.field_media_video_file.entity %}
