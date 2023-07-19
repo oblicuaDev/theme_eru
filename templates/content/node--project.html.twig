@@ -157,12 +157,6 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         <h2>Multimedia</h2>
         <div class="oblicua-gallery">
           {{ content.field_gallery }}
-          {% for key, item in content.field_videos %}
-          {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_video_file.entity.uri.value) %}
-          {% set video = item['#paragraph'].field_media.entity %}
-          <p>{{img_url}}</p>
-          {% endfor %}
-          {{ content.field_videos }}
         </div>
       </div>
       <div
