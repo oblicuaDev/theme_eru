@@ -70,7 +70,7 @@
                                     <p>asdasdasd</p>
                                     <p>{{ video.field_media_oembed_video.value }}</p>
                                     <iframe width="1300" height="700" src="{{ video.field_media_oembed_video.value }}"></iframe>
-                                    <video controls width="100%" src="{{ img_url }}"></video>
+                                    <video controls width="100%" src="{{ img_url }}" data-iframeurl="{{video.field_media_oembed_video.value}}"></video>
                                     {% if item['#paragraph'].field_description.value %}
                                         <div class="carousel-caption d-none d-md-block">
                                             <h3>{{ item['#paragraph'].field_title.value }}</h3>
