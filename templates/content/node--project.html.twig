@@ -159,12 +159,14 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
           {{ content.field_gallery }}
           {% for key, item in content.field_videos %}
           {% if key matches '/^\\d+$/' %}
-          {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_video_file.entity.uri.value) %}
-          {% set video = item['#paragraph'].field_media.entity %}
-          <p>{{img_url}}</p>
-          <video controls width="100%" src="{{ img_url }}"></video>
+            {% set video = item['#paragraph'].field_media.entity %}
+            {% set video_uri = video.field_media_video_file.entity.uri.value %}
+            {% set video_url = file_url(video_uri) %}
+            <p>{{ video_url }}</p>
+            <video controls width="100%" src="{{ video_url }}"></video>
           {% endif %}
-          {% endfor %}
+        {% endfor %}
+        
           {{ content.field_videos }}
         </div>
       </div>
