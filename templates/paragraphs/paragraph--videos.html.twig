@@ -68,7 +68,7 @@
                                     {% set video = item['#paragraph'].field_media.entity %}
                                     {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_video_file.entity.uri.value) %}
                                     {% if img_url == '/' %}
-                                    <iframe width="1300" height="700" src="{{ item['#paragraph'].field_media.entity.field_media_oembed_video }}"></iframe>
+                                    <iframe width="1300" height="700" src="{{ item['#paragraph'].field_media_oembed_video }}"></iframe>
                                     {% else %}
                                     <video controls width="100%" src="{{ img_url }}"></video>
                                     {% endif %}
