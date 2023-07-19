@@ -60,10 +60,10 @@
                 <div class="carousel-inner">
                     {% for key, item in content.field_videos %}
                     {% set video = item['#paragraph'].field_media.entity %}
+                    <p>asdasdasd</p>
+                    <p>{{ video.field_media_oembed_video.value }}</p>
+                    <iframe width="1300" height="700" src="{{ video.field_media_oembed_video.value }}"></iframe>
                         {% if key matches '/^\\d+$/' %}
-                        <p>asdasdasd</p>
-                        <p>{{ video.field_media_oembed_video.value }}</p>
-                        <iframe width="1300" height="700" src="{{ video.field_media_oembed_video.value }}"></iframe>
                             {% if key == 0 %}
                                 <div class="carousel-item active">
                                 {% else %}
