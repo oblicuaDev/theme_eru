@@ -67,7 +67,7 @@
                                     {% endif %}
                                     {% set video = item['#paragraph'].field_media.entity %}
                                     {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_video_file.entity.uri.value) %}
-                                    <iframe width="1300" height="700" src="{{ video.field_media_oembed_video.value }}"></iframe>
+                                    <video controls width="100%" src="{{ img_url }}" data-videourl="{{video.field_media_oembed_video}}" data-target="{{video.bundle.value.0.target_id}}"></video>
                                     {% if item['#paragraph'].field_description.value %}
                                         <div class="carousel-caption d-none d-md-block">
                                             <h3>{{ item['#paragraph'].field_title.value }}</h3>
