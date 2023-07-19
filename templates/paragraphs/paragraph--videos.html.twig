@@ -45,13 +45,15 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 not paragraph.isPublished() ? 'paragraph--unpublished'
 ] %}
 {% block paragraph %}
-{% for key, item in content.field_videos %}
-	{% set video = item['#paragraph'].field_media.entity %}
-	<p>asdasdasd</p>
-	<p>{{ video.field_media_oembed_video.value }}</p>
-	<iframe width="1300" height="700" src="{{ video.field_media_oembed_video.value }}"></iframe>
-{% endif %}{% endfor %}<div{{attributes.addClass(classes)}}>
-{% block content %}
+	<div{{attributes.addClass(classes)}}>
+		{% block content %}
+		{% for key, item in content.field_videos %}
+			{% set video = item['#paragraph'].field_media.entity %}
+			<p>asdasdasd</p>
+			<p>{{ video.field_media_oembed_video.value }}</p>
+			<iframe width="1300" height="700" src="{{ video.field_media_oembed_video.value }}"></iframe>
+		{% endif %}
+	{% endfor %}
 
 	<div id="eru-slide" class="carousel slide" {#data-ride="carousel" #}>
 		{% if is_front %}
