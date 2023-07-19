@@ -70,6 +70,7 @@
                                     {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_video_file.entity.uri.value) %}
                                     <video controls width="100%" src="{{ img_url }}"></video>
                                     {% else %}
+                                    {{item['#paragraph'].field_media.entity.field_media_oembed_video.entity.uri.value}}
                                     {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_oembed_video.entity.uri.value) %}
                                     xxxx
                                     <iframe width="1300" height="700" src="{{ img_url }}"></iframe>
