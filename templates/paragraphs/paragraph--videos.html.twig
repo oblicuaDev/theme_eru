@@ -59,17 +59,17 @@
                 {% endif %}
                 <div class="carousel-inner">
                     {% for key, item in content.field_videos %}
+                    {% set video = item['#paragraph'].field_media.entity %}
                         {% if key matches '/^\\d+$/' %}
+                        <p>asdasdasd</p>
+                        <p>{{ video.field_media_oembed_video.value }}</p>
+                        <iframe width="1300" height="700" src="{{ video.field_media_oembed_video.value }}"></iframe>
                             {% if key == 0 %}
                                 <div class="carousel-item active">
                                 {% else %}
                                     <div class="carousel-item">
                                     {% endif %}
-                                    {% set video = item['#paragraph'].field_media.entity %}
                                     {% set img_url = file_url(video.field_media_video_file.entity.uri.value) %}
-                                    <p>asdasdasd</p>
-                                    <p>{{ video.field_media_oembed_video.value }}</p>
-                                    <iframe width="1300" height="700" src="{{ video.field_media_oembed_video.value }}"></iframe>
                                     <video controls width="100%" src="{{ img_url }}" data-iframeurl="{{video.field_media_oembed_video.value}}"></video>
                                     {% if item['#paragraph'].field_description.value %}
                                         <div class="carousel-caption d-none d-md-block">
