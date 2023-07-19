@@ -159,6 +159,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
           {{ content.field_gallery }}
           {% for key, item in content.field_videos %}
           <p>{{ key }}</p>
+          {{ dump(item) }}
             {% set paragraph = item['#paragraph'] %}
           
             {% if paragraph.entity.field_media %}
