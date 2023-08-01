@@ -70,7 +70,8 @@
                                 {# Display the iFrame using the field_media_oembed_video value #}
                                 {% if item['#paragraph'].field_media.entity.field_media_oembed_video.value %}
                                     <div class="iframe-container">
-                                        {{ item['#paragraph'].field_media.entity.field_media_oembed_video.value|raw }}
+                                     <iframe width="560" height="315" src="{{ item['#paragraph'].field_media.entity.field_media_oembed_video.value|raw }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                                        
                                     </div>
                                 {% endif %}
                             {% else %}
