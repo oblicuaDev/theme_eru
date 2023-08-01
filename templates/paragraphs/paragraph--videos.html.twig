@@ -71,7 +71,9 @@
                                 {% if item['#paragraph'].field_media.entity.field_media_oembed_video.value %}
                                      {# Extract the YouTube video ID from the URL #}
                                 <div class="iframe-container">
-                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/{{ item['#paragraph'].field_media.entity.field_media_oembed_video.value }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                 {% set youtube_url = item['#paragraph'].field_media.entity.field_media_oembed_video.value|trim %}
+                                {% set video_id = youtube_url|split('/')|last %}
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/{{ video_id }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 {% endif %}
                             {% else %}
