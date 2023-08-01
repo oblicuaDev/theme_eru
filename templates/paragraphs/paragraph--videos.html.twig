@@ -43,9 +43,8 @@
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished'
-  ] %}
+] %}
 {% block paragraph %}
-   <p>lorem</p>
     <div{{ attributes.addClass(classes) }}>
         {% block content %}
             <div id="eru-slide" class="carousel slide" {#data-ride="carousel"#}>
@@ -63,33 +62,40 @@
                         {% if key matches '/^\\d+$/' %}
                             {% if key == 0 %}
                                 <div class="carousel-item active">
-                                {% else %}
-                                    <div class="carousel-item">
-                                    {% endif %}
-                                    {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_video_file.entity.uri.value) %}
-                                 
-                                    <video controls width="100%" src="{{ img_url }}"></video>
-                                    {% if item['#paragraph'].field_description.value %}
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h3>{{ item['#paragraph'].field_title.value }}</h3>
-                                            <p>
-                                                {{ item['#paragraph'].field_description.value }}
-                                            </p>
-                                        </div>
-                                    {% endif %}
-                                    {% if item['#paragraph'].field_link.value %}
-                                        <div class="transcription-caption d-none d-md-block">
-                                            <a class="btn btn-primary" href="{{ item['#paragraph'].field_link.0.url }}" {% if item['#paragraph'].field_external_link.value == 1 %} target="_blank" class="alert-leave-page" {% endif %}>
-                                                <span class="fa fa-download"></span>
-                                                Descargar transcripción
-                                                {% if item['#paragraph'].field_external_link.value == 1 %}, Abre en una nueva ventana
-                                                {% endif %}
-                                            </span>
+                            {% else %}
+                                <div class="carousel-item">
+                            {% endif %}
+                            {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_video_file.entity.uri.value) %}
+                            {% if not img_url or img_url == "/" %}
+                                {# Display the iFrame using the field_media_oembed_video value #}
+                                {% if item['#paragraph'].field_media.entity.field_media_oembed_video.value %}
+                                    <div class="iframe-container">
+                                        {{ item['#paragraph'].field_media.entity.field_media_oembed_video.value|raw }}
+                                    </div>
+                                {% endif %}
+                            {% else %}
+                                <video controls width="100%" src="{{ img_url }}"></video>
+                                {% if item['#paragraph'].field_description.value %}
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h3>{{ item['#paragraph'].field_title.value }}</h3>
+                                        <p>
+                                            {{ item['#paragraph'].field_description.value }}
+                                        </p>
+                                    </div>
+                                {% endif %}
+                                {% if item['#paragraph'].field_link.value %}
+                                    <div class="transcription-caption d-none d-md-block">
+                                        <a class="btn btn-primary" href="{{ item['#paragraph'].field_link.0.url }}" {% if item['#paragraph'].field_external_link.value == 1 %} target="_blank" class="alert-leave-page" {% endif %}>
+                                            <span class="fa fa-download"></span>
+                                            Descargar transcripción
+                                            {% if item['#paragraph'].field_external_link.value == 1 %}, Abre en una nueva ventana
+                                            {% endif %}
                                         </a>
                                     </div>
                                 {% endif %}
-                            </div>
-                        {% endif %}
+                            {% endif %}
+                        </div>
+                    {% endif %}
                     {% endfor %}
                 </div>
                 {% if is_front %}
