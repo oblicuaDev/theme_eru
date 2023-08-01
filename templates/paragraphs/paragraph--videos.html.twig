@@ -69,10 +69,12 @@
                             {% if not img_url or img_url == "/" %}
                                 {# Display the iFrame using the field_media_oembed_video value #}
                                 {% if item['#paragraph'].field_media.entity.field_media_oembed_video.value %}
-                                    <div class="iframe-container">
-                                     <iframe width="560" height="315" src="{{ item['#paragraph'].field_media.entity.field_media_oembed_video.value|raw }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-                                        
-                                    </div>
+                                     {# Extract the YouTube video ID from the URL #}
+                                {% set youtube_url = item['#paragraph'].field_media.entity.field_media_oembed_video.value|trim %}
+                                {% set video_id = youtube_url|split('/').last %}
+                                <div class="iframe-container">
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/{{ video_id }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
                                 {% endif %}
                             {% else %}
                                 <video controls width="100%" src="{{ img_url }}"></video>
