@@ -8,85 +8,30 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
   <div class="container container-project mt-5">
     <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
       <li class="nav-item">
-        <a
-          aria-controls="description"
-          aria-selected="true"
-          class="nav-link active"
-          data-toggle="tab"
-          href="#description"
-          id="description-tab"
-          role="tab"
-          >Descripción</a
-        >
+        <a aria-controls="description" aria-selected="true" class="nav-link active" data-toggle="tab"
+          href="#description" id="description-tab" role="tab">Descripción</a>
       </li>
       <li class="nav-item">
-        <a
-          aria-controls="benefits"
-          aria-selected="false"
-          class="nav-link"
-          data-toggle="tab"
-          href="#benefits"
-          id="benefits-tab"
-          role="tab"
-          >Beneficios</a
-        >
+        <a aria-controls="benefits" aria-selected="false" class="nav-link" data-toggle="tab" href="#benefits"
+          id="benefits-tab" role="tab">Beneficios</a>
+      </li>
+
+      <li class="nav-item">
+        <a aria-controls="scope" aria-selected="false" class="nav-link" data-toggle="tab" href="#scope" id="scope-tab"
+          role="tab">Alcance</a>
       </li>
       <li class="nav-item">
-        <a
-          aria-controls="status"
-          aria-selected="false"
-          class="nav-link"
-          data-toggle="tab"
-          href="#status"
-          id="status-tab"
-          role="tab"
-          >Estado</a
-        >
+        <a aria-controls="status" aria-selected="false" class="nav-link" data-toggle="tab" href="#status"
+          id="status-tab" role="tab">Estado e Inversión</a>
       </li>
       <li class="nav-item">
-        <a
-          aria-controls="scope"
-          aria-selected="false"
-          class="nav-link"
-          data-toggle="tab"
-          href="#scope"
-          id="scope-tab"
-          role="tab"
-          >Alcance</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          aria-controls="photos"
-          aria-selected="false"
-          class="nav-link"
-          data-toggle="tab"
-          href="#photos"
-          id="photos-tab"
-          role="tab"
-          >Multimedia</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          aria-controls="regulatory"
-          aria-selected="false"
-          class="nav-link"
-          data-toggle="tab"
-          href="#regulatory"
-          id="regulatory-tab"
-          role="tab"
-          >Marco Normativo</a
-        >
+        <a aria-controls="photos" aria-selected="false" class="nav-link" data-toggle="tab" href="#photos"
+          id="photos-tab" role="tab">Multimedia</a>
       </li>
     </ul>
     <div class="tab-content" id="myTabContent">
-      <div
-        aria-labelledby="description-tab"
-        class="tab-pane fade show active project-content"
-        id="description"
-        role="tabpanel"
-      >
+      <div aria-labelledby="description-tab" class="tab-pane fade show active project-content" id="description"
+        role="tabpanel">
         <div class="oblicua-flex">
           {{ content.field_intern_img }}
           <div class="right">
@@ -95,27 +40,25 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
             {{ content.field_introduccion }}
           </div>
         </div>
-        <div class="oblicua-general_data">
-          <h2>Datos Generales</h2>
-          {{ content.field_general_data }}
-        </div>
         <div class="oblicua-description">
           <h2>Descripción</h2>
           {{ content.body }}
           {{ content.field_contenido_incrustado }}
-          
-        <div class="oblicua-enlacesadicionales">
-          {{content.field_enlaces_adicionales}}
-          {{content.field_links_of_interest}}
+
+          <div class="oblicua-enlacesadicionales">
+            {{content.field_enlaces_adicionales}}
+            {{content.field_links_of_interest}}
+          </div>
         </div>
+        <h2>Estado</h2>
+        {{ content.field_status_of_project }}
+        <div class="oblicua-general_data">
+          <h2>Datos Generales</h2>
+          {{ content.field_general_data }}
         </div>
+        <a href="" class="marcoBtn">Ver Marco Normativo</a>
       </div>
-      <div
-        aria-labelledby="benefits-tab"
-        class="tab-pane fade project-content"
-        id="benefits"
-        role="tabpanel"
-      >
+      <div aria-labelledby="benefits-tab" class="tab-pane fade project-content" id="benefits" role="tabpanel">
         <div class="oblicua-flex">
           <div class="left">
             <h2>Beneficios del proyecto</h2>
@@ -126,59 +69,32 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
           </div>
         </div>
       </div>
-      <div
-        aria-labelledby="status-tab"
-        class="tab-pane fade project-content row"
-        id="status"
-        role="tabpanel"
-      >
-        <h2>Estado</h2>
-        {{ content.field_status_of_project }}
+      <div aria-labelledby="status-tab" class="tab-pane fade project-content row" id="status" role="tabpanel">
+
       </div>
-      <div
-        aria-labelledby="scope-tab"
-        class="tab-pane fade project-content"
-        id="scope"
-        role="tabpanel"
-      >
+      <div aria-labelledby="scope-tab" class="tab-pane fade project-content" id="scope" role="tabpanel">
         <div class="oblicua-flex">
           <div class="left">
             <h2>Alcance</h2>
             {{ content.field_scope_of_project }}
           </div>
-          <img
-            src="/sites/default/files/2023-07/alcance_img.png"
-            alt="Alcance"
-          />
+          <img src="/sites/default/files/2023-07/alcance_img.png" alt="Alcance" />
         </div>
       </div>
-      <div
-        aria-labelledby="photos-tab"
-        class="tab-pane fade row project-content"
-        id="photos"
-        role="tabpanel"
-      >
+      <div aria-labelledby="photos-tab" class="tab-pane fade row project-content" id="photos" role="tabpanel">
         <h2>Multimedia</h2>
         <div class="oblicua-gallery">
           {{ content.field_gallery }}
           {{ content.field_videos }}
         </div>
       </div>
-      <div
-        aria-labelledby="regulatory-tab"
-        class="tab-pane fade project-content"
-        id="regulatory"
-        role="tabpanel"
-      >
+      <div aria-labelledby="regulatory-tab" class="tab-pane fade project-content" id="regulatory" role="tabpanel">
         <div class="oblicua-flex">
           <div class="left">
             <h2>Marco Normativo</h2>
             {{ content.field_regulatory_framework }}
           </div>
-          <img
-            src="/sites/default/files/2023-07/marco_normativo_img.png"
-            alt="Marco Normativo"
-          />
+          <img src="/sites/default/files/2023-07/marco_normativo_img.png" alt="Marco Normativo" />
         </div>
       </div>
     </div>
