@@ -23,24 +23,30 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
       <li class="nav-item">
         <a aria-controls="multimedia" aria-selected="false" class="nav-link" data-toggle="tab" href="#photos" id="photos-tab" role="tab">Multimedia</a>
       </li>
-     
     </ul>
     <div class="tab-content" id="myTabContent">
       <div aria-labelledby="description-tab" class="tab-pane fade show active project-content" id="description" role="tabpanel">
         {{ content.body }}
         {{content.field_location}}
+        {{content.field_status_of_project}}
+        {{content.field_visor_de_proyectos}}
       </div>
       <div aria-labelledby="benefits-tab" class="tab-pane fade project-content" id="benefits" role="tabpanel">
-
+        {{content.field_benefits_of_project}}
+        {{content.field_imagen_bebeficios}}
       </div>
       <div aria-labelledby="scope-tab" class="tab-pane fade project-content row" id="scope" role="tabpanel">
-
+        {{content.field_scope_of_project}}
+        {{content.field_contratos}}
       </div>
       <div aria-labelledby="status-tab" class="tab-pane fade project-content" id="status" role="tabpanel">
-
+        {{content.field_fecha_de_inicio}}
+        {{content.field_fecha_de_finalizacion}}
+        {{content.field_valor_ejecutado_del_proyec}}
+        {{content.field_valor_total_del_proyecto}}
       </div>
       <div aria-labelledby="multimedia-tab" class="tab-pane fade row project-content" id="multimedia" role="tabpanel">
-
+        {{content.field_gallery}}
       </div>
     </div>
   </div>
