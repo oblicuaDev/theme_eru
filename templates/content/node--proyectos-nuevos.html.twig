@@ -41,6 +41,9 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
       <div aria-labelledby="status-tab" class="tab-pane fade project-content" id="status" role="tabpanel">
         {{content.field_fecha_de_inicio}}
         {{content.field_fecha_de_finalizacion}}
+        <div>
+          <canvas id="myChart"></canvas>
+        </div>
         {{content.field_valor_ejecutado_del_proyec}}
         {{content.field_valor_total_del_proyecto}}
       </div>
@@ -51,3 +54,26 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
   </div>
   {% endblock %}
 </article>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
