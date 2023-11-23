@@ -35,24 +35,45 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         {{content.field_location}}
         {{content.field_status_of_project}}
         {{content.field_visor_de_proyectos}}
+        <a href="" class="btn btn-rel">Ver proyectos relacionados</a>
+        <a href="" class="btn btn-marco">Ver Marco Normativo</a>
       </div>
       <div aria-labelledby="benefits-tab" class="tab-pane fade project-content" id="benefits" role="tabpanel">
-        {{content.field_benefits_of_project}}
-        {{content.field_imagen_bebeficios}}
+        <div class="benefits-content">
+          {{content.field_benefits_of_project}}
+          {{content.field_imagen_bebeficios}}
+        </div>
       </div>
       <div aria-labelledby="scope-tab" class="tab-pane fade project-content row" id="scope" role="tabpanel">
         {{content.field_scope_of_project}}
         {{content.field_contratos}}
       </div>
       <div aria-labelledby="status-tab" class="tab-pane fade project-content" id="status" role="tabpanel">
+        <h2>Avance del proyecto</h2>
+        <h4>Fecha de inicio:</h4>
         {{content.field_fecha_de_inicio}}
+        <h4>Fecha fin:</h4>
         {{content.field_fecha_de_finalizacion}}
-        <div>
+
+        <div class="charts">
           <canvas id="myChart"></canvas>
-          <canvas id="myChart2"></canvas>
+          <div class="chart2-content">
+            <h5>HISTÓRICO</h5>
+            <h3>Fase - Obra</h3>
+            <canvas id="myChart2"></canvas>
+          </div>
         </div>
-        {{content.field_valor_ejecutado_del_proyec}}
-        {{content.field_valor_total_del_proyecto}}
+        <h2>Inversión</h2>
+        <div class="valores_inversion">
+          <div class="left">
+            <h3>Valor total del proyecto</h3>
+            {{content.field_valor_ejecutado_del_proyec}}
+          </div>
+          <div class="right">
+            <h3>Valor ejecutado del proyecto</h3>
+            {{content.field_valor_total_del_proyecto}}
+          </div>
+        </div>
       </div>
       <div aria-labelledby="multimedia-tab" class="tab-pane fade row project-content" id="multimedia" role="tabpanel">
         {{content.field_gallery}}
@@ -68,11 +89,11 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['Programado', 'Ejecutado'],
       datasets: [{
-        label: '# of Votes',
         data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1
+        borderWidth: 1,
+        backgroundColor: ['#673AFB', '#FF9500'],
       }]
     },
     options: {
@@ -90,16 +111,16 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
     labels: [['June', '2015'], 'July', 'August', 'September', 'October', 'November', 'December', ['January', '2016'], 'February', 'March', 'April', 'May'],
     datasets: [
       {
-        label: 'Dataset 1',
+        label: 'Programado',
         data: [10, 20, 50, 80, 20, 30, 12, 15],
         fill: false,
-        borderColor: "#F00",
+        borderColor: "#673AFB",
       },
       {
-        label: 'Dataset 2',
+        label: 'Ejecutado',
         data: [2, 5, 6, 12, 54, 78, 24, 42, 13],
         fill: false,
-        borderColor: "#0ff"
+        borderColor: "#FF9500"
       }
     ]
   };
