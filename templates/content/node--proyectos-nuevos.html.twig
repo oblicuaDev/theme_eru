@@ -31,10 +31,20 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
     <div class="tab-content" id="myTabContent">
       <div aria-labelledby="description-tab" class="tab-pane fade show active project-content" id="description"
         role="tabpanel">
-        {{ content.body }}
-        {{content.field_location}}
-        {{content.field_status_of_project}}
-        {{content.field_visor_de_proyectos}}
+        {{content.field_datos_generales2}}
+        <div class="oblicuaflex-container">
+          <div class="left">
+            {{ content.body }}
+          </div>
+          <div class="right">
+            {{content.field_mapa_ubicacion}}
+            <a href="" class="btn btn-visor">Ver Visor de Proyectos</a>
+          </div>
+        </div>
+        <div class="status-desc">
+          <h2>¿En qué va el proyecto?</h2>
+          {{content.field_status_of_project}}
+        </div>
         <a href="" class="btn btn-rel">Ver proyectos relacionados</a>
         <a href="" class="btn btn-marco">Ver Marco Normativo</a>
       </div>
