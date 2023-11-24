@@ -14,8 +14,8 @@
      *   See Drupal\paragraphs\Entity\Paragraph for a full list of public properties
      *   and methods for the paragraph object.
      * - content: All paragraph items. Use {{ content }} to print them all,
-     *   or print a subset such as {{ content.field_example }}. Use
-     *   {{ content|without('field_example') }} to temporarily suppress the printing
+     *   or print a subset such as {{ content. }}. Use
+     *   {{ content|without('') }} to temporarily suppress the printing
      *   of a given child element.
      * - attributes: HTML attributes for the containing element.
      *   The attributes.class element may contain one or more of the following
@@ -38,11 +38,23 @@
      * @ingroup themeable
      */
     #}
+
 {% block paragraph %}
 <div>
     {% block content %}
     <div class="contratos-grid">
-       
+        {% for key, item in content.field_caracteristicas_proyecto  %}
+        {% if key matches '/^\\d+$/' %}
+            <div class="contrato">
+                {% item['#paragraph'].field_nombre_contratista_o_inter %}
+                {% item['#paragraph'].field_numero_de_contrato %}
+                {% item['#paragraph'].field_estado_del_contrato %}
+                {% item['#paragraph'].field_documento %}
+            </div>            
+        {% endif %}
+      {% endfor %}
+    </div>
+      
     </div>
     {% endblock %}
 </div>
