@@ -7,6 +7,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 %}
 
 <div{{ attributes.addClass(classes) }}>
+    {{ kint(content.field_contratos['#items'].entity) }}
     {# Check if the Entity Reference Revisions field has a target entity. #}
     {% if content.field_contratos['#items'].entity %}
 
@@ -15,6 +16,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 
     {# Check if the referenced entity has the desired field. #}
     {% if contrato_entity.field_nombre_contratista_o_inter.value is not null %}
+
     <div class="name">
         {{ contrato_entity.field_nombre_contratista_o_inter.value }}
     </div>
