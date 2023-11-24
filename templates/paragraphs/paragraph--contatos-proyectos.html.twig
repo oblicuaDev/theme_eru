@@ -5,19 +5,11 @@ set classes = [
 view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 ]
 %}
-{% block paragraph %}
-{% block content %}
-{{ kint(content.field_contratos ) }}
-{% for key, item in content.field_contratos %}
-{{ kint(item) }}
-{% if key matches '/^\\d+$/' %}
-{{ kint(item['#paragraph'].field_nombre_contratista_o_inter.value)}}
 
-{% endif %}
-{% endfor %}
-{% endblock %}
-{% endblock paragraph %}
-
+{{ content.field_nombre_contratista_o_inter }}
+{{ content.field_numero_de_contrato }}
+{{ content.field_estado_del_contrato }}
+{{ content.field_documento }}
 <div{{ attributes.addClass(classes) }}>
 
     <div class="name">
