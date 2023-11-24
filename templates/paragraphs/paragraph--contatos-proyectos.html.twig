@@ -1,14 +1,44 @@
-    {%
-      set classes = [
-        'paragraph',
-        'paragraph--type--' ~ paragraph.bundle|clean_class,
-        view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-      ]
-    %}
-    
-    <div{{ attributes.addClass(classes) }}>
-        {{ content.field_nombre_contratista_o_inter.value }}
-        {{ content.field_numero_de_contrato.value }}
-        {{ content.field_estado_del_contrato.value }}
-        {{ content.field_documento.value }}
+{%
+set classes = [
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+    <div class="name">
+        {{ content.field_nombre_contratista_o_inter }}
+    </div>
+    <div class="data">
+
+        <div class="number">
+            <div class="icon">
+                <img src="/sites/default/files/2023-11/numero.png" alt="icon">
+            </div>
+            <div class="txt">
+                <strong>Número de contrato</strong>
+                {{ content.field_numero_de_contrato }}
+            </div>
+        </div>
+        <div class="estado">
+            <div class="icon">
+                <img src="/sites/default/files/2023-11/estadoPro.png" alt="icon">
+            </div>
+            <div class="txt">
+                <strong>Estado del contrato</strong>
+                {{ content.field_estado_del_contrato }}
+            </div>
+        </div>
+        <div class="documento">
+            <div class="icon">
+                <img src="/sites/default/files/2023-11/link.png" alt="icon">
+            </div>
+            <div class="txt">
+                <strong>Documento contractua</strong>
+                <a href="{{ content.field_documento }}">Link Secop</a>
+            </div>
+        </div>
+
+    </div>
     </div>
