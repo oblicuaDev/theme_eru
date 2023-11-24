@@ -4,8 +4,6 @@
     <div class="contratos-grid">
         {% for key, item in content.field_contratos %}
         {% if key matches '/^\\d+$/' %}
-        {% set title = item['#paragraph'].field_title.value %}
-        {% set description = item['#paragraph'].field_description.value %}
         <div class="contrato">
             <div class="name">
                 {{item['#paragraph'].field_nombre_contratista_o_inter}}
