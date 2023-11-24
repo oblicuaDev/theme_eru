@@ -8,7 +8,6 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 
 <div{{ attributes.addClass(classes) }}>
     {% for key, item in content.field_contratos %}
-    {% if key matches '/^\\d+$/' %}
     <div class="name">
         {{ item['#paragraph'].field_nombre_contratista_o_inter.value }}
     </div>
@@ -40,8 +39,6 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
                 <a href="{{ item['#paragraph'].field_documento.value }}">Link Secop</a>
             </div>
         </div>
-
     </div>
-    {% endif %}
     {% endfor %}
     </div>
