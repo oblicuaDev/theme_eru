@@ -6,10 +6,10 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 ]
 %}
 
-{{ content.field_nombre_contratista_o_inter }}
-{{ content.field_numero_de_contrato }}
-{{ content.field_estado_del_contrato }}
-{{ content.field_documento }}
+{{ content.field_nombre_contratista_o_inter.value }}
+{{ content.field_numero_de_contrato.value }}
+{{ content.field_estado_del_contrato.value }}
+{{ content.field_documento.value }}
 <div{{ attributes.addClass(classes) }}>
 
     <div class="name">
