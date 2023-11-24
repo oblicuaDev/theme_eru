@@ -7,18 +7,19 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 %}
 
 <div{{ attributes.addClass(classes) }}>
+    {% for key, item in content.field_contratos %}
+    {% if key matches '/^\\d+$/' %}
     <div class="name">
-        {{ content.field_contratos.field_nombre_contratista_o_inter.value }}
+        {{ item['#paragraph'].field_nombre_contratista_o_inter.value }}
     </div>
     <div class="data">
-
         <div class="number">
             <div class="icon">
                 <img src="/sites/default/files/2023-11/numero.png" alt="icon">
             </div>
             <div class="txt">
                 <strong>Número de contrato</strong>
-                {{ content.field_contratos.field_numero_de_contrato.value }}
+                {{ item['#paragraph'].field_numero_de_contrato.value }}
             </div>
         </div>
         <div class="estado">
@@ -27,7 +28,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
             </div>
             <div class="txt">
                 <strong>Estado del contrato</strong>
-                {{ content.field_contratos.field_estado_del_contrato.value }}
+                {{ item['#paragraph'].field_estado_del_contrato.value }}
             </div>
         </div>
         <div class="documento">
@@ -36,9 +37,11 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
             </div>
             <div class="txt">
                 <strong>Documento contractua</strong>
-                <a href="{{ content.field_contratos.field_documento.value }}">Link Secop</a>
+                <a href="{{ item['#paragraph'].field_documento.value }}">Link Secop</a>
             </div>
         </div>
 
     </div>
+    {% endif %}
+    {% endfor %}
     </div>
