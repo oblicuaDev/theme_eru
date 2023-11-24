@@ -7,10 +7,17 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 %}
 
 <div{{ attributes.addClass(classes) }}>
-    {{ kint(content.field_contratos.field_nombre_contratista_o_inter) }}
-    {{ kint(content.field_contratos.field_numero_de_contrato) }}
-    {{ kint(content.field_contratos.field_estado_del_contrato) }}
-    {{ kint(content.field_contratos.field_documento) }}
+    {%
+    set paragraph_entity = node.field_contratos.entity
+    %}
+    {%
+    set paragraph_content = paragraph_entity.field_nombre_contratista_o_inter.value
+    %}
+    {{ kint(paragraph_content) }}
+
+    {% if paragraph_entity %}
+    {{ paragraph_entity.field_nombre_contratista_o_inter.value }}
+    {% endif %}
     <div class="name">
         {{ content.field_contratos.field_nombre_contratista_o_inter }}
     </div>
