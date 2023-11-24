@@ -66,11 +66,15 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         {{content.field_fecha_de_finalizacion}}
 
         <div class="charts">
-          <canvas id="myChart"></canvas>
+          <div class="chart-container">
+            <canvas id="myChart"></canvas>
+          </div>
           <div class="chart2-content">
             <h5>HISTÓRICO</h5>
             <h3>Fase - Obra</h3>
-            <canvas id="myChart2"></canvas>
+            <div class="chart-container">
+              <canvas id="myChart2"></canvas>
+          </div>
           </div>
         </div>
         <h2>Inversión</h2>
