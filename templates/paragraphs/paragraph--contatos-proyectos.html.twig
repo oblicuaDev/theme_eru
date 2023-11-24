@@ -7,7 +7,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 %}
 
 <div{{ attributes.addClass(classes) }}>
-    {{ kint(content) }}
+    {{ kint(content[0]) }}
     <div class="name">
         {{ content.field_contratos.field_nombre_contratista_o_inter }}
     </div>
