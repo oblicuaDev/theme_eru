@@ -42,18 +42,7 @@
 <div>
     {% block content %}
     <div class="contratos-grid">
-        {% for key, item in content.field_contratos %}
-        {% if key matches '/^\\d+$/' %}
-        <div class="contrato">
-            <div class="name"></div>
-            <div class="data">
-                <div class="field_numero_de_contrato"></div>
-                <div class="field_estado_del_contrato"></div>
-                <div class="field_documento"></div>
-            </div>
-        </div>
-        {% endif %}
-        {% endfor %}
+       
     </div>
     {% endblock %}
     </div>
