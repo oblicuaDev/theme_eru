@@ -7,7 +7,8 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 %}
 
 <div{{ attributes.addClass(classes) }}>
-    {{ kint(content.field_contratos['#items'].entity) }}
+    {{ kint(content.field_contratos) }}
+    {{ kint(content["#field_contratos"]) }}
     {# Check if the Entity Reference Revisions field has a target entity. #}
     {% if content.field_contratos['#items'].entity %}
 
