@@ -5,15 +5,10 @@ set classes = [
 view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 ]
 %}
-
-{{ content.field_nombre_contratista_o_inter.value }}
-{{ content.field_numero_de_contrato.value }}
-{{ content.field_estado_del_contrato.value }}
-{{ content.field_documento.value }}
 <div{{ attributes.addClass(classes) }}>
 
     <div class="name">
-        {{ content.field_contratos.field_nombre_contratista_o_inter }}
+        {{ content.field_nombre_contratista_o_inter }}
     </div>
     <div class="data">
 
@@ -23,7 +18,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
             </div>
             <div class="txt">
                 <strong>Número de contrato</strong>
-                {{ content.field_contratos.field_numero_de_contrato }}
+                {{ content.field_numero_de_contrato }}
             </div>
         </div>
         <div class="estado">
@@ -32,7 +27,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
             </div>
             <div class="txt">
                 <strong>Estado del contrato</strong>
-                {{ content.field_contratos.field_estado_del_contrato }}
+                {{ content.field_estado_del_contrato }}
             </div>
         </div>
         <div class="documento">
