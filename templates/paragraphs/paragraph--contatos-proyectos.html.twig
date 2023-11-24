@@ -13,7 +13,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     {%
     set paragraph_content = paragraph_entity.field_nombre_contratista_o_inter.value
     %}
-    {{ kint(paragraph_entity) }}
+    {{ kint(node.field_contratos) }}
 
     {% if paragraph_entity %}
     {{ paragraph_entity.field_nombre_contratista_o_inter.value }}
