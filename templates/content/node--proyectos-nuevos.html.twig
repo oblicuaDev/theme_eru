@@ -31,6 +31,28 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
     <div class="tab-content" id="myTabContent">
       <div aria-labelledby="description-tab" class="tab-pane fade show active project-content" id="description"
         role="tabpanel">
+        <div class="grafica">
+          <div class="grafica-item estructuracion">
+            <h3>Estructuración</h3>
+            <ul>
+              <li>Prefactibilidad</li>
+              <li>Factibilidad</li>
+            </ul>
+          </div>
+          <div class="grafica-item ejecucion">
+            <h3>Ejecución</h3>
+            <ul>
+              <li>Estudios y diseños</li>
+              <li>Ejecución de obra</li>
+            </ul>
+          </div>
+          <div class="grafica-item cierre">
+            <h3>Cierre</h3>
+            <ul>
+              <li>Cierre y evaluación</li>
+            </ul>
+          </div>
+        </div>
         {{content.field_datos_generales2}}
         <div class="oblicuaflex-container">
           <div class="left">
@@ -44,9 +66,9 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         <div class="status-desc">
           <h2>¿En qué va el proyecto?</h2>
           {{content.field_status_of_project}}
+          <a href="" class="btn btn-marco">Ver Marco Normativo</a>
         </div>
-        <a href="" class="btn btn-rel">Ver proyectos relacionados</a>
-        <a href="" class="btn btn-marco">Ver Marco Normativo</a>
+        <h2>Proyectos relacionados</h2>
       </div>
       <div aria-labelledby="benefits-tab" class="tab-pane fade project-content" id="benefits" role="tabpanel">
         <div class="benefits-content">
