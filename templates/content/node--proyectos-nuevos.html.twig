@@ -149,6 +149,11 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
       }]
     },
     options: {
+      plugins: {
+        legend: {
+          position: 'bottom',
+        },
+      },
       maintainAspectRatio: false,
       scales: {
         y: {
@@ -177,13 +182,11 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
       {
         label: 'Programado',
         data: [10, 20, 50, 80, 20, 30, 12, 15],
-        fill: false,
         borderColor: "#673AFB",
       },
       {
         label: 'Ejecutado',
         data: [2, 5, 6, 12, 54, 78, 24, 42, 13],
-        fill: false,
         borderColor: "#FF9500"
       }
     ]
@@ -193,17 +196,6 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
     data: data,
     options: {
       maintainAspectRatio: false,
-      scales: {
-        x: {
-          ticks: {
-            // For a category axis, the val is the index so the lookup via getLabelForValue is needed
-            callback: function (val, index) {
-              // Hide every 2nd tick label
-              return index % 2 === 0 ? this.getLabelForValue(val) : '';
-            },
-          }
-        }
-      }
     },
   };
   new Chart(ctx2, config);
