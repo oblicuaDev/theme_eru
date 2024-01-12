@@ -73,7 +73,10 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         </div>
         <div class="status-desc">
           <h2>¿En qué va el proyecto?</h2>
-          {{content.field_status_of_project}}
+          <div class="txt">
+            {{content.field_status_of_project}}
+            <a href="#status">Ver más</a>
+          </div>
           <a href="" class="btn btn-marco">Ver Marco Normativo</a>
         </div>
         <h2>Proyectos relacionados</h2>
@@ -142,6 +145,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         data: [12, 19, 3, 5, 2, 3],
         borderWidth: 1,
         backgroundColor: ['#673AFB', '#FF9500'],
+        borderRadius: 25
       }]
     },
     options: {
@@ -157,7 +161,18 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
   const DATA_COUNT = 12;
   const NUMBER_CFG = { count: DATA_COUNT, min: 0, max: 100 };
   const data = {
-    labels: [['June', '2015'], 'July', 'August', 'September', 'October', 'November', 'December', ['January', '2016'], 'February', 'March', 'April', 'May'],
+    labels: ["03/2023",
+      "02/2023",
+      "01/2023",
+      "12/2022",
+      "11/2022",
+      "10/2022",
+      "09/2022",
+      "08/2022",
+      "07/2022",
+      "06/2022",
+      "05/2022",
+      "04/2022"],
     datasets: [
       {
         label: 'Programado',
@@ -178,12 +193,6 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
     data: data,
     options: {
       maintainAspectRatio: false,
-      plugins: {
-        title: {
-          display: true,
-          text: 'Chart with Tick Configuration'
-        }
-      },
       scales: {
         x: {
           ticks: {
