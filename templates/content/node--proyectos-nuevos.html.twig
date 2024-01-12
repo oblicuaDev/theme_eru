@@ -145,12 +145,13 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         data: [12, 19, 3, 5, 2, 3],
         borderWidth: 1,
         backgroundColor: ['#673AFB', '#FF9500'],
-        borderRadius: 25
+        borderRadius: 50
       }]
     },
     options: {
       plugins: {
         legend: {
+          display: false,
           position: 'bottom',
         },
       },
@@ -196,6 +197,11 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
     data: data,
     options: {
       maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'bottom',
+        },
+      },
     },
   };
   new Chart(ctx2, config);
