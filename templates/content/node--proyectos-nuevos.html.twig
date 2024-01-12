@@ -196,6 +196,18 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
     type: 'line',
     data: data,
     options: {
+      scales: {
+        xAxes: [{
+          gridLines: {
+            display: false
+          }
+        }],
+        yAxes: [{
+          gridLines: {
+            display: false
+          }
+        }]
+      },
       maintainAspectRatio: false,
       plugins: {
         legend: {
