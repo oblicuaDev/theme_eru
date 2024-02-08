@@ -79,8 +79,9 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
             <h2>Alcance</h2>
             {{ content.field_scope_of_project }}
           </div>
-          {% if content.field_imagen_alcance.value is defined %}
-              {{ content.field_imagen_alcance.value }}
+          {% if content.field_imagen_alcance is defined %}
+              {{ content.field_imagen_alcance }}
+              <img src="{{ content.field_imagen_alcance }}" alt="Alcance" />
           {% else %}
               <img src="/sites/default/files/2023-07/alcance_img.png" alt="Alcance" />
           {% endif %}
