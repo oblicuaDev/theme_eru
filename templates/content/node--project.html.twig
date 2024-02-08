@@ -79,7 +79,11 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
             <h2>Alcance</h2>
             {{ content.field_scope_of_project }}
           </div>
-          <img src="/sites/default/files/2023-07/alcance_img.png" alt="Alcance" />
+          {% if content.field_scope_of_project is not null %}
+              <img src="{{ content.field_scope_of_project }}" alt="Alcance" />
+          {% else %}
+              <img src="/sites/default/files/2023-07/alcance_img.png" alt="Alcance" />
+          {% endif %}
         </div>
       </div>
       <div aria-labelledby="photos-tab" class="tab-pane fade row project-content" id="photos" role="tabpanel">
