@@ -82,8 +82,9 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
           {% if node.field_imagen_alcance %}
               {% set imagen_url = file_url(node.field_imagen_alcance.entity.uri.value) %}
               <img src="{{ imagen_url }}" alt="Alcance" />
-          {% endif %}
+          {% else %}
               <img src="/sites/default/files/2023-07/alcance_img.png" alt="Alcance" />
+          {% endif %}
         </div>
       </div>
       <div aria-labelledby="photos-tab" class="tab-pane fade row project-content" id="photos" role="tabpanel">
