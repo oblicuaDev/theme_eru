@@ -81,9 +81,11 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
           </div>
           {% if node.field_imagen_alcance %}
               {% set imagen_url = file_url(node.field_imagen_alcance.entity.uri.value) %}
-              <img src="{{ imagen_url }}" alt="Alcance" />
-          {% else %}
-              <img src="/sites/default/files/2023-07/alcance_img.png" alt="Alcance" />
+              {% if imagen_url is not empty %}
+                <img src="{{ imagen_url }}" alt="Alcance" />
+              {% else %}
+                  <img src="/sites/default/files/2023-07/alcance_img.png" alt="Alcance" />
+              {% endif %}
           {% endif %}
         </div>
       </div>
