@@ -2,15 +2,27 @@
 /* #345A47 */
 .news-landings {
   background-color: #255b46;
+  position: relative;
+}
+.news-landings::before {
+  content: "";
+  background-image: url(/sites/default/files/2024-04/newsBefore.png);
+  width: 100%;
+  height: 200px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .news-landings .views-view-grid.horizontal {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
 #special-landings {
   background-image: url(/sites/default/files/2024-04/papel.jpg);
-  background-size: cover;
+  background-size: 100vw 50vh;
   background-repeat: repeat-y;
   background-position: center center;
 }
