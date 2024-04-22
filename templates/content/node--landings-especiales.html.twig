@@ -1,11 +1,7 @@
 <section id="special-landings">
 	{% block content %}
 	<div class="banner">
-		<h1>
-			{{ node.label }}
-			{{ title }}
-			{{content.title}}
-		</h1>
+		<h1 id="mainHeading">{{ node.label }}</h1>
 		{{content.field_subtitle}}
 		{{content.field_imagen_banner}}
 	</div>
@@ -1007,3 +1003,25 @@
 		<h2>Urbanismo temporal en el mundo: casos de éxito.</h2>
 	</div>
 </section>
+
+<script>
+	// Select the h1 element
+	var h1Element = document.getElementById('mainHeading');
+	// Get the text content of the h1 element
+	var text = h1Element.textContent;
+	// Split the text into two parts
+	var parts = text.split(' ');
+	// Join the first part back together
+	var firstPart = parts.shift();
+	var firstPartText = parts.join(' ');
+	// Create a span element
+	var spanElement = document.createElement('span');
+	// Set the text content of the span element to the second part
+	spanElement.textContent = firstPartText;
+	// Empty the h1 element
+	h1Element.textContent = '';
+	// Append the first part back to the h1 element
+	h1Element.textContent = firstPart + ' ';
+	// Append the span element to the h1 element
+	h1Element.appendChild(spanElement);
+</script>
