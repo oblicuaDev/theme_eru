@@ -18,6 +18,12 @@
   color: #003937;
   margin-bottom: 10px;
 }
+#special-landings .temporal img {
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+}
 #special-landings h2 {
   text-align: center;
   color: #345a47;
