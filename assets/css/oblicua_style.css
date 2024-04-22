@@ -8,6 +8,12 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+#special-landings {
+  background-image: url(/sites/default/files/2024-04/papel.jpg);
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center center;
+}
 #special-landings #down {
   margin: 30px auto;
   width: 100px;
