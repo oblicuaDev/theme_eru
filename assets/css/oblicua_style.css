@@ -8,7 +8,7 @@
 #special-landings .banner {
   background: #013334;
 }
-#special-landings .banner p {
+#special-landings .banner .landings-especiales__field-subtitle, #special-landings .banner p {
   color: #ffffff;
 }
 #special-landings .description {
