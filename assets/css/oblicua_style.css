@@ -21,9 +21,20 @@
 #special-landings .banner {
   background: #013334;
   display: flex;
+  justify-content: center;
+  gap: 420px;
+  padding-left: 60px;
+  height: 70vh;
+  overflow: hidden;
+}
+#special-landings .banner .text {
+  align-self: center;
 }
 #special-landings .banner .landings-especiales__field-subtitle, #special-landings .banner p {
   color: #ffffff;
+}
+#special-landings .banner .landings-especiales__field-imagen-banner {
+  align-self: flex-end;
 }
 #special-landings .banner #firstPart {
   background-color: #afe951;
