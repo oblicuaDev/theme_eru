@@ -4,6 +4,11 @@ node.isPublished() ? 'node--unpublished', node.bundle|clean_class,
 node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
 {{ kint(content | keys) }} #}
 <section id="special-landings">
+	{% block content %}
+	{{ title }}
+	{{content.title}}
+	{{ content.body }}
+	{% endblock %}
 	<h2>¡Encuentra el urbanismo temporal en Bogotá!</h2>
 	<div class="map">
 		<?xml version="1.0" encoding="utf-8"?>
