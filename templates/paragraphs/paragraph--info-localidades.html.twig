@@ -52,7 +52,8 @@
         {{content.field_tit}}
         {{content.field_des}}
         {{content.field_imagen}}
-        {{content.field_localidad.value}}
+        {{ content.field_localidad|render|striptags|trim }}
+        {{ content.field_localidad}}
         {% endblock %}
       </div>
     {% endblock paragraph %}
