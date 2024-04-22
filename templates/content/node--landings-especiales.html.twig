@@ -2,6 +2,8 @@
 	{% block content %}
 	<div class="banner">
 		<h1 id="mainHeading">{{ node.label }}</h1>
+		<div id="firstPart"></div>
+<div id="secondPart"></div>
 		{{content.field_subtitle}}
 		{{content.field_imagen_banner}}
 	</div>
@@ -1005,23 +1007,22 @@
 </section>
 
 <script>
-	// Select the h1 element
-	var h1Element = document.getElementById('mainHeading');
-	// Get the text content of the h1 element
-	var text = h1Element.textContent;
-	// Split the text into two parts
-	var parts = text.split(' ');
-	// Join the first part back together
-	var firstPart = parts.shift();
-	var firstPartText = parts.join(' ');
-	// Create a span element
-	var spanElement = document.createElement('span');
-	// Set the text content of the span element to the second part
-	spanElement.textContent = firstPartText;
-	// Empty the h1 element
-	h1Element.textContent = '';
-	// Append the first part back to the h1 element
-	h1Element.textContent = firstPart + ' ';
-	// Append the span element to the h1 element
-	h1Element.appendChild(spanElement);
+// Selecciona el h1
+var h1Element = document.getElementById('mainHeading');
+
+// Obtén el texto del h1
+var text = h1Element.textContent;
+
+// Divide el texto en dos partes
+var parts = text.split(' ');
+var firstPart = parts.shift();
+var secondPart = parts.join(' ');
+
+// Selecciona los divs donde se colocarán las partes del texto
+var firstPartDiv = document.getElementById('firstPart');
+var secondPartDiv = document.getElementById('secondPart');
+
+// Establece el texto de cada div
+firstPartDiv.textContent = firstPart;
+secondPartDiv.textContent = secondPart;
 </script>
