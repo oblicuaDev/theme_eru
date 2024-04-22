@@ -5,6 +5,11 @@
   width: 100px;
   display: block;
 }
+#special-landings #down img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 #special-landings .banner {
   background: #013334;
 }
