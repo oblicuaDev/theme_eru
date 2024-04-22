@@ -36,6 +36,10 @@
   font-family: "value serif pro";
 }
 
+.views-view-grid.horizontal.cols-1.clearfix .views-row.clearfix.row-1 {
+  padding: 10px;
+}
+
 .news-landings {
   background-color: #255b46;
 }
