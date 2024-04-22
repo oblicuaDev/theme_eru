@@ -44,6 +44,7 @@
 }
 
 #special-landings {
+  padding-bottom: 250px;
   background-image: url(/sites/default/files/2024-04/papel.jpg);
   background-size: 100vw 50vh;
   background-repeat: repeat-y;
