@@ -15,20 +15,8 @@
 		</div>
 	</div>
 	{% if content.field_proyectos_localidades %}
-	<?php
-	// Verifica que el campo tenga elementos.
-	if (!empty($content['field_proyectos_localidades'])) {
-	  // Itera sobre cada elemento del campo.
-	  foreach ($content['field_proyectos_localidades']['#items'] as $item) {
-		// Renderiza el párrafo.
-		$paragraph_render_array = $item['entity']->toArray();
-		$paragraph_output = \Drupal::service('renderer')->render($paragraph_render_array);
-		// Imprime o muestra el párrafo en la ubicación deseada.
-		print $paragraph_output;
-	  }
-	}
-	?>
-{% endif %}
+	{{ content.field_proyectos_localidades }}
+	{% endif %}
 	{% endblock %}
 	<h2>¡Encuentra el urbanismo temporal en Bogotá!</h2>
 	<div class="map">
