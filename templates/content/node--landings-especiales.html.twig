@@ -1078,7 +1078,12 @@ if(document.querySelector("#localidad-14")){document.querySelector("g#tunjuelito
 if(document.querySelector("#localidad-15")){document.querySelector("g#usaquen").addEventListener('click',()=>{Fancybox.show([{ src: "#localidad-15", type: "inline" }]);})}
 if(document.querySelector("#localidad-16")){document.querySelector("g#usme").addEventListener('click',()=>{Fancybox.show([{ src: "#localidad-16", type: "inline" }]);})}
 document.addEventListener("DOMContentLoaded", function() {
-	var splide = new Splide( '.splide' );splide.mount();
+	var splide = new Splide('.splide', {
+		type: 'fade',
+		pagination: false,
+		arrows: false,
+	});
+	splide.mount();
   // Add smooth scrolling to all links
   var links = document.querySelectorAll("a");
 
