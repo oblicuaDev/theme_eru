@@ -2,6 +2,7 @@
 /* #345A47 */
 #special-landings h2 {
   text-align: center;
+  color: #345a47;
 }
 #special-landings .map g#suba,
 #special-landings .map g#engativa,
@@ -10,6 +11,7 @@
 #special-landings .map g#puentearanda,
 #special-landings .map g#teusaquillo,
 #special-landings .map g#chapinero,
+#special-landings .map g#usaquen,
 #special-landings .map g#santafe,
 #special-landings .map g#sancristobal,
 #special-landings .map g#usme,
@@ -21,6 +23,7 @@
 #special-landings .map g#barriosunidos {
   transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   color: #b5e169;
+  cursor: pointer;
 }
 #special-landings .map g#suba .text,
 #special-landings .map g#engativa .text,
@@ -29,6 +32,7 @@
 #special-landings .map g#puentearanda .text,
 #special-landings .map g#teusaquillo .text,
 #special-landings .map g#chapinero .text,
+#special-landings .map g#usaquen .text,
 #special-landings .map g#santafe .text,
 #special-landings .map g#sancristobal .text,
 #special-landings .map g#usme .text,
@@ -48,6 +52,7 @@
 #special-landings .map g#puentearanda:hover,
 #special-landings .map g#teusaquillo:hover,
 #special-landings .map g#chapinero:hover,
+#special-landings .map g#usaquen:hover,
 #special-landings .map g#santafe:hover,
 #special-landings .map g#sancristobal:hover,
 #special-landings .map g#usme:hover,
@@ -66,6 +71,7 @@
 #special-landings .map g#puentearanda:hover .text,
 #special-landings .map g#teusaquillo:hover .text,
 #special-landings .map g#chapinero:hover .text,
+#special-landings .map g#usaquen:hover .text,
 #special-landings .map g#santafe:hover .text,
 #special-landings .map g#sancristobal:hover .text,
 #special-landings .map g#usme:hover .text,
