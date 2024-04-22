@@ -9,25 +9,28 @@
   content: "";
   background-image: url(/sites/default/files/2024-04/newsBefore.png);
   width: 100%;
-  height: 200px;
+  height: 250px;
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: -340%;
+  top: -248%;
   z-index: 0;
 }
 .block--views-block--all-the-news-block-3 h2 {
   text-align: center;
   position: relative;
   z-index: 2;
+  color: #afe951;
+  font-family: "value serif pro";
 }
 .block--views-block--all-the-news-block-3 a {
   font-size: 18px;
-  color: #FFF;
+  color: #fff;
 }
 .block--views-block--all-the-news-block-3 .views-field.views-field-created span {
   color: #afe951;
+  font-family: "value serif pro";
 }
 
 .news-landings {
@@ -68,8 +71,11 @@
 #special-landings .banner .text {
   align-self: center;
 }
-#special-landings .banner .landings-especiales__field-subtitle, #special-landings .banner p {
+#special-landings .banner .landings-especiales__field-subtitle,
+#special-landings .banner p {
+  font-family: "value serif pro";
   color: #ffffff;
+  font-size: 29px;
 }
 #special-landings .banner .landings-especiales__field-imagen-banner {
   align-self: flex-end;
@@ -80,6 +86,7 @@
   line-height: 125px;
   color: #013334;
   border-radius: 5px;
+  font-family: "value serif pro";
 }
 #special-landings .banner #secondPart {
   font-size: 120px;
@@ -87,6 +94,7 @@
   background-color: #013334;
   color: #afe951;
   display: block;
+  font-family: "value serif pro";
 }
 #special-landings .banner h1 {
   display: none;
@@ -98,6 +106,7 @@
 }
 #special-landings .description h2 {
   text-align: center;
+  font-family: "value serif pro";
   color: #345a47;
 }
 #special-landings .description .desc-p {
