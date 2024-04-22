@@ -56,6 +56,9 @@
 }
 .news-landings .views-view-grid.horizontal .views-row .views-col {
   padding: 0;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 #special-landings {
