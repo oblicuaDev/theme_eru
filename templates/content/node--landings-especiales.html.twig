@@ -1077,40 +1077,41 @@ if(document.querySelector("#localidad-13")){document.querySelector("g#teusaquill
 if(document.querySelector("#localidad-14")){document.querySelector("g#tunjuelito").addEventListener('click',()=>{Fancybox.show([{ src: "#localidad-14", type: "inline" }]);})}
 if(document.querySelector("#localidad-15")){document.querySelector("g#usaquen").addEventListener('click',()=>{Fancybox.show([{ src: "#localidad-15", type: "inline" }]);})}
 if(document.querySelector("#localidad-16")){document.querySelector("g#usme").addEventListener('click',()=>{Fancybox.show([{ src: "#localidad-16", type: "inline" }]);})}
-document.addEventListener("DOMContentLoaded", function() {
-	var splide = new Splide('.splide', {
-		type: 'fade',
-		pagination: false,
-		arrows: false,
+	document.addEventListener("DOMContentLoaded", function () {
+		var splide = new Splide('.splide', {
+			type: 'fade',
+			pagination: false,
+			arrows: false,
+			autoplay: true
+		});
+		splide.mount();
+		// Add smooth scrolling to all links
+		var links = document.querySelectorAll("a");
+
+		links.forEach(function (link) {
+			link.addEventListener('click', function (event) {
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+					// Prevent default anchor click behavior
+					event.preventDefault();
+
+					// Store hash
+					var hash = this.hash;
+
+					// Using JavaScript's scrollTo() method to add smooth page scroll
+					var target = document.querySelector(hash);
+					var targetOffset = target.offsetTop;
+					var scrollOptions = {
+						top: targetOffset,
+						behavior: 'smooth'
+					};
+
+					window.scrollTo(scrollOptions);
+
+					// Add hash (#) to URL when done scrolling (default click behavior)
+					history.pushState(null, null, hash);
+				}
+			});
+		});
 	});
-	splide.mount();
-  // Add smooth scrolling to all links
-  var links = document.querySelectorAll("a");
-
-  links.forEach(function(link) {
-    link.addEventListener('click', function(event) {
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-
-        // Store hash
-        var hash = this.hash;
-
-        // Using JavaScript's scrollTo() method to add smooth page scroll
-        var target = document.querySelector(hash);
-        var targetOffset = target.offsetTop;
-        var scrollOptions = {
-          top: targetOffset,
-          behavior: 'smooth'
-        };
-
-        window.scrollTo(scrollOptions);
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        history.pushState(null, null, hash);
-      }
-    });
-  });
-});
 </script>
