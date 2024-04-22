@@ -5,18 +5,33 @@
   width: 100px;
   display: block;
 }
+#special-landings .banner {
+  background: #013334;
+}
+#special-landings .banner p {
+  color: #ffffff;
+}
+#special-landings .description {
+  margin: 30px auto;
+}
 #special-landings .description h2 {
   text-align: center;
   color: #345a47;
 }
-#special-landings .description p {
-  font-size: 13px;
+#special-landings .description .desc-p {
   -moz-column-count: 2;
        column-count: 2;
   -moz-column-gap: 20px;
        column-gap: 20px;
-  color: #003937;
+  margin-bottom: 30px;
+}
+#special-landings .description p {
+  font-size: 13px;
   margin-bottom: 10px;
+  color: #003937;
+}
+#special-landings .temporal {
+  margin: 30px auto;
 }
 #special-landings .temporal img {
   width: 100px;

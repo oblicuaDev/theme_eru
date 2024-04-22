@@ -13,11 +13,15 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
 		<p>
 			{{content.field_subtitle}}
 		</p>
+		{{content.field_imagen_banner}}
+		<img src="{{content.field_imagen_banner}}" />
 	</div>
 	<a href="#description" id="down"><img src="/sites/default/files/2024-04/arrowDown.png" /></a>
 	<div class="description" id="description">
 		<h2>Descripción</h2>
-		{{ content.body }}
+		<div class="desc-p">
+			{{ content.body }}
+		</div>
 	</div>
 	{% endblock %}
 	<h2>¡Encuentra el urbanismo temporal en Bogotá!</h2>
