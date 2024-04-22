@@ -7,7 +7,10 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
 	{% block content %}
 	{{ title }}
 	{{content.title}}
-	{{ content.body }}
+	<a href="#description"><img src="/sites/default/files/2024-04/arrowDown.png" /></a>
+	<div class="description" id="description">
+		{{ content.body }}
+	</div>
 	{% endblock %}
 	<h2>¡Encuentra el urbanismo temporal en Bogotá!</h2>
 	<div class="map">
@@ -993,5 +996,9 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
 			</g>
 		</svg>
 
+	</div>
+	<div class="temporal">
+		<img src="/sites/default/files/2024-04/figure.png" alt="temporal" />
+		<h2>Urbanismo temporal en el mundo: casos de éxito.</h2>
 	</div>
 </section>
