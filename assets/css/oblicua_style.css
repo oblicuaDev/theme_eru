@@ -151,7 +151,7 @@
 
 .fancybox__content {
   width: 100%;
-  background: rgba(52, 90, 71, 0.8);
+  background: rgba(52, 90, 71, 0.8) !important;
 }
 .fancybox__content .info-localidades__field-tit {
   font-family: "value serif pro";
