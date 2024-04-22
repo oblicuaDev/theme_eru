@@ -1,5 +1,23 @@
 /* #B5E169 */
 /* #345A47 */
+#special-landings #down {
+  margin: 0 auto;
+  width: 100px;
+  display: block;
+}
+#special-landings .description h2 {
+  text-align: center;
+  color: #345a47;
+}
+#special-landings .description p {
+  font-size: 13px;
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  color: #003937;
+  margin-bottom: 10px;
+}
 #special-landings h2 {
   text-align: center;
   color: #345a47;
