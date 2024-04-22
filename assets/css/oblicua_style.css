@@ -148,25 +148,26 @@
 .fancybox__backdrop {
   background: transparent;
 }
-.fancybox__backdrop .fancybox__content {
+
+.fancybox__content {
   max-width: 400px;
   width: 100%;
   background: rgba(52, 90, 71, 0.8);
 }
-.fancybox__backdrop .fancybox__content .info-localidades__field-tit {
+.fancybox__content .info-localidades__field-tit {
   font-family: "value serif pro";
   color: #fefcf1;
   font-size: 28px;
   border-bottom: 1px solid #fefcf1;
 }
-.fancybox__backdrop .fancybox__content .info-localidades__field-des {
+.fancybox__content .info-localidades__field-des {
   color: #fefcf1;
   font-size: 13px;
 }
-.fancybox__backdrop .fancybox__content .info-localidades__field-imagen {
+.fancybox__content .info-localidades__field-imagen {
   width: 100%;
 }
-.fancybox__backdrop .fancybox__content .info-localidades__field-imagen img {
+.fancybox__content .info-localidades__field-imagen img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
