@@ -47,11 +47,12 @@
       ]
     %}
     {% block paragraph %}
-    <div id="dialog-content" style="display:none;max-width:500px;">
+    <div id="localidad" style="display:none;max-width:500px;">
         {% block content %}
         {{content.field_tit}}
         {{content.field_des}}
         {{content.field_imagen}}
+        {{content.field_localidad}}
         {% endblock %}
       </div>
     {% endblock paragraph %}
