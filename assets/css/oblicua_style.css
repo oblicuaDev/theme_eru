@@ -146,11 +146,10 @@
 }
 
 .fancybox__backdrop {
-  background: transparent;
+  background: transparent !important;
 }
 
 .fancybox__content {
-  max-width: 400px;
   width: 100%;
   background: rgba(52, 90, 71, 0.8);
 }
