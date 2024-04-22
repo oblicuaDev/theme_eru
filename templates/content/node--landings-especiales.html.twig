@@ -1,3 +1,5 @@
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 <section id="special-landings">
@@ -9,7 +11,16 @@
 		<div id="secondPart"></div>
 		{{content.field_subtitle}}
 	</div>
-		{{content.field_imagen_banner}}
+	<section class="splide" aria-label="Splide Basic HTML Example">
+		<div class="splide__track">
+			  <ul class="splide__list">
+				  <li class="splide__slide">{{content.field_imagen_banner.0}}</li>
+				  <li class="splide__slide">{{content.field_imagen_banner.1}}</li>
+				  <li class="splide__slide">{{content.field_imagen_banner.2}}</li>
+			  </ul>
+		</div>
+	  </section>
+		
 	</div>
 	<a href="#description" id="down"><img src="/sites/default/files/2024-04/arrowDown.png" /></a>
 	<div class="description" id="description">
@@ -1091,4 +1102,5 @@ $(document).ready(function(){
     } // End if
   });
 });
+document.addEventListener( 'DOMContentLoaded', function() {var splide = new Splide( '.splide' );splide.mount();});
 </script>
