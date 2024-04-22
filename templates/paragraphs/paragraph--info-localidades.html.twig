@@ -47,7 +47,7 @@
       ]
     %}
     {% block paragraph %}
-      <div{{ attributes.addClass(classes) }}>
+    <div id="dialog-content" style="display:none;max-width:500px;">
         {% block content %}
         {{content.field_tit}}
         {{content.field_des}}
