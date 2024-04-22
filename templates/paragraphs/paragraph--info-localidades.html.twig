@@ -47,13 +47,14 @@
       ]
     %}
     {% block paragraph %}
-    <div id="localidad" style="display:none;max-width:500px;">
-        {% block content %}
+    {% block content %}
+     {{ localidad_value }}
+    <div id="localidad-{{ localidad_value }}" style="display:none;max-width:500px;">
+        {% set localidad_value = content.field_localidad|render|striptags|trim %}
         {{content.field_tit}}
         {{content.field_des}}
         {{content.field_imagen}}
-        {{ content.field_localidad|render|striptags|trim }}
-        {{ content.field_localidad}}
-        {% endblock %}
-      </div>
+       
+    </div>
+    {% endblock %}
     {% endblock paragraph %}
