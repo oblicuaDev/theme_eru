@@ -1,5 +1,13 @@
 /* #B5E169 */
 /* #345A47 */
+.news-landing {
+  background-color: #255b46;
+}
+.news-landing .views-view-grid.horizontal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 #special-landings #down {
   margin: 0 auto;
   width: 100px;
@@ -158,6 +166,7 @@
   color: #fefcf1;
   font-size: 28px;
   border-bottom: 1px solid #fefcf1;
+  font-weight: bold;
 }
 .fancybox__content .info-localidades__field-des {
   color: #fefcf1;
