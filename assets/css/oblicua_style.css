@@ -48,6 +48,10 @@
 }
 .news-landings .views-view-grid.horizontal .views-row {
   border: 1px solid #c5e472;
+  padding: 10px;
+}
+.news-landings .views-view-grid.horizontal .views-row .views-col {
+  padding: 0;
 }
 
 #special-landings {
