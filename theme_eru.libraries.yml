@@ -3,9 +3,9 @@ style:
   css:
     theme:
       assets/css/eru_radix.style.css: {}
-      assets/css/oblicua_style.css: {}
       assets/css/font/fonts.css: {}
       https://oblicua.co/lab/renobo/chatbot/elLike/css/styles-oblicua.css: { type: external }
+      assets/css/oblicua_style.css: {}
   js:
     node_modules/popper.js/dist/umd/popper.min.js: {}
     node_modules/bootstrap/dist/js/bootstrap.min.js: {}
