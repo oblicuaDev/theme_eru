@@ -73,6 +73,18 @@
   background-repeat: repeat-y;
   background-position: center center;
 }
+.urbanismo-temporal .contextual-region.block--webform h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.urbanismo-temporal .contextual-region.block--webform form {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+}
+.urbanismo-temporal .contextual-region.block--webform form input, .urbanismo-temporal .contextual-region.block--webform form .form-control, .urbanismo-temporal .contextual-region.block--webform form select, .urbanismo-temporal .contextual-region.block--webform form .custom-select {
+  background-color: #fff;
+}
 
 #special-landings {
   padding-bottom: 250px;
