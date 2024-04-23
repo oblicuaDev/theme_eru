@@ -67,6 +67,13 @@
   grid-template-rows: auto 1fr auto;
 }
 
+.urbanismo-temporal .contextual-region.block--webform {
+  background-image: url(/sites/default/files/2024-04/papel.jpg);
+  background-size: 100vw 50vh;
+  background-repeat: repeat-y;
+  background-position: center center;
+}
+
 #special-landings {
   padding-bottom: 250px;
   background-image: url(/sites/default/files/2024-04/papel.jpg);
