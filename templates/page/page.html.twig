@@ -9,10 +9,57 @@
   {% if url == '/es/juntos-construimos' %}
   {% endif %}
   {% if url == '/es/urbanismo-temporal' %}
+  {% if page.header %}
+  <header class="page__header mb-3" title="Región Encabezado">
+    {% if (is_front) %}
+    <div class="container-fluid px-0">
+      {{ page.header }}
+    </div>
+    {% elseif (url == '/es/juntos-construimos') %}
+    <div class="container-fluid px-0">
+      {{ page.header }}
+    </div>
+    {% else %}
+    <div class="container">
+      {{ page.header }}
+    </div>
+    {% endif %}
+  </header>
+  {% endif %}
   <div class="urbanismo-temporal">
     {{ page.content }}
     {{ page.content_1 }}
   </div>
+  
+  {% if page.footer %}
+  <footer class="page__footer" {{ attributes }} title="Pie de página Misión, enlaces de interés y datos de contacto">
+    <div class="container">
+      <div class="row">
+        {{ page.footer }}
+      </div>
+    </div>
+  </footer>
+  {% endif %}
+
+  {% if page.footer_light %}
+  <footer class="page__footer_2" {{ attributes }} title="Pie de página, redes sociales, s d q s, mapa del sitio">
+    <div class="container">
+      <div class="row">
+        {{ page.footer_light }}
+      </div>
+    </div>
+  </footer>
+  {% endif %}
+
+  {% if page.footer_black %}
+  <footer class="page__footer_3" {{ attributes }} title="Pie de página - Términos, condiciones, logos">
+    <div class="container">
+      <div class="row">
+        {{ page.footer_black }}
+      </div>
+    </div>
+  </footer>
+  {% endif %}
   {% else %}
   <div class="page">
     <h1 class="sr-only">Sitio Web Empresa de Renovación y Desarrollo Urbano</h1>
