@@ -115,6 +115,11 @@
 @media only screen and (max-width: 768px) {
   #special-landings .banner {
     flex-direction: column;
+    height: auto;
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
   }
 }
 #special-landings .banner .text {
