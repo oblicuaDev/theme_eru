@@ -145,6 +145,12 @@
 #special-landings .banner .text {
   align-self: center;
 }
+@media only screen and (max-width: 768px) {
+  #special-landings .banner .text {
+    align-self: center;
+    width: 100%;
+  }
+}
 #special-landings .banner .landings-especiales__field-subtitle,
 #special-landings .banner p {
   font-family: "value serif pro";
@@ -172,7 +178,8 @@
 }
 @media only screen and (max-width: 768px) {
   #special-landings .banner #firstPart {
-    font-size: 90px;
+    font-size: 55px;
+    line-height: 55px;
   }
 }
 #special-landings .banner #secondPart {
@@ -186,7 +193,8 @@
 }
 @media only screen and (max-width: 768px) {
   #special-landings .banner #secondPart {
-    font-size: 90px;
+    font-size: 55px;
+    line-height: 55px;
   }
 }
 #special-landings .banner h1 {
