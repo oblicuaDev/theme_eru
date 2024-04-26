@@ -238,6 +238,25 @@
   color: #b5e169;
   cursor: pointer;
 }
+#special-landings .map g#suba.hasPro,
+#special-landings .map g#engativa.hasPro,
+#special-landings .map g#fontibon.hasPro,
+#special-landings .map g#kennedy.hasPro,
+#special-landings .map g#puentearanda.hasPro,
+#special-landings .map g#teusaquillo.hasPro,
+#special-landings .map g#chapinero.hasPro,
+#special-landings .map g#usaquen.hasPro,
+#special-landings .map g#santafe.hasPro,
+#special-landings .map g#sancristobal.hasPro,
+#special-landings .map g#usme.hasPro,
+#special-landings .map g#ciudadbolivar.hasPro,
+#special-landings .map g#rafaeluribe.hasPro,
+#special-landings .map g#losmartires.hasPro,
+#special-landings .map g#antonionarino.hasPro,
+#special-landings .map g#tunjuelito.hasPro,
+#special-landings .map g#barriosunidos.hasPro {
+  color: #81aa3c;
+}
 #special-landings .map g#suba .text,
 #special-landings .map g#engativa .text,
 #special-landings .map g#fontibon .text,
