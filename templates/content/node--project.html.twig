@@ -31,12 +31,9 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         <a aria-controls="regulatory" aria-selected="false" class="nav-link" data-toggle="tab" href="#regulatory"
           id="regulatory-tab" role="tab">Documentos de interés</a>
       </li>
-      {% set has_page_sidebar =content.field_actuaciones_estrat|render|trim %} // Set rendered content to a new variable
-      {% if has_page_sidebar|striptags not empty %} // Then strip tags and test if actual content is there
       <li class="nav-item">
         <a aria-controls="estrategicas" aria-selected="false" class="nav-link" data-toggle="tab" href="#estrategicas" id="estrategicas-tab" role="tab">¿Qué son las Actuaciones Estratégicas?</a>
     </li>
-      {% endif %}
     </ul>
     <div class="tab-content" id="myTabContent">
       <div aria-labelledby="description-tab" class="tab-pane fade show active project-content" id="description"
