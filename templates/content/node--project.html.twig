@@ -31,9 +31,11 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         <a aria-controls="regulatory" aria-selected="false" class="nav-link" data-toggle="tab" href="#regulatory"
           id="regulatory-tab" role="tab">Documentos de interés</a>
       </li>
-      <li class="nav-item">
-        <a aria-controls="estrategicas" aria-selected="false" class="nav-link" data-toggle="tab" href="#estrategicas" id="estrategicas-tab" role="tab">¿Qué son las Actuaciones Estratégicas?</a>
-    </li>
+      {% if content.field_actuaciones_estrat is not empty %}
+        <li class="nav-item">
+          <a aria-controls="estrategicas" aria-selected="false" class="nav-link" data-toggle="tab" href="#estrategicas" id="estrategicas-tab" role="tab">¿Qué son las Actuaciones Estratégicas?</a>
+      </li>
+      {% endif %}
     </ul>
     <div class="tab-content" id="myTabContent">
       <div aria-labelledby="description-tab" class="tab-pane fade show active project-content" id="description"
