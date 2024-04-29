@@ -32,12 +32,13 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
           id="regulatory-tab" role="tab">Documentos de interés</a>
       </li>
       {% if content.field_actuaciones_estrat is empty %}
-      {% else %}
-          <li class="nav-item">
-            <a aria-controls="estrategicas" aria-selected="false" class="nav-link" data-toggle="tab" href="#estrategicas"
-              id="estrategicas-tab" role="tab">¿Qué son las Actuaciones Estratégicas?</a>
-          </li>
-      {% endif %}
+      <!-- Field is empty -->
+  {% else %}
+      <!-- Field is not empty, render your HTML -->
+      <li class="nav-item">
+          <a aria-controls="estrategicas" aria-selected="false" class="nav-link" data-toggle="tab" href="#estrategicas" id="estrategicas-tab" role="tab">¿Qué son las Actuaciones Estratégicas?</a>
+      </li>
+  {% endif %}
     </ul>
     <div class="tab-content" id="myTabContent">
       <div aria-labelledby="description-tab" class="tab-pane fade show active project-content" id="description"
