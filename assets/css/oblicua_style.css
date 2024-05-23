@@ -103,7 +103,10 @@
   margin: 0 auto;
   padding: 20px;
 }
-.urbanismo-temporal .contextual-region.block--webform form input, .urbanismo-temporal .contextual-region.block--webform form .form-control, .urbanismo-temporal .contextual-region.block--webform form select, .urbanismo-temporal .contextual-region.block--webform form .custom-select {
+.urbanismo-temporal .contextual-region.block--webform form input,
+.urbanismo-temporal .contextual-region.block--webform form .form-control,
+.urbanismo-temporal .contextual-region.block--webform form select,
+.urbanismo-temporal .contextual-region.block--webform form .custom-select {
   background-color: #fff;
 }
 
