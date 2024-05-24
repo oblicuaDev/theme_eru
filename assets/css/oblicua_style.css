@@ -438,6 +438,11 @@
 .page.landing-eventos .landing-eventos__body {
   padding: 0 30px 0 0;
 }
+@media only screen and (max-width: 768px) {
+  .page.landing-eventos .landing-eventos__body {
+    padding: 0;
+  }
+}
 .page.landing-eventos .date-count .container {
   display: flex;
   background-color: #255c46;
