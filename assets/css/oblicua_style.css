@@ -434,6 +434,11 @@
   position: relative;
   padding: 50px 0;
 }
+@media only screen and (max-width: 768px) {
+  .page.landing-eventos .date-count .container {
+    flex-direction: column;
+  }
+}
 .page.landing-eventos .date-count .container::after {
   background-color: #fffdef;
   content: "";
@@ -443,6 +448,11 @@
   top: 50%;
   transform: translate(-50%, -50%);
   width: 1px;
+}
+@media only screen and (max-width: 768px) {
+  .page.landing-eventos .date-count .container::after {
+    content: none;
+  }
 }
 .page.landing-eventos .date-count .left,
 .page.landing-eventos .date-count .right {
@@ -542,11 +552,17 @@
 }
 .page.landing-eventos .speakers-evento__field-nombre {
   color: #163839;
-  font-size: 75px;
   font-weight: bold;
   font-family: "value serif pro";
+  font-size: 75px;
   line-height: 80px;
   width: 90%;
+}
+@media only screen and (max-width: 768px) {
+  .page.landing-eventos .speakers-evento__field-nombre {
+    font-size: 35px;
+    line-height: 40px;
+  }
 }
 .page.landing-eventos .speakers-evento__field-descrip {
   color: #163839;
@@ -555,10 +571,22 @@
   font-weight: 200;
   line-height: 30px;
 }
+@media only screen and (max-width: 768px) {
+  .page.landing-eventos .speakers-evento__field-descrip {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
 .page.landing-eventos ul li div.speakers-evento__field-foto img {
   width: 570px !important;
   height: 570px !important;
   object-fit: cover !important;
+}
+@media only screen and (max-width: 768px) {
+  .page.landing-eventos ul li div.speakers-evento__field-foto img {
+    width: 50vw !important;
+    height: 50vw !important;
+  }
 }
 .page.landing-eventos .landing-eventos__field-sobre-nosotros p {
   font-size: 16px;
