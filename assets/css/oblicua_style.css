@@ -466,6 +466,18 @@
   font-size: 42px;
   line-height: 42px;
 }
+.page.landing-eventos .container.speakers {
+  background-color: #255c46;
+  color: #fffdef;
+  text-align: center;
+  padding: 20px 0;
+  font-family: "value serif pro";
+  font-size: 42px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .page.landing-eventos .bloques-horarios__field-hora-bloque,
 .page.landing-eventos .bloques-horarios__field-nombre-del-bloque {
   display: inline-block;
@@ -491,6 +503,7 @@
   font-weight: bold;
   font-family: "value serif pro";
   line-height: 80px;
+  width: 90%;
 }
 .page.landing-eventos .speakers-evento__field-descrip {
   color: #163839;
