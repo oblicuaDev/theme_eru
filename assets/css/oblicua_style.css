@@ -425,7 +425,7 @@
 .page.landing-eventos .date-count .right {
   flex: 1;
 }
-.page.landing-eventos .date-count .left h2 {
+.page.landing-eventos .date-count .left h1 {
   color: #afcd50;
   font-size: 25px;
   line-height: 25px;
