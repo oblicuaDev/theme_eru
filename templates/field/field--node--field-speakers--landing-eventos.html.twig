@@ -4,21 +4,12 @@
      * Template for a field.
      */
     #} 
-   
-      {% if multiple %}
-        <div{{ attributes }}>
-          {% for item in items %}
-          {{item.content|raw }}
-          {{ item.content['#node'].field_foto.0.entity.uri.value|raw }}
-          {{ item.content['#node'].field_nombre.0.value|raw }}
-          {{ item.content['#node'].field_descrip.0.value|raw }}
-          {% endfor %}
-        </div>
-      {% else %}
+<section class="splide" aria-label="Splide Basic HTML Example">
+<div class="splide__track">
+        <ul class="splide__list">
         {% for item in items %}
-        {{item.content['#node']|raw }}
-        {{ item.content['#node'].field_foto.value|raw }}
-        {{ item.content['#node'].field_nombre.value|raw }}
-        {{ item.content['#node'].field_descrip.value|raw }}
+        <li class="splide__slide">{{item.content }}</li>
         {% endfor %}
-      {% endif %}
+        </ul>
+</div>
+</section>
