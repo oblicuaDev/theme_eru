@@ -558,7 +558,7 @@
   font-size: 30px;
   font-weight: 200;
 }
-.page.landing-eventos .splide__slide {
+.page.landing-eventos .page ul li.splide__slide {
   display: block !important;
 }
 
