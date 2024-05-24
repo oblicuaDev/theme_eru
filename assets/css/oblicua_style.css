@@ -459,12 +459,16 @@
   font-family: "value serif pro";
   color: #afcd50;
 }
+.page.landing-eventos .paragraph.paragraph--type--agenda-eventos.paragraph--view-mode--default details {
+  margin-bottom: 30px;
+}
 .page.landing-eventos .agenda h2 {
   text-align: center;
   padding: 20px 0;
   font-family: "value serif pro";
   font-size: 42px;
   line-height: 42px;
+  margin: 0;
 }
 .page.landing-eventos .container.speakers {
   margin: 0;
