@@ -543,6 +543,9 @@
   font-family: "value serif pro";
   font-weight: bold;
 }
+.noticias .block--views-block--all-the-news-block-3 h3 {
+  color: #163738;
+}
 .noticias .block--views-block--all-the-news-block-3 a {
   font-size: 18px !important;
   color: #fff;
