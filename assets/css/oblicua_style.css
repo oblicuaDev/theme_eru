@@ -543,7 +543,7 @@
   font-family: "value serif pro";
   font-weight: bold;
 }
-.noticias .block--views-block--all-the-news-block-3 h3 {
+.noticias .block--views-block--all-the-news-block-3 h3 span a {
   color: #163738;
 }
 .noticias .block--views-block--all-the-news-block-3 a {
