@@ -498,6 +498,10 @@
 
 #special-landings-v2 {
   background-color: #113334;
+  background-image: none;
+}
+#special-landings-v2 .banner {
+  background-color: #afe951;
 }
 
 .fancybox__backdrop {
