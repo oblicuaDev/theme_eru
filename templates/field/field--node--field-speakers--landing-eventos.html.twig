@@ -9,9 +9,9 @@
         <div{{ attributes }}>
           {% for item in items %}
           {{item.content|raw }}
-          {{ item.content['#node'].field_foto.value|raw }}
-          {{ item.content['#node'].field_nombre.value|raw }}
-          {{ item.content['#node'].field_descrip.value|raw }}
+          {{ item.content['#node'].field_foto.0.entity.uri.value|raw }}
+          {{ item.content['#node'].field_nombre.0.value|raw }}
+          {{ item.content['#node'].field_descrip.0.value|raw }}
           {% endfor %}
         </div>
       {% else %}
