@@ -500,9 +500,9 @@
   line-height: 30px;
 }
 .page.landing-eventos .speakers-evento__field-foto img {
-  width: 570px;
+  width: 570px !important;
   height: 570px !important;
-  object-fit: cover;
+  object-fit: cover !important;
 }
 .page.landing-eventos .landing-eventos__field-sobre-nosotros p {
   font-size: 25px;
@@ -558,7 +558,7 @@
   font-size: 30px;
   font-weight: 200;
 }
-.page.landing-eventos .page ul li.splide__slide {
+.page.landing-eventos ul li.splide__slide {
   display: block !important;
 }
 
