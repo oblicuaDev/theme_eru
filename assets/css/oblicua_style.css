@@ -507,6 +507,9 @@
   padding-bottom: 30px;
   position: relative;
 }
+.noticias .block--views-block--all-the-news-block-3 .news-landings {
+  background-color: #ffffee;
+}
 .noticias .block--views-block--all-the-news-block-3::before {
   content: "";
   background-image: url(https://renobo.com.co/sites/default/files/2024-05/newsBeforeLigth.png);
