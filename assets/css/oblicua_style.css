@@ -571,6 +571,7 @@
 @media only screen and (max-width: 768px) {
   .page.landing-eventos .speakers-evento__field-nombre {
     font-size: 35px;
+    text-align: center;
     line-height: 40px;
   }
 }
@@ -584,6 +585,7 @@
 @media only screen and (max-width: 768px) {
   .page.landing-eventos .speakers-evento__field-descrip {
     font-size: 16px;
+    text-align: center;
     line-height: 20px;
   }
 }
@@ -596,6 +598,8 @@
   .page.landing-eventos ul li div.speakers-evento__field-foto img {
     width: 50vw !important;
     height: 50vw !important;
+    margin: 0 auto;
+    display: block;
   }
 }
 .page.landing-eventos .landing-eventos__field-sobre-nosotros p {
