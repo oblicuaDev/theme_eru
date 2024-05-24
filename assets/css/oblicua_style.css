@@ -503,6 +503,12 @@
 #special-landings-v2 .banner {
   background-color: #afe951;
 }
+#special-landings-v2 .description h2 {
+  color: #afe951;
+}
+#special-landings-v2 .description p {
+  color: #fff;
+}
 
 .fancybox__backdrop {
   background: transparent !important;
