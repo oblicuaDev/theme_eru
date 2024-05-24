@@ -502,16 +502,12 @@
   font-weight: bold;
 }
 
-#special-landings-v2 {
-  background-color: #113334;
-  background-image: none;
-}
-#special-landings-v2 .block--views-block--all-the-news-block-3 {
+.noticias .block--views-block--all-the-news-block-3 {
   background-color: #ffffee;
   padding-bottom: 30px;
   position: relative;
 }
-#special-landings-v2 .block--views-block--all-the-news-block-3::before {
+.noticias .block--views-block--all-the-news-block-3::before {
   content: "";
   background-image: url(https://renobo.com.co/sites/default/files/2024-05/newsBeforeLigth.png);
   width: 100%;
@@ -524,7 +520,7 @@
   z-index: 0;
 }
 @media only screen and (max-width: 768px) {
-  #special-landings-v2 .block--views-block--all-the-news-block-3::before {
+  .noticias .block--views-block--all-the-news-block-3::before {
     width: 100%;
     height: 100vw;
     background-position: top;
@@ -536,7 +532,7 @@
     pointer-events: none;
   }
 }
-#special-landings-v2 .block--views-block--all-the-news-block-3 h2 {
+.noticias .block--views-block--all-the-news-block-3 h2 {
   text-align: center;
   position: relative;
   z-index: 2;
@@ -544,17 +540,22 @@
   font-family: "value serif pro";
   font-weight: bold;
 }
-#special-landings-v2 .block--views-block--all-the-news-block-3 a {
+.noticias .block--views-block--all-the-news-block-3 a {
   font-size: 18px !important;
   color: #fff;
 }
-#special-landings-v2 .block--views-block--all-the-news-block-3 .views-field.views-field-created {
+.noticias .block--views-block--all-the-news-block-3 .views-field.views-field-created {
   display: block;
 }
-#special-landings-v2 .block--views-block--all-the-news-block-3 .views-field.views-field-created span {
+.noticias .block--views-block--all-the-news-block-3 .views-field.views-field-created span {
   color: #afe951;
   font-family: "value serif pro";
   font-weight: bold;
+}
+
+#special-landings-v2 {
+  background-color: #113334;
+  background-image: none;
 }
 #special-landings-v2 .banner {
   background-color: #afe951;
