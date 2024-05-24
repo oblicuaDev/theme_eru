@@ -408,6 +408,10 @@
 }
 .page.landing-eventos .bannernosotros h2 {
   background: rgba(255, 255, 255, 0.7);
+  font-family: "value serif pro";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 40px;
   padding: 20px 360px;
 }
 .page.landing-eventos .page__header {
@@ -472,6 +476,9 @@
 }
 .page.landing-eventos .paragraph.paragraph--type--agenda-eventos.paragraph--view-mode--default details {
   margin-bottom: 30px;
+}
+.page.landing-eventos .paragraph.paragraph--type--agenda-eventos.paragraph--view-mode--default details summary {
+  list-style-type: "";
 }
 .page.landing-eventos .agenda h2 {
   text-align: center;
