@@ -429,6 +429,8 @@
   color: #afcd50;
   font-size: 25px;
   line-height: 25px;
+  font-family: "value serif pro";
+  font-weight: bold;
 }
 .page.landing-eventos .date-count .left p {
   color: #fffdef;
@@ -444,15 +446,18 @@
 .page.landing-eventos .date-count .right p {
   font-size: 130px;
   line-height: 130px;
+  font-family: "value serif pro";
   color: #afcd50;
 }
 .page.landing-eventos .agenda-eventos__field-titulo-agenda {
   background-color: #afcd50;
   color: #163839;
+  font-family: "value serif pro";
 }
 .page.landing-eventos .speakers-evento__field-nombre {
   color: #163839;
   font-size: 75px;
+  font-family: "value serif pro";
   line-height: 80px;
 }
 .page.landing-eventos .speakers-evento__field-descrip {

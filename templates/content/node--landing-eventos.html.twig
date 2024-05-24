@@ -97,30 +97,32 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
     {% endblock %}
 </section>
 <script>
-    // Fecha del evento obtenida de Drupal
     // Obtener la fecha del evento desde el atributo data-fecha
     const fechaEvento = document.getElementById("evento").getAttribute("data-fecha");
 
     // Convertir la fecha a un formato que JavaScript entienda
     const fechaEventoJS = new Date(fechaEvento).getTime();
 
-
     function actualizarContador() {
         const ahora = new Date().getTime();
         const distancia = fechaEventoJS - ahora;
 
-        // Cálculo de días, horas, minutos y segundos
+        // Cálculo de meses, días, horas, minutos y segundos
+        const meses = Math.floor(distancia / (1000 * 60 * 60 * 24 * 30.436875)); // Aproximación de un mes
+        const dias = Math.floor((distancia % (1000 * 60 * 60 * 24 * 30.436875)) / (1000 * 60 * 60 * 24));
         const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
         const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
 
-        // Formatear el tiempo en HH:MM:SS
+        // Formatear el tiempo en MM DD HH:MM:SS
+        const formatoMeses = meses < 10 ? '0' + meses : meses;
+        const formatoDias = dias < 10 ? '0' + dias : dias;
         const formatoHoras = horas < 10 ? '0' + horas : horas;
         const formatoMinutos = minutos < 10 ? '0' + minutos : minutos;
         const formatoSegundos = segundos < 10 ? '0' + segundos : segundos;
 
         // Mostrar el resultado en el elemento con id "tiempo"
-        document.getElementById("tiempo").innerHTML = `${formatoHoras}:${formatoMinutos}:${formatoSegundos}`;
+        document.getElementById("tiempo").innerHTML = `${formatoMeses}M ${formatoDias}D ${formatoHoras}:${formatoMinutos}:${formatoSegundos}`;
 
         // Si el conteo regresivo ha terminado, mostrar un mensaje
         if (distancia < 0) {
