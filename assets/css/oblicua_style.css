@@ -396,4 +396,12 @@
   object-fit: cover;
 }
 
+.page.landing-eventos .page__header {
+  margin: 0 !important;
+  display: none;
+}
+.page.landing-eventos .col-12 {
+  padding: 0;
+}
+
 /*# sourceMappingURL=oblicua_style.css.map */
