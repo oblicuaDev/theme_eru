@@ -8,11 +8,14 @@
       {% if multiple %}
         <div{{ attributes }}>
           {% for item in items %}
-            <div{{ item.attributes }}>{{ item.content }}</div>
+          {{ item.content.field_foto }}
+          {{ item.content.field_nombre }}
+          {{ item.content.field_descrip }}
+            {{ item.content }}
           {% endfor %}
         </div>
       {% else %}
         {% for item in items %}
-          <div{{ attributes }}>{{ item.content }}</div>
+          {{ item.content }}
         {% endfor %}
       {% endif %}
