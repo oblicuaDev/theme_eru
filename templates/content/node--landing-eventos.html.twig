@@ -32,7 +32,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
                         </clipPath>
                     </defs>
                 </svg>
-                <p>03:24:58</p>
+                <p id="tiempo">00:00:00</p>
             </div>
         </div>
     </div>
@@ -89,12 +89,46 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
     <div class="container">
         <h2>Sobre nosotros:</h2>
     </div>
-    {{ content.field_fecha_del_evento }}
+
     <div class="container">
         {{ content.field_sobre_nosotros }}
     </div>
     {% endblock %}
 </section>
-
+<div id="evento" data-fecha="{{ content.field_fecha_del_evento }}"></div>
 <script>
+    // Fecha del evento obtenida de Drupal
+    // Obtener la fecha del evento desde el atributo data-fecha
+    const fechaEvento = document.getElementById("evento").getAttribute("data-fecha");
+
+    // Convertir la fecha a un formato que JavaScript entienda
+    const fechaEventoJS = new Date(fechaEvento).getTime();
+
+
+    function actualizarContador() {
+        const ahora = new Date().getTime();
+        const distancia = fechaEventoJS - ahora;
+
+        // Cálculo de días, horas, minutos y segundos
+        const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+        // Formatear el tiempo en HH:MM:SS
+        const formatoHoras = horas < 10 ? '0' + horas : horas;
+        const formatoMinutos = minutos < 10 ? '0' + minutos : minutos;
+        const formatoSegundos = segundos < 10 ? '0' + segundos : segundos;
+
+        // Mostrar el resultado en el elemento con id "tiempo"
+        document.getElementById("tiempo").innerHTML = `${formatoHoras}:${formatoMinutos}:${formatoSegundos}`;
+
+        // Si el conteo regresivo ha terminado, mostrar un mensaje
+        if (distancia < 0) {
+            clearInterval(intervalo);
+            document.getElementById("tiempo").innerHTML = "EVENTO INICIADO";
+        }
+    }
+
+    // Actualizar el contador cada segundo
+    const intervalo = setInterval(actualizarContador, 1000);
 </script>
