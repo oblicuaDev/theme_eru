@@ -94,6 +94,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         {{ content.field_sobre_nosotros }}
     </div>
     <div id="evento" data-fecha="{{ content.field_fecha_del_evento.value }}"></div>
+    <div id="evento" data-fecha="{{ node.field_fecha_del_evento.value }}"></div>
     {% endblock %}
 </section>
 <script>
