@@ -682,6 +682,13 @@
   font-size: 30px;
   font-weight: 200;
 }
+@media only screen and (max-width: 768px) {
+  .page.landing-eventos .bloques-horarios__field-puntos-del-bloque p,
+  .page.landing-eventos .bloques-horarios__field-puntos-del-bloque li {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
 .page.landing-eventos ul li.splide__slide {
   display: block !important;
 }
