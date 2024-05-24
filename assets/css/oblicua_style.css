@@ -509,6 +509,9 @@
 #special-landings-v2 .banner {
   background-color: #afe951;
 }
+#special-landings-v2 .banner .landing-especiales-v2__field-subtitle {
+  color: #113334;
+}
 #special-landings-v2 .description h2 {
   color: #afe951;
 }
