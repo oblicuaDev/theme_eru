@@ -107,7 +107,8 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         {{ content.field_speakers }}
     </div>
     {% set imagen_url = content.field_fondo_nosotros['#items'].entity.uri.value | file_url %}
-    <div style="background-image: url( {{ imagen_url}});background-repeat: no-repeat;background-size: cover;">
+    <div class="bannernosotros"
+        style="background-image: url( {{ imagen_url}});background-repeat: no-repeat;background-size: cover;">
         <h2>Sobre nosotros:</h2>
     </div>
     <div class="container">
