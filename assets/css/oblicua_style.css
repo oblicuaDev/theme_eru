@@ -110,23 +110,27 @@
   background-color: #fff;
 }
 
-#special-landings {
+#special-landings,
+#special-landings-v2 {
   padding-bottom: 250px;
   background-image: url(/sites/default/files/2024-04/papel.jpg);
   background-size: 100vw 50vh;
   background-repeat: repeat-y;
   background-position: center center;
 }
-#special-landings #down {
+#special-landings #down,
+#special-landings-v2 #down {
   margin: 30px auto;
   width: 100px;
   display: block;
 }
-#special-landings #down img {
+#special-landings #down img,
+#special-landings-v2 #down img {
   width: 100%;
   object-fit: contain;
 }
-#special-landings .banner {
+#special-landings .banner,
+#special-landings-v2 .banner {
   background: #013334;
   display: flex;
   justify-content: center;
@@ -136,7 +140,8 @@
   overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
-  #special-landings .banner {
+  #special-landings .banner,
+  #special-landings-v2 .banner {
     flex-direction: column;
     height: auto;
     padding: 20px;
@@ -145,17 +150,21 @@
     justify-content: center;
   }
 }
-#special-landings .banner .text {
+#special-landings .banner .text,
+#special-landings-v2 .banner .text {
   align-self: center;
 }
 @media only screen and (max-width: 768px) {
-  #special-landings .banner .text {
+  #special-landings .banner .text,
+  #special-landings-v2 .banner .text {
     align-self: center;
     width: 100%;
   }
 }
 #special-landings .banner .landings-especiales__field-subtitle,
-#special-landings .banner p {
+#special-landings .banner p,
+#special-landings-v2 .banner .landings-especiales__field-subtitle,
+#special-landings-v2 .banner p {
   font-family: "value serif pro";
   color: #ffffff;
   font-size: 29px;
@@ -163,14 +172,18 @@
 }
 @media only screen and (max-width: 768px) {
   #special-landings .banner .landings-especiales__field-subtitle,
-  #special-landings .banner p {
+  #special-landings .banner p,
+  #special-landings-v2 .banner .landings-especiales__field-subtitle,
+  #special-landings-v2 .banner p {
     font-size: 22px;
   }
 }
-#special-landings .banner .landings-especiales__field-imagen-banner {
+#special-landings .banner .landings-especiales__field-imagen-banner,
+#special-landings-v2 .banner .landings-especiales__field-imagen-banner {
   align-self: flex-end;
 }
-#special-landings .banner #firstPart {
+#special-landings .banner #firstPart,
+#special-landings-v2 .banner #firstPart {
   background-color: #afe951;
   font-size: 120px;
   line-height: 125px;
@@ -180,12 +193,14 @@
   font-weight: bold;
 }
 @media only screen and (max-width: 768px) {
-  #special-landings .banner #firstPart {
+  #special-landings .banner #firstPart,
+  #special-landings-v2 .banner #firstPart {
     font-size: 55px;
     line-height: 55px;
   }
 }
-#special-landings .banner #secondPart {
+#special-landings .banner #secondPart,
+#special-landings-v2 .banner #secondPart {
   font-size: 120px;
   line-height: 125px;
   background-color: #013334;
@@ -195,54 +210,65 @@
   font-weight: bold;
 }
 @media only screen and (max-width: 768px) {
-  #special-landings .banner #secondPart {
+  #special-landings .banner #secondPart,
+  #special-landings-v2 .banner #secondPart {
     font-size: 55px;
     line-height: 55px;
   }
 }
-#special-landings .banner h1 {
+#special-landings .banner h1,
+#special-landings-v2 .banner h1 {
   display: none;
 }
-#special-landings .description {
+#special-landings .description,
+#special-landings-v2 .description {
   margin: 30px auto;
   max-width: 1200px;
   padding: 0 20px;
 }
-#special-landings .description h2 {
+#special-landings .description h2,
+#special-landings-v2 .description h2 {
   text-align: center;
   font-family: "value serif pro";
   font-weight: bold;
   color: #345a47;
 }
-#special-landings .description .desc-p {
+#special-landings .description .desc-p,
+#special-landings-v2 .description .desc-p {
   column-count: 2;
   column-gap: 20px;
   margin-bottom: 30px;
 }
 @media only screen and (max-width: 768px) {
-  #special-landings .description .desc-p {
+  #special-landings .description .desc-p,
+  #special-landings-v2 .description .desc-p {
     column-count: 1;
   }
 }
-#special-landings .description p {
+#special-landings .description p,
+#special-landings-v2 .description p {
   font-size: 13px;
   margin-bottom: 10px;
   color: #003937;
 }
-#special-landings .temporal {
+#special-landings .temporal,
+#special-landings-v2 .temporal {
   margin: 30px auto;
 }
-#special-landings .temporal img {
+#special-landings .temporal img,
+#special-landings-v2 .temporal img {
   width: 100px;
   margin: 0 auto;
   display: block;
   margin-bottom: 30px;
 }
-#special-landings h2 {
+#special-landings h2,
+#special-landings-v2 h2 {
   text-align: center;
   color: #345a47;
 }
-#special-landings .map {
+#special-landings .map,
+#special-landings-v2 .map {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -264,245 +290,7 @@
 #special-landings .map g#losmartires,
 #special-landings .map g#antonionarino,
 #special-landings .map g#tunjuelito,
-#special-landings .map g#barriosunidos {
-  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-  color: #b5e169;
-  cursor: pointer;
-}
-#special-landings .map g#suba.hasPro,
-#special-landings .map g#engativa.hasPro,
-#special-landings .map g#fontibon.hasPro,
-#special-landings .map g#kennedy.hasPro,
-#special-landings .map g#puentearanda.hasPro,
-#special-landings .map g#teusaquillo.hasPro,
-#special-landings .map g#chapinero.hasPro,
-#special-landings .map g#usaquen.hasPro,
-#special-landings .map g#santafe.hasPro,
-#special-landings .map g#sancristobal.hasPro,
-#special-landings .map g#usme.hasPro,
-#special-landings .map g#ciudadbolivar.hasPro,
-#special-landings .map g#rafaeluribe.hasPro,
-#special-landings .map g#losmartires.hasPro,
-#special-landings .map g#antonionarino.hasPro,
-#special-landings .map g#tunjuelito.hasPro,
-#special-landings .map g#barriosunidos.hasPro {
-  color: #81aa3c;
-}
-#special-landings .map g#suba .text,
-#special-landings .map g#engativa .text,
-#special-landings .map g#fontibon .text,
-#special-landings .map g#kennedy .text,
-#special-landings .map g#puentearanda .text,
-#special-landings .map g#teusaquillo .text,
-#special-landings .map g#chapinero .text,
-#special-landings .map g#usaquen .text,
-#special-landings .map g#santafe .text,
-#special-landings .map g#sancristobal .text,
-#special-landings .map g#usme .text,
-#special-landings .map g#ciudadbolivar .text,
-#special-landings .map g#rafaeluribe .text,
-#special-landings .map g#losmartires .text,
-#special-landings .map g#antonionarino .text,
-#special-landings .map g#tunjuelito .text,
-#special-landings .map g#barriosunidos .text {
-  color: #345a47;
-  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-@media only screen and (max-width: 768px) {
-  #special-landings .map g#suba .text,
-  #special-landings .map g#engativa .text,
-  #special-landings .map g#fontibon .text,
-  #special-landings .map g#kennedy .text,
-  #special-landings .map g#puentearanda .text,
-  #special-landings .map g#teusaquillo .text,
-  #special-landings .map g#chapinero .text,
-  #special-landings .map g#usaquen .text,
-  #special-landings .map g#santafe .text,
-  #special-landings .map g#sancristobal .text,
-  #special-landings .map g#usme .text,
-  #special-landings .map g#ciudadbolivar .text,
-  #special-landings .map g#rafaeluribe .text,
-  #special-landings .map g#losmartires .text,
-  #special-landings .map g#antonionarino .text,
-  #special-landings .map g#tunjuelito .text,
-  #special-landings .map g#barriosunidos .text {
-    display: none;
-  }
-}
-#special-landings .map g#suba:hover,
-#special-landings .map g#engativa:hover,
-#special-landings .map g#fontibon:hover,
-#special-landings .map g#kennedy:hover,
-#special-landings .map g#puentearanda:hover,
-#special-landings .map g#teusaquillo:hover,
-#special-landings .map g#chapinero:hover,
-#special-landings .map g#usaquen:hover,
-#special-landings .map g#santafe:hover,
-#special-landings .map g#sancristobal:hover,
-#special-landings .map g#usme:hover,
-#special-landings .map g#ciudadbolivar:hover,
-#special-landings .map g#rafaeluribe:hover,
-#special-landings .map g#losmartires:hover,
-#special-landings .map g#antonionarino:hover,
-#special-landings .map g#tunjuelito:hover,
-#special-landings .map g#barriosunidos:hover {
-  color: #345a47;
-}
-#special-landings .map g#suba:hover .text,
-#special-landings .map g#engativa:hover .text,
-#special-landings .map g#fontibon:hover .text,
-#special-landings .map g#kennedy:hover .text,
-#special-landings .map g#puentearanda:hover .text,
-#special-landings .map g#teusaquillo:hover .text,
-#special-landings .map g#chapinero:hover .text,
-#special-landings .map g#usaquen:hover .text,
-#special-landings .map g#santafe:hover .text,
-#special-landings .map g#sancristobal:hover .text,
-#special-landings .map g#usme:hover .text,
-#special-landings .map g#ciudadbolivar:hover .text,
-#special-landings .map g#rafaeluribe:hover .text,
-#special-landings .map g#losmartires:hover .text,
-#special-landings .map g#antonionarino:hover .text,
-#special-landings .map g#tunjuelito:hover .text,
-#special-landings .map g#barriosunidos:hover .text {
-  color: #b5e169;
-}
-
-#special-landings-v2 {
-  padding-bottom: 250px;
-  background-color: #113334;
-}
-#special-landings-v2 #down {
-  margin: 30px auto;
-  width: 100px;
-  display: block;
-}
-#special-landings-v2 #down img {
-  width: 100%;
-  object-fit: contain;
-}
-#special-landings-v2 .banner {
-  background: #013334;
-  display: flex;
-  justify-content: center;
-  gap: 420px;
-  padding-left: 60px;
-  height: 70vh;
-  overflow: hidden;
-}
-@media only screen and (max-width: 768px) {
-  #special-landings-v2 .banner {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-    align-items: center;
-    gap: 20px;
-    justify-content: center;
-  }
-}
-#special-landings-v2 .banner .text {
-  align-self: center;
-}
-@media only screen and (max-width: 768px) {
-  #special-landings-v2 .banner .text {
-    align-self: center;
-    width: 100%;
-  }
-}
-#special-landings-v2 .banner .landings-especiales__field-subtitle,
-#special-landings-v2 .banner p {
-  font-family: "value serif pro";
-  color: #ffffff;
-  font-size: 29px;
-  font-weight: bold;
-}
-@media only screen and (max-width: 768px) {
-  #special-landings-v2 .banner .landings-especiales__field-subtitle,
-  #special-landings-v2 .banner p {
-    font-size: 22px;
-  }
-}
-#special-landings-v2 .banner .landings-especiales__field-imagen-banner {
-  align-self: flex-end;
-}
-#special-landings-v2 .banner #firstPart {
-  background-color: #afe951;
-  font-size: 120px;
-  line-height: 125px;
-  color: #013334;
-  border-radius: 5px;
-  font-family: "value serif pro";
-  font-weight: bold;
-}
-@media only screen and (max-width: 768px) {
-  #special-landings-v2 .banner #firstPart {
-    font-size: 55px;
-    line-height: 55px;
-  }
-}
-#special-landings-v2 .banner #secondPart {
-  font-size: 120px;
-  line-height: 125px;
-  background-color: #013334;
-  color: #afe951;
-  display: block;
-  font-family: "value serif pro";
-  font-weight: bold;
-}
-@media only screen and (max-width: 768px) {
-  #special-landings-v2 .banner #secondPart {
-    font-size: 55px;
-    line-height: 55px;
-  }
-}
-#special-landings-v2 .banner h1 {
-  display: none;
-}
-#special-landings-v2 .description {
-  margin: 30px auto;
-  max-width: 1200px;
-  padding: 0 20px;
-}
-#special-landings-v2 .description h2 {
-  text-align: center;
-  font-family: "value serif pro";
-  font-weight: bold;
-  color: #345a47;
-}
-#special-landings-v2 .description .desc-p {
-  column-count: 2;
-  column-gap: 20px;
-  margin-bottom: 30px;
-}
-@media only screen and (max-width: 768px) {
-  #special-landings-v2 .description .desc-p {
-    column-count: 1;
-  }
-}
-#special-landings-v2 .description p {
-  font-size: 13px;
-  margin-bottom: 10px;
-  color: #003937;
-}
-#special-landings-v2 .temporal {
-  margin: 30px auto;
-}
-#special-landings-v2 .temporal img {
-  width: 100px;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 30px;
-}
-#special-landings-v2 h2 {
-  text-align: center;
-  color: #345a47;
-}
-#special-landings-v2 .map {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+#special-landings .map g#barriosunidos,
 #special-landings-v2 .map g#suba,
 #special-landings-v2 .map g#engativa,
 #special-landings-v2 .map g#fontibon,
@@ -524,6 +312,23 @@
   color: #b5e169;
   cursor: pointer;
 }
+#special-landings .map g#suba.hasPro,
+#special-landings .map g#engativa.hasPro,
+#special-landings .map g#fontibon.hasPro,
+#special-landings .map g#kennedy.hasPro,
+#special-landings .map g#puentearanda.hasPro,
+#special-landings .map g#teusaquillo.hasPro,
+#special-landings .map g#chapinero.hasPro,
+#special-landings .map g#usaquen.hasPro,
+#special-landings .map g#santafe.hasPro,
+#special-landings .map g#sancristobal.hasPro,
+#special-landings .map g#usme.hasPro,
+#special-landings .map g#ciudadbolivar.hasPro,
+#special-landings .map g#rafaeluribe.hasPro,
+#special-landings .map g#losmartires.hasPro,
+#special-landings .map g#antonionarino.hasPro,
+#special-landings .map g#tunjuelito.hasPro,
+#special-landings .map g#barriosunidos.hasPro,
 #special-landings-v2 .map g#suba.hasPro,
 #special-landings-v2 .map g#engativa.hasPro,
 #special-landings-v2 .map g#fontibon.hasPro,
@@ -543,6 +348,23 @@
 #special-landings-v2 .map g#barriosunidos.hasPro {
   color: #81aa3c;
 }
+#special-landings .map g#suba .text,
+#special-landings .map g#engativa .text,
+#special-landings .map g#fontibon .text,
+#special-landings .map g#kennedy .text,
+#special-landings .map g#puentearanda .text,
+#special-landings .map g#teusaquillo .text,
+#special-landings .map g#chapinero .text,
+#special-landings .map g#usaquen .text,
+#special-landings .map g#santafe .text,
+#special-landings .map g#sancristobal .text,
+#special-landings .map g#usme .text,
+#special-landings .map g#ciudadbolivar .text,
+#special-landings .map g#rafaeluribe .text,
+#special-landings .map g#losmartires .text,
+#special-landings .map g#antonionarino .text,
+#special-landings .map g#tunjuelito .text,
+#special-landings .map g#barriosunidos .text,
 #special-landings-v2 .map g#suba .text,
 #special-landings-v2 .map g#engativa .text,
 #special-landings-v2 .map g#fontibon .text,
@@ -564,6 +386,23 @@
   transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 @media only screen and (max-width: 768px) {
+  #special-landings .map g#suba .text,
+  #special-landings .map g#engativa .text,
+  #special-landings .map g#fontibon .text,
+  #special-landings .map g#kennedy .text,
+  #special-landings .map g#puentearanda .text,
+  #special-landings .map g#teusaquillo .text,
+  #special-landings .map g#chapinero .text,
+  #special-landings .map g#usaquen .text,
+  #special-landings .map g#santafe .text,
+  #special-landings .map g#sancristobal .text,
+  #special-landings .map g#usme .text,
+  #special-landings .map g#ciudadbolivar .text,
+  #special-landings .map g#rafaeluribe .text,
+  #special-landings .map g#losmartires .text,
+  #special-landings .map g#antonionarino .text,
+  #special-landings .map g#tunjuelito .text,
+  #special-landings .map g#barriosunidos .text,
   #special-landings-v2 .map g#suba .text,
   #special-landings-v2 .map g#engativa .text,
   #special-landings-v2 .map g#fontibon .text,
@@ -584,6 +423,23 @@
     display: none;
   }
 }
+#special-landings .map g#suba:hover,
+#special-landings .map g#engativa:hover,
+#special-landings .map g#fontibon:hover,
+#special-landings .map g#kennedy:hover,
+#special-landings .map g#puentearanda:hover,
+#special-landings .map g#teusaquillo:hover,
+#special-landings .map g#chapinero:hover,
+#special-landings .map g#usaquen:hover,
+#special-landings .map g#santafe:hover,
+#special-landings .map g#sancristobal:hover,
+#special-landings .map g#usme:hover,
+#special-landings .map g#ciudadbolivar:hover,
+#special-landings .map g#rafaeluribe:hover,
+#special-landings .map g#losmartires:hover,
+#special-landings .map g#antonionarino:hover,
+#special-landings .map g#tunjuelito:hover,
+#special-landings .map g#barriosunidos:hover,
 #special-landings-v2 .map g#suba:hover,
 #special-landings-v2 .map g#engativa:hover,
 #special-landings-v2 .map g#fontibon:hover,
@@ -603,6 +459,23 @@
 #special-landings-v2 .map g#barriosunidos:hover {
   color: #345a47;
 }
+#special-landings .map g#suba:hover .text,
+#special-landings .map g#engativa:hover .text,
+#special-landings .map g#fontibon:hover .text,
+#special-landings .map g#kennedy:hover .text,
+#special-landings .map g#puentearanda:hover .text,
+#special-landings .map g#teusaquillo:hover .text,
+#special-landings .map g#chapinero:hover .text,
+#special-landings .map g#usaquen:hover .text,
+#special-landings .map g#santafe:hover .text,
+#special-landings .map g#sancristobal:hover .text,
+#special-landings .map g#usme:hover .text,
+#special-landings .map g#ciudadbolivar:hover .text,
+#special-landings .map g#rafaeluribe:hover .text,
+#special-landings .map g#losmartires:hover .text,
+#special-landings .map g#antonionarino:hover .text,
+#special-landings .map g#tunjuelito:hover .text,
+#special-landings .map g#barriosunidos:hover .text,
 #special-landings-v2 .map g#suba:hover .text,
 #special-landings-v2 .map g#engativa:hover .text,
 #special-landings-v2 .map g#fontibon:hover .text,
@@ -621,6 +494,10 @@
 #special-landings-v2 .map g#tunjuelito:hover .text,
 #special-landings-v2 .map g#barriosunidos:hover .text {
   color: #b5e169;
+}
+
+#special-landings-v2 {
+  background-color: #113334;
 }
 
 .fancybox__backdrop {
