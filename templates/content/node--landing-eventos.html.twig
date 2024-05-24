@@ -121,8 +121,13 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         const formatoMinutos = minutos < 10 ? '0' + minutos : minutos;
         const formatoSegundos = segundos < 10 ? '0' + segundos : segundos;
 
+
+        // Verificar singular o plural
+        const textoMes = meses === 1 ? 'Mes' : 'Meses';
+        const textoDia = dias === 1 ? 'Día' : 'Días';
+
         // Mostrar el resultado en el elemento con id "tiempo"
-        document.getElementById("tiempo").innerHTML = `${formatoMeses}M ${formatoDias}D ${formatoHoras}:${formatoMinutos}:${formatoSegundos}`;
+        document.getElementById("tiempo").innerHTML = `${formatoMeses} ${textoMes} ${formatoDias} ${textoDia} ${formatoHoras}:${formatoMinutos}:${formatoSegundos}`;
 
         // Si el conteo regresivo ha terminado, mostrar un mensaje
         if (distancia < 0) {
