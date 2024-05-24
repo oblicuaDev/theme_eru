@@ -488,17 +488,20 @@
 .page.landing-eventos .speakers-evento__field-nombre {
   color: #163839;
   font-size: 75px;
+  font-weight: bold;
   font-family: "value serif pro";
   line-height: 80px;
 }
 .page.landing-eventos .speakers-evento__field-descrip {
   color: #163839;
   font-size: 25px;
+  font-family: "Noi Variable Fix";
+  font-weight: 200;
   line-height: 30px;
 }
-.page.landing-eventos .speakers-evento__field-foto {
+.page.landing-eventos .speakers-evento__field-foto img {
   width: 570px;
-  height: 570px;
+  height: 570px !important;
   object-fit: cover;
 }
 .page.landing-eventos .landing-eventos__field-sobre-nosotros p {
@@ -554,6 +557,9 @@
   font-family: "Noi Variable Fix";
   font-size: 30px;
   font-weight: 200;
+}
+.page.landing-eventos .splide__slide {
+  display: block !important;
 }
 
 /*# sourceMappingURL=oblicua_style.css.map */
