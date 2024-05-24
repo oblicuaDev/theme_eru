@@ -500,6 +500,18 @@
   font-size: 25px;
   line-height: 30px;
 }
+.page.landing-eventos .bloques-horarios__field-hora-bloque {
+  background-color: #163839;
+  color: #fffdef;
+  font-family: "Noi Variable Fix";
+  font-weight: 300;
+  display: inline-flex;
+  align-items: center;
+  font-size: 22px;
+  border-radius: 10px;
+  position: relative;
+  margin-left: 42px;
+}
 .page.landing-eventos .bloques-horarios__field-hora-bloque::before {
   display: inline-block;
   content: "";
@@ -509,9 +521,15 @@
   background-repeat: no-repeat;
   background-size: contain;
   margin-right: 15px;
+  position: absolute;
+  top: 0;
+  left: -40px;
 }
 .page.landing-eventos .bloques-horarios__field-puntos-del-bloque ul {
   padding-left: 25px;
+}
+.page.landing-eventos .bloques-horarios__field-puntos-del-bloque ul li {
+  display: list-item;
 }
 .page.landing-eventos .bloques-horarios__field-puntos-del-bloque ul li::before {
   display: inline-block;
@@ -522,6 +540,9 @@
   background-repeat: no-repeat;
   background-size: contain;
   margin-right: 15px;
+  position: absolute;
+  top: 14px;
+  left: -27px;
 }
 .page.landing-eventos .bloques-horarios__field-puntos-del-bloque p,
 .page.landing-eventos .bloques-horarios__field-puntos-del-bloque li {
