@@ -406,6 +406,9 @@
 .page.landing-eventos .col-12 {
   padding: 0;
 }
+.page.landing-eventos .landing-eventos__body {
+  padding: 0 30px 0 0;
+}
 .page.landing-eventos .date-count .container {
   display: flex;
   background-color: #255c46;
@@ -432,15 +435,17 @@
 }
 .page.landing-eventos .date-count .left h1 {
   color: #afcd50;
-  font-size: 25px;
-  line-height: 25px;
+  font-size: 35px;
+  line-height: 35px;
   font-family: "value serif pro";
   font-weight: bold;
 }
 .page.landing-eventos .date-count .left p {
   color: #fffdef;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: "Noi Variable Fix";
+  font-weight: 200;
 }
 .page.landing-eventos .date-count .right {
   display: flex;
