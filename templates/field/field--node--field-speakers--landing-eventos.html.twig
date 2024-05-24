@@ -4,7 +4,7 @@
      * Template for a field.
      */
     #} 
-    {% if label_hidden %}
+   
       {% if multiple %}
         <div{{ attributes }}>
           {% for item in items %}
@@ -16,15 +16,3 @@
           <div{{ attributes }}>{{ item.content }}</div>
         {% endfor %}
       {% endif %}
-    {% else %}  
-        <h3{{ title_attributes }}>{{ label }}</h3>
-        {% if multiple %}
-        <div>
-          {% endif %}      
-          {% for item in items %}
-            <div class="tag_alcance"><span>{{ item.content }}</span></div>      
-          {% endfor %}
-          {% if multiple %}
-        </div>
-        {% endif %}  
-    {% endif %}
