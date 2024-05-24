@@ -524,6 +524,9 @@
 .page.landing-eventos .landing-eventos__field-sobre-nosotros p {
   font-size: 25px;
   line-height: 30px;
+  font-family: "Noi Variable Fix";
+  font-weight: 300;
+  margin-bottom: 15px;
 }
 .page.landing-eventos .bloques-horarios__field-hora-bloque {
   background-color: #163839;
