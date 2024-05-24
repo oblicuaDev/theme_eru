@@ -396,12 +396,78 @@
   object-fit: cover;
 }
 
+.page.landing-eventos {
+  background-color: #fffdef;
+}
 .page.landing-eventos .page__header {
   margin: 0 !important;
   display: none;
 }
 .page.landing-eventos .col-12 {
   padding: 0;
+}
+.page.landing-eventos .date-count {
+  display: flex;
+  background-color: #255c46;
+  position: relative;
+}
+.page.landing-eventos .date-count::after {
+  background-color: #fffdef;
+  content: "";
+  height: 350px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1px;
+}
+.page.landing-eventos .date-count .left,
+.page.landing-eventos .date-count .right {
+  flex: 1;
+}
+.page.landing-eventos .date-count .left h2 {
+  color: #afcd50;
+  font-size: 25px;
+  line-height: 25px;
+}
+.page.landing-eventos .date-count .left p {
+  color: #fffdef;
+  font-size: 16px;
+  line-height: 22px;
+}
+.page.landing-eventos .date-count .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page.landing-eventos .date-count .right p {
+  font-size: 130px;
+  line-height: 130px;
+  color: #afcd50;
+}
+.page.landing-eventos .agenda-eventos__field-titulo-agenda {
+  background-color: #afcd50;
+  color: #163839;
+}
+.page.landing-eventos .speakers-evento__field-nombre {
+  color: #163839;
+  font-size: 75px;
+  line-height: 80px;
+}
+.page.landing-eventos .speakers-evento__field-descrip {
+  color: #163839;
+  font-size: 25px;
+  line-height: 30px;
+}
+.page.landing-eventos .speakers-evento__field-foto {
+  width: 570px;
+  height: 570px;
+  object-fit: cover;
+}
+.page.landing-eventos .landing-eventos__field-sobre-nosotros p {
+  font-size: 25px;
+  line-height: 30px;
 }
 
 /*# sourceMappingURL=oblicua_style.css.map */
