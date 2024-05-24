@@ -8,14 +8,15 @@
       {% if multiple %}
         <div{{ attributes }}>
           {% for item in items %}
-          {{ item.content.field_foto }}
-          {{ item.content.field_nombre }}
-          {{ item.content.field_descrip }}
-            {{ item.content }}
+          {{ item.content['#node'].field_foto.value|raw }}
+          {{ item.content['#node'].field_nombre.value|raw }}
+          {{ item.content['#node'].field_descrip.value|raw }}
           {% endfor %}
         </div>
       {% else %}
         {% for item in items %}
-          {{ item.content }}
+        {{ item.content['#node'].field_foto.value|raw }}
+        {{ item.content['#node'].field_nombre.value|raw }}
+        {{ item.content['#node'].field_descrip.value|raw }}
         {% endfor %}
       {% endif %}
