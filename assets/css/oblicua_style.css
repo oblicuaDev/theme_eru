@@ -406,12 +406,12 @@
 .page.landing-eventos .col-12 {
   padding: 0;
 }
-.page.landing-eventos .date-count {
+.page.landing-eventos .date-count .container {
   display: flex;
   background-color: #255c46;
   position: relative;
 }
-.page.landing-eventos .date-count::after {
+.page.landing-eventos .date-count .container::after {
   background-color: #fffdef;
   content: "";
   height: 350px;
