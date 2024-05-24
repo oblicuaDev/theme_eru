@@ -415,6 +415,16 @@
   line-height: 40px;
   padding: 20px 360px;
 }
+@media only screen and (max-width: 768px) {
+  .page.landing-eventos .bannernosotros h2 {
+    background: rgba(255, 255, 255, 0.7);
+    font-family: "value serif pro";
+    font-size: 25px !important;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 10px;
+  }
+}
 .page.landing-eventos .page__content {
   margin: 0;
 }
