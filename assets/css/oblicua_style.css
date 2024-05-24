@@ -536,6 +536,7 @@
   position: absolute;
   right: 25px;
   top: 50%;
+  content: "";
   transform: translateY(-50%);
   width: 25px;
 }
