@@ -520,7 +520,7 @@
   font-weight: 200;
   line-height: 30px;
 }
-.page.landing-eventos .speakers-evento__field-foto img {
+.page.landing-eventos ul li .speakers-evento__field-foto img {
   width: 570px !important;
   height: 570px !important;
   object-fit: cover !important;
