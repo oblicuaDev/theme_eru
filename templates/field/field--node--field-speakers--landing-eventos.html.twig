@@ -8,7 +8,7 @@
       {% if multiple %}
         <div{{ attributes }}>
           {% for item in items %}
-          {{item.content['#node']|raw }}
+          {{item.content|raw }}
           {{ item.content['#node'].field_foto.value|raw }}
           {{ item.content['#node'].field_nombre.value|raw }}
           {{ item.content['#node'].field_descrip.value|raw }}
