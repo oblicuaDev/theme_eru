@@ -410,6 +410,7 @@
   display: flex;
   background-color: #255c46;
   position: relative;
+  padding: 50px 0;
 }
 .page.landing-eventos .date-count .container::after {
   background-color: #fffdef;
@@ -424,6 +425,10 @@
 .page.landing-eventos .date-count .left,
 .page.landing-eventos .date-count .right {
   flex: 1;
+}
+.page.landing-eventos .date-count .left {
+  padding: 0 30px;
+  text-align: justify;
 }
 .page.landing-eventos .date-count .left h1 {
   color: #afcd50;
@@ -444,15 +449,36 @@
   justify-content: center;
 }
 .page.landing-eventos .date-count .right p {
-  font-size: 130px;
-  line-height: 130px;
+  font-size: 45px;
+  line-height: 60px;
   font-family: "value serif pro";
   color: #afcd50;
+}
+.page.landing-eventos .agenda h2 {
+  text-align: center;
+  padding: 20px 0;
+  font-family: "value serif pro";
+  font-size: 42px;
+  line-height: 42px;
+}
+.page.landing-eventos .bloques-horarios__field-hora-bloque,
+.page.landing-eventos .bloques-horarios__field-nombre-del-bloque {
+  display: inline-block;
+}
+.page.landing-eventos .bloques-horarios__field-nombre-del-bloque {
+  font-family: "value serif pro";
+  font-weight: bold;
+  font-size: 22px;
 }
 .page.landing-eventos .agenda-eventos__field-titulo-agenda {
   background-color: #afcd50;
   color: #163839;
   font-family: "value serif pro";
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 42px;
+  padding: 10px 0;
+  text-align: center;
 }
 .page.landing-eventos .speakers-evento__field-nombre {
   color: #163839;
@@ -473,6 +499,35 @@
 .page.landing-eventos .landing-eventos__field-sobre-nosotros p {
   font-size: 25px;
   line-height: 30px;
+}
+.page.landing-eventos .bloques-horarios__field-hora-bloque::before {
+  display: inline-block;
+  content: "";
+  background-image: url(https://renobo.com.co/sites/default/files/2024-05/relojIcon.png);
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 15px;
+}
+.page.landing-eventos .bloques-horarios__field-puntos-del-bloque ul {
+  padding-left: 25px;
+}
+.page.landing-eventos .bloques-horarios__field-puntos-del-bloque ul li::before {
+  display: inline-block;
+  content: "";
+  background-image: url(https://renobo.com.co/sites/default/files/2024-05/listdot.png);
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 15px;
+}
+.page.landing-eventos .bloques-horarios__field-puntos-del-bloque p,
+.page.landing-eventos .bloques-horarios__field-puntos-del-bloque li {
+  font-family: "Noi Variable Fix";
+  font-size: 30px;
+  font-weight: 200;
 }
 
 /*# sourceMappingURL=oblicua_style.css.map */
