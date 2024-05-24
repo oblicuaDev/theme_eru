@@ -651,6 +651,17 @@
   object-fit: cover;
 }
 
+.page.landing-especiales-v2 .page__content {
+  margin: 0;
+}
+.page.landing-especiales-v2 .page__header {
+  margin: 0 !important;
+  display: none;
+}
+.page.landing-especiales-v2 .col-12 {
+  padding: 0;
+}
+
 .page.landing-eventos {
   background-color: #fffdef;
   padding-bottom: 50px;
