@@ -466,6 +466,9 @@
   font-size: 42px;
   line-height: 42px;
 }
+.page.landing-eventos .container.speakers {
+  margin: 0;
+}
 .page.landing-eventos .container.speakers h2 {
   background-color: #255c46;
   color: #fffdef;
@@ -475,6 +478,7 @@
   font-size: 42px;
   line-height: 42px;
   display: flex;
+  margin: 0;
   align-items: center;
   justify-content: center;
 }
@@ -532,6 +536,7 @@
   border-radius: 10px;
   position: relative;
   margin-left: 42px;
+  padding: 0 6px;
 }
 .page.landing-eventos .bloques-horarios__field-hora-bloque::before {
   display: inline-block;
