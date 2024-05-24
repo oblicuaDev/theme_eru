@@ -544,8 +544,8 @@
   object-fit: cover !important;
 }
 .page.landing-eventos .landing-eventos__field-sobre-nosotros p {
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 20px;
   font-family: "Noi Variable Fix";
   font-weight: 300;
   margin-bottom: 15px;
