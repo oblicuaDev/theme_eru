@@ -466,7 +466,7 @@
   font-size: 42px;
   line-height: 42px;
 }
-.page.landing-eventos .container.speakers {
+.page.landing-eventos .container.speakers h2 {
   background-color: #255c46;
   color: #fffdef;
   text-align: center;
