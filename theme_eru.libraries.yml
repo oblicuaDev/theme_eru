@@ -4,7 +4,7 @@ style:
     theme:
       assets/css/eru_radix.style.css: {}
       assets/css/font/fonts.css: {}
-      assets/css/oblicua_style.css: {}
+      assets/css/renobo_style.css: {}
   js:
     node_modules/popper.js/dist/umd/popper.min.js: {}
     node_modules/bootstrap/dist/js/bootstrap.min.js: {}
