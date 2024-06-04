@@ -5149,6 +5149,10 @@ i.icon-lists::before {
   padding-left: 25px;
   list-style-type: disc;
 }
+.page.landing-eventos .landing-eventos__field-sobre-nosotros ul li {
+  list-style: disc;
+  display: list-item;
+}
 .page.landing-eventos .landing-eventos__field-sobre-nosotros p, .page.landing-eventos .landing-eventos__field-sobre-nosotros li {
   font-size: 16px;
   line-height: 20px;
