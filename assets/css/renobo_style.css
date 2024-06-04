@@ -5031,6 +5031,9 @@ i.icon-lists::before {
   font-family: "value serif pro";
   color: #afcd50;
 }
+.page.landing-eventos .date-count .right p strong, .page.landing-eventos .date-count .right p b {
+  font-weight: bold;
+}
 @media only screen and (max-width: 768px) {
   .page.landing-eventos .date-count .right p {
     font-size: 23px;
