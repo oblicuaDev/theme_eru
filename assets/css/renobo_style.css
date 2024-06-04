@@ -5153,6 +5153,7 @@ i.icon-lists::before {
   font-size: 16px;
   line-height: 20px;
   font-family: "Noi Variable Fix";
+  text-align: justify;
   font-weight: 300;
   margin-bottom: 15px;
 }
