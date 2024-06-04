@@ -4982,26 +4982,7 @@ i.icon-lists::before {
   background-color: #255c46;
   position: relative;
   padding: 50px 0;
-}
-@media only screen and (max-width: 768px) {
-  .page.landing-eventos .date-count .container {
-    flex-direction: column;
-  }
-}
-.page.landing-eventos .date-count .container::after {
-  background-color: #fffdef;
-  content: "";
-  height: 350px;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 1px;
-}
-@media only screen and (max-width: 768px) {
-  .page.landing-eventos .date-count .container::after {
-    content: none;
-  }
+  flex-direction: column-reverse;
 }
 .page.landing-eventos .date-count .left,
 .page.landing-eventos .date-count .right {
@@ -5010,9 +4991,11 @@ i.icon-lists::before {
 .page.landing-eventos .date-count .left {
   padding: 0 30px;
   text-align: justify;
+  column-count: 2;
 }
 @media only screen and (max-width: 768px) {
   .page.landing-eventos .date-count .left {
+    column-count: 1;
     padding: 0 20px;
   }
 }
@@ -5043,8 +5026,8 @@ i.icon-lists::before {
   justify-content: center;
 }
 .page.landing-eventos .date-count .right p {
-  font-size: 45px;
-  line-height: 60px;
+  font-size: 31px;
+  line-height: 40px;
   font-family: "value serif pro";
   color: #afcd50;
 }
@@ -5158,7 +5141,15 @@ i.icon-lists::before {
     display: block;
   }
 }
-.page.landing-eventos .landing-eventos__field-sobre-nosotros p {
+.page.landing-eventos .landing-eventos__field-sobre-nosotros {
+  max-width: 580px;
+  margin: 0 auto;
+}
+.page.landing-eventos .landing-eventos__field-sobre-nosotros ul {
+  padding-left: 25px;
+  list-style-type: disc;
+}
+.page.landing-eventos .landing-eventos__field-sobre-nosotros p, .page.landing-eventos .landing-eventos__field-sobre-nosotros li {
   font-size: 16px;
   line-height: 20px;
   font-family: "Noi Variable Fix";
