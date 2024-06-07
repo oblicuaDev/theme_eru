@@ -4772,9 +4772,9 @@ i.icon-lists::before {
 #special-landings-v2 .map g#barriosunidos:hover .text {
   color: #b5e169;
 }
-#special-landings .map img,
-#special-landings-v2 .map img {
-  width: 100%;
+
+#special-landings-v2 .map {
+  overflow: auto;
 }
 
 .block--views-block--all-the-news-block-3 {
