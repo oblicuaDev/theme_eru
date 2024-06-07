@@ -4905,6 +4905,7 @@ i.icon-lists::before {
   list-style-type: disc;
 }
 #special-landings-v2 .description ul li {
+  list-style: disc;
   display: list-item;
 }
 
