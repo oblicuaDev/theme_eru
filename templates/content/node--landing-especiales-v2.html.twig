@@ -36,7 +36,8 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         </div>
     </div>
     <div class="container">
-        {{content.field_videos}}
+        {{content.field_videos | raw}}
+        {{content.field_videos | json}}
     </div>
     <div class="map">
         {{ content.field_mapa }}
