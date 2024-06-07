@@ -42,7 +42,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
         {% endfor %}
     </div>
     <div class="map">
-        <img src="  {{ content.field_mapa }}" usemap="#image-map">
+        <img src="  {{ content.field_mapa.value }}" usemap="#image-map">
 
         <map name="image-map">
             <area target="_blank" alt="" title="" href="https://renobo.com.co/es/proyectos/calle-72-actuacion-estrategica" coords="934,428,851,296" shape="rect">
