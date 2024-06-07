@@ -4900,6 +4900,13 @@ i.icon-lists::before {
 #special-landings-v2 .description p {
   color: #fff;
 }
+#special-landings-v2 .description ul {
+  padding-left: 25px;
+  list-style-type: disc;
+}
+#special-landings-v2 .description ul li {
+  display: list-item;
+}
 
 .fancybox__backdrop {
   background: transparent !important;
