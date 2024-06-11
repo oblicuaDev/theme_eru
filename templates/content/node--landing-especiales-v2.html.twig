@@ -41,6 +41,12 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
             {{ item.content }}
         {% endfor %}
     </div>
+    <div class="container">
+        {{ content.field_video_eru  }}
+        {% for item in content.field_video_eru %}
+            {{ item.content }}
+        {% endfor %}
+    </div>
     <div class="map">
         <div class="container">
             {% if content.field_mapa['#items'] is not empty %}
