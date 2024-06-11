@@ -4936,6 +4936,18 @@ i.icon-lists::before {
   color: #fefcf1;
   font-size: 13px;
 }
+.fancybox__content .info-localidades__field-des a {
+  color: #fefcf1;
+}
+.fancybox__content .info-localidades__field-des p {
+  color: #fefcf1;
+}
+.fancybox__content .info-localidades__field-des ul {
+  padding-left: 25px;
+}
+.fancybox__content .info-localidades__field-des li {
+  color: #fefcf1;
+}
 .fancybox__content .info-localidades__field-imagen {
   width: 100%;
 }
