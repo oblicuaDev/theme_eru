@@ -4937,16 +4937,19 @@ i.icon-lists::before {
   font-size: 13px;
 }
 .fancybox__content .info-localidades__field-des a {
-  color: #fefcf1;
+  color: #fefcf1 !important;
+}
+.fancybox__content .info-localidades__field-des a strong {
+  color: #fefcf1 !important;
 }
 .fancybox__content .info-localidades__field-des p {
-  color: #fefcf1;
+  color: #fefcf1 !important;
 }
 .fancybox__content .info-localidades__field-des ul {
   padding-left: 25px;
 }
 .fancybox__content .info-localidades__field-des li {
-  color: #fefcf1;
+  color: #fefcf1 !important;
 }
 .fancybox__content .info-localidades__field-imagen {
   width: 100%;
