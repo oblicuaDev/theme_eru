@@ -4901,7 +4901,10 @@ i.icon-lists::before {
 #special-landings-v2 .description h2 {
   color: #afe951;
 }
-#special-landings-v2 .description p {
+#special-landings-v2 .description p, #special-landings-v2 .description a, #special-landings-v2 .description li {
+  color: #fff;
+}
+#special-landings-v2 .description p strong, #special-landings-v2 .description a strong, #special-landings-v2 .description li strong {
   color: #fff;
 }
 #special-landings-v2 .description ul {
