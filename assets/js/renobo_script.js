@@ -577,16 +577,18 @@ document.addEventListener("DOMContentLoaded", () => {
       );
   }
 });
+setTimeout(() => {
+  document
+  .querySelectorAll(".project-block .views-field-field-video-hover video")
+  .forEach((video) => {
+    video.removeAttribute("controls");
+    video.addEventListener("mouseover", (e) => {
+      e.target.play();
+    });
+    video.addEventListener("mouseleave", (e) => {
+      e.target.pause();
+      e.target.currentTime = 0;
+    });
+  });
 
-document
-.querySelectorAll(".project-block .views-field-field-video-hover video")
-.forEach((video) => {
-  video.removeAttribute("controls");
-  video.addEventListener("mouseover", (e) => {
-    e.target.play();
-  });
-  video.addEventListener("mouseleave", (e) => {
-    e.target.pause();
-    e.target.currentTime = 0;
-  });
-});
+}, 2000);
