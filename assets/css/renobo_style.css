@@ -5278,8 +5278,12 @@ i.icon-lists::before {
   height: 100%;
 }
 .views-field.views-field-field-video-hover video {
+  opacity: 0;
   width: 100%;
   height: 100%;
+}
+.views-field.views-field-field-video-hover:hover video {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=renobo_style.css.map */
