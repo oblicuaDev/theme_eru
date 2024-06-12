@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   
-  }, 2000);
+  }, 5000);
   
   // if (document.querySelector(".container-fluid.news")) {
   //   // Paso 1: Selecciona el elemento a mover
