@@ -27,6 +27,18 @@ setTimeout(() => {
   preloaderElement.classList.add("fadeOut");
 }, 1800);
 document.addEventListener("DOMContentLoaded", () => {
+  document
+    .querySelectorAll(".project-block .views-field-field-video-hover video")
+    .forEach((video) => {
+      video.removeAttribute("controls");
+      video.addEventListener("mouseover", (e) => {
+        e.target.play();
+      });
+      video.addEventListener("mouseleave", (e) => {
+        e.target.pause();
+        e.target.currentTime = 0;
+      });
+    });
   // if (document.querySelector(".container-fluid.news")) {
   //   // Paso 1: Selecciona el elemento a mover
   //   var elementoAMover = document.querySelector(

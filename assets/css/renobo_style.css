@@ -5266,4 +5266,20 @@ i.icon-lists::before {
   display: block !important;
 }
 
+.project-block .views-view-grid.horizontal.cols-3.clearfix .col-12.col-sm-4.views-col {
+  overflow: hidden;
+}
+
+.views-field.views-field-field-video-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.views-field.views-field-field-video-hover video {
+  width: 100%;
+  height: 100%;
+}
+
 /*# sourceMappingURL=renobo_style.css.map */
