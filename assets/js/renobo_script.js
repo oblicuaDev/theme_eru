@@ -27,7 +27,6 @@ setTimeout(() => {
   preloaderElement.classList.add("fadeOut");
 }, 1800);
 document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(() => {
     document
     .querySelectorAll(".project-block .views-field-field-video-hover video")
     .forEach((video) => {
@@ -41,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   
-  }, 5000);
   
   // if (document.querySelector(".container-fluid.news")) {
   //   // Paso 1: Selecciona el elemento a mover
