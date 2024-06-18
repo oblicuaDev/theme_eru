@@ -5186,34 +5186,34 @@ i.icon-lists::before {
   color: #163839;
   font-weight: bold;
   font-family: "value serif pro";
-  font-size: 75px;
-  line-height: 80px;
+  font-size: 25px;
+  line-height: 30px;
   width: 90%;
 }
 @media only screen and (max-width: 768px) {
   .page.landing-eventos .speakers-evento__field-nombre {
-    font-size: 35px;
+    font-size: 25px;
+    line-height: 30px;
     text-align: center;
-    line-height: 40px;
   }
 }
 .page.landing-eventos .speakers-evento__field-descrip {
   color: #163839;
-  font-size: 25px;
+  font-size: 16px;
+  line-height: 20px;
   font-family: "Noi Variable Fix";
   font-weight: 200;
-  line-height: 30px;
 }
 @media only screen and (max-width: 768px) {
   .page.landing-eventos .speakers-evento__field-descrip {
     font-size: 16px;
-    text-align: center;
     line-height: 20px;
+    text-align: center;
   }
 }
 .page.landing-eventos ul li div.speakers-evento__field-foto img {
-  width: 570px !important;
-  height: 570px !important;
+  width: 200px !important;
+  height: 200px !important;
   object-fit: cover !important;
 }
 @media only screen and (max-width: 768px) {
