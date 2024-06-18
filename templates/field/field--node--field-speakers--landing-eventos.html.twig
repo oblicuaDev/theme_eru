@@ -4,12 +4,10 @@
      * Template for a field.
      */
     #} 
-<section class="splide splideSpeakers" aria-label="Splide Basic HTML Example">
-<div class="splide__track">
-        <ul class="splide__list">
+<section class="splideSpeakers">
+    <ul class="splide__list ">
         {% for item in items %}
         <li class="splide__slide">{{item.content }}</li>
         {% endfor %}
-        </ul>
-</div>
+    </ul>
 </section>
