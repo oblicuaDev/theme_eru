@@ -5201,6 +5201,7 @@ i.icon-lists::before {
   font-size: 25px;
   line-height: 30px;
   width: 90%;
+  text-align: center;
 }
 @media only screen and (max-width: 768px) {
   .page.landing-eventos .speakers-evento__field-nombre {
