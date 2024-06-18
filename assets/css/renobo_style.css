@@ -5083,7 +5083,8 @@ i.icon-lists::before {
 .page.landing-eventos .date-count .right #tiempo {
   display: flex;
   width: 100%;
-  max-width: 900px;
+  max-width: 768px;
+  margin: 30px auto;
   justify-content: space-between;
   gap: 10px;
 }
