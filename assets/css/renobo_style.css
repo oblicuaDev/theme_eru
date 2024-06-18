@@ -5082,7 +5082,7 @@ i.icon-lists::before {
 }
 .page.landing-eventos .date-count .right #tiempo {
   display: flex;
-  width: 100%;
+  width: 90%;
   max-width: 550px;
   margin: 30px auto;
   justify-content: space-between;
@@ -5164,6 +5164,11 @@ i.icon-lists::before {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   padding: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .page.landing-eventos .splideSpeakers ul {
+    padding: 0;
+  }
 }
 .page.landing-eventos .splideSpeakers ul li .paragraph--type--speakers-evento {
   display: flex;
