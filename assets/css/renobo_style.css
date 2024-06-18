@@ -5159,6 +5159,17 @@ i.icon-lists::before {
   font-weight: bold;
   font-size: 22px;
 }
+.page.landing-eventos .splideSpeakers ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.page.landing-eventos .splideSpeakers ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .page.landing-eventos .agenda-eventos__field-titulo-agenda {
   background-color: #afcd50;
   color: #163839;
