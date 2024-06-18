@@ -123,10 +123,15 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
     {% endblock %}
 </section>
 <script>
+    const setMidnight = (dateString) => {
+        const date = new Date(dateString);
+        date.setHours(0, 0, 0, 0);
+        return date;
+      };
     // Obtener la fecha del evento desde el atributo data-fecha
-    const fechaEvento = document
+    const fechaEvento = setMidnight(document
       .getElementById("evento")
-      .getAttribute("data-fecha");
+      .getAttribute("data-fecha"));
 
     // Convertir la fecha a un formato que JavaScript entienda
     const fechaEventoJS = new Date(fechaEvento).getTime();
