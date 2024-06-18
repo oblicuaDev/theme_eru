@@ -5164,7 +5164,7 @@ i.icon-lists::before {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
-.page.landing-eventos .splideSpeakers ul li {
+.page.landing-eventos .splideSpeakers ul li .paragraph--type--speakers-evento {
   display: flex;
   flex-direction: column;
   align-items: center;
