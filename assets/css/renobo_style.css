@@ -5163,6 +5163,7 @@ i.icon-lists::before {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  padding: 20px;
 }
 .page.landing-eventos .splideSpeakers ul li .paragraph--type--speakers-evento {
   display: flex;
