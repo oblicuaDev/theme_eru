@@ -5080,6 +5080,41 @@ i.icon-lists::before {
     line-height: 40px;
   }
 }
+.page.landing-eventos .date-count .right #tiempo {
+  display: flex;
+}
+.page.landing-eventos .date-count .right #tiempo span {
+  flex: 1;
+  font-size: 35px;
+  color: #255c46;
+  margin: 0 1vw;
+  padding: 2.1vw 2.1vw;
+  display: inline-block;
+  border-radius: 10px;
+  font-family: "value serif pro";
+  text-align: center;
+  background: #afcd50;
+}
+.page.landing-eventos .date-count .right #tiempo span:after {
+  font-size: 12px;
+  display: block;
+  margin: 3px 0 -1px;
+  opacity: 0.8;
+  font-family: "Arial";
+  font-weight: bold;
+}
+.page.landing-eventos .date-count .right #tiempo span:nth-of-type(1):after {
+  content: "Días";
+}
+.page.landing-eventos .date-count .right #tiempo span:nth-of-type(2):after {
+  content: "Horas";
+}
+.page.landing-eventos .date-count .right #tiempo span:nth-of-type(3):after {
+  content: "Minutos";
+}
+.page.landing-eventos .date-count .right #tiempo span:nth-of-type(4):after {
+  content: "Segundos";
+}
 .page.landing-eventos .paragraph.paragraph--type--agenda-eventos.paragraph--view-mode--default details {
   margin-bottom: 30px;
 }

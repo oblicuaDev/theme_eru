@@ -32,7 +32,12 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
                         </clipPath>
                     </defs>
                 </svg>
-                <p id="tiempo">00:00:00</p>
+                <div id="tiempo">
+                    <span class="dia"></span>
+                    <span class="hora"></span>
+                    <span class="min"></span>
+                    <span class="sec"></span>
+                  </div>
             </div>
         </div>
     </div>
@@ -119,42 +124,46 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
 </section>
 <script>
     // Obtener la fecha del evento desde el atributo data-fecha
-    const fechaEvento = document.getElementById("evento").getAttribute("data-fecha");
+    const fechaEvento = document
+      .getElementById("evento")
+      .getAttribute("data-fecha");
 
     // Convertir la fecha a un formato que JavaScript entienda
     const fechaEventoJS = new Date(fechaEvento).getTime();
 
     function actualizarContador() {
-        const ahora = new Date().getTime();
-        const distancia = fechaEventoJS - ahora;
+      const ahora = new Date().getTime();
+      const distancia = fechaEventoJS - ahora;
 
-        // Cálculo de meses, días, horas, minutos y segundos
-        const meses = Math.floor(distancia / (1000 * 60 * 60 * 24 * 30.436875)); // Aproximación de un mes
-        const dias = Math.floor((distancia % (1000 * 60 * 60 * 24 * 30.436875)) / (1000 * 60 * 60 * 24));
-        const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
-        const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+      // Cálculo de días, horas, minutos y segundos
+      const dias = Math.floor(
+        (distancia % (1000 * 60 * 60 * 24 * 30.436875)) /
+          (1000 * 60 * 60 * 24)
+      );
+      const horas = Math.floor(
+        (distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutos = Math.floor(
+        (distancia % (1000 * 60 * 60)) / (1000 * 60)
+      );
+      const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
 
-        // Formatear el tiempo en MM DD HH:MM:SS
-        const formatoMeses = meses < 10 ? '0' + meses : meses;
-        const formatoDias = dias < 10 ? '0' + dias : dias;
-        const formatoHoras = horas < 10 ? '0' + horas : horas;
-        const formatoMinutos = minutos < 10 ? '0' + minutos : minutos;
-        const formatoSegundos = segundos < 10 ? '0' + segundos : segundos;
+      // Formatear el tiempo en MM DD HH:MM:SS
+      const formatoDias = dias < 10 ? "0" + dias : dias;
+      const formatoHoras = horas < 10 ? "0" + horas : horas;
+      const formatoMinutos = minutos < 10 ? "0" + minutos : minutos;
+      const formatoSegundos = segundos < 10 ? "0" + segundos : segundos;
+      // Mostrar el resultado en el elemento con id "tiempo"
+      document.querySelector("#tiempo .dia").innerHTML = formatoDias;
+      document.querySelector("#tiempo .hora").innerHTML = formatoHoras;
+      document.querySelector("#tiempo .min").innerHTML = formatoMinutos;
+      document.querySelector("#tiempo .sec").innerHTML = formatoSegundos;
 
-
-        // Verificar singular o plural
-        const textoMes = meses === 1 ? 'Mes' : 'Meses';
-        const textoDia = dias === 1 ? 'Día' : 'Días';
-
-        // Mostrar el resultado en el elemento con id "tiempo"
-        document.getElementById("tiempo").innerHTML = `${formatoMeses} ${textoMes} ${formatoDias} ${textoDia} ${formatoHoras}:${formatoMinutos}:${formatoSegundos}`;
-
-        // Si el conteo regresivo ha terminado, mostrar un mensaje
-        if (distancia < 0) {
-            clearInterval(intervalo);
-            document.getElementById("tiempo").innerHTML = "EVENTO INICIADO";
-        }
+      // Si el conteo regresivo ha terminado, mostrar un mensaje
+      if (distancia < 0) {
+        clearInterval(intervalo);
+        document.getElementById("tiempo").innerHTML = "EVENTO INICIADO";
+      }
     }
 
     // Actualizar el contador cada segundo
