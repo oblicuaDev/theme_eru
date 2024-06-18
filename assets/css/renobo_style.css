@@ -5083,7 +5083,7 @@ i.icon-lists::before {
 .page.landing-eventos .date-count .right #tiempo {
   display: flex;
   width: 100%;
-  max-width: 768px;
+  max-width: 550px;
   margin: 30px auto;
   justify-content: space-between;
   gap: 10px;
@@ -5092,8 +5092,8 @@ i.icon-lists::before {
   flex: 1;
   font-size: 35px;
   color: #255c46;
-  margin: 0 1vw;
-  padding: 2.1vw 2.1vw;
+  margin: 0;
+  padding: 10px;
   display: inline-block;
   border-radius: 10px;
   font-family: "value serif pro";
