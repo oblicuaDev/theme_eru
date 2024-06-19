@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       video.setAttribute("autoplay", true);
       video.setAttribute("loop", true);
       video.removeAttribute("controls");
-      e.target.play();
+      video.play();
       video.addEventListener("mouseover", (e) => {
         e.target.play();
       });
