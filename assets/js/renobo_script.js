@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document
     .querySelectorAll(".project-block .views-field-field-video-hover video")
     .forEach((video) => {
-      video.setAttribute("muted");
-      video.setAttribute("autoplay");
-      video.setAttribute("loop");
+      video.setAttribute("muted", true);
+      video.setAttribute("autoplay", true);
+      video.setAttribute("loop", true);
       video.removeAttribute("controls");
       e.target.play();
       video.addEventListener("mouseover", (e) => {
