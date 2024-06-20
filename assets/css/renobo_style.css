@@ -4901,10 +4901,14 @@ i.icon-lists::before {
 #special-landings-v2 .description h2 {
   color: #afe951;
 }
-#special-landings-v2 .description p, #special-landings-v2 .description a, #special-landings-v2 .description li {
+#special-landings-v2 .description p,
+#special-landings-v2 .description a,
+#special-landings-v2 .description li {
   color: #fff;
 }
-#special-landings-v2 .description p strong, #special-landings-v2 .description a strong, #special-landings-v2 .description li strong {
+#special-landings-v2 .description p strong,
+#special-landings-v2 .description a strong,
+#special-landings-v2 .description li strong {
   color: #fff;
 }
 #special-landings-v2 .description ul {
@@ -5071,7 +5075,8 @@ i.icon-lists::before {
   font-family: "value serif pro";
   color: #afcd50;
 }
-.page.landing-eventos .date-count .right p strong, .page.landing-eventos .date-count .right p b {
+.page.landing-eventos .date-count .right p strong,
+.page.landing-eventos .date-count .right p b {
   font-weight: bold;
 }
 @media only screen and (max-width: 768px) {
@@ -5254,7 +5259,8 @@ i.icon-lists::before {
   list-style: disc;
   display: list-item;
 }
-.page.landing-eventos .landing-eventos__field-sobre-nosotros p, .page.landing-eventos .landing-eventos__field-sobre-nosotros li {
+.page.landing-eventos .landing-eventos__field-sobre-nosotros p,
+.page.landing-eventos .landing-eventos__field-sobre-nosotros li {
   font-size: 16px;
   line-height: 20px;
   font-family: "Noi Variable Fix";
@@ -5310,15 +5316,8 @@ i.icon-lists::before {
 .page.landing-eventos .bloques-horarios__field-puntos-del-bloque p,
 .page.landing-eventos .bloques-horarios__field-puntos-del-bloque li {
   font-family: "Noi Variable Fix";
-  font-size: 30px;
+  font-size: 16px;
   font-weight: 200;
-}
-@media only screen and (max-width: 768px) {
-  .page.landing-eventos .bloques-horarios__field-puntos-del-bloque p,
-  .page.landing-eventos .bloques-horarios__field-puntos-del-bloque li {
-    font-size: 14px;
-    line-height: 22px;
-  }
 }
 .page.landing-eventos ul li.splide__slide {
   display: block !important;
