@@ -5278,7 +5278,7 @@ i.icon-lists::before {
   font-size: 22px;
   border-radius: 10px;
   position: relative;
-  margin-left: 42px;
+  margin: 20px 0 20px 52px;
   padding: 0 6px;
 }
 .page.landing-eventos .bloques-horarios__field-hora-bloque::before {
@@ -5295,7 +5295,7 @@ i.icon-lists::before {
   left: -40px;
 }
 .page.landing-eventos .bloques-horarios__field-puntos-del-bloque ul {
-  padding-left: 25px;
+  padding-left: 75px;
 }
 .page.landing-eventos .bloques-horarios__field-puntos-del-bloque ul li {
   display: list-item;
