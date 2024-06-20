@@ -5181,7 +5181,7 @@ i.icon-lists::before {
   align-items: center;
   justify-content: center;
 }
-.page.landing-eventos .agenda-eventos__field-titulo-agenda {
+.page.landing-eventos details summary .agenda-eventos__field-titulo-agenda {
   background-color: #afcd50;
   color: #163839;
   font-family: "value serif pro";
@@ -5192,7 +5192,7 @@ i.icon-lists::before {
   text-align: center;
   position: relative;
 }
-.page.landing-eventos .agenda-eventos__field-titulo-agenda::after {
+.page.landing-eventos details summary .agenda-eventos__field-titulo-agenda::after {
   background-image: url(https://renobo.com.co/sites/default/files/2024-05/arrowDetails.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -5203,6 +5203,9 @@ i.icon-lists::before {
   content: "";
   transform: translateY(-50%);
   width: 25px;
+}
+.page.landing-eventos details[open] summary .agenda-eventos__field-titulo-agenda::after {
+  transform: translateY(-50%) rotate(180deg);
 }
 .page.landing-eventos .speakers-evento__field-nombre {
   color: #163839;
