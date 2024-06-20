@@ -4,10 +4,30 @@
      * Template for a field.
      */
     #} 
-<section class="splideSpeakers">
-    <ul>
+<section class="splide splideSpeakers" aria-label="Splide Basic HTML Example">
+<div class="splide__track">
+        <ul class="splide__list">
         {% for item in items %}
         <li class="splide__slide">{{item.content }}</li>
         {% endfor %}
-    </ul>
+        </ul>
+</div>
 </section>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		var splide = new Splide('.splideSpeakers', {
+			type: 'loop',
+			pagination: true,
+			arrows: true,
+            perPage: 2,
+            breakpoints: {
+                768: {
+                    perPage: 1,
+                },
+          }
+		});
+		splide.mount();
+    })
+
+</script>
