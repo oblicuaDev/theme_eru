@@ -5240,9 +5240,11 @@ i.icon-lists::before {
   }
 }
 .page.landing-eventos ul li div.speakers-evento__field-foto img {
-  width: 200px !important;
-  height: 200px !important;
+  width: 250px !important;
+  height: 310px !important;
   object-fit: cover !important;
+  display: block;
+  margin: 20px auto;
 }
 @media only screen and (max-width: 768px) {
   .page.landing-eventos ul li div.speakers-evento__field-foto img {
