@@ -5205,6 +5205,7 @@ i.icon-lists::before {
   width: 25px;
 }
 .page.landing-eventos details[open] summary .agenda-eventos__field-titulo-agenda::after {
+  top: 40%;
   transform: translateY(-50%) rotate(180deg);
 }
 .page.landing-eventos .speakers-evento__field-nombre {
