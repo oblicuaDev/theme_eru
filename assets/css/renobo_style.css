@@ -4984,7 +4984,7 @@ i.icon-lists::before {
 }
 .page.landing-eventos .page__footer .container > .row > div.contextual-region.block.block--webform-2 select,
 .page.landing-eventos .page__footer .container > .row > div.contextual-region.block.block--webform-2 .custom-select {
-  background-color: #006b60;
+  color: #006b60 !important;
 }
 .page.landing-eventos .splideSpeakers {
   margin-bottom: 30px;
