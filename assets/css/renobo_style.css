@@ -5176,23 +5176,6 @@ i.icon-lists::before {
   font-weight: bold;
   font-size: 25px;
 }
-.page.landing-eventos .splideSpeakers ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  padding: 20px;
-}
-@media only screen and (max-width: 768px) {
-  .page.landing-eventos .splideSpeakers ul {
-    padding: 0;
-  }
-}
-.page.landing-eventos .splideSpeakers ul li .paragraph--type--speakers-evento {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 .page.landing-eventos details summary .agenda-eventos__field-titulo-agenda {
   background-color: #afcd50;
   color: #163839;
