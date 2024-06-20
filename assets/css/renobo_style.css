@@ -4986,6 +4986,10 @@ i.icon-lists::before {
 .page.landing-eventos .page__footer .container > .row > div.contextual-region.block.block--webform-2 .custom-select {
   color: #006b60 !important;
 }
+.page.landing-eventos .page__footer .container > .row > div.contextual-region.block.block--webform-2 select option,
+.page.landing-eventos .page__footer .container > .row > div.contextual-region.block.block--webform-2 .custom-select option {
+  color: #006b60 !important;
+}
 .page.landing-eventos .splideSpeakers {
   margin-bottom: 30px;
 }
