@@ -141,10 +141,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
       const distancia = fechaEventoJS - ahora;
 
       // Cálculo de días, horas, minutos y segundos
-      const dias = Math.floor(
-        (distancia % (1000 * 60 * 60 * 24 * 30.436875)) /
-          (1000 * 60 * 60 * 24)
-      );
+      const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
       const horas = Math.floor(
         (distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
