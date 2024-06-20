@@ -4978,8 +4978,13 @@ i.icon-lists::before {
   background-color: #fffdef;
   padding-bottom: 50px;
 }
+.page.landing-eventos .page__footer .container > .row > div.contextual-region.block.block--webform-2 {
+  max-width: 580px;
+  margin: 0 auto;
+  border: 0;
+}
 .page.landing-eventos .page__footer .container > .row > div.contextual-region.block.block--webform-2 h2 {
-  font-size: 32px;
+  font-size: 42px;
   text-align: center;
 }
 .page.landing-eventos .page__footer .container > .row > div.contextual-region.block.block--webform-2 select,
