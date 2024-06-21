@@ -3683,7 +3683,6 @@ i.icon-lists::before {
   color: #003a37;
 }
 .content-projects-block p {
-  font-family: "value serif pro";
   color: #163738;
   font-weight: 300;
   font-size: 22px;
@@ -3918,7 +3917,6 @@ i.icon-lists::before {
   width: fit-content;
 }
 .proyectos-nuevos #myTabContent .tab-pane .proyectos-nuevos__field-datos-generales2 .field__items .field__item .datos-generales-nuevos__field-valor {
-  font-family: "value serif pro";
   font-weight: 300;
   font-size: 16px;
   text-align: center;
@@ -3955,7 +3953,6 @@ i.icon-lists::before {
 }
 .proyectos-nuevos #myTabContent .tab-pane .oblicuaflex-container .proyectos-nuevos__body p {
   font-size: 20px;
-  font-family: "value serif pro";
   font-weight: 300;
   line-height: normal;
   text-align: justify;
@@ -3973,7 +3970,6 @@ i.icon-lists::before {
   color: #163738;
   border-radius: 15px;
   background-color: #ffbfbd;
-  font-family: "value serif pro";
   font-weight: 300;
   font-size: 22px;
   border: 1px solid transparent;
@@ -4002,7 +3998,6 @@ i.icon-lists::before {
   color: #ffffee;
   border-radius: 15px;
   background-color: #6143f0;
-  font-family: "value serif pro";
   font-weight: 300;
   font-size: 22px;
   line-height: 22px;
@@ -4043,7 +4038,6 @@ i.icon-lists::before {
 .proyectos-nuevos #myTabContent .tab-pane #status h4 {
   font-size: 32px;
   line-height: 32px;
-  font-family: "value serif pro";
   font-weight: normal;
   color: #003435;
   margin-bottom: 0;
@@ -4208,14 +4202,12 @@ i.icon-lists::before {
   padding: 5px;
   background-color: #ffffdd;
   color: #000;
-  font-family: "value serif pro";
   font-weight: 300;
 }
 .proyectos-nuevos .proyectos-nuevos__field-contratos .data .number .txt strong,
 .proyectos-nuevos .proyectos-nuevos__field-contratos .data .estado .txt strong,
 .proyectos-nuevos .proyectos-nuevos__field-contratos .data .documento .txt strong {
   color: #000;
-  font-family: "value serif pro";
   display: block;
   font-weight: 300;
 }
@@ -4242,7 +4234,6 @@ i.icon-lists::before {
 
 .proyectos-nuevos__field-scope-of-project {
   font-size: 20px;
-  font-family: "value serif pro";
   font-weight: 300;
   line-height: normal;
   text-align: justify;
@@ -4250,7 +4241,6 @@ i.icon-lists::before {
 
 .proyectos-nuevos__field-benefits-of-project li {
   font-size: 20px;
-  font-family: "value serif pro";
   font-weight: 300;
   line-height: normal;
   text-align: justify;
@@ -5071,7 +5061,6 @@ i.icon-lists::before {
   color: #fffdef;
   font-size: 16px;
   line-height: 24px;
-  font-family: "value serif pro";
   font-weight: 200;
 }
 @media only screen and (max-width: 768px) {
@@ -5234,7 +5223,6 @@ i.icon-lists::before {
   color: #163839;
   font-size: 16px;
   line-height: 20px;
-  font-family: "value serif pro";
   font-weight: 200;
 }
 @media only screen and (max-width: 768px) {
@@ -5275,7 +5263,6 @@ i.icon-lists::before {
 .page.landing-eventos .landing-eventos__field-sobre-nosotros li {
   font-size: 16px;
   line-height: 20px;
-  font-family: "value serif pro";
   text-align: justify;
   font-weight: 300;
   margin-bottom: 15px;
@@ -5283,7 +5270,6 @@ i.icon-lists::before {
 .page.landing-eventos .bloques-horarios__field-hora-bloque {
   background-color: #163839;
   color: #fffdef;
-  font-family: "value serif pro";
   font-weight: 300;
   display: inline-flex;
   align-items: center;
@@ -5327,7 +5313,6 @@ i.icon-lists::before {
 }
 .page.landing-eventos .bloques-horarios__field-puntos-del-bloque p,
 .page.landing-eventos .bloques-horarios__field-puntos-del-bloque li {
-  font-family: "value serif pro";
   font-size: 16px;
   font-weight: 200;
 }
