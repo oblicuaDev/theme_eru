@@ -4343,34 +4343,34 @@ i.icon-lists::before {
   color: #fff !important;
 }
 
-.page.landing-especiales-v2 .contextual-region.block--webform,
-.urbanismo-temporal .contextual-region.block--webform {
+.page.landing-especiales-v2 .block--webform,
+.urbanismo-temporal .block--webform {
   background-image: url(/sites/default/files/2024-04/papel.jpg);
   background-size: 100vw 50vh;
   background-repeat: repeat-y;
   background-position: center center;
   padding-bottom: 170px;
 }
-.page.landing-especiales-v2 .contextual-region.block--webform h2,
-.urbanismo-temporal .contextual-region.block--webform h2 {
+.page.landing-especiales-v2 .block--webform h2,
+.urbanismo-temporal .block--webform h2 {
   text-align: center;
   margin-bottom: 30px;
 }
-.page.landing-especiales-v2 .contextual-region.block--webform form,
-.urbanismo-temporal .contextual-region.block--webform form {
+.page.landing-especiales-v2 .block--webform form,
+.urbanismo-temporal .block--webform form {
   max-width: 480px;
   width: 100%;
   margin: 0 auto;
   padding: 20px;
 }
-.page.landing-especiales-v2 .contextual-region.block--webform form input,
-.page.landing-especiales-v2 .contextual-region.block--webform form .form-control,
-.page.landing-especiales-v2 .contextual-region.block--webform form select,
-.page.landing-especiales-v2 .contextual-region.block--webform form .custom-select,
-.urbanismo-temporal .contextual-region.block--webform form input,
-.urbanismo-temporal .contextual-region.block--webform form .form-control,
-.urbanismo-temporal .contextual-region.block--webform form select,
-.urbanismo-temporal .contextual-region.block--webform form .custom-select {
+.page.landing-especiales-v2 .block--webform form input,
+.page.landing-especiales-v2 .block--webform form .form-control,
+.page.landing-especiales-v2 .block--webform form select,
+.page.landing-especiales-v2 .block--webform form .custom-select,
+.urbanismo-temporal .block--webform form input,
+.urbanismo-temporal .block--webform form .form-control,
+.urbanismo-temporal .block--webform form select,
+.urbanismo-temporal .block--webform form .custom-select {
   background-color: #fff;
 }
 
