@@ -4766,6 +4766,16 @@ i.icon-lists::before {
   color: #b5e169;
 }
 
+#special-landings {
+  padding: 0;
+}
+
+.block--views-block--duplicate-of-project-desarrollo-urbano-block-2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 #special-landings-v2 .map {
   overflow: auto;
 }
