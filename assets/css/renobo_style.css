@@ -4339,6 +4339,9 @@ i.icon-lists::before {
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
+.news-landings .title-one a {
+  color: #fff !important;
+}
 
 .page.landing-especiales-v2 .contextual-region.block--webform,
 .urbanismo-temporal .contextual-region.block--webform {
