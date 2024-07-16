@@ -13,17 +13,13 @@ href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.cs
 	{% block content %}
 		<div class="banner">
 			<div class="text">
-				<h1 id="mainHeading">{{ node.label }}</h1>
-				<div id="firstPart"></div>
-				<div id="secondPart"></div>
-				{{content.field_subtitle}}
+				{{content.field_logo}}
+
 			</div>
 			<section class="splide" aria-label="Splide Basic HTML Example">
 				<div class="splide__track">
 					<ul class="splide__list">
 						<li class="splide__slide">{{content.field_imagen_banner.0}}</li>
-						<li class="splide__slide">{{content.field_imagen_banner.1}}</li>
-						<li class="splide__slide">{{content.field_imagen_banner.2}}</li>
 					</ul>
 				</div>
 			</section>
@@ -45,24 +41,6 @@ href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.cs
 </section>
 
  <script>
-// Selecciona el h1
-var h1Element = document.getElementById('mainHeading');
-
-// Obtén el texto del h1
-var text = h1Element.textContent;
-
-// Divide el texto en dos partes
-var parts = text.split(' ');
-var firstPart = parts.shift();
-var secondPart = parts.join(' ');
-
-// Selecciona los divs donde se colocarán las partes del texto
-var firstPartDiv = document.getElementById('firstPart');
-var secondPartDiv = document.getElementById('secondPart');
-
-// Establece el texto de cada div
-firstPartDiv.textContent = firstPart;
-secondPartDiv.textContent = secondPart;
 // 0|Antonio Nariño
 // 1|Barrios Unidos
 // 2|Chapinero
