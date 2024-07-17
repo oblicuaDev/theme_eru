@@ -69,11 +69,29 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
     .noticias .block--views-block--all-the-news-block-3 {
         display: none;
     }
+
+    #special-landings .banner,
+    #special-landings-v2 .banner,
+    .banner {
+        background: #013334;
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        padding-left: 60px;
+        height: 70vh;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .banner .logo {
+        width: 40%;
+        height: 170px;
+    }
 </style>
 <section id="special-landings">
     {% block content %}
     <div class="banner">
-        <img src="/sites/default/files/2024-07/reusas.svg" alt="logo" />
+        <img src="/sites/default/files/2024-07/reusas.svg" alt="logo" class="logo" />
         <section class="splide" aria-label="Splide Basic HTML Example">
             <div class="splide__track">
                 <ul class="splide__list">
