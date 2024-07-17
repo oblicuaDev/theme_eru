@@ -97,6 +97,13 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
     .page__header.mb-3 {
         display: none;
     }
+
+    @media screen and (max-width: 768px) {
+        .banner .logo {
+            width: 100%;
+            height: 170px;
+        }
+    }
 </style>
 <section id="special-landings">
     {% block content %}
