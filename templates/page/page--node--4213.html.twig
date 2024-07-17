@@ -70,23 +70,6 @@
 				</div>
 			</main>
 		{% endif %}
-
-		 <script>
-						              var divTag = document.getElementsByTagName("div");
-						              for (var i = 0; i < divTag.length; i++) {
-						                if (divTag[i].textContent == "En curso") {
-						                  divTag[i].classList.add("curso");
-						                }
-						                if (divTag[i].textContent == "Finalizado") {
-						                  divTag[i].classList.add("finalizado");
-						                }
-						                if (divTag[i].textContent == "proximo") {
-						                  divTag[i].classList.add("proximo");
-						                }
-						              }
-						        
-						            </script>
-
 		<footer class="page__footer" {{ attributes }} title="Pie de página Misión, enlaces de interés y datos de contacto">
 			<div class="container">
 				<div class="row">
