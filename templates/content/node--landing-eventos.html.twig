@@ -17,27 +17,8 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
                 {{ content.body }}
             </div>
             <div class="right">
-                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_28_2)">
-                        <path
-                            d="M66.77 60.75L51.3 49.15V25.79C51.3 24.88 50.56 24.14 49.65 24.14C48.74 24.14 48 24.88 48 25.79V49.98C48 50.5 48.25 50.99 48.66 51.3L64.78 63.39C65.15 63.66 65.52 63.72 65.77 63.72C66.3 63.72 66.78 63.48 67.1 63.05C67.36 62.7 67.48 62.27 67.41 61.84C67.35 61.4 67.12 61.02 66.77 60.75Z"
-                            fill="#FFFDEF" />
-                        <path
-                            d="M49.66 0C22.28 0 0 22.28 0 49.66C0 77.04 22.28 99.32 49.66 99.32C77.04 99.32 99.32 77.04 99.32 49.66C99.32 22.28 77.04 0 49.66 0ZM49.66 96.02C24.1 96.02 3.3 75.22 3.3 49.66C3.3 24.1 24.09 3.3 49.66 3.3C75.23 3.3 96.02 24.1 96.02 49.66C96.02 75.22 75.22 96.02 49.66 96.02Z"
-                            fill="#FFFDEF" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_28_2">
-                            <rect width="99.32" height="99.31" fill="white" />
-                        </clipPath>
-                    </defs>
-                </svg>
-                <div id="tiempo">
-                    <span class="dia"></span>
-                    <span class="hora"></span>
-                    <span class="min"></span>
-                    <span class="sec"></span>
-                  </div>
+                
+               
             </div>
         </div>
     </div>
@@ -122,52 +103,3 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %} {#
     <div id="evento" data-fecha="{{ node.field_fecha_del_evento.value }}"></div>
     {% endblock %}
 </section>
-<script>
-    const setMidnight = (dateString) => {
-        const date = new Date(dateString);
-        date.setHours(0, 0, 0, 0);
-        return date;
-      };
-    // Obtener la fecha del evento desde el atributo data-fecha
-    const fechaEvento = setMidnight(document
-      .getElementById("evento")
-      .getAttribute("data-fecha"));
-
-    // Convertir la fecha a un formato que JavaScript entienda
-    const fechaEventoJS = new Date(fechaEvento).getTime();
-
-    function actualizarContador() {
-      const ahora = new Date().getTime();
-      const distancia = fechaEventoJS - ahora;
-
-      // Cálculo de días, horas, minutos y segundos
-      const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
-      const horas = Math.floor(
-        (distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      const minutos = Math.floor(
-        (distancia % (1000 * 60 * 60)) / (1000 * 60)
-      );
-      const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
-
-      // Formatear el tiempo en MM DD HH:MM:SS
-      const formatoDias = dias < 10 ? "0" + dias : dias;
-      const formatoHoras = horas < 10 ? "0" + horas : horas;
-      const formatoMinutos = minutos < 10 ? "0" + minutos : minutos;
-      const formatoSegundos = segundos < 10 ? "0" + segundos : segundos;
-      // Mostrar el resultado en el elemento con id "tiempo"
-      document.querySelector("#tiempo .dia").innerHTML = formatoDias;
-      document.querySelector("#tiempo .hora").innerHTML = formatoHoras;
-      document.querySelector("#tiempo .min").innerHTML = formatoMinutos;
-      document.querySelector("#tiempo .sec").innerHTML = formatoSegundos;
-
-      // Si el conteo regresivo ha terminado, mostrar un mensaje
-      if (distancia < 0) {
-        clearInterval(intervalo);
-        document.getElementById("tiempo").innerHTML = "EVENTO INICIADO";
-      }
-    }
-
-    // Actualizar el contador cada segundo
-    const intervalo = setInterval(actualizarContador, 1000);
-</script>
