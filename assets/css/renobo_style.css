@@ -5661,6 +5661,7 @@ i.icon-lists::before {
   color: #FFF;
   text-transform: uppercase;
   margin-bottom: 15px;
+  font-weight: bold;
   display: block;
 }
 #home-v2 .home-metas--container .txt p {
