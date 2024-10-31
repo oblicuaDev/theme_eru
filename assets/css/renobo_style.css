@@ -5454,7 +5454,7 @@ nav #search-block-form > div.form-item input::placeholder {
   content: "";
   height: 80px;
   width: 3px;
-  background-color: #BABABA;
+  background-color: #595959;
   position: absolute;
   bottom: 0;
   left: calc(50% - 25px);
@@ -5466,6 +5466,9 @@ nav #search-block-form > div.form-item input::placeholder {
 }
 
 #home-v2 .menu-principal {
+  background: transparent !important;
+}
+#home-v2 .menu-principal .block.block--theme-eru-main-menu {
   background: transparent !important;
 }
 #home-v2 .menu-principal form input.form-control {
@@ -5934,13 +5937,13 @@ nav #search-block-form > div.form-item input::placeholder {
   background-color: #FFF !important;
 }
 .home-v2 .menu-principal.scrolled .block--theme-eru-main-menu a.nav-link {
-  color: #BABABA !important;
+  color: #595959 !important;
   font-weight: bold;
 }
 .home-v2 .menu-principal.scrolled .navbar-nav .nav-item.dropdown::before {
   content: "";
-  border-top: 2px solid #BABABA;
-  border-right: 2px solid #BABABA;
+  border-top: 2px solid #595959;
+  border-right: 2px solid #595959;
 }
 .home-v2 .menu-principal.scrolled .block.block--theme-eru-main-menu {
   position: fixed;
