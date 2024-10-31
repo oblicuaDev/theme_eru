@@ -84,8 +84,6 @@
 
 
 </div>
-
-{% if page.footer %}
 <footer class="page__footer" {{ attributes }} title="Pie de página Misión, enlaces de interés y datos de contacto">
 	<div class="container">
 		<div class="row">
@@ -93,6 +91,8 @@
 		</div>
 	</div>
 </footer>
+
+{% if page.footer %}
 {% endif %}
 
 {% if page.footer_light %}
