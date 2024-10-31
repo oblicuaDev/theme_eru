@@ -5488,6 +5488,7 @@ i.icon-lists::before {
 }
 #home-v2 .home-proyectos {
   background: #F5F5F5;
+  padding: 90px 20px;
 }
 #home-v2 .home-proyectos--container {
   display: flex;
@@ -5545,6 +5546,9 @@ i.icon-lists::before {
   line-height: 30px;
   font-weight: 300;
   color: #FFF;
+}
+#home-v2 .home-convocatorias {
+  padding: 90px 20px;
 }
 #home-v2 .home-convocatorias--container {
   display: flex;
@@ -5606,6 +5610,7 @@ i.icon-lists::before {
   right: 0;
 }
 #home-v2 .home-noticias {
+  padding: 90px 20px;
   background: #F5F5F5;
 }
 #home-v2 .home-noticias--container {
