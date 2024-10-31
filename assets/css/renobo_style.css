@@ -1824,12 +1824,6 @@ h3,
   opacity: 0.5;
 }
 
-.menu-principal {
-  background-color: rgb(0, 48, 49) !important;
-  padding: 0;
-  box-shadow: 0 2px 3px rgb(3, 26, 26);
-}
-
 .menu-principal form {
   align-items: center;
   display: flex;
@@ -5467,6 +5461,15 @@ nav #search-block-form > div.form-item input::placeholder {
 
 #home-v2 .menu-principal {
   background: transparent !important;
+}
+#home-v2 .menu-principal .logos svg {
+  width: initial;
+  height: initial;
+  color: #FFF;
+}
+#home-v2 .menu-principal .navbar-nav .nav-item.dropdown::before {
+  border-top: 2px solid #FFF;
+  border-right: 2px solid #FFF;
 }
 #home-v2 .menu-principal .block.block--theme-eru-main-menu {
   background: transparent !important;
