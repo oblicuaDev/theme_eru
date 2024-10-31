@@ -5519,7 +5519,7 @@ i.icon-lists::before {
 #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-beneficios .field-content img,
 #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-banner .field-content img {
   width: 100%;
-  height: 100%;
+  height: 370px;
   object-fit: cover;
 }
 #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-title {
