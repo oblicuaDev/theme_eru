@@ -5900,6 +5900,9 @@ i.icon-lists::before {
 .home-v2 .menu-principal.scrolled {
   background-color: #FFF !important;
 }
+.home-v2 .menu-principal.scrolled .block--theme-eru-main-menu a.nav-link {
+  color: #BABABA !important;
+}
 .home-v2 .menu-principal.scrolled .block.block--theme-eru-main-menu {
   position: fixed;
   width: 100%;
