@@ -2359,28 +2359,8 @@ nav #search-block-form > div.form-item input {
   border-color: rgba(255, 255, 220, 0.22);
 }
 
-.menu-principal .dropdown-menu {
-  background-color: #ffffdc !important;
-}
-
-.menu-principal .dropdown-menu::before {
-  border-bottom-color: #ffffdc !important;
-}
-
 .menu-principal .dropdown-menu li {
   height: auto !important;
-}
-
-.menu-principal .dropdown-menu a {
-  color: #003937;
-  background-color: #ffffdc !important;
-  font-weight: bold !important;
-}
-
-.menu-principal .dropdown-menu a:hover,
-.menu-principal .dropdown-menu a:focus {
-  background-color: #003937;
-  color: #000;
 }
 
 .project-block {
