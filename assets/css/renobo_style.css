@@ -5414,6 +5414,7 @@ i.icon-lists::before {
 .home-v2 .menu-principal {
   background: transparent !important;
   position: fixed;
+  width: 100%;
 }
 
 #home-v2 .container {
@@ -5460,7 +5461,7 @@ i.icon-lists::before {
   }
 }
 #home-v2 .home-banner {
-  min-height: 100dvh;
+  height: auto;
   width: 100%;
   position: relative;
 }
@@ -5470,7 +5471,7 @@ i.icon-lists::before {
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
+  object-fit: contain;
 }
 #home-v2 .home-proposito {
   display: flex;
