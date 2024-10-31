@@ -5414,7 +5414,9 @@ i.icon-lists::before {
 .home-v2 .block.block--theme-eru-main-menu {
   position: fixed;
   width: 100%;
-  top: 0;
+  top: 50px;
+  left: 0;
+  padding: 0 20px;
 }
 .home-v2 .menu-principal {
   background: transparent !important;
