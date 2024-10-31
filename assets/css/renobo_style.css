@@ -5385,6 +5385,10 @@ i.icon-lists::before {
   padding: 0 20px;
 }
 
+nav #search-block-form > div.form-item input {
+  border-color: #000;
+}
+
 .menu-principal {
   background: #FFF !important;
   width: 100%;
