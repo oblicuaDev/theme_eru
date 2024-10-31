@@ -5366,10 +5366,13 @@ i.icon-lists::before {
 }
 
 .logos {
-  display: flex;
-  gap: 50px;
   position: relative;
+  display: flex;
+}
+.logos a {
+  display: flex;
   align-items: flex-end;
+  gap: 50px;
 }
 .logos::after {
   content: "";
