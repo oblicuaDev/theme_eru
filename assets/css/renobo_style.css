@@ -5872,6 +5872,20 @@ i.icon-lists::before {
   transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+.menu-principal .block--theme-eru-main-menu a.nav-link {
+  color: #ffffdc !important;
+  display: flex;
+  align-items: center;
+  font-size: 10px !important;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  position: relative;
+  padding: 0 10px;
+  max-width: 220px;
+  margin: 0;
+  white-space: break-spaces;
+}
+
 .home-v2 .menu-principal.scrolled {
   background-color: #00C29D !important;
 }
@@ -5880,6 +5894,7 @@ i.icon-lists::before {
 }
 .home-v2 .menu-principal.scrolled .logos svg {
   width: 130px;
+  height: 50px;
 }
 
 /*# sourceMappingURL=renobo_style.css.map */
