@@ -5420,6 +5420,9 @@ i.icon-lists::before {
   background: transparent !important;
   width: 100%;
   box-shadow: none;
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
 .home-v2 .menu-principal .menu-secundario {
   background: transparent !important;
