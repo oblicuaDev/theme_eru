@@ -5369,6 +5369,78 @@ nav #search-block-form > div.form-item input::placeholder {
   color: #000;
 }
 
+.menu-principal {
+  background: #FFF;
+  width: 100%;
+  box-shadow: none;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.menu-principal .dropdown-menu {
+  background-color: #fff;
+}
+.menu-principal .dropdown-menu a {
+  background-color: #fff;
+}
+.menu-principal .dropdown-item.active,
+.menu-principal .dropdown-item:active {
+  background-color: #2E4C7E;
+}
+.menu-principal .block--theme-eru-main-menu a.nav-link {
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  font-family: "Montserrat", serif;
+  font-weight: normal;
+  position: relative;
+  padding: 0 10px;
+  max-width: 220px;
+  margin: 0;
+  white-space: break-spaces;
+}
+.menu-principal form input.form-control {
+  background-color: #FFF;
+  border-color: #000;
+  color: #000;
+}
+.menu-principal form input.form-control::placeholder {
+  color: #000;
+}
+.menu-principal .menu-secundario {
+  background: transparent;
+}
+.menu-principal .dropdown-menu a:hover,
+.menu-principal .dropdown-menu a:focus {
+  background-color: #2E4C7E;
+}
+.menu-principal .block--theme-eru-main-menu a.nav-link {
+  color: #595959;
+  font-weight: bold;
+}
+.menu-principal .navbar-nav .nav-item.dropdown::before {
+  content: "";
+  border-top: 2px solid #595959;
+  border-right: 2px solid #595959;
+}
+.menu-principal .block.block--theme-eru-main-menu {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 5px 20px;
+  background-color: #FFF;
+}
+.menu-principal .logos::after {
+  left: 50%;
+}
+.menu-principal .logos svg {
+  width: 130px;
+  height: 50px;
+  color: #595959;
+}
+
 .logos {
   position: relative;
   display: flex;
