@@ -5701,16 +5701,12 @@ i.icon-lists::before {
   font-size: 11px;
   color: #737373;
 }
-#home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-field-cover-img {
-  width: 411px;
-}
 #home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-field-cover-img .field-content {
   width: 100%;
   height: 100%;
 }
 #home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-field-cover-img .field-content img {
   width: 100%;
-  height: 411px;
   object-fit: cover;
 }
 #home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-title {
