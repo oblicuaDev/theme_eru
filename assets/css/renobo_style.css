@@ -5674,6 +5674,7 @@ i.icon-lists::before {
   left: 0;
 }
 #home-v2 .home-noticias--container {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -5681,9 +5682,13 @@ i.icon-lists::before {
   width: 100%;
   margin: 0 auto;
 }
+#home-v2 .home-noticias--container .views-element-container {
+  width: 70%;
+  margin: 0 0 0 auto;
+}
 #home-v2 .home-noticias--container .views-view-grid .grid-new {
   display: grid;
-  grid-template-columns: repeat(3, 411px);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: flex-end;
   gap: 40px;
 }
