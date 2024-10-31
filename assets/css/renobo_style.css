@@ -5408,6 +5408,9 @@ i.icon-lists::before {
   transform: translateX(-50%);
 }
 
+#home-v2 .breadcrumb {
+  display: none;
+}
 #home-v2 .container {
   max-width: 1360px;
   width: 100%;
