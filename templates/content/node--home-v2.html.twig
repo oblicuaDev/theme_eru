@@ -6,7 +6,9 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
 <div id="home-v2">
 	{% block content %}
 		{% set title = node.title.value %}
-		<section class="home-banner"><img src="banner.jpg" alt="banner"></section>
+
+		{% set banner_url = file_url(node.field_banner.entity.uri.value) %}
+		<section class="home-banner"><img src="{{banner_url}}" alt="banner"></section>
 		<div class="home_links">
 			<div class="home_links--container">
 				<a href="">Conoce a nuestro equipo
@@ -33,7 +35,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
 		<section class="home-proyectos">
 			<div class="container">
 				<h3 class="home_title">Estamos impulsando varios proyectos importantes para Bogotá, te invitamos a
-																																																		                conocerlos
+																																																							                conocerlos
 				</h3>
 			</div>
 		</section>
@@ -53,7 +55,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
 		<section class="home-convocatorias">
 			<div class="home-convocatorias--container">
 				<h3 class="home_title">¿Estas interesado en unirte a nuestros proyectos? Aquí te presentamos nuestras
-																																																		                convocatorias</h3>
+																																																							                convocatorias</h3>
 				<div class="images">
 					{{	content.field_imagenes_convo}}
 				</div>
@@ -61,7 +63,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
 					<a href="">
 						<div class="convocatorias_title">CONVOCATORIA DE PREDIOS VIS</div>
 						<div class="convocatorias_desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-																																																																						                        nonummy nibh euismod
+																																																																													                        nonummy nibh euismod
 							<svg width="79" height="20" viewbox="0 0 79 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M78.41 9.97L61.14 0V8.97H0V10.97H61.14V19.94L78.41 9.97Z" fill="white"/>
 							</svg>
@@ -70,7 +72,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
 					<a href="">
 						<div class="convocatorias_title">CONVOCATORIA DE PREDIOS VIS</div>
 						<div class="convocatorias_desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-																																																																						                        nonummy nibh euismod
+																																																																													                        nonummy nibh euismod
 							<svg width="79" height="20" viewbox="0 0 79 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M78.41 9.97L61.14 0V8.97H0V10.97H61.14V19.94L78.41 9.97Z" fill="white"/>
 							</svg>
