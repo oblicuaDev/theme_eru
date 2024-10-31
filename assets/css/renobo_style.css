@@ -960,7 +960,7 @@ select,
   width: fit-content;
   background-color: #6143f1 !important;
   margin: 10px 0 10px auto;
-  color: #ffffdc !important;
+  color: #ffffdc;
   border-color: #6550c8 !important;
 }
 
@@ -1800,7 +1800,7 @@ h3,
 }
 
 .menu-principal .block--theme-eru-main-menu a.nav-link {
-  color: #ffffdc !important;
+  color: #ffffdc;
   display: flex;
   align-items: center;
   font-size: 11px !important;
@@ -5874,7 +5874,7 @@ i.icon-lists::before {
   background-color: #fff;
 }
 .menu-principal .block--theme-eru-main-menu a.nav-link {
-  color: #ffffdc !important;
+  color: #FFF !important;
   display: flex;
   align-items: center;
   font-size: 10px !important;
