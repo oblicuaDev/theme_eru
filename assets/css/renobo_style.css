@@ -5676,6 +5676,53 @@ i.icon-lists::before {
   width: 100%;
   margin: 0 auto;
 }
+#home-v2 .home-noticias--container .views-view-grid .grid-new {
+  display: grid;
+  grid-template-columns: repeat(3, 297px);
+  justify-content: flex-end;
+  gap: 40px;
+}
+#home-v2 .home-noticias--container .views-view-grid .grid-new > div {
+  position: relative;
+  width: 297px;
+  overflow: hidden;
+}
+#home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-field-imagen-beneficios,
+#home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-field-imagen-banner {
+  width: 297px;
+}
+#home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-field-imagen-beneficios .field-content,
+#home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-field-imagen-banner .field-content {
+  width: 100%;
+  height: 100%;
+}
+#home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-field-imagen-beneficios .field-content img,
+#home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-field-imagen-banner .field-content img {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+}
+#home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  width: 100%;
+  background-color: rgba(15, 15, 15, 0.59);
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-title::after {
+  content: "";
+  display: inline-block;
+  background-image: url(/sites/default/files/2024-10/arrow_blue.png);
+  width: 34px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 #home-v2 .home-video--container {
   display: flex;
   align-items: center;
