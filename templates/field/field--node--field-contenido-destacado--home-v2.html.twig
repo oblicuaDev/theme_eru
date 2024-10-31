@@ -3,8 +3,8 @@
 		<div{{attributes}}>
 			{% for item in items %}
 				<div{{item.attributes}}>
-					{# Acceder a un campo específico del contenido relacionado, por ejemplo, field_title #}
-					<div class="related-field-title">{{ item.content['#node'].field_title.value }}</div>
+					{# Acceder a un campo específico del contenido relacionado, por ejemplo, title #}
+					<div class="related-field-title">{{ item.content['#node'].title.value }}</div>
 					{# Acceder a otro campo, por ejemplo, field_description #}
 					<div class="related-field-description">{{ item.content['#node'].field_description.value }}</div>
 					{% if item.content['#node'].field_imagen_banner is not empty %}
@@ -26,7 +26,7 @@
 		{% for item in items %}
 			<div{{attributes}}>
 				{# Acceder a los campos del contenido relacionado cuando no es múltiple #}
-				<div class="related-field-title">{{ item.content['#node'].field_title.value }}</div>
+				<div class="related-field-title">{{ item.content['#node'].title.value }}</div>
 				{% if item.content['#node'].field_imagen_banner is not empty %}
 					<div class="related-field-field_imagen_banner">
 						<img src="{{ item.content['#node'].field_imagen_banner.entity.uri.value | image_style('thumbnail') }}" alt="{{ item.content['#node'].field_imagen_banner.alt }}">
@@ -51,7 +51,7 @@
 			<div
 				class="tag_alcance">
 				{# Mismo acceso a los campos individuales #}
-				<span>{{ item.content['#node'].field_title.value }}</span>
+				<span>{{ item.content['#node'].title.value }}</span>
 				{% if item.content['#node'].field_imagen_banner is not empty %}
 					<div class="related-field-field_imagen_banner">
 						<img src="{{ item.content['#node'].field_imagen_banner.entity.uri.value | image_style('thumbnail') }}" alt="{{ item.content['#node'].field_imagen_banner.alt }}">
