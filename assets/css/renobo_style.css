@@ -5386,15 +5386,34 @@ i.icon-lists::before {
 }
 
 .menu-principal {
-  background: transparent !important;
+  background: #FFF !important;
   width: 100%;
   box-shadow: none;
   position: absolute;
   width: 100%;
   top: 0;
 }
+.menu-principal .dropdown-menu {
+  background-color: #fff;
+}
+.menu-principal .dropdown-menu a {
+  background-color: #fff;
+}
+.menu-principal .block--theme-eru-main-menu a.nav-link {
+  color: #FFF !important;
+  display: flex;
+  align-items: center;
+  font-size: 10px !important;
+  font-family: "Montserrat", serif;
+  font-weight: normal;
+  position: relative;
+  padding: 0 10px;
+  max-width: 220px;
+  margin: 0;
+  white-space: break-spaces;
+}
 .menu-principal form input.form-control {
-  background-color: transparent;
+  background-color: #FFF;
   color: #FFF;
 }
 .menu-principal .menu-secundario {
@@ -5404,7 +5423,42 @@ i.icon-lists::before {
 .menu-principal .dropdown-menu a:focus {
   background-color: #2E4C7E;
 }
+.menu-principal .block--theme-eru-main-menu a.nav-link {
+  color: #BABABA !important;
+  font-weight: bold;
+}
+.menu-principal .navbar-nav .nav-item.dropdown::before {
+  content: "";
+  border-top: 2px solid #BABABA;
+  border-right: 2px solid #BABABA;
+}
+.menu-principal .block.block--theme-eru-main-menu {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 5px 20px;
+  background-color: #FFF !important;
+}
+.menu-principal .logos::after {
+  left: 50%;
+}
+.menu-principal .logos svg {
+  width: 130px;
+  height: 50px;
+  color: #595959;
+}
 
+#home-v2 .menu-principal {
+  background: transparent !important;
+}
+#home-v2 .menu-principal form input.form-control {
+  background-color: transparent;
+  color: #FFF;
+}
+#home-v2 .menu-principal .menu-secundario {
+  background: transparent !important;
+}
 #home-v2 .container {
   max-width: 1360px;
   width: 100%;
@@ -5858,26 +5912,6 @@ i.icon-lists::before {
 .logos svg {
   transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   color: #FFF;
-}
-
-.menu-principal .dropdown-menu {
-  background-color: #fff;
-}
-.menu-principal .dropdown-menu a {
-  background-color: #fff;
-}
-.menu-principal .block--theme-eru-main-menu a.nav-link {
-  color: #FFF !important;
-  display: flex;
-  align-items: center;
-  font-size: 10px !important;
-  font-family: "Montserrat", serif;
-  font-weight: normal;
-  position: relative;
-  padding: 0 10px;
-  max-width: 220px;
-  margin: 0;
-  white-space: break-spaces;
 }
 
 .home-v2 .menu-principal.scrolled {
