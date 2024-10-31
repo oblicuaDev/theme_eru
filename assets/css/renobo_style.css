@@ -5526,11 +5526,6 @@ i.icon-lists::before {
   width: 100%;
   margin: 0 auto;
 }
-@media only screen and (max-width: 1023px) {
-  #home-v2 .home-proyectos--container {
-    flex-direction: column;
-  }
-}
 #home-v2 .home-proyectos .views-view-grid .grid-new {
   display: grid;
   grid-template-columns: repeat(3, 297px);
@@ -5615,6 +5610,11 @@ i.icon-lists::before {
   width: 100%;
   margin: 0 auto;
   justify-content: space-between;
+}
+@media only screen and (max-width: 1023px) {
+  #home-v2 .home-metas--container {
+    flex-direction: column;
+  }
 }
 #home-v2 .home-metas--container .left {
   width: 35%;
