@@ -5510,7 +5510,6 @@ i.icon-lists::before {
 #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-beneficios,
 #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-banner {
   width: 297px;
-  height: 370px;
 }
 #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-beneficios .field-content,
 #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-banner .field-content {
@@ -5531,7 +5530,6 @@ i.icon-lists::before {
   width: 100%;
   background-color: rgba(15, 15, 15, 0.59);
   color: #FFF;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
