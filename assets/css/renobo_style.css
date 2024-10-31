@@ -5415,6 +5415,8 @@ i.icon-lists::before {
   background: transparent !important;
   position: fixed;
   width: 100%;
+  box-shadow: none;
+  top: 40px;
 }
 
 #home-v2 .container {
