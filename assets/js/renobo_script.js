@@ -593,12 +593,3 @@ document.addEventListener("DOMContentLoaded", () => {
       );
   }
 });
-
-window.addEventListener("scroll", function () {
-  const menu = document.querySelector(".home-v2 .menu-principal");
-  if (window.scrollY > 50) {
-    menu.style.backgroundColor = "#00C29D !important"; // Example background color
-  } else {
-    menu.style.backgroundColor = "transparent !important"; // Reset to transparent or default
-  }
-});
