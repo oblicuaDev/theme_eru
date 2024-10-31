@@ -290,7 +290,6 @@ footer .oblicua-footer-section ul li {
   max-width: 450px;
   flex-wrap: nowrap;
   width: 100%;
-  border-bottom: 1px dashed #D6D6D6;
   flex-direction: row !important;
 }
 
@@ -5426,6 +5425,11 @@ nav #search-block-form > div.form-item input::placeholder {
   padding: 5px 20px;
   background-color: #FFF;
 }
+@media only screen and (max-width: 1023px) {
+  .menu-principal .block.block--theme-eru-main-menu {
+    left: -100%;
+  }
+}
 .menu-principal .logos::after {
   left: 50%;
 }
@@ -5465,6 +5469,13 @@ nav #search-block-form > div.form-item input::placeholder {
   width: initial;
   height: initial;
   color: #FFF;
+}
+@media only screen and (max-width: 1023px) {
+  .home-v2 .menu-principal .logos svg {
+    width: 100px;
+    height: initial;
+    color: #FFF;
+  }
 }
 .home-v2 .menu-principal .navbar-nav .nav-item.dropdown::before {
   border-top: 2px solid #FFF;
@@ -5967,6 +5978,17 @@ nav #search-block-form > div.form-item input::placeholder {
   width: 130px;
   height: 50px;
   color: #595959;
+}
+@media only screen and (max-width: 1023px) {
+  .home-v2 .menu-principal.scrolled .logos svg {
+    width: 100px;
+    height: initial;
+    color: #FFF;
+  }
+}
+
+.navbar-collapse.collapse.show .block.block--theme-eru-main-menu {
+  left: 0;
 }
 
 /*# sourceMappingURL=renobo_style.css.map */
