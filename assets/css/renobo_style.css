@@ -5670,8 +5670,8 @@ i.icon-lists::before {
 }
 #home-v2 .home-noticias .home_title {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 85px;
+  left: 20px;
 }
 #home-v2 .home-noticias--container {
   position: relative;
