@@ -5391,14 +5391,16 @@ i.icon-lists::before {
 .home-v2 .breadcrumb {
   display: none;
 }
-.home-v2 .block.block--theme-eru-main-menu {
+
+.block.block--theme-eru-main-menu {
   position: fixed;
   width: 100%;
   top: 50px;
   left: 0;
   padding: 0 20px;
 }
-.home-v2 .menu-principal {
+
+.menu-principal {
   background: transparent !important;
   width: 100%;
   box-shadow: none;
@@ -5406,7 +5408,7 @@ i.icon-lists::before {
   width: 100%;
   top: 0;
 }
-.home-v2 .menu-principal .menu-secundario {
+.menu-principal .menu-secundario {
   background: transparent !important;
 }
 
