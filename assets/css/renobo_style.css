@@ -5504,6 +5504,8 @@ i.icon-lists::before {
 }
 #home-v2 .home-proyectos .views-view-grid .grid-new > div {
   position: relative;
+  width: 297px;
+  overflow: hidden;
 }
 #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-beneficios,
 #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-banner {
@@ -5526,7 +5528,9 @@ i.icon-lists::before {
   bottom: 0;
   left: 0;
   padding: 5px;
+  width: 100%;
   background-color: rgba(15, 15, 15, 0.59);
+  color: #FFF;
 }
 #home-v2 .home-metas {
   display: flex;
