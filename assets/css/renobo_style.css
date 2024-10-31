@@ -5630,26 +5630,34 @@ i.icon-lists::before {
   position: relative;
   transform: translateX(-100px);
 }
-#home-v2 .home-convocatorias--container .convocatorias a {
+#home-v2 .home-convocatorias--container .convocatorias .views-element-container .convocatorias-list {
   display: block;
   color: #FFF;
   text-decoration: none;
   margin-bottom: 50px;
 }
-#home-v2 .home-convocatorias--container .convocatorias a:hover {
+#home-v2 .home-convocatorias--container .convocatorias .views-element-container .convocatorias-list:hover {
   opacity: 0.5;
 }
-#home-v2 .home-convocatorias--container .convocatorias a .convocatorias_title {
+#home-v2 .home-convocatorias--container .convocatorias a {
+  display: block;
+  color: #FFF;
+  text-decoration: none;
   margin-bottom: 10px;
   font-weight: bold;
   display: block;
   font-size: 16px;
 }
-#home-v2 .home-convocatorias--container .convocatorias a .convocatorias_desc {
+#home-v2 .home-convocatorias--container .convocatorias .views-field.views-field-body .field-content {
   font-size: 14px;
   position: relative;
 }
-#home-v2 .home-convocatorias--container .convocatorias a .convocatorias_desc svg {
+#home-v2 .home-convocatorias--container .convocatorias .views-field.views-field-body .field-content::after {
+  content: "";
+  display: inline-block;
+  background-image: url(/sites/default/files/2024-10/arrow_blue.png);
+  background-repeat: no-repeat;
+  background-size: contain;
   position: absolute;
   bottom: -20px;
   width: 35px;
