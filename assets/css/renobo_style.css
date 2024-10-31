@@ -1775,19 +1775,6 @@ h3,
     right: 3px;
   }
 }
-.menu-principal .navbar-nav .nav-item:hover::after {
-  content: "";
-  background-color: rgba(255, 255, 220, 0.22);
-  height: 100%;
-  width: 1px;
-  position: absolute;
-  right: -16px;
-}
-
-.menu-principal .navbar-nav .nav-item:last-of-type::after {
-  content: none;
-}
-
 .menu-principal .block--theme-eru-main-menu a.nav-link {
   color: #ffffdc;
   display: flex;
