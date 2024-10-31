@@ -5424,13 +5424,13 @@ i.icon-lists::before {
   background-color: #2E4C7E;
 }
 .menu-principal .block--theme-eru-main-menu a.nav-link {
-  color: #BABABA !important;
+  color: #595959 !important;
   font-weight: bold;
 }
 .menu-principal .navbar-nav .nav-item.dropdown::before {
   content: "";
-  border-top: 2px solid #BABABA;
-  border-right: 2px solid #BABABA;
+  border-top: 2px solid #595959;
+  border-right: 2px solid #595959;
 }
 .menu-principal .block.block--theme-eru-main-menu {
   position: fixed;
