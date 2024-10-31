@@ -1775,6 +1775,18 @@ h3,
     right: 3px;
   }
 }
+.menu-principal .navbar-nav .nav-item::after {
+  content: none;
+}
+
+.menu-principal .navbar-nav .nav-item:hover::after {
+  content: none;
+}
+
+.menu-principal .navbar-nav .nav-item:last-of-type::after {
+  content: none;
+}
+
 .menu-principal .block--theme-eru-main-menu a.nav-link {
   color: #ffffdc;
   display: flex;
@@ -5869,6 +5881,11 @@ i.icon-lists::before {
 .home-v2 .menu-principal.scrolled .block--theme-eru-main-menu a.nav-link {
   color: #BABABA !important;
   font-weight: bold;
+}
+.home-v2 .menu-principal.scrolled .navbar-nav .nav-item.dropdown::before {
+  content: "";
+  border-top: 2px solid #BABABA;
+  border-right: 2px solid #BABABA;
 }
 .home-v2 .menu-principal.scrolled .block.block--theme-eru-main-menu {
   position: fixed;
