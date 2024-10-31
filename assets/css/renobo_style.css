@@ -5428,6 +5428,12 @@ i.icon-lists::before {
   padding-right: 100px;
   position: relative;
 }
+@media only screen and (max-width: 1023px) {
+  #home-v2 .home_title {
+    max-width: 100%;
+    padding-right: 0;
+  }
+}
 #home-v2 .home-banner {
   min-height: 100dvh;
   width: 100%;
