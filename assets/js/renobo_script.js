@@ -27,7 +27,7 @@ setTimeout(() => {
   preloaderElement.classList.add("fadeOut");
 }, 1800);
 document.addEventListener("DOMContentLoaded", () => {
-    document
+  document
     .querySelectorAll(".project-block .views-field-field-video-hover video")
     .forEach((video) => {
       video.setAttribute("muted", true);
@@ -43,8 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         e.target.currentTime = 0;
       });
     });
-  
-  
+
   // if (document.querySelector(".container-fluid.news")) {
   //   // Paso 1: Selecciona el elemento a mover
   //   var elementoAMover = document.querySelector(
@@ -592,5 +591,14 @@ document.addEventListener("DOMContentLoaded", () => {
           ".paragraph.paragraph--type--videos.paragraph--view-mode--default video"
         )
       );
+  }
+});
+
+window.addEventListener("scroll", function () {
+  const menu = document.querySelector(".home-v2 .menu-principal");
+  if (window.scrollY > 50) {
+    menu.style.backgroundColor = "rgba(0, 0, 0, 0) !important"; // Example background color
+  } else {
+    menu.style.backgroundColor = "transparent !important"; // Reset to transparent or default
   }
 });
