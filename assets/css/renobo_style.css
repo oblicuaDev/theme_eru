@@ -5892,13 +5892,14 @@ i.icon-lists::before {
 }
 .home-v2 .menu-principal.scrolled .block--theme-eru-main-menu a.nav-link {
   color: #BABABA !important;
+  font-weight: bold;
 }
 .home-v2 .menu-principal.scrolled .block.block--theme-eru-main-menu {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  padding: 0 20px;
+  padding: 5px 20px;
   background-color: #FFF !important;
 }
 .home-v2 .menu-principal.scrolled .logos::after {
