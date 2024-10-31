@@ -5977,6 +5977,9 @@ nav #search-block-form > div.form-item input::placeholder {
     background: transparent;
   }
 }
+.home-v2 .menu-principal.scrolled .navbar-collapse.collapse.show .block.block--theme-eru-main-menu {
+  left: 0;
+}
 .home-v2 .menu-principal.scrolled .logos::after {
   left: 50%;
 }
