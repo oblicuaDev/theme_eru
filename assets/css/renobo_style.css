@@ -5793,8 +5793,8 @@ i.icon-lists::before {
 }
 #home-v2 .home-noticias .home_title {
   position: absolute;
-  top: 85px;
-  left: 20px;
+  top: 0;
+  left: 0;
 }
 @media only screen and (max-width: 1023px) {
   #home-v2 .home-noticias .home_title {
@@ -5817,11 +5817,12 @@ i.icon-lists::before {
 }
 #home-v2 .home-noticias--container .views-element-container {
   width: 70%;
-  margin: 0 auto;
+  margin: 0 0 0 auto;
 }
 @media only screen and (max-width: 1023px) {
   #home-v2 .home-noticias--container .views-element-container {
     width: 100%;
+    margin: 0 auto;
   }
 }
 #home-v2 .home-noticias--container .views-view-grid .grid-new {
