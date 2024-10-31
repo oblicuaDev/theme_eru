@@ -5,159 +5,159 @@ node.isPublished() ? 'node--unpublished', node.bundle|clean_class,
 node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
 {#
 {{ kint(content | keys) }} #}
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+ <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<link
+href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"/>  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 <style>
-    .col-12 {
-        padding: 0;
-    }
+	.col-12 {
+		padding: 0;
+	}
 
-    .btns {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
+	.btns {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+	}
 
-    .btns a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        color: #003937;
-        position: relative;
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 19px;
-        background: #a5e55d;
-        text-transform: none !important;
-        border-radius: 8px;
-        font-family: "value serif pro";
-        text-align: center;
+	.btns a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 10px;
+		color: #003937;
+		position: relative;
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 19px;
+		background: #a5e55d;
+		text-transform: none !important;
+		border-radius: 8px;
+		font-family: "value serif pro";
+		text-align: center;
 
-    }
+	}
 
-    .quees {
-        background-color: #003937;
-        color: #fdfdef;
-        display: flex;
-        justify-content: space-between;
+	.quees {
+		background-color: #003937;
+		color: #fdfdef;
+		display: flex;
+		justify-content: space-between;
 
-    }
+	}
 
-    .landings-especiales__field-que-es-reuso {
-        padding: 30px;
-    }
+	.landings-especiales__field-que-es-reuso {
+		padding: 30px;
+	}
 
-    .quees ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-        max-width: 760px;
-        margin: 0 auto;
-    }
+	.quees ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 30px;
+		max-width: 760px;
+		margin: 0 auto;
+	}
 
-    .quees ul li {
-        color: #fdfdef;
-        font-size: 13px;
-        border-bottom: 2px dashed #afe951;
-        padding: 10px;
-    }
+	.quees ul li {
+		color: #fdfdef;
+		font-size: 13px;
+		border-bottom: 2px dashed #afe951;
+		padding: 10px;
+	}
 
-    .quees h1 {
-        color: #afe951;
-        font-weight: bold;
-        font-size: 36px;
-        font-family: "value serif pro";
-    }
+	.quees h1 {
+		color: #afe951;
+		font-weight: bold;
+		font-size: 36px;
+		font-family: "value serif pro";
+	}
 
-    .noticias .block--views-block--all-the-news-block-3 {
-        display: none;
-    }
+	.noticias .block--views-block--all-the-news-block-3 {
+		display: none;
+	}
 
-    #special-landings .banner,
-    #special-landings-v2 .banner,
-    .banner {
-        background: none;
-        display: flex;
-        justify-content: center;
-        gap: 80px;
-        padding-left: 60px;
-        height: 70vh;
-        overflow: hidden;
-        align-items: center;
-    }
+	#special-landings .banner,
+	#special-landings-v2 .banner,
+	.banner {
+		background: none;
+		display: flex;
+		justify-content: center;
+		gap: 80px;
+		padding-left: 60px;
+		height: 70vh;
+		overflow: hidden;
+		align-items: center;
+	}
 
-    .banner .logo {
-        width: 40%;
-        height: 170px;
-    }
+	.banner .logo {
+		width: 40%;
+		height: 170px;
+	}
 
-    .page__header.mb-3 {
-        display: none;
-    }
+	.page__header.mb-3 {
+		display: none;
+	}
 
-    @media screen and (max-width: 768px) {
-        .banner .logo {
-            width: 90%;
-            height: 170px;
-        }
+	@media screen and(max-width: 768px) {
+		.banner .logo {
+			width: 90%;
+			height: 170px;
+		}
 
-        .quees {
-            flex-direction: column;
+		.quees {
+			flex-direction: column;
 
-        }
+		}
 
-        #special-landings .banner,
-        #special-landings-v2 .banner,
-        .banner {
-            padding: 0;
-        }
+		#special-landings .banner,
+		#special-landings-v2 .banner,
+		.banner {
+			padding: 0;
+		}
 
-        .quees ul {
+		.quees ul {
 
-            grid-template-columns: 1fr;
+			grid-template-columns: 1fr;
 
-        }
-    }
+		}
+	}
 </style>
 <section id="special-landings">
-    {% block content %}
-    <div class="banner">
-        <img src="/sites/default/files/2024-07/reusas.svg" alt="logo" class="logo" />
-        <section class="splide" aria-label="Splide Basic HTML Example">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide">{{content.field_imagen_banner.0}}</li>
-                    <li class="splide__slide">{{content.field_imagen_banner.1}}</li>
-                    <li class="splide__slide">{{content.field_imagen_banner.2}}</li>
-                </ul>
-            </div>
-        </section>
-    </div>
-    <div class="description" id="description">
-        <h2>Descripción</h2>
-        <div class="text">
+	{% block content %}
+		<div class="banner">
+			<img src="/sites/default/files/2024-07/reusas.svg" alt="logo" class="logo"/>
+			<section class="splide" aria-label="Splide Basic HTML Example">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide">{{content.field_imagen_banner.0}}</li>
+						<li class="splide__slide">{{content.field_imagen_banner.1}}</li>
+						<li class="splide__slide">{{content.field_imagen_banner.2}}</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<div class="description" id="description">
+			<h2>Descripción</h2>
+			<div class="text">
 
-            <div class="desc-p">
-                {{ content.body }}
-            </div>
-        </div>
-        <div class="btns">
-            <a href="/es/form/reusa-tu-inmueble-revitaliza-bog">Formulario propietarios</a>
-            <a href="/es/form/formulario-desarrolladores">Formulario desarrolladores</a>
-        </div>
-    </div>
-    <div class="quees">
-        <img alt="quees" src="/sites/default/files/inline-images/quees.png">
-        {{ content.field_que_es_reuso }}
-    </div>
-</section>
+				<div class="desc-p">
+					{{ content.body }}
+				</div>
+			</div>
+			<div class="btns">
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSdKbXz1Hx3tOVOyEAR14gGEnWURZrY6xN0RIFg6EMWjJHNSaQ/viewform?vc=0&c=0&w=1&flr=0">Formulario propietarios</a>
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSdKbXz1Hx3tOVOyEAR14gGEnWURZrY6xN0RIFg6EMWjJHNSaQ/viewform?vc=0&c=0&w=1&flr=0">Formulario desarrolladores</a>
+			</div>
+		</div>
+		<div class="quees">
+			<img alt="quees" src="/sites/default/files/inline-images/quees.png">
+			{{ content.field_que_es_reuso }}
+		</div>
+	</section>
 {% endblock %}
 
-<script>
+ <script>
     // 0|Antonio Nariño
     // 1|Barrios Unidos
     // 2|Chapinero
