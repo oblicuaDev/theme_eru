@@ -5868,6 +5868,10 @@ i.icon-lists::before {
   margin: 0 auto;
 }
 
+.logos svg {
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
 .home-v2 .menu-principal.scrolled {
   background-color: #00C29D !important;
 }
