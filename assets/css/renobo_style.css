@@ -1758,8 +1758,8 @@ h3,
 
 .menu-principal .navbar-nav .nav-item.dropdown::before {
   content: "";
-  border-top: 2px solid #ffffdc;
-  border-right: 2px solid #ffffdc;
+  border-top: 2px solid #FFF;
+  border-right: 2px solid #FFF;
   height: 8px;
   width: 8px;
   transform: rotate(132deg) translateY(-50%);
@@ -1775,17 +1775,6 @@ h3,
     right: 3px;
   }
 }
-.menu-principal .navbar-nav .nav-item::after {
-  content: "";
-  background-color: rgba(255, 255, 220, 0.22);
-  height: 100%;
-  width: 1px;
-  position: absolute;
-  right: -16px;
-  border: 0;
-  top: 0;
-}
-
 .menu-principal .navbar-nav .nav-item:hover::after {
   content: "";
   background-color: rgba(255, 255, 220, 0.22);
