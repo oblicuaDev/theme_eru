@@ -5418,12 +5418,15 @@ i.icon-lists::before {
   gap: 10px;
 }
 #home-v2 .home_title {
-  font-size: 19px;
+  border-bottom: 0;
   color: #646464;
+  font-size: 19px;
   font-weight: 500;
+  line-height: 19px;
+  margin: 0;
+  max-width: 290px;
   padding-right: 100px;
   position: relative;
-  max-width: 290px;
 }
 #home-v2 .home-banner {
   min-height: 100dvh;
@@ -5462,6 +5465,8 @@ i.icon-lists::before {
   position: absolute;
   top: 0;
   right: 0;
+  left: initial;
+  bottom: initial;
 }
 #home-v2 .home-proposito .desc {
   padding: 0 60px;
