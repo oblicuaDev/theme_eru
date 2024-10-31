@@ -5898,7 +5898,15 @@ i.icon-lists::before {
 }
 
 .home-v2 .menu-principal.scrolled {
-  background-color: #00C29D !important;
+  background-color: #FFF !important;
+}
+.home-v2 .menu-principal.scrolled .block.block--theme-eru-main-menu {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  background-color: #FFF !important;
 }
 .home-v2 .menu-principal.scrolled .logos::after {
   left: 50%;
