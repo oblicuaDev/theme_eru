@@ -5751,6 +5751,9 @@ i.icon-lists::before {
   text-decoration: none;
   margin-bottom: 50px;
 }
+#home-v2 .home-convocatorias--container .convocatorias .views-element-container .convocatorias-list p {
+  color: #FFF;
+}
 #home-v2 .home-convocatorias--container .convocatorias .views-element-container .convocatorias-list:hover {
   opacity: 0.5;
 }
