@@ -5389,6 +5389,9 @@ nav #search-block-form > div.form-item input {
   border-color: #000;
   color: #000;
 }
+nav #search-block-form > div.form-item input::placeholder {
+  color: #000;
+}
 
 .menu-principal {
   background: #FFF !important;
@@ -5423,8 +5426,11 @@ nav #search-block-form > div.form-item input {
 }
 .menu-principal form input.form-control {
   background-color: #FFF;
-  color: #000;
   border-color: #000;
+  color: #000;
+}
+.menu-principal form input.form-control::placeholder {
+  color: #000;
 }
 .menu-principal .menu-secundario {
   background: transparent !important;
