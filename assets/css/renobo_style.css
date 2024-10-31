@@ -5464,6 +5464,7 @@ i.icon-lists::before {
 }
 #home-v2 .home-banner {
   width: 100%;
+  height: auto;
 }
 #home-v2 .home-banner img {
   width: 100%;
