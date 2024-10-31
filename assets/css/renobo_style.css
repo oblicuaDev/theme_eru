@@ -5505,14 +5505,17 @@ i.icon-lists::before {
 #home-v2 .home-proyectos .views-view-grid .grid-new > div {
   position: relative;
 }
+#home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-beneficios,
 #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-banner {
   width: 297px;
   height: 370px;
 }
+#home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-beneficios .field-content,
 #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-banner .field-content {
   width: 100%;
   height: 100%;
 }
+#home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-beneficios .field-content img,
 #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-banner .field-content img {
   width: 100%;
   height: 100%;
