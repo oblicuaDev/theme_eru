@@ -5614,6 +5614,7 @@ i.icon-lists::before {
 @media only screen and (max-width: 1023px) {
   #home-v2 .home-metas--container {
     flex-direction: column;
+    padding: 20px;
   }
 }
 #home-v2 .home-metas--container .left {
@@ -5625,6 +5626,7 @@ i.icon-lists::before {
     width: 100%;
     border-right: 0;
     border-bottom: 4px solid #FFF;
+    padding: 0 0 20px;
   }
 }
 #home-v2 .home-metas--container .metas_title {
@@ -5641,6 +5643,11 @@ i.icon-lists::before {
 }
 #home-v2 .home-metas--container .txt {
   width: 50%;
+}
+@media only screen and (max-width: 1023px) {
+  #home-v2 .home-metas--container .txt {
+    width: 100%;
+  }
 }
 #home-v2 .home-metas--container .txt strong {
   font-size: 25px;
