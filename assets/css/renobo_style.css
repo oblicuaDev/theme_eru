@@ -5393,6 +5393,10 @@ i.icon-lists::before {
   width: 100%;
   top: 0;
 }
+.menu-principal form input.form-control {
+  background-color: transparent;
+  color: #FFF;
+}
 .menu-principal .menu-secundario {
   background: transparent !important;
 }
