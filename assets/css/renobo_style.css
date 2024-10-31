@@ -5498,6 +5498,9 @@ i.icon-lists::before {
   width: 100%;
   margin: 0 auto;
 }
+#home-v2 .home-proyectos .views-element-container {
+  margin-bottom: 40px;
+}
 #home-v2 .home-proyectos .views-view-grid .grid-new {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
