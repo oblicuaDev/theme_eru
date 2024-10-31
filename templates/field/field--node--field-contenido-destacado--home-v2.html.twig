@@ -2,44 +2,12 @@
 	{% if multiple %}
 		<div{{attributes}}>
 			{% for item in items %}
-				<div{{item.attributes}}>
-					{# Acceder a un campo específico del contenido relacionado, por ejemplo, title #}
-					<div class="related-field-title">{{ item.content['#node'].title.value }}</div>
-					{# Acceder a otro campo, por ejemplo, field_description #}
-					<div class="related-field-description">{{ item.content['#node'].field_description.value }}</div>
-					{% if item.content['#node'].field_imagen_banner is not empty %}
-						<div class="related-field-field_imagen_banner">
-							<img src="{{ item.content['#node'].field_imagen_banner.entity.uri.value | image_style('thumbnail') }}" alt="{{ item.content['#node'].field_imagen_banner.alt }}">
-						</div>
-					{% endif %}
-
-					{% if item.content['#node'].field_cover_img is not empty %}
-						<div class="related-field-field_cover_img">
-							<img src="{{ item.content['#node'].field_cover_img.entity.uri.value | image_style('thumbnail') }}" alt="{{ item.content['#node'].field_cover_img.alt }}">
-						</div>
-					{% endif %}
-
-				</div>
+				<div{{item.attributes}}>{{ item.content }}</div>
 			{% endfor %}
 		</div>
 	{% else %}
 		{% for item in items %}
-			<div{{attributes}}>
-				{# Acceder a los campos del contenido relacionado cuando no es múltiple #}
-				<div class="related-field-title">{{ item.content['#node'].title.value }}</div>
-				{% if item.content['#node'].field_imagen_banner is not empty %}
-					<div class="related-field-field_imagen_banner">
-						<img src="{{ item.content['#node'].field_imagen_banner.entity.uri.value | image_style('thumbnail') }}" alt="{{ item.content['#node'].field_imagen_banner.alt }}">
-					</div>
-				{% endif %}
-
-				{% if item.content['#node'].field_cover_img is not empty %}
-					<div class="related-field-field_cover_img">
-						<img src="{{ item.content['#node'].field_cover_img.entity.uri.value | image_style('thumbnail') }}" alt="{{ item.content['#node'].field_cover_img.alt }}">
-					</div>
-				{% endif %}
-
-			</div>
+			<div{{attributes}}>{{ item.content }}</div>
 		{% endfor %}
 	{% endif %}
 {% else %}
@@ -48,22 +16,8 @@
 		<div>
 		{% endif %}
 		{% for item in items %}
-			<div
-				class="tag_alcance">
-				{# Mismo acceso a los campos individuales #}
-				<span>{{ item.content['#node'].title.value }}</span>
-				{% if item.content['#node'].field_imagen_banner is not empty %}
-					<div class="related-field-field_imagen_banner">
-						<img src="{{ item.content['#node'].field_imagen_banner.entity.uri.value | image_style('thumbnail') }}" alt="{{ item.content['#node'].field_imagen_banner.alt }}">
-					</div>
-				{% endif %}
-
-				{% if item.content['#node'].field_cover_img is not empty %}
-					<div class="related-field-field_cover_img">
-						<img src="{{ item.content['#node'].field_cover_img.entity.uri.value | image_style('thumbnail') }}" alt="{{ item.content['#node'].field_cover_img.alt }}">
-					</div>
-				{% endif %}
-
+			<div class="tag_alcance">
+				<span>{{ item.content }}</span>
 			</div>
 		{% endfor %}
 		{% if multiple %}
