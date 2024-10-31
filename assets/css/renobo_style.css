@@ -6000,4 +6000,274 @@ nav #search-block-form > div.form-item input::placeholder {
   left: 0;
 }
 
+.page.landing-especiales.landing-prediosparavisvip #special-landings {
+  padding-bottom: 0;
+  background-image: none;
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .btns a {
+  color: #FFF;
+  font-weight: bold;
+  background: #00C29D;
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings #down {
+  margin: 30px auto;
+  width: 100px;
+  display: block;
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings #down img {
+  width: 100%;
+  object-fit: contain;
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .banner {
+  background: #FFF;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  height: auto;
+  overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .banner {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .banner .text {
+  align-self: center;
+}
+@media only screen and (max-width: 768px) {
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .banner .text {
+    align-self: center;
+    width: 100%;
+  }
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .banner .landing-especiales-v2__field-subtitle,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .banner .landings-especiales__field-subtitle,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .banner p {
+  font-family: "value serif pro";
+  color: #ffffff;
+  font-size: 29px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .banner .landing-especiales-v2__field-subtitle,
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .banner .landings-especiales__field-subtitle,
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .banner p {
+    font-size: 22px;
+  }
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .banner .landings-especiales-v2__field-imagen-banner,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .banner .landings-especiales__field-imagen-banner {
+  align-self: flex-end;
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .banner #firstPart {
+  background-color: #afe951;
+  font-size: 120px;
+  line-height: 125px;
+  color: #2E4C7E;
+  border-radius: 5px;
+  font-family: "value serif pro";
+  font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .banner #firstPart {
+    font-size: 55px;
+    line-height: 55px;
+  }
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .banner #secondPart {
+  font-size: 120px;
+  line-height: 125px;
+  background-color: #2E4C7E;
+  color: #afe951;
+  display: block;
+  font-family: "value serif pro";
+  font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .banner #secondPart {
+    font-size: 55px;
+    line-height: 55px;
+  }
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .banner h1 {
+  display: none;
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .description {
+  margin: 30px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .description h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #2E4C7E;
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .description .desc-p {
+  column-count: 2;
+  column-gap: 20px;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .description .desc-p {
+    column-count: 1;
+  }
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .description p {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #595959;
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .quees {
+  background-color: #223659;
+  color: #fdfdef;
+  display: flex;
+  justify-content: space-between;
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .quees h1 {
+  color: #fdfdef;
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .temporal {
+  margin: 30px auto;
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .temporal img {
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings h2 {
+  text-align: center;
+  color: #345a47;
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#suba,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#engativa,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#fontibon,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#kennedy,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#puentearanda,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#teusaquillo,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#chapinero,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#usaquen,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#santafe,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#sancristobal,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#usme,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#ciudadbolivar,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#rafaeluribe,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#losmartires,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#antonionarino,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#tunjuelito,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#barriosunidos {
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  color: #b5e169;
+  cursor: pointer;
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#suba.hasPro,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#engativa.hasPro,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#fontibon.hasPro,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#kennedy.hasPro,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#puentearanda.hasPro,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#teusaquillo.hasPro,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#chapinero.hasPro,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#usaquen.hasPro,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#santafe.hasPro,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#sancristobal.hasPro,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#usme.hasPro,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#ciudadbolivar.hasPro,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#rafaeluribe.hasPro,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#losmartires.hasPro,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#antonionarino.hasPro,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#tunjuelito.hasPro,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#barriosunidos.hasPro {
+  color: #81aa3c;
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#suba .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#engativa .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#fontibon .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#kennedy .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#puentearanda .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#teusaquillo .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#chapinero .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#usaquen .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#santafe .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#sancristobal .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#usme .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#ciudadbolivar .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#rafaeluribe .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#losmartires .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#antonionarino .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#tunjuelito .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#barriosunidos .text {
+  color: #345a47;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@media only screen and (max-width: 768px) {
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .map g#suba .text,
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .map g#engativa .text,
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .map g#fontibon .text,
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .map g#kennedy .text,
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .map g#puentearanda .text,
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .map g#teusaquillo .text,
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .map g#chapinero .text,
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .map g#usaquen .text,
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .map g#santafe .text,
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .map g#sancristobal .text,
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .map g#usme .text,
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .map g#ciudadbolivar .text,
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .map g#rafaeluribe .text,
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .map g#losmartires .text,
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .map g#antonionarino .text,
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .map g#tunjuelito .text,
+  .page.landing-especiales.landing-prediosparavisvip #special-landings .map g#barriosunidos .text {
+    display: none;
+  }
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#suba:hover,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#engativa:hover,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#fontibon:hover,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#kennedy:hover,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#puentearanda:hover,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#teusaquillo:hover,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#chapinero:hover,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#usaquen:hover,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#santafe:hover,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#sancristobal:hover,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#usme:hover,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#ciudadbolivar:hover,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#rafaeluribe:hover,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#losmartires:hover,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#antonionarino:hover,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#tunjuelito:hover,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#barriosunidos:hover {
+  color: #345a47;
+}
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#suba:hover .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#engativa:hover .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#fontibon:hover .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#kennedy:hover .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#puentearanda:hover .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#teusaquillo:hover .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#chapinero:hover .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#usaquen:hover .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#santafe:hover .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#sancristobal:hover .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#usme:hover .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#ciudadbolivar:hover .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#rafaeluribe:hover .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#losmartires:hover .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#antonionarino:hover .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#tunjuelito:hover .text,
+.page.landing-especiales.landing-prediosparavisvip #special-landings .map g#barriosunidos:hover .text {
+  color: #b5e169;
+}
+
 /*# sourceMappingURL=renobo_style.css.map */
