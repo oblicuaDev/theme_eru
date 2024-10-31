@@ -5391,6 +5391,23 @@ i.icon-lists::before {
   font-weight: 300;
 }
 
+.logos {
+  display: flex;
+  gap: 50px;
+  position: relative;
+  align-items: flex-end;
+}
+.logos::after {
+  content: "";
+  height: 80px;
+  width: 3px;
+  background-color: #BABABA;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 25px);
+  transform: translateX(-50%);
+}
+
 #home-v2 .container {
   max-width: 1360px;
   width: 100%;
