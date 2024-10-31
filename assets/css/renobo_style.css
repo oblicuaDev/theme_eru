@@ -5411,6 +5411,10 @@ i.icon-lists::before {
 .menu-principal .menu-secundario {
   background: transparent !important;
 }
+.menu-principal .dropdown-menu a:hover,
+.menu-principal .dropdown-menu a:focus {
+  background-color: #2E4C7E;
+}
 
 #home-v2 .container {
   max-width: 1360px;
