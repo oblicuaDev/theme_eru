@@ -11,7 +11,8 @@ style:
     https://ssl.google-analytics.com/analytics.js:
       { type: external, attributes: { async: true, id: "ga" } }
     assets/js/eru_radix.script.js: {}
-    assets/js/renobo_script.js: {}
+    assets/js/renobo_script.js:
+      version: "1.0.1"
   dependencies:
     - core/jquery
     - core/drupal
