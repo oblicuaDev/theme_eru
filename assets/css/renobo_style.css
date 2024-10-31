@@ -5551,8 +5551,14 @@ i.icon-lists::before {
   height: 360px;
   background-size: cover;
 }
+@media only screen and (max-width: 1023px) {
+  #home-v2 .home-metas {
+    flex-direction: column;
+  }
+}
 #home-v2 .home-metas--container {
   display: flex;
+  padding: 0 20px;
   align-items: center;
   gap: 30px;
   max-width: 1360px;
@@ -5563,6 +5569,13 @@ i.icon-lists::before {
 #home-v2 .home-metas--container .left {
   width: 35%;
   border-right: 4px solid #FFF;
+}
+@media only screen and (max-width: 1023px) {
+  #home-v2 .home-metas--container .left {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 4px solid #FFF;
+  }
 }
 #home-v2 .home-metas--container .metas_title {
   font-size: 35px;
@@ -5606,15 +5619,30 @@ i.icon-lists::before {
   margin: 0 auto;
   position: relative;
 }
+@media only screen and (max-width: 1023px) {
+  #home-v2 .home-convocatorias--container {
+    flex-direction: column;
+  }
+}
 #home-v2 .home-convocatorias--container .home_title {
   position: absolute;
   top: 0;
   left: 0;
 }
+@media only screen and (max-width: 1023px) {
+  #home-v2 .home-convocatorias--container .home_title {
+    position: static;
+  }
+}
 #home-v2 .home-convocatorias--container .home-v2__field-imagenes-convo {
   display: flex;
   align-items: flex-end;
   gap: 10px;
+}
+@media only screen and (max-width: 1023px) {
+  #home-v2 .home-convocatorias--container .home-v2__field-imagenes-convo {
+    display: none;
+  }
 }
 #home-v2 .home-convocatorias--container .home-v2__field-imagenes-convo .field__item:nth-of-type(1) img {
   width: 440px;
@@ -5629,6 +5657,11 @@ i.icon-lists::before {
   max-width: 360px;
   position: relative;
   transform: translateX(-100px);
+}
+@media only screen and (max-width: 1023px) {
+  #home-v2 .home-convocatorias--container .convocatorias {
+    transform: none;
+  }
 }
 #home-v2 .home-convocatorias--container .convocatorias .views-element-container .convocatorias-list {
   display: block;
@@ -5668,10 +5701,20 @@ i.icon-lists::before {
   padding: 90px 20px;
   background: #F5F5F5;
 }
+@media only screen and (max-width: 1023px) {
+  #home-v2 .home-noticias {
+    flex-direction: column;
+  }
+}
 #home-v2 .home-noticias .home_title {
   position: absolute;
   top: 85px;
   left: 20px;
+}
+@media only screen and (max-width: 1023px) {
+  #home-v2 .home-noticias .home_title {
+    position: static;
+  }
 }
 #home-v2 .home-noticias--container {
   position: relative;
