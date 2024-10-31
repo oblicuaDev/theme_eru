@@ -5871,5 +5871,11 @@ i.icon-lists::before {
 .home-v2 .menu-principal.scrolled {
   background-color: #00C29D !important;
 }
+.home-v2 .menu-principal.scrolled .logos::after {
+  left: 50%;
+}
+.home-v2 .menu-principal.scrolled .logos svg {
+  width: 130px;
+}
 
 /*# sourceMappingURL=renobo_style.css.map */
