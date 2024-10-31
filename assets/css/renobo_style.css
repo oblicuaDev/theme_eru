@@ -5668,6 +5668,11 @@ i.icon-lists::before {
   padding: 90px 20px;
   background: #F5F5F5;
 }
+#home-v2 .home-noticias .home_title {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 #home-v2 .home-noticias--container {
   display: flex;
   align-items: center;
