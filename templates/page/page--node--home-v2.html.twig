@@ -116,12 +116,12 @@
 {% endif %}
 
 <script>
-	window.addEventListener("scroll", function () {
-		const menu = document.querySelector(".home-v2 .menu-principal");
+	window.addEventListener('scroll', function () {
+		const menu = document.querySelector('.home-v2 .menu-principal');
 		if (window.scrollY > 50) {
-			menu.style.backgroundColor = "#00C29D !important"; // Example background color
+			menu.classList.add('scrolled');
 		} else {
-			menu.style.backgroundColor = "transparent !important"; // Reset to transparent or default
+			menu.classList.remove('scrolled');
 		}
 	});
 

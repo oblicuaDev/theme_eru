@@ -5864,4 +5864,8 @@ i.icon-lists::before {
   margin: 0 auto;
 }
 
+.home-v2 .menu-principal.scrolled {
+  background-color: #00C29D !important;
+}
+
 /*# sourceMappingURL=renobo_style.css.map */
