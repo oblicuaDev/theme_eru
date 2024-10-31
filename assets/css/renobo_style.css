@@ -5684,12 +5684,12 @@ i.icon-lists::before {
 }
 #home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field.views-field-created {
   display: block;
+  margin: 15px 0;
 }
 #home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field.views-field-created .field-content {
   display: block;
   font-size: 11px;
   color: #737373;
-  margin: 15px 0;
 }
 #home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-field-cover-img {
   width: 411px;
