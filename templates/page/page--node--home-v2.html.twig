@@ -65,21 +65,51 @@
 			</main>
 		{% endif %}
 
+		{% if page.footer %}
+			<footer class="page__footer" {{ attributes }} title="Pie de página Misión, enlaces de interés y datos de contacto">
+				<div class="container">
+					<div class="row">
+						{{ page.footer }}
+					</div>
+				</div>
+			</footer>
+		{% endif %}
+
+		{% if page.footer_light %}
+			<footer class="page__footer_2" {{ attributes }} title="Pie de página, redes sociales, s d q s, mapa del sitio">
+				<div class="container">
+					<div class="row">
+						{{ page.footer_light }}
+					</div>
+				</div>
+			</footer>
+		{% endif %}
+
+		{% if page.footer_black %}
+			<footer class="page__footer_3" {{ attributes }} title="Pie de página - Términos, condiciones, logos">
+				<div class="container">
+					<div class="row">
+						{{ page.footer_black }}
+					</div>
+				</div>
+			</footer>
+		{% endif %}
+
 		 <script>
-																              var divTag = document.getElementsByTagName("div");
-																              for (var i = 0; i < divTag.length; i++) {
-																                if (divTag[i].textContent == "En curso") {
-																                  divTag[i].classList.add("curso");
-																                }
-																                if (divTag[i].textContent == "Finalizado") {
-																                  divTag[i].classList.add("finalizado");
-																                }
-																                if (divTag[i].textContent == "proximo") {
-																                  divTag[i].classList.add("proximo");
-																                }
-																              }
-																        
-																            </script>
+																		              var divTag = document.getElementsByTagName("div");
+																		              for (var i = 0; i < divTag.length; i++) {
+																		                if (divTag[i].textContent == "En curso") {
+																		                  divTag[i].classList.add("curso");
+																		                }
+																		                if (divTag[i].textContent == "Finalizado") {
+																		                  divTag[i].classList.add("finalizado");
+																		                }
+																		                if (divTag[i].textContent == "proximo") {
+																		                  divTag[i].classList.add("proximo");
+																		                }
+																		              }
+																		        
+																		            </script>
 
 		{% if page.footer %}
 			<footer class="page__footer" {{ attributes }} title="Pie de página Misión, enlaces de interés y datos de contacto">
