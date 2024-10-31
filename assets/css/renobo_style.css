@@ -208,11 +208,11 @@ body {
 }
 
 footer {
-  background-color: #003031 !important;
+  background-color: #2E4C7E !important;
 }
 
 footer.page__footer_2 {
-  background-color: #003031 !important;
+  background-color: #2E4C7E !important;
 }
 
 footer .contact .basic__body ul {
@@ -230,6 +230,10 @@ footer .contact .basic__body ul li img {
   -o-object-fit: contain;
   object-fit: contain;
   height: 24px;
+}
+
+.page__footer .nav .nav-link {
+  color: #D6D6D6;
 }
 
 footer * {
@@ -283,23 +287,22 @@ footer {
 footer .oblicua-footer-section {
   padding-left: 44px;
   padding-right: 80px;
-  border-right: 1px solid #ffffec;
   flex: 1;
   padding-top: 15px;
 }
 
 footer .oblicua-footer-section ul li {
-  margin-bottom: 20px;
   display: flex;
   max-width: 450px;
   flex-wrap: nowrap;
   width: 100%;
-  gap: 30px;
+  border-bottom: 1px dashed #D6D6D6;
   flex-direction: row !important;
 }
 
 footer .oblicua-footer-section ul li a {
   font-weight: normal !important;
+  color: #D6D6D6;
 }
 
 footer .oblicua-footer-section ul li img {
@@ -420,6 +423,7 @@ footer {
 .oblicua-siguenos .basic__body ul.oblicua-redes li img {
   width: 20px;
   height: 20px;
+  max-width: 20px;
   -o-object-fit: contain;
   object-fit: contain;
 }
@@ -3903,7 +3907,8 @@ i.icon-lists::before {
   margin: 0 auto;
 }
 .proyectos-nuevos #myTabContent .tab-pane .proyectos-nuevos__field-datos-generales2 .field__items .field__item {
-  flex: 1 0 25%; /* explanation below */
+  flex: 1 0 25%;
+  /* explanation below */
 }
 .proyectos-nuevos #myTabContent .tab-pane .proyectos-nuevos__field-datos-generales2 .field__items .field__item .datos-generales-nuevos__field-cifra {
   background: #005e43;
@@ -5351,6 +5356,39 @@ i.icon-lists::before {
 }
 .views-field.views-field-field-video-hover:hover video {
   opacity: 1;
+}
+
+.home-banner {
+  height: 100vh;
+  width: 100%;
+}
+.home-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-proposito {
+  display: flex;
+}
+.home-proposito .title {
+  font-size: 27px;
+  color: #646464;
+  font-weight: 500;
+  padding-right: 100px;
+}
+.home-proposito .desc {
+  padding: 0 60px;
+}
+.home-proposito .desc-title {
+  font-size: 60px;
+  line-height: 68px;
+  font-weight: bold;
+}
+.home-proposito .desc-txt {
+  font-size: 60px;
+  line-height: 68px;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=renobo_style.css.map */
