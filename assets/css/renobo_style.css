@@ -5458,29 +5458,29 @@ nav #search-block-form > div.form-item input::placeholder {
 .home-v2 .breadcrumb {
   display: none;
 }
-
-#home-v2 .menu-principal {
+.home-v2 .menu-principal {
   background: transparent !important;
 }
-#home-v2 .menu-principal .logos svg {
+.home-v2 .menu-principal .logos svg {
   width: initial;
   height: initial;
   color: #FFF;
 }
-#home-v2 .menu-principal .navbar-nav .nav-item.dropdown::before {
+.home-v2 .menu-principal .navbar-nav .nav-item.dropdown::before {
   border-top: 2px solid #FFF;
   border-right: 2px solid #FFF;
 }
-#home-v2 .menu-principal .block.block--theme-eru-main-menu {
+.home-v2 .menu-principal .block.block--theme-eru-main-menu {
   background: transparent !important;
 }
-#home-v2 .menu-principal form input.form-control {
+.home-v2 .menu-principal form input.form-control {
   background-color: transparent;
   color: #FFF;
 }
-#home-v2 .menu-principal .menu-secundario {
+.home-v2 .menu-principal .menu-secundario {
   background: transparent !important;
 }
+
 #home-v2 .container {
   max-width: 1360px;
   width: 100%;
