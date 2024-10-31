@@ -5971,6 +5971,12 @@ nav #search-block-form > div.form-item input::placeholder {
   padding: 5px 20px;
   background-color: #FFF !important;
 }
+@media only screen and (max-width: 1023px) {
+  .home-v2 .menu-principal.scrolled .block.block--theme-eru-main-menu {
+    left: -100%;
+    background: transparent;
+  }
+}
 .home-v2 .menu-principal.scrolled .logos::after {
   left: 50%;
 }
