@@ -1,5 +1,5 @@
 style:
-  version: VERSION
+  version: 3.0
   css:
     theme:
       assets/css/eru_radix.style.css: {}
@@ -11,8 +11,7 @@ style:
     https://ssl.google-analytics.com/analytics.js:
       { type: external, attributes: { async: true, id: "ga" } }
     assets/js/eru_radix.script.js: {}
-    assets/js/renobo_script.js:
-      version: "1.0.1"
+    assets/js/renobo_script.js: {}
   dependencies:
     - core/jquery
     - core/drupal
