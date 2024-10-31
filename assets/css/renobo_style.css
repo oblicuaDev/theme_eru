@@ -5678,18 +5678,18 @@ i.icon-lists::before {
 }
 #home-v2 .home-noticias--container .views-view-grid .grid-new {
   display: grid;
-  grid-template-columns: repeat(3, 297px);
+  grid-template-columns: repeat(3, 411px);
   justify-content: flex-end;
   gap: 40px;
 }
 #home-v2 .home-noticias--container .views-view-grid .grid-new > div {
   position: relative;
-  width: 297px;
+  width: 411px;
   overflow: hidden;
 }
 #home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-field-imagen-beneficios,
 #home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-field-imagen-banner {
-  width: 297px;
+  width: 411px;
 }
 #home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-field-imagen-beneficios .field-content,
 #home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-field-imagen-banner .field-content {
@@ -5699,7 +5699,7 @@ i.icon-lists::before {
 #home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-field-imagen-beneficios .field-content img,
 #home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-field-imagen-banner .field-content img {
   width: 100%;
-  height: 370px;
+  height: 411px;
   object-fit: cover;
 }
 #home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-title {
