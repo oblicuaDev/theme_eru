@@ -5471,7 +5471,11 @@ nav #search-block-form > div.form-item input::placeholder {
   border-right: 2px solid #FFF;
 }
 .home-v2 .menu-principal .block.block--theme-eru-main-menu {
+  top: 40px;
   background: transparent !important;
+}
+.home-v2 .menu-principal .block.block--theme-eru-main-menu a.nav-link {
+  color: #FFF;
 }
 .home-v2 .menu-principal form input.form-control {
   background-color: transparent;
