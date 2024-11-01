@@ -5520,6 +5520,7 @@ nav #search-block-form > div.form-item input::placeholder {
   display: inline-block;
   background-image: url(/sites/default/files/2024-10/arrow_blue.png);
   width: 34px;
+  margin-left: 20px;
   height: 10px;
   background-repeat: no-repeat;
   background-size: contain;
