@@ -5510,8 +5510,9 @@ nav #search-block-form > div.form-item input::placeholder {
 #home-v2 .page__content .more-link a:hover,
 #home-v2 .more-link a:hover {
   opacity: 0.5;
-  background-color: transparent;
+  background-color: transparent !important;
   color: #000;
+  border-color: transparent !important;
 }
 #home-v2 .page__content .more-link a::after,
 #home-v2 .more-link a::after {
