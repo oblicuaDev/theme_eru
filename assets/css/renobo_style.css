@@ -5507,6 +5507,12 @@ nav #search-block-form > div.form-item input::placeholder {
   font-weight: bolder;
   font-size: 20px;
 }
+#home-v2 .page__content .more-link a:hover,
+#home-v2 .more-link a:hover {
+  opacity: 0.5;
+  background-color: transparent;
+  color: #000;
+}
 #home-v2 .page__content .more-link a::after,
 #home-v2 .more-link a::after {
   content: "";
