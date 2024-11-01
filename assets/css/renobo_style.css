@@ -5496,6 +5496,27 @@ nav #search-block-form > div.form-item input::placeholder {
   background: transparent !important;
 }
 
+#home-v2 .page__content .more-link,
+#home-v2 .more-link {
+  justify-content: flex-end;
+}
+#home-v2 .page__content .more-link a,
+#home-v2 .more-link a {
+  background: transparent;
+  color: #000;
+  font-weight: bolder;
+  font-size: 20px;
+}
+#home-v2 .page__content .more-link a::after,
+#home-v2 .more-link a::after {
+  content: "";
+  display: inline-block;
+  background-image: url(/sites/default/files/2024-10/arrow_blue.png);
+  width: 34px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 #home-v2 .container {
   max-width: 1360px;
   width: 100%;
