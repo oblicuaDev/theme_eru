@@ -145,9 +145,40 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
                 {{ content.body }}
             </div>
         </div>
-        <div class="btns">
-            <a href="/es/form/reusa-tu-inmueble-revitaliza-bog">Formulario propietarios</a>
-            <a href="/es/form/formulario-desarrolladores">Formulario desarrolladores</a>
+
+    </div>
+    <div class="texts">
+        <div class="left">
+            <h2>¿Qué es el Reuso?</h2>
+            <p>Esta iniciativa liderada por RenoBo, la Secretaría del Hábitat y el Instituto Distrital de Patrimonio
+                Cultural (IDPC) es una apuesta por el reuso de espacios y edificaciones ya existentes como una opción
+                innovadora para revitalizar la ciudad mediante proyectos integrales de uso mixto, aumentar la oferta de
+                vivienda en ubicaciones estratégicas y aportar a la mitigación del cambio climático.</p>
+        </div>
+        <div class="right">
+            <h2>¿Quiénes pueden participar?</h2>
+            <p>Si eres propietario de un inmueble en el centro ampliado de Bogotá o eres un desarrollador o constructor
+                interesado en este tipo de proyectos no dudes en hacer parte.</p>
+            <div class="btns">
+                <a href="/es/form/reusa-tu-inmueble-revitaliza-bog">Formulario propietarios</a>
+                <a href="/es/form/formulario-desarrolladores">Formulario desarrolladores</a>
+            </div>
+        </div>
+    </div>
+    <div class="news-container">
+        <div class="gallery">
+            <section class="splide newsgallery" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">{{content.field_imagen_banner.0}}</li>
+                        <li class="splide__slide">{{content.field_imagen_banner.1}}</li>
+                        <li class="splide__slide">{{content.field_imagen_banner.2}}</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="news">
+            <h2>Noticias</h2>
         </div>
     </div>
     <div class="quees">
