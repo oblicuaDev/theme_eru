@@ -100,7 +100,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
 <section id="special-landings">
     {% block content %}
     <div class="banner">
-        {{content.field_imagen_banner.0}}
+        {{file_url(node.field_banner_principal.entity.uri.value)}}
     </div>
     <div class="video-container">
         <div class="txt">
@@ -144,6 +144,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
         </div>
         <div class="news">
             <h2>Noticias</h2>
+            {{ drupal_view('contenido_destacado_home_v2', 'block_1') }}
         </div>
     </div>
     <div class="quees">
@@ -173,7 +174,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
     // 16|Usme
 
     document.addEventListener("DOMContentLoaded", function () {
-        var splide = new Splide(".splide", {
+        var splide = new Splide(".newsgallery", {
             type: "fade",
             pagination: false,
             arrows: false,
