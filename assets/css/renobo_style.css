@@ -6315,6 +6315,17 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza #special-landings-v2 .video-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 0 20px;
+}
+.landing-reusayrevitaliza #special-landings .video-container .txt,
+.landing-reusayrevitaliza #special-landings-v2 .video-container .txt {
+  flex: 1;
+}
+.landing-reusayrevitaliza #special-landings .video-container .txt .video,
+.landing-reusayrevitaliza #special-landings-v2 .video-container .txt .video {
+  flex: 1;
 }
 .landing-reusayrevitaliza #special-landings .texts,
 .landing-reusayrevitaliza #special-landings-v2 .texts {
@@ -6322,6 +6333,7 @@ nav #search-block-form > div.form-item input::placeholder {
   justify-content: space-between;
   align-items: center;
   gap: 50px;
+  padding: 0 20px;
 }
 .landing-reusayrevitaliza #special-landings .texts .left,
 .landing-reusayrevitaliza #special-landings-v2 .texts .left {
@@ -6334,8 +6346,18 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza #special-landings .news-container,
 .landing-reusayrevitaliza #special-landings-v2 .news-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 0 20px;
+}
+.landing-reusayrevitaliza #special-landings .gallery,
+.landing-reusayrevitaliza #special-landings-v2 .gallery {
+  flex: 1;
+}
+.landing-reusayrevitaliza #special-landings .news,
+.landing-reusayrevitaliza #special-landings-v2 .news {
+  flex: 1;
 }
 
 /*# sourceMappingURL=renobo_style.css.map */
