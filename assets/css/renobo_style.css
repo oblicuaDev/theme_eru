@@ -6321,6 +6321,15 @@ nav #search-block-form > div.form-item input::placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 50px;
+}
+.landing-reusayrevitaliza #special-landings .texts .left,
+.landing-reusayrevitaliza #special-landings-v2 .texts .left {
+  flex: 1;
+}
+.landing-reusayrevitaliza #special-landings .texts .right,
+.landing-reusayrevitaliza #special-landings-v2 .texts .right {
+  flex: 1;
 }
 .landing-reusayrevitaliza #special-landings .news-container,
 .landing-reusayrevitaliza #special-landings-v2 .news-container {
