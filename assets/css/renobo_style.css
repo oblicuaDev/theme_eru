@@ -6352,7 +6352,20 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza #special-landings-v2 .video-container .txt {
   flex: 1;
   text-align: center;
-  padding: 0 50px;
+  padding: 50px;
+}
+.landing-reusayrevitaliza #special-landings .video-container .txt h2,
+.landing-reusayrevitaliza #special-landings-v2 .video-container .txt h2 {
+  margin-bottom: 15px;
+}
+.landing-reusayrevitaliza #special-landings .video-container .txt p,
+.landing-reusayrevitaliza #special-landings-v2 .video-container .txt p {
+  margin-bottom: 15px;
+}
+.landing-reusayrevitaliza #special-landings .video-container .txt a,
+.landing-reusayrevitaliza #special-landings-v2 .video-container .txt a {
+  max-width: 340px;
+  margin: 0 auto;
 }
 .landing-reusayrevitaliza #special-landings .video-container .txt .video,
 .landing-reusayrevitaliza #special-landings-v2 .video-container .txt .video {
@@ -6364,7 +6377,7 @@ nav #search-block-form > div.form-item input::placeholder {
   justify-content: space-between;
   align-items: center;
   gap: 50px;
-  padding: 0 20px;
+  padding: 50px 20px;
 }
 .landing-reusayrevitaliza #special-landings .texts .left,
 .landing-reusayrevitaliza #special-landings-v2 .texts .left {
@@ -6380,7 +6393,7 @@ nav #search-block-form > div.form-item input::placeholder {
   justify-content: space-between;
   align-items: center;
   gap: 50px;
-  padding: 0 20px;
+  padding: 50px 20px;
 }
 .landing-reusayrevitaliza #special-landings .gallery,
 .landing-reusayrevitaliza #special-landings-v2 .gallery {
