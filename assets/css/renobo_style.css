@@ -6307,28 +6307,6 @@ nav #search-block-form > div.form-item input::placeholder {
   justify-content: center;
   gap: 10px;
 }
-.landing-reusayrevitaliza #special-landings a,
-.landing-reusayrevitaliza #special-landings-v2 a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  position: relative;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 19px;
-  color: #FFF;
-  font-weight: bold;
-  background: #00C29D;
-  text-transform: none !important;
-  border-radius: 8px;
-  font-family: "value serif pro";
-  text-align: center;
-}
-.landing-reusayrevitaliza #special-landings a:hover,
-.landing-reusayrevitaliza #special-landings-v2 a:hover {
-  text-decoration: underline;
-}
 .landing-reusayrevitaliza #special-landings .banner,
 .landing-reusayrevitaliza #special-landings-v2 .banner {
   background: none;
@@ -6366,6 +6344,25 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza #special-landings-v2 .video-container .txt a {
   max-width: 340px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 19px;
+  color: #FFF;
+  font-weight: bold;
+  background: #00C29D;
+  text-transform: none !important;
+  border-radius: 8px;
+  font-family: "value serif pro";
+  text-align: center;
+}
+.landing-reusayrevitaliza #special-landings .video-container .txt a:hover,
+.landing-reusayrevitaliza #special-landings-v2 .video-container .txt a:hover {
+  text-decoration: underline;
 }
 .landing-reusayrevitaliza #special-landings .video-container .txt .video,
 .landing-reusayrevitaliza #special-landings-v2 .video-container .txt .video {
@@ -6386,6 +6383,28 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza #special-landings .texts .right,
 .landing-reusayrevitaliza #special-landings-v2 .texts .right {
   flex: 1;
+}
+.landing-reusayrevitaliza #special-landings .texts .btns a,
+.landing-reusayrevitaliza #special-landings-v2 .texts .btns a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 19px;
+  color: #FFF;
+  font-weight: bold;
+  background: #00C29D;
+  text-transform: none !important;
+  border-radius: 8px;
+  font-family: "value serif pro";
+  text-align: center;
+}
+.landing-reusayrevitaliza #special-landings .texts .btns a:hover,
+.landing-reusayrevitaliza #special-landings-v2 .texts .btns a:hover {
+  text-decoration: underline;
 }
 .landing-reusayrevitaliza #special-landings .news-container,
 .landing-reusayrevitaliza #special-landings-v2 .news-container {
