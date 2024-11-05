@@ -126,16 +126,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
 <section id="special-landings">
     {% block content %}
     <div class="banner">
-        <img src="/sites/default/files/2024-07/reusas.svg" alt="logo" class="logo" />
-        <section class="splide" aria-label="Splide Basic HTML Example">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide">{{content.field_imagen_banner.0}}</li>
-                    <li class="splide__slide">{{content.field_imagen_banner.1}}</li>
-                    <li class="splide__slide">{{content.field_imagen_banner.2}}</li>
-                </ul>
-            </div>
-        </section>
+        {{content.field_imagen_banner.0}}
     </div>
     <div class="description" id="description">
         <h2>Descripción</h2>
