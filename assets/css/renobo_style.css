@@ -6300,6 +6300,35 @@ nav #search-block-form > div.form-item input::placeholder {
   color: #b5e169;
 }
 
+.landing-reusayrevitaliza #special-landings .btns,
+.landing-reusayrevitaliza #special-landings-v2 .btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.landing-reusayrevitaliza #special-landings a,
+.landing-reusayrevitaliza #special-landings-v2 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 19px;
+  color: #FFF;
+  font-weight: bold;
+  background: #00C29D;
+  text-transform: none !important;
+  border-radius: 8px;
+  font-family: "value serif pro";
+  text-align: center;
+}
+.landing-reusayrevitaliza #special-landings a:hover,
+.landing-reusayrevitaliza #special-landings-v2 a:hover {
+  text-decoration: underline;
+}
 .landing-reusayrevitaliza #special-landings .banner,
 .landing-reusayrevitaliza #special-landings-v2 .banner {
   background: none;
