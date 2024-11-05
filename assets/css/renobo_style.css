@@ -6300,4 +6300,15 @@ nav #search-block-form > div.form-item input::placeholder {
   color: #b5e169;
 }
 
+.landing-reusayrevitaliza .banner {
+  background: none;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding-left: 0;
+  height: auto;
+  overflow: hidden;
+  align-items: center;
+}
+
 /*# sourceMappingURL=renobo_style.css.map */
