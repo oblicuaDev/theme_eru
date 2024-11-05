@@ -6311,5 +6311,22 @@ nav #search-block-form > div.form-item input::placeholder {
   overflow: hidden;
   align-items: center;
 }
+.landing-reusayrevitaliza #special-landings .video-container,
+.landing-reusayrevitaliza #special-landings-v2 .video-container {
+  display: flex;
+  justify-content: space-between;
+}
+.landing-reusayrevitaliza #special-landings .texts,
+.landing-reusayrevitaliza #special-landings-v2 .texts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.landing-reusayrevitaliza #special-landings .news-container,
+.landing-reusayrevitaliza #special-landings-v2 .news-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 /*# sourceMappingURL=renobo_style.css.map */
