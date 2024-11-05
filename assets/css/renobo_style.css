@@ -6300,8 +6300,8 @@ nav #search-block-form > div.form-item input::placeholder {
   color: #b5e169;
 }
 
-#special-landings .landing-reusayrevitaliza .banner,
-#special-landings-v2 .landing-reusayrevitaliza .banner {
+.landing-reusayrevitaliza #special-landings .banner,
+.landing-reusayrevitaliza #special-landings-v2 .banner {
   background: none;
   display: flex;
   justify-content: center;
