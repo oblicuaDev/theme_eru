@@ -6413,17 +6413,20 @@ nav #search-block-form > div.form-item input::placeholder {
 }
 .landing-reusayrevitaliza #special-landings .texts,
 .landing-reusayrevitaliza #special-landings-v2 .texts {
+  background-color: #F5F5F5;
+  padding: 50px 20px;
+}
+.landing-reusayrevitaliza #special-landings .texts .container,
+.landing-reusayrevitaliza #special-landings-v2 .texts .container {
   display: flex;
   justify-content: space-between;
   gap: 50px;
-  padding: 50px 20px;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #F5F5F5;
 }
 @media only screen and (max-width: 1023px) {
-  .landing-reusayrevitaliza #special-landings .texts,
-  .landing-reusayrevitaliza #special-landings-v2 .texts {
+  .landing-reusayrevitaliza #special-landings .texts .container,
+  .landing-reusayrevitaliza #special-landings-v2 .texts .container {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
