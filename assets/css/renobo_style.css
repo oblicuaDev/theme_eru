@@ -6334,11 +6334,17 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza #special-landings-v2 .video-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 50px;
   padding: 0 20px;
   max-width: 1200px;
   margin: 0 auto;
+}
+@media only screen and (max-width: 1023px) {
+  .landing-reusayrevitaliza #special-landings .video-container,
+  .landing-reusayrevitaliza #special-landings-v2 .video-container {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 .landing-reusayrevitaliza #special-landings .video-container .txt,
 .landing-reusayrevitaliza #special-landings-v2 .video-container .txt {
@@ -6390,11 +6396,17 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza #special-landings-v2 .texts {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 50px;
   padding: 50px 20px;
   max-width: 1200px;
   margin: 0 auto;
+}
+@media only screen and (max-width: 1023px) {
+  .landing-reusayrevitaliza #special-landings .texts,
+  .landing-reusayrevitaliza #special-landings-v2 .texts {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 .landing-reusayrevitaliza #special-landings .texts .left,
 .landing-reusayrevitaliza #special-landings-v2 .texts .left {
@@ -6429,11 +6441,17 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza #special-landings-v2 .news-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 50px;
   padding: 50px 20px;
   max-width: 1200px;
   margin: 0 auto;
+}
+@media only screen and (max-width: 1023px) {
+  .landing-reusayrevitaliza #special-landings .news-container,
+  .landing-reusayrevitaliza #special-landings-v2 .news-container {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 .landing-reusayrevitaliza #special-landings .gallery,
 .landing-reusayrevitaliza #special-landings-v2 .gallery {
