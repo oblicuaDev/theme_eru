@@ -6340,6 +6340,7 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza #special-landings-v2 .video-container {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   gap: 50px;
   padding: 0 20px;
   max-width: 1200px;
