@@ -50,22 +50,24 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
             <section class="splide newsgallery" aria-label="Splide Basic HTML Example">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        {% for image in content.field_imagen_banner %}
-                        <li class="splide__slide">
-                            <img src="{{ image.entity.uri.value | file_url }}"
-                                alt="{{ image.field_imagen_banner.alt.value is not empty ? image.field_imagen_banner.alt.value : 'Imagen sin descripción' }}">
-                        </li>
-                        {% endfor %}
+                        <li class="splide__slide">{{content.field_imagen_banner.0}}</li>
+                        <li class="splide__slide">{{content.field_imagen_banner.1}}</li>
+                        <li class="splide__slide">{{content.field_imagen_banner.2}}</li>
+                        <li class="splide__slide">{{content.field_imagen_banner.3}}</li>
+                        <li class="splide__slide">{{content.field_imagen_banner.4}}</li>
+                        <li class="splide__slide">{{content.field_imagen_banner.5}}</li>
+                        <li class="splide__slide">{{content.field_imagen_banner.6}}</li>
+                        <li class="splide__slide">{{content.field_imagen_banner.7}}</li>
+                        <li class="splide__slide">{{content.field_imagen_banner.8}}</li>
+                        <li class="splide__slide">{{content.field_imagen_banner.9}}</li>
                     </ul>
                 </div>
             </section>
         </div>
-    </div>
-
-    <div class="newsContent">
-        <h2>Lo último sobre Reúso</h2>
-        {{ drupal_view('noticias_reuso') }}
-    </div>
+        <div class="newsContent">
+            <h2>Lo último sobre Reúso</h2>
+            {{ drupal_view('noticias_reuso') }}
+        </div>
     </div>
     <div class="redes">
         <div class="container">
