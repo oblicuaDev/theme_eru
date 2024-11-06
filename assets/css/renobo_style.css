@@ -6300,6 +6300,9 @@ nav #search-block-form > div.form-item input::placeholder {
   color: #b5e169;
 }
 
+.landing-reusayrevitaliza .page__content {
+  margin: 0;
+}
 .landing-reusayrevitaliza #special-landings .btns,
 .landing-reusayrevitaliza #special-landings-v2 .btns {
   display: flex;
