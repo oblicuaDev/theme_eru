@@ -5,80 +5,90 @@ node.isPublished() ? 'node--unpublished', node.bundle|clean_class,
 node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
 {#
 {{ kint(content | keys) }} #}
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+ <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<link
+href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"/>  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 <style>
-    .col-12 {
-        padding: 0;
-    }
+	.col-12 {
+		padding: 0;
+	}
 </style>
 <section id="special-landings">
-    {% block content %}
-    <div class="banner">
-        <img width="100%" src="{{file_url(node.field_banner_principal.entity.uri.value)}}" alt="Banner Principal">
+	{% block content %}
+		<div class="banner">
+			<img width="100%" src="{{file_url(node.field_banner_principal.entity.uri.value)}}" alt="Banner Principal">
 
-    </div>
-    <div class="video-container">
-        <div class="txt">
-            <h2>¿Tienes un inmueble en desuso?</h2>
-            <p>¡Lo estamos buscando para revitalizar el centro de Bogotá!</p>
-            <a href="https://renobo.com.co/es/form/reusa-tu-inmueble-revitaliza-bog">Inscríbete aquí
-                como propietario</a>
-        </div>
-        <div class="video">
-            <video src="{{file_url(node.field_video_reuso.entity.uri.value)}}" controls></video>
-        </div>
-    </div>
-    <div class="texts">
-        <div class="container">
-            <div class="left">
-                {{ content.field_que_es_reuso }}
-            </div>
-            <div class="right">
-                {{content.body}}
-                <div class="btns">
-                    <a href="/es/form/reusa-tu-inmueble-revitaliza-bog">Formulario propietarios</a>
-                    <a href="/es/form/formulario-desarrolladores">Formulario desarrolladores</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="news-container">
-        <div class="gallery">
-            <section class="splide newsgallery" aria-label="Splide Basic HTML Example">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">{{content.field_imagen_banner.0}}</li>
-                        <li class="splide__slide">{{content.field_imagen_banner.1}}</li>
-                        <li class="splide__slide">{{content.field_imagen_banner.2}}</li>
-                        <li class="splide__slide">{{content.field_imagen_banner.3}}</li>
-                        <li class="splide__slide">{{content.field_imagen_banner.4}}</li>
-                        <li class="splide__slide">{{content.field_imagen_banner.5}}</li>
-                        <li class="splide__slide">{{content.field_imagen_banner.6}}</li>
-                        <li class="splide__slide">{{content.field_imagen_banner.7}}</li>
-                        <li class="splide__slide">{{content.field_imagen_banner.8}}</li>
-                        <li class="splide__slide">{{content.field_imagen_banner.9}}</li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-        <div class="newsContent">
-            <h2>Lo último sobre Reúso</h2>
-            {{ drupal_view('noticias_reuso') }}
-        </div>
-    </div>
-    <div class="redes">
-        <div class="container">
-            <h2>Reúso en las redes</h2>
-            {{content.field_contenido_redes}}
-        </div>
-    </div>
-</section>
+		</div>
+		<div class="video-container">
+			<div class="txt">
+				<h2>¿Tienes un inmueble en desuso?</h2>
+				<p>¡Lo estamos buscando para revitalizar el centro de Bogotá!</p>
+				<a href="https://renobo.com.co/es/form/reusa-tu-inmueble-revitaliza-bog">Inscríbete aquí
+					                como propietario</a>
+			</div>
+			<div class="video">
+				<video src="{{file_url(node.field_video_reuso.entity.uri.value)}}" controls></video>
+			</div>
+		</div>
+		<div class="texts">
+			<div class="container">
+				<div class="left">
+					{{ content.field_que_es_reuso }}
+				</div>
+				<div class="right">
+					{{content.body}}
+					<div class="btns">
+						<a href="/es/form/reusa-tu-inmueble-revitaliza-bog">Formulario propietarios</a>
+						<a href="/es/form/formulario-desarrolladores">Formulario desarrolladores</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="news-container">
+			<div class="gallery">
+				<section class="splide newsgallery" aria-label="Splide Basic HTML Example">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide">{{content.field_imagen_banner.0}}<small>{{node.field_banner_principal.0.entity.alt.value}}</small>
+							</li>
+							<li class="splide__slide">{{content.field_imagen_banner.1}}<small>{{node.field_banner_principal.1.entity.alt.value}}</small>
+							</li>
+							<li class="splide__slide">{{content.field_imagen_banner.2}}<small>{{node.field_banner_principal.2.entity.alt.value}}</small>
+							</li>
+							<li class="splide__slide">{{content.field_imagen_banner.3}}<small>{{node.field_banner_principal.3.entity.alt.value}}</small>
+							</li>
+							<li class="splide__slide">{{content.field_imagen_banner.4}}<small>{{node.field_banner_principal.4.entity.alt.value}}</small>
+							</li>
+							<li class="splide__slide">{{content.field_imagen_banner.5}}<small>{{node.field_banner_principal.5.entity.alt.value}}</small>
+							</li>
+							<li class="splide__slide">{{content.field_imagen_banner.6}}<small>{{node.field_banner_principal.6.entity.alt.value}}</small>
+							</li>
+							<li class="splide__slide">{{content.field_imagen_banner.7}}<small>{{node.field_banner_principal.7.entity.alt.value}}</small>
+							</li>
+							<li class="splide__slide">{{content.field_imagen_banner.8}}<small>{{node.field_banner_principal.8.entity.alt.value}}</small>
+							</li>
+							<li class="splide__slide">{{content.field_imagen_banner.9}}<small>{{node.field_banner_principal.9.entity.alt.value}}</small>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<div class="newsContent">
+				<h2>Lo último sobre Reúso</h2>
+				{{ drupal_view('noticias_reuso') }}
+			</div>
+		</div>
+		<div class="redes">
+			<div class="container">
+				<h2>Reúso en las redes</h2>
+				{{content.field_contenido_redes}}
+			</div>
+		</div>
+	</section>
 {% endblock %}
-<script async src="//www.instagram.com/embed.js"></script>
-<script>
+ <script async src="//www.instagram.com/embed.js"></script>
+ <script>
     // 0|Antonio Nariño
     // 1|Barrios Unidos
     // 2|Chapinero
@@ -134,7 +144,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
     });
 </script>
 
-<script>
+ <script>
     window.addEventListener('scroll', function () {
         const menu = document.querySelector('.menu-principal');
         if (window.scrollY > 50) {
