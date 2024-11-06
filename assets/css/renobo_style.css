@@ -6515,6 +6515,10 @@ nav #search-block-form > div.form-item input::placeholder {
   display: flex;
   flex-direction: column;
 }
+.landing-reusayrevitaliza .redes .container h2 {
+  margin-bottom: 15px;
+  color: #2E4C7E;
+}
 .landing-reusayrevitaliza .landings-especiales__field-contenido-redes .field__items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
