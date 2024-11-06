@@ -40,9 +40,9 @@
 					{% for row in rows %}
 						<li class="splide__slide">
 							{{ row.content['#markup'] }}
-						{# O prueba a mostrar campos específicos si los ves con dump() #}
-							{# {{ row.content['field_imagen'] }} #}
-							{# {{ row.content['field_titulo'] }} #}
+							{# O prueba a mostrar campos específicos si los ves con dump() #}
+							{{ row.content['field_imagen'] }}
+							{{ row.content['field_titulo'] }}
 						</li>
 					{% endfor %}
 				{% else %}
