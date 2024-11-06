@@ -6337,6 +6337,8 @@ nav #search-block-form > div.form-item input::placeholder {
   align-items: center;
   gap: 50px;
   padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .landing-reusayrevitaliza #special-landings .video-container .txt,
 .landing-reusayrevitaliza #special-landings-v2 .video-container .txt {
@@ -6387,6 +6389,8 @@ nav #search-block-form > div.form-item input::placeholder {
   align-items: center;
   gap: 50px;
   padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .landing-reusayrevitaliza #special-landings .texts .left,
 .landing-reusayrevitaliza #special-landings-v2 .texts .left {
@@ -6425,6 +6429,8 @@ nav #search-block-form > div.form-item input::placeholder {
   align-items: center;
   gap: 50px;
   padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .landing-reusayrevitaliza #special-landings .gallery,
 .landing-reusayrevitaliza #special-landings-v2 .gallery {
