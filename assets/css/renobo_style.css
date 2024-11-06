@@ -6515,5 +6515,11 @@ nav #search-block-form > div.form-item input::placeholder {
   display: flex;
   flex-direction: column;
 }
+.landing-reusayrevitaliza #special-landings .redes .container .field__items,
+.landing-reusayrevitaliza #special-landings-v2 .redes .container .field__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
 
 /*# sourceMappingURL=renobo_style.css.map */
