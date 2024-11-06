@@ -3,7 +3,9 @@
 	<span>{{ fields.field_cover_img }}</span>
 	<span>{{ fields.title.content }},</span>
 	<span>{{ fields.body.content }}</span>
-	<span>{{ dump(fields) }}</span>
+	<span>{{ dump(row) }}</span>
+	<span>{{ dump(content) }}</span>
+	<span>{{ dump(node) }}</span>
 	{{ row.content['#row']._entity.field_link[0]['#url'] }}
 
 	<a href="{{ row.content['#row']._entity.field_link[0]['#url'] }}">
