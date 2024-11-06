@@ -6484,6 +6484,11 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza #special-landings-v2 .gallery {
   flex: 1;
 }
+.landing-reusayrevitaliza #special-landings .gallery .newsgallery img,
+.landing-reusayrevitaliza #special-landings-v2 .gallery .newsgallery img {
+  height: 300px;
+  object-fit: cover;
+}
 .landing-reusayrevitaliza #special-landings .newsContent,
 .landing-reusayrevitaliza #special-landings-v2 .newsContent {
   flex: 1;
