@@ -6509,6 +6509,7 @@ nav #search-block-form > div.form-item input::placeholder {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  padding: 0;
 }
 @media only screen and (max-width: 1023px) {
   .landing-reusayrevitaliza #special-landings .newsContent .newsgalleryN,
@@ -6534,7 +6535,14 @@ nav #search-block-form > div.form-item input::placeholder {
 @media only screen and (max-width: 1023px) {
   .landing-reusayrevitaliza .landings-especiales__field-contenido-redes {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
+}
+.landing-reusayrevitaliza .landings-especiales__field-contenido-redes .field__item {
+  width: 100%;
+}
+.landing-reusayrevitaliza .landings-especiales__field-contenido-redes .field__item iframe {
+  margin: 0 auto !important;
 }
 .landing-reusayrevitaliza .landings-especiales__field-contenido-redes .field__items {
   display: grid;
