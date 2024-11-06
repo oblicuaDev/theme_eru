@@ -1,4 +1,4 @@
-{#  
+{#
 /**
  * @file
  * Theme override for main view template.
@@ -30,28 +30,26 @@
  * @see template_preprocess_views_view()
  */
 #}
-{%
-  set classes = [
-    dom_id ? 'js-view-dom-id-' ~ dom_id,
-  ]
-%}
 <div{{attributes.addClass(classes)}}>
-	<div
-		class="container splideS">
-		{# Si hay filas, las iteramos y agregamos la estructura que necesitemos para cada una #}
-		{% if rows %}
-			<div class="rows-wrapper">
-				{% for row in rows %}
-					<div class="row-item">
-						{{ row.content }}
-					</div>
-				{% endfor %}
-			</div>
-		{% else %}
-			{# Si no hay filas, mostramos el contenido vacío #}
-			<div class="view-empty">
-				{{ empty }}
-			</div>
-		{% endif %}
-	</div>
+	<section class="splide newsgallery" aria-label="Noticias Gallery">
+		<div class="splide__track">
+			<ul
+				class="splide__list">
+				{# Si hay filas, las iteramos para crear cada slide #}
+				{% if rows %}
+					{% for row in rows %}
+						<li class="splide__slide">
+							{{ row.content }}
+							{# O el campo específico que deseas mostrar #}
+						</li>
+					{% endfor %}
+				{% else %}
+					{# Si no hay filas, mostramos el contenido vacío #}
+					<li class="splide__slide">
+						{{ empty }}
+					</li>
+				{% endif %}
+			</ul>
+		</div>
+	</section>
 </div>
