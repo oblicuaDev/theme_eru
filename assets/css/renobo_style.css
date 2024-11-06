@@ -6419,6 +6419,7 @@ nav #search-block-form > div.form-item input::placeholder {
   padding: 50px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #F5F5F5;
 }
 @media only screen and (max-width: 1023px) {
   .landing-reusayrevitaliza #special-landings .texts,
