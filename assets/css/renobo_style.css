@@ -6470,16 +6470,15 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza #special-landings .news-container,
 .landing-reusayrevitaliza #special-landings-v2 .news-container {
   display: flex;
-  justify-content: space-between;
   gap: 50px;
   padding: 50px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  flex-direction: column;
 }
 @media only screen and (max-width: 1023px) {
   .landing-reusayrevitaliza #special-landings .news-container,
   .landing-reusayrevitaliza #special-landings-v2 .news-container {
-    flex-direction: column;
     gap: 20px;
     padding: 20px;
   }
