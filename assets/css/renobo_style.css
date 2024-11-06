@@ -6486,8 +6486,14 @@ nav #search-block-form > div.form-item input::placeholder {
 }
 .landing-reusayrevitaliza #special-landings .gallery .newsgallery img,
 .landing-reusayrevitaliza #special-landings-v2 .gallery .newsgallery img {
-  height: 300px;
+  height: 620px;
   object-fit: cover;
+}
+@media only screen and (max-width: 1023px) {
+  .landing-reusayrevitaliza #special-landings .gallery .newsgallery img,
+  .landing-reusayrevitaliza #special-landings-v2 .gallery .newsgallery img {
+    height: calc(100vw - 40px);
+  }
 }
 .landing-reusayrevitaliza #special-landings .newsContent,
 .landing-reusayrevitaliza #special-landings-v2 .newsContent {
