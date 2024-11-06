@@ -5450,7 +5450,7 @@ nav #search-block-form > div.form-item input::placeholder {
 }
 .logos::after {
   content: "";
-  height: 80px;
+  height: 100%;
   width: 3px;
   background-color: #595959;
   position: absolute;
@@ -6300,6 +6300,9 @@ nav #search-block-form > div.form-item input::placeholder {
   color: #b5e169;
 }
 
+.landing-reusayrevitaliza .menu-principal .block.block--theme-eru-main-menu {
+  top: 70px;
+}
 .landing-reusayrevitaliza .page__content {
   margin: 0;
 }
