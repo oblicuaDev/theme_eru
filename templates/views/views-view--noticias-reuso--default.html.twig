@@ -39,8 +39,10 @@
 				{% if rows %}
 					{% for row in rows %}
 						<li class="splide__slide">
-							{{ row.content }}
-							{# O el campo específico que deseas mostrar #}
+							{{ row.content['#markup'] }}
+						{# O prueba a mostrar campos específicos si los ves con dump() #}
+							{# {{ row.content['field_imagen'] }} #}
+							{# {{ row.content['field_titulo'] }} #}
 						</li>
 					{% endfor %}
 				{% else %}
