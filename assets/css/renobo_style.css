@@ -6378,13 +6378,13 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza #special-landings-v2 .video-container .txt a:hover {
   text-decoration: underline;
 }
-.landing-reusayrevitaliza #special-landings .video-container .txt .video,
-.landing-reusayrevitaliza #special-landings-v2 .video-container .txt .video {
+.landing-reusayrevitaliza #special-landings .video-container .video,
+.landing-reusayrevitaliza #special-landings-v2 .video-container .video {
   flex: 1;
   padding: 50px;
 }
-.landing-reusayrevitaliza #special-landings .video-container .txt .video video,
-.landing-reusayrevitaliza #special-landings-v2 .video-container .txt .video video {
+.landing-reusayrevitaliza #special-landings .video-container .video video,
+.landing-reusayrevitaliza #special-landings-v2 .video-container .video video {
   width: 100%;
 }
 .landing-reusayrevitaliza #special-landings .texts,
