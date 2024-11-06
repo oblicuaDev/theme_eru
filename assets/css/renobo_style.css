@@ -6504,9 +6504,16 @@ nav #search-block-form > div.form-item input::placeholder {
   display: block;
   margin: 15px 0;
 }
-.landing-reusayrevitaliza #special-landings .newsContent .newsgalleryN .splide__list .splide__slide,
-.landing-reusayrevitaliza #special-landings-v2 .newsContent .newsgalleryN .splide__list .splide__slide {
-  display: block;
+.landing-reusayrevitaliza #special-landings .newsContent .newsgalleryN,
+.landing-reusayrevitaliza #special-landings-v2 .newsContent .newsgalleryN {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.landing-reusayrevitaliza #special-landings .newsContent .newsgalleryN li,
+.landing-reusayrevitaliza #special-landings-v2 .newsContent .newsgalleryN li {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=renobo_style.css.map */
