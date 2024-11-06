@@ -25,7 +25,7 @@ href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.cs
 				<h2>¿Tienes un inmueble en desuso?</h2>
 				<p>¡Lo estamos buscando para revitalizar el centro de Bogotá!</p>
 				<a href="https://renobo.com.co/es/form/reusa-tu-inmueble-revitaliza-bog">Inscríbete aquí
-																									                como propietario</a>
+										                como propietario</a>
 			</div>
 			<div class="video">
 				<video src="{{file_url(node.field_video_reuso.entity.uri.value)}}" controls></video>
@@ -50,32 +50,29 @@ href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.cs
 				<section class="splide newsgallery" aria-label="Splide Basic HTML Example">
 					<div class="splide__track">
 						<ul class="splide__list">
-							<li class="splide__slide">{{content.field_imagen_banner.0}}<small>{{node.field_banner_principal.entity.uri.value}}</small>
+							<li class="splide__slide">{{content.field_imagen_banner.0}}
 							</li>
-							<li class="splide__slide">{{content.field_imagen_banner.1}}<small>{{node.field_banner_principal.entity.uri.value}}</small>
+							<li class="splide__slide">{{content.field_imagen_banner.1}}
 							</li>
-							<li class="splide__slide">{{content.field_imagen_banner.2}}<small>{{node.field_banner_principal.entity.uri.value}}</small>
+							<li class="splide__slide">{{content.field_imagen_banner.2}}
 							</li>
-							<li class="splide__slide">{{content.field_imagen_banner.3}}<small>{{node.field_banner_principal.entity.uri.value}}</small>
+							<li class="splide__slide">{{content.field_imagen_banner.3}}
 							</li>
-							<li class="splide__slide">{{content.field_imagen_banner.4}}<small>{{node.field_banner_principal.entity.uri.value}}</small>
+							<li class="splide__slide">{{content.field_imagen_banner.4}}
 							</li>
-							<li class="splide__slide">{{content.field_imagen_banner.5}}<small>{{node.field_banner_principal.entity.uri.value}}</small>
+							<li class="splide__slide">{{content.field_imagen_banner.5}}
 							</li>
-							<li class="splide__slide">{{content.field_imagen_banner.6}}<small>{{node.field_banner_principal.entity.uri.value}}</small>
+							<li class="splide__slide">{{content.field_imagen_banner.6}}
 							</li>
-							<li class="splide__slide">{{content.field_imagen_banner.7}}<small>{{node.field_banner_principal.entity.uri.value}}</small>
+							<li class="splide__slide">{{content.field_imagen_banner.7}}
 							</li>
-							<li class="splide__slide">{{content.field_imagen_banner.8}}<small>{{node.field_banner_principal.entity.uri.value}}</small>
+							<li class="splide__slide">{{content.field_imagen_banner.8}}
 							</li>
-							<li class="splide__slide">{{content.field_imagen_banner.9}}<small>{{node.field_banner_principal.entity.uri.value}}</small>
+							<li class="splide__slide">{{content.field_imagen_banner.9}}
 							</li>
 						</ul>
 					</div>
 				</section>
-				{% for image in node.field_banner_principal %}
-					{{ dump(image.entity.field_media_image.alt) }}
-				{% endfor %}
 			</div>
 			<div class="newsContent">
 				<h2>Lo último sobre Reúso</h2>
