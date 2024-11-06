@@ -6443,5 +6443,9 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza #special-landings-v2 .newsContent {
   flex: 1;
 }
+.landing-reusayrevitaliza #special-landings .newsContent .newsgalleryN .splide__list .splide__slide,
+.landing-reusayrevitaliza #special-landings-v2 .newsContent .newsgalleryN .splide__list .splide__slide {
+  display: block;
+}
 
 /*# sourceMappingURL=renobo_style.css.map */
