@@ -1,24 +1,8 @@
-<section class="splide newsgalleryN" aria-label="Noticias Gallery">
-	<div class="splide__track">
-		<ul class="splide__list">
-			{% for row in rows %}
-			<li class="splide__slide">
-				{{ row.content }}
-			</li>
-			{% endfor %}
-		</ul>
-	</div>
-</section>
-<script>
-	document.addEventListener("DOMContentLoaded", function () {
-		var splide = new Splide(".newsgalleryN", {
-			type: "fade",
-			pagination: false,
-			arrows: false,
-			autoplay: true,
-			interval: 4000,
-			speed: 800,
-		});
-		splide.mount();
-	})
-</script>
+<ul class="newsgalleryN">
+	{% for row in rows %}
+	<li>
+		{{ row.content }}
+	</li>
+	{% endfor %}
+</ul>
+</div>
