@@ -6303,6 +6303,11 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza .page__content {
   margin: 0;
 }
+.landing-reusayrevitaliza #special-landings h2,
+.landing-reusayrevitaliza #special-landings-v2 h2 {
+  margin-bottom: 15px;
+  color: #2E4C7E;
+}
 .landing-reusayrevitaliza #special-landings .btns,
 .landing-reusayrevitaliza #special-landings-v2 .btns {
   display: flex;
