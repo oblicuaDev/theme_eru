@@ -6343,7 +6343,8 @@ nav #search-block-form > div.form-item input::placeholder {
   .landing-reusayrevitaliza #special-landings .video-container,
   .landing-reusayrevitaliza #special-landings-v2 .video-container {
     flex-direction: column;
-    gap: 0;
+    gap: 20px;
+    padding: 20px;
   }
 }
 .landing-reusayrevitaliza #special-landings .video-container .txt,
@@ -6351,6 +6352,12 @@ nav #search-block-form > div.form-item input::placeholder {
   flex: 1;
   text-align: center;
   padding: 50px;
+}
+@media only screen and (max-width: 1023px) {
+  .landing-reusayrevitaliza #special-landings .video-container .txt,
+  .landing-reusayrevitaliza #special-landings-v2 .video-container .txt {
+    padding: 0;
+  }
 }
 .landing-reusayrevitaliza #special-landings .video-container .txt h2,
 .landing-reusayrevitaliza #special-landings-v2 .video-container .txt h2 {
@@ -6388,6 +6395,12 @@ nav #search-block-form > div.form-item input::placeholder {
   flex: 1;
   padding: 50px;
 }
+@media only screen and (max-width: 1023px) {
+  .landing-reusayrevitaliza #special-landings .video-container .video,
+  .landing-reusayrevitaliza #special-landings-v2 .video-container .video {
+    padding: 0;
+  }
+}
 .landing-reusayrevitaliza #special-landings .video-container .video video,
 .landing-reusayrevitaliza #special-landings-v2 .video-container .video video {
   width: 100%;
@@ -6405,7 +6418,8 @@ nav #search-block-form > div.form-item input::placeholder {
   .landing-reusayrevitaliza #special-landings .texts,
   .landing-reusayrevitaliza #special-landings-v2 .texts {
     flex-direction: column;
-    gap: 0;
+    gap: 20px;
+    padding: 20px;
   }
 }
 .landing-reusayrevitaliza #special-landings .texts .left,
@@ -6450,7 +6464,8 @@ nav #search-block-form > div.form-item input::placeholder {
   .landing-reusayrevitaliza #special-landings .news-container,
   .landing-reusayrevitaliza #special-landings-v2 .news-container {
     flex-direction: column;
-    gap: 0;
+    gap: 20px;
+    padding: 20px;
   }
 }
 .landing-reusayrevitaliza #special-landings .gallery,
