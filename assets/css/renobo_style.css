@@ -6430,6 +6430,12 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza #special-landings-v2 .texts .right {
   flex: 1;
 }
+@media only screen and (max-width: 1023px) {
+  .landing-reusayrevitaliza #special-landings .texts .btns,
+  .landing-reusayrevitaliza #special-landings-v2 .texts .btns {
+    flex-direction: column;
+  }
+}
 .landing-reusayrevitaliza #special-landings .texts .btns a,
 .landing-reusayrevitaliza #special-landings-v2 .texts .btns a {
   display: flex;
