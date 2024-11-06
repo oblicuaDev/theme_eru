@@ -6357,7 +6357,6 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza #special-landings-v2 .video-container .txt {
   flex: 1;
   text-align: center;
-  padding: 50px;
 }
 @media only screen and (max-width: 1023px) {
   .landing-reusayrevitaliza #special-landings .video-container .txt,
@@ -6399,7 +6398,6 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza #special-landings .video-container .video,
 .landing-reusayrevitaliza #special-landings-v2 .video-container .video {
   flex: 1;
-  padding: 50px;
 }
 @media only screen and (max-width: 1023px) {
   .landing-reusayrevitaliza #special-landings .video-container .video,
