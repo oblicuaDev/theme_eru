@@ -6381,6 +6381,11 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza #special-landings .video-container .txt .video,
 .landing-reusayrevitaliza #special-landings-v2 .video-container .txt .video {
   flex: 1;
+  padding: 50px;
+}
+.landing-reusayrevitaliza #special-landings .video-container .txt .video video,
+.landing-reusayrevitaliza #special-landings-v2 .video-container .txt .video video {
+  width: 100%;
 }
 .landing-reusayrevitaliza #special-landings .texts,
 .landing-reusayrevitaliza #special-landings-v2 .texts {
