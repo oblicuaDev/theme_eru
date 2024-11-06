@@ -6510,6 +6510,12 @@ nav #search-block-form > div.form-item input::placeholder {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
+@media only screen and (max-width: 1023px) {
+  .landing-reusayrevitaliza #special-landings .newsContent .newsgalleryN,
+  .landing-reusayrevitaliza #special-landings-v2 .newsContent .newsgalleryN {
+    grid-template-columns: 1fr;
+  }
+}
 .landing-reusayrevitaliza #special-landings .newsContent .newsgalleryN li,
 .landing-reusayrevitaliza #special-landings-v2 .newsContent .newsgalleryN li {
   display: flex;
@@ -6524,6 +6530,11 @@ nav #search-block-form > div.form-item input::placeholder {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+}
+@media only screen and (max-width: 1023px) {
+  .landing-reusayrevitaliza .landings-especiales__field-contenido-redes {
+    grid-template-columns: 1fr;
+  }
 }
 .landing-reusayrevitaliza .landings-especiales__field-contenido-redes .field__items {
   display: grid;
