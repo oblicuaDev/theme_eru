@@ -6303,6 +6303,9 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza .menu-principal .block.block--theme-eru-main-menu {
   top: 70px;
 }
+.landing-reusayrevitaliza .menu-principal.scrolled .block.block--theme-eru-main-menu {
+  top: 0;
+}
 .landing-reusayrevitaliza .page__content {
   margin: 0;
 }
