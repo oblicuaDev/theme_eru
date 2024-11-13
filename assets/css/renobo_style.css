@@ -1,14 +1,12 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @font-face {
-  font-family: "Value Serif Pro";
   src: url("https://fonts.renobo.com.co/ValueSerifPro-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Value Serif Pro";
   src: url("https://fonts.renobo.com.co/ValueSerifPro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -37,7 +35,6 @@ body {
   font-size: 47px;
   line-height: 41px;
   margin: 0;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   text-align: left;
 }
@@ -48,7 +45,6 @@ body {
 
 .title-projeccts h3 {
   color: #003937;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   padding: 0;
   margin: 0;
@@ -63,7 +59,6 @@ body {
 
 .nav.nav-tabs .nav-item .nav-link {
   color: #6143f1;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   position: relative;
   border: 0;
@@ -99,7 +94,6 @@ body {
 .nav.nav-pills.nav-fill.nav-tabs-oblicua .nav-item .nav-link {
   color: #ffffdc;
   font-size: 19px;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   padding: 15px 0;
 }
@@ -107,7 +101,6 @@ body {
 .container-project h3 {
   font-size: 35px;
   border-bottom: 0;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   color: #003937;
   position: relative;
@@ -167,7 +160,6 @@ body {
 .grid-datos > div .dato-general .dato-info .cifra span {
   color: #003031;
   font-size: 25px;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   line-height: 33px;
 }
@@ -509,7 +501,6 @@ header h2 {
     font-size: 29px !important;
     line-height: 33px !important;
     margin-bottom: 30px;
-    font-family: "Value Serif Pro";
     font-weight: bold;
   }
 }
@@ -546,7 +537,6 @@ header h2 span {
   font-size: 60px;
   line-height: 46px;
   margin-bottom: 30px;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   color: #003435;
 }
@@ -563,7 +553,6 @@ header h2 span {
     font-size: 60px !important;
     line-height: 46px !important;
     margin-bottom: 30px;
-    font-family: "Value Serif Pro";
     font-weight: bold;
     color: #003435;
   }
@@ -579,7 +568,6 @@ header h3 {
   font-size: 40px;
   line-height: 32px !important;
   margin-bottom: 30px;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   max-width: 440px;
   color: #003435;
@@ -598,7 +586,6 @@ header h3 {
     font-size: 40px;
     line-height: 32px !important;
     margin-bottom: 30px;
-    font-family: "Value Serif Pro";
     font-weight: bold;
     max-width: 440px;
     color: #003435;
@@ -627,7 +614,6 @@ header h1 {
   font-size: 60px;
   line-height: 46px;
   margin-bottom: 30px;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   max-width: 440px;
   color: #003435;
@@ -794,7 +780,6 @@ header .page__field-attach-file .field__label {
   font-size: 40px;
   line-height: 30px;
   margin-bottom: 30px;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   max-width: 440px;
   color: #003435;
@@ -864,7 +849,6 @@ header li a:hover {
 .panel-panel-inner.date-social span,
 header span {
   font-weight: bold;
-  font-family: "Value Serif Pro";
   font-size: 14px;
 }
 
@@ -1012,7 +996,6 @@ thead {
 thead .views-field {
   font-size: 16px;
   line-height: 19px;
-  font-family: "Value Serif Pro";
   color: #fff;
   font-weight: normal;
 }
@@ -1179,7 +1162,6 @@ table tbody .views-field {
 .page__content .page-search h3 {
   font-size: 30px;
   line-height: 33px !important;
-  font-family: "Value Serif Pro";
   color: #fff;
   font-weight: normal;
   padding: 0;
@@ -1188,7 +1170,6 @@ table tbody .views-field {
 .page__content .page-search h3 span {
   font-size: 30px;
   line-height: 33px !important;
-  font-family: "Value Serif Pro";
   color: #003031;
   font-weight: normal;
   padding: 0;
@@ -1197,7 +1178,6 @@ table tbody .views-field {
 .page__content .page-search h3 span a {
   font-size: 30px;
   line-height: 33px !important;
-  font-family: "Value Serif Pro";
   color: #003031;
   font-weight: normal;
   padding: 0;
@@ -1421,7 +1401,6 @@ h3,
 .container.container-project.mt-5 h2.text-center span {
   font-size: 38px !important;
   line-height: 40px !important;
-  font-family: "value serif pro";
   max-width: 530px;
 }
 
@@ -1432,7 +1411,6 @@ h3,
 
 .nav.nav-tabs .nav-item .nav-link {
   color: #6143f1;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   position: relative;
   border: 0;
@@ -1480,7 +1458,6 @@ h3,
   background-color: #003937;
   color: #ffffdc;
   font-size: 15px;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   padding: 8px 0;
 }
@@ -1623,7 +1600,6 @@ h3,
   margin-top: 10px;
   color: #6143f1;
   font-size: 20px;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   text-decoration: none;
   border: 0;
@@ -1648,7 +1624,6 @@ h3,
   font-size: 12px;
   line-height: 30px;
   margin-bottom: 10px;
-  font-family: "Value Serif Pro";
   font-weight: normal;
 }
 
@@ -1982,7 +1957,6 @@ h3,
   text-transform: none;
   line-height: 40px !important;
   font-size: 46px !important;
-  font-family: "Value Serif Pro";
   display: block;
 }
 
@@ -2381,7 +2355,6 @@ nav #search-block-form > div.form-item input {
   line-height: 50px;
   font-size: 42px;
   margin-bottom: 15px;
-  font-family: "value serif pro";
 }
 
 @media only screen and (max-width: 1200px) {
@@ -2391,7 +2364,6 @@ nav #search-block-form > div.form-item input {
 }
 .project-block .left h2 b {
   font-size: 82px;
-  font-family: "value serif pro";
 }
 
 @media only screen and (max-width: 1200px) {
@@ -2693,7 +2665,6 @@ nav #search-block-form > div.form-item input {
 
 .projects-block-list .item-list ul li h3 {
   border-bottom: 0;
-  font-family: "Value Serif Pro";
   text-align: center;
   padding: 0 !important;
 }
@@ -3358,7 +3329,6 @@ video {
   font-size: 42px;
   line-height: 48px;
   margin-bottom: 10px;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   max-width: 800px;
   color: #003435;
@@ -3369,7 +3339,6 @@ video {
   font-size: 30px !important;
   line-height: 30px !important;
   margin-bottom: 10px;
-  font-family: "Value Serif Pro";
   color: #003435;
   width: 100%;
   text-transform: none;
@@ -3638,7 +3607,6 @@ i.icon-lists::before {
   align-items: center;
   justify-content: center;
   font-size: 46px;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   margin-bottom: 10px;
   color: #003a37;
@@ -3750,7 +3718,6 @@ i.icon-lists::before {
 }
 .proyectos-nuevos .nav.nav-tabs .nav-item .nav-link {
   color: #6143f1;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   position: relative;
   border: 0;
@@ -3782,7 +3749,6 @@ i.icon-lists::before {
 .proyectos-nuevos .nav.nav-pills.nav-fill .nav-item .nav-link {
   color: #003937;
   font-size: 19px;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   border-radius: 9px;
   overflow: hidden;
@@ -3794,7 +3760,6 @@ i.icon-lists::before {
 .proyectos-nuevos .nav.nav-pills.nav-fill .nav-item .nav-link:hover {
   color: #b5e067;
   font-size: 19px;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   padding: 15px 0;
   border-radius: 9px;
@@ -3815,7 +3780,6 @@ i.icon-lists::before {
   color: #003937;
   border-radius: 0;
   font-size: 19px;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   padding: 15px 0;
   background-color: transparent;
@@ -3830,7 +3794,6 @@ i.icon-lists::before {
   color: #005e43;
   line-height: 40px;
   margin-bottom: 30px;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   max-width: 800px;
   background-color: transparent;
@@ -3847,7 +3810,6 @@ i.icon-lists::before {
   font-size: 42px;
   line-height: 48px;
   margin-bottom: 30px;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   max-width: 800px;
   color: #003435;
@@ -3875,7 +3837,6 @@ i.icon-lists::before {
   font-weight: bold;
   color: #ffffed;
   font-size: 32px;
-  font-family: "Value Serif Pro";
   width: fit-content;
 }
 .proyectos-nuevos #myTabContent .tab-pane .proyectos-nuevos__field-datos-generales2 .field__items .field__item .datos-generales-nuevos__field-valor {
@@ -3906,7 +3867,6 @@ i.icon-lists::before {
   font-size: 42px;
   line-height: 48px;
   margin-bottom: 10px;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   max-width: 800px;
   color: #003435;
@@ -4081,7 +4041,6 @@ i.icon-lists::before {
 .proyectos-nuevos #myTabContent .tab-pane .valores_inversion .right h3 {
   border: 0;
   margin-bottom: 15px;
-  font-family: "Value Serif Pro";
   font-size: 19px !important;
   line-height: 19px !important;
   text-align: center;
@@ -4090,7 +4049,6 @@ i.icon-lists::before {
 .proyectos-nuevos #myTabContent .tab-pane .valores_inversion .left .proyectos-nuevos__field-valor-ejecutado-del-proyec,
 .proyectos-nuevos #myTabContent .tab-pane .valores_inversion .right .proyectos-nuevos__field-valor-total-del-proyecto,
 .proyectos-nuevos #myTabContent .tab-pane .valores_inversion .right .proyectos-nuevos__field-valor-ejecutado-del-proyec {
-  font-family: "Value Serif Pro";
   color: #673afb;
   font-size: 30px;
   font-weight: bold;
@@ -4123,7 +4081,6 @@ i.icon-lists::before {
 }
 .proyectos-nuevos .proyectos-nuevos__field-contratos .name .contatos-proyectos__field-nombre-contratista-o-inter {
   font-size: 23px;
-  font-family: "Value Serif Pro";
   font-weight: bold;
   color: #ffffdd;
 }
@@ -4393,7 +4350,6 @@ i.icon-lists::before {
 #special-landings-v2 .banner .landing-especiales-v2__field-subtitle,
 #special-landings-v2 .banner .landings-especiales__field-subtitle,
 #special-landings-v2 .banner p {
-  font-family: "value serif pro";
   color: #ffffff;
   font-size: 29px;
   font-weight: bold;
@@ -4421,7 +4377,6 @@ i.icon-lists::before {
   line-height: 125px;
   color: #013334;
   border-radius: 5px;
-  font-family: "value serif pro";
   font-weight: bold;
 }
 @media only screen and (max-width: 768px) {
@@ -4438,7 +4393,6 @@ i.icon-lists::before {
   background-color: #013334;
   color: #afe951;
   display: block;
-  font-family: "value serif pro";
   font-weight: bold;
 }
 @media only screen and (max-width: 768px) {
@@ -4461,7 +4415,6 @@ i.icon-lists::before {
 #special-landings .description h2,
 #special-landings-v2 .description h2 {
   text-align: center;
-  font-family: "value serif pro";
   font-weight: bold;
   color: #345a47;
 }
@@ -4777,7 +4730,6 @@ i.icon-lists::before {
   position: relative;
   z-index: 2;
   color: #afe951;
-  font-family: "value serif pro";
   font-weight: bold;
 }
 .block--views-block--all-the-news-block-3 a {
@@ -4789,7 +4741,6 @@ i.icon-lists::before {
 }
 .block--views-block--all-the-news-block-3 .views-field.views-field-created span {
   color: #afe951;
-  font-family: "value serif pro";
   font-weight: bold;
 }
 
@@ -4831,7 +4782,6 @@ i.icon-lists::before {
   position: relative;
   z-index: 2;
   color: #163738;
-  font-family: "value serif pro";
   font-weight: bold;
 }
 .noticias .block--views-block--all-the-news-block-3 h3 span a {
@@ -4846,7 +4796,6 @@ i.icon-lists::before {
 }
 .noticias .block--views-block--all-the-news-block-3 .views-field.views-field-created span {
   color: #afe951;
-  font-family: "value serif pro";
   font-weight: bold;
 }
 
@@ -4894,7 +4843,6 @@ i.icon-lists::before {
   background: rgba(52, 90, 71, 0.9) !important;
 }
 .fancybox__content .info-localidades__field-tit {
-  font-family: "value serif pro";
   color: #fefcf1;
   font-size: 28px;
   font-weight: bold;
@@ -4969,7 +4917,6 @@ i.icon-lists::before {
 }
 .page.landing-eventos .bannernosotros h2 {
   background: rgba(255, 255, 255, 0.7);
-  font-family: "value serif pro";
   font-size: 45px;
   font-weight: bold;
   line-height: 40px;
@@ -4978,7 +4925,6 @@ i.icon-lists::before {
 @media only screen and (max-width: 768px) {
   .page.landing-eventos .bannernosotros h2 {
     background: rgba(255, 255, 255, 0.7);
-    font-family: "value serif pro";
     font-size: 25px !important;
     font-weight: bold;
     line-height: 40px;
@@ -5029,7 +4975,6 @@ i.icon-lists::before {
   color: #afcd50;
   font-size: 35px;
   line-height: 35px;
-  font-family: "value serif pro";
   font-weight: bold;
 }
 .page.landing-eventos .date-count .left p {
@@ -5053,7 +4998,6 @@ i.icon-lists::before {
 .page.landing-eventos .date-count .right p {
   font-size: 31px;
   line-height: 40px;
-  font-family: "value serif pro";
   color: #afcd50;
 }
 .page.landing-eventos .date-count .right p strong,
@@ -5082,7 +5026,6 @@ i.icon-lists::before {
   padding: 10px;
   display: inline-block;
   border-radius: 10px;
-  font-family: "value serif pro";
   text-align: center;
   background: #afcd50;
 }
@@ -5115,7 +5058,6 @@ i.icon-lists::before {
 .page.landing-eventos .agenda h2 {
   text-align: center;
   padding: 20px 0;
-  font-family: "value serif pro";
   font-size: 42px;
   line-height: 42px;
   margin: 0;
@@ -5128,7 +5070,6 @@ i.icon-lists::before {
   color: #fffdef;
   text-align: center;
   padding: 20px 0;
-  font-family: "value serif pro";
   font-size: 42px;
   line-height: 42px;
   display: flex;
@@ -5141,7 +5082,6 @@ i.icon-lists::before {
   display: inline-block;
 }
 .page.landing-eventos .bloques-horarios__field-nombre-del-bloque {
-  font-family: "value serif pro";
   font-weight: bold;
   font-size: 25px;
 }
@@ -5154,7 +5094,6 @@ i.icon-lists::before {
 .page.landing-eventos details summary .agenda-eventos__field-titulo-agenda {
   background-color: #afcd50;
   color: #163839;
-  font-family: "value serif pro";
   font-size: 42px;
   font-weight: bold;
   line-height: 42px;
@@ -5181,7 +5120,6 @@ i.icon-lists::before {
 .page.landing-eventos .speakers-evento__field-nombre {
   color: #163839;
   font-weight: bold;
-  font-family: "value serif pro";
   font-size: 25px;
   line-height: 30px;
   width: 90%;
@@ -6080,7 +6018,6 @@ nav #search-block-form > div.form-item input::placeholder {
 .page.landing-especiales.landing-prediosparavisvip #special-landings .banner .landing-especiales-v2__field-subtitle,
 .page.landing-especiales.landing-prediosparavisvip #special-landings .banner .landings-especiales__field-subtitle,
 .page.landing-especiales.landing-prediosparavisvip #special-landings .banner p {
-  font-family: "value serif pro";
   color: #ffffff;
   font-size: 29px;
   font-weight: bold;
@@ -6102,7 +6039,6 @@ nav #search-block-form > div.form-item input::placeholder {
   line-height: 125px;
   color: #2E4C7E;
   border-radius: 5px;
-  font-family: "value serif pro";
   font-weight: bold;
 }
 @media only screen and (max-width: 768px) {
@@ -6117,7 +6053,6 @@ nav #search-block-form > div.form-item input::placeholder {
   background-color: #2E4C7E;
   color: #afe951;
   display: block;
-  font-family: "value serif pro";
   font-weight: bold;
 }
 @media only screen and (max-width: 768px) {
