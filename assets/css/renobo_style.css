@@ -944,7 +944,6 @@ select,
 
 .btn.btn-secondary,
 .btn.btn-primary {
-  font-family: var(--font-primary);
   z-index: 2;
   position: relative;
   display: flex;
@@ -955,10 +954,10 @@ select,
   padding: 8px 20px;
   width: -moz-fit-content;
   width: fit-content;
-  background-color: #6143f1 !important;
+  background-color: #00C29D !important;
   margin: 10px 0 10px auto;
-  color: #ffffdc;
-  border-color: #6550c8 !important;
+  color: #FFF;
+  border-color: #00C29D !important;
 }
 
 .btn.btn-secondary:hover,
@@ -966,8 +965,8 @@ select,
 .btn.btn-primary:hover,
 .btn.btn-primary:active {
   color: #fff;
-  background-color: #280fa2 !important;
-  border-color: #6550c8 !important;
+  background-color: #029f83 !important;
+  border-color: #029f83 !important;
 }
 
 .btn.btn-secondary {
