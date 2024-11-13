@@ -1221,7 +1221,7 @@ table tbody .views-field {
   font-size: 16px;
   line-height: 19px !important;
   font-family: "Montserrat", serif;
-  color: #003031;
+  color: #737373;
   font-weight: 700;
   padding: 0;
 }
@@ -1230,7 +1230,7 @@ table tbody .views-field {
   font-size: 16px;
   line-height: 19px !important;
   font-family: "Montserrat", serif;
-  color: #003031;
+  color: #737373;
   font-weight: 700;
   padding: 0;
 }
@@ -1240,13 +1240,13 @@ table tbody .views-field {
     font-size: 16px !important;
     line-height: 19px !important;
     font-family: "Montserrat", serif;
-    color: #003031;
+    color: #737373;
     font-weight: 700;
     padding: 0;
   }
 }
 .news-home h3 a {
-  color: #003031;
+  color: #737373;
 }
 
 .page__content .news-home .title-one,
