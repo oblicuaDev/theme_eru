@@ -848,7 +848,6 @@ header li a:hover {
 .news__body span,
 .panel-panel-inner.date-social span,
 header span {
-  font-weight: bold;
   font-size: 14px;
 }
 
