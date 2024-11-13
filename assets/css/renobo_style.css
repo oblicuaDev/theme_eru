@@ -888,24 +888,23 @@ label {
   font-size: 22px;
   line-height: 30px;
   margin-bottom: 10px;
-  font-family: "Value Serif Pro";
   font-weight: normal;
-  color: #003435;
+  color: #2E4C7E;
 }
 
 input,
 .form-control,
 select,
 .custom-select {
-  background-color: #ffffe7;
-  color: #003435;
+  background-color: #FFF;
+  color: #2E4C7E;
   font-family: "Montserrat", serif;
   font-weight: normal;
   font-size: 14px;
 }
 
 .custom-select {
-  background: url("http://files.renobo.com.co/sites/default/files/2023-05/arrows.png") no-repeat right 0.75rem center/15px 15px #ffffe7;
+  background: url("http://files.renobo.com.co/sites/default/files/2023-05/arrows.png") no-repeat right 0.75rem center/15px 15px #FFF;
 }
 
 .page__content .more-link,
@@ -919,9 +918,9 @@ select,
 .page__content .more-link a,
 .more-link a {
   align-items: center;
-  background-color: #6143f1;
+  background-color: #00C29D;
   border-radius: 9px;
-  color: #ffffdc;
+  color: #FFF;
   display: flex;
   font-family: "Montserrat", serif;
   font-size: 14px;
@@ -3045,13 +3044,11 @@ form.views-exposed-form {
 }
 
 .news-home.all-news.home.eru-medios h2 b {
-  font-family: "value serif pro" !important;
   font-weight: bold !important;
   display: block !important;
 }
 
 .news-home.all-news.home.eru-medios h2 {
-  font-family: "value serif pro" !important;
   font-weight: 300 !important;
   display: block !important;
 }
