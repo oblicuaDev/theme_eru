@@ -1266,7 +1266,7 @@ table tbody .views-field {
 
 .page-item .page-link,
 .views-field.views-field-created {
-  color: #003435;
+  color: #2E4C7E;
   font-family: "Montserrat", serif;
   font-weight: bold;
   font-size: 14px;
@@ -1314,7 +1314,7 @@ li.page-item.pager__item.is-active.active a.page-link {
 
 h3,
 #titulo-busqueda {
-  color: #003435;
+  color: #2E4C7E;
   font-family: "Montserrat", serif;
 }
 
@@ -1683,7 +1683,7 @@ h3,
 }
 
 .link-proyecto:hover {
-  background-color: #003435 !important;
+  background-color: #2E4C7E !important;
   color: #fff !important;
   cursor: pointer;
 }
