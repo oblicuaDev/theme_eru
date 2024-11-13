@@ -715,7 +715,7 @@ header li {
   font-size: 14px;
   line-height: 31px;
   max-width: 640px;
-  color: #003031;
+  color: #4D4D4D;
 }
 
 .home .page__field-attach-file a strong,
@@ -742,7 +742,7 @@ header li {
 header .page__field-attach-file a strong,
 header p strong,
 header li strong {
-  color: #003435;
+  color: #4D4D4D;
 }
 
 .home .page__field-attach-file a .icon-lists,
@@ -826,7 +826,7 @@ header li {
 .news__body li a,
 .panel-panel-inner.date-social li a,
 header li a {
-  color: #003435;
+  color: #4D4D4D;
 }
 
 .home li a:hover,
@@ -837,7 +837,7 @@ header li a {
 .news__body li a:hover,
 .panel-panel-inner.date-social li a:hover,
 header li a:hover {
-  color: #6143f1;
+  color: #7b7979;
 }
 
 .home span,
