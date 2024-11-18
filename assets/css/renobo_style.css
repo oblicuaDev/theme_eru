@@ -5605,21 +5605,25 @@ nav #search-block-form > div.form-item input::placeholder {
     width: 100%;
   }
 }
+#home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-image,
 #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-beneficios,
 #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-banner {
   width: 297px;
 }
 @media only screen and (max-width: 1023px) {
+  #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-image,
   #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-beneficios,
   #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-banner {
     width: 100%;
   }
 }
+#home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-image .field-content,
 #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-beneficios .field-content,
 #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-banner .field-content {
   width: 100%;
   height: 100%;
 }
+#home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-image .field-content img,
 #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-beneficios .field-content img,
 #home-v2 .home-proyectos .views-view-grid .grid-new > div .views-field-field-imagen-banner .field-content img {
   width: 100%;
