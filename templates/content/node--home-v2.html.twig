@@ -35,10 +35,10 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
 		<section class="home-proyectos">
 			<div class="container">
 				<h3 class="home_title">Estamos impulsando varios proyectos importantes para Bogotá, te invitamos a
-																																							conocerlos
+																																												conocerlos
 				</h3>
 				{# Renderiza la vista "contenido_destacado_home_v2". El primer parámetro es el nombre de la vista, y el
-																															segundo es el display de la vista (p.ej. "block_1", "page_1", etc.) #}
+																																			segundo es el display de la vista (p.ej. "block_1", "page_1", etc.) #}
 				{{ drupal_view('contenido_destacado_home_v2', 'block_1') }}
 				{{ drupal_view('contenido_destacado_home_v2', 'block_2') }}
 
@@ -60,7 +60,7 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
 		<section class="home-convocatorias">
 			<div class="home-convocatorias--container">
 				<h3 class="home_title">¿Estas interesado en unirte a nuestros proyectos? Aquí te presentamos nuestras
-																																							convocatorias</h3>
+																																												convocatorias</h3>
 				<div class="images">
 					{{ content.field_imagenes_convo}}
 				</div>
@@ -73,21 +73,31 @@ node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
 		<section class="splide bannerFinal" aria-label="Splide Basic HTML Example">
 			<div class="splide__track">
 				<ul class="splide__list">
-					<a href="{{ node.field_banner_final[0].value}}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
-						{{content.field_imagen_banner_final[0]}}
-					</a>
-					<a href="{{ node.field_banner_final[1].value}}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
-						{{content.field_imagen_banner_final[1]}}
-					</a>
-					<a href="{{ node.field_banner_final[2].value}}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
-						{{content.field_imagen_banner_final[2]}}
-					</a>
-					<a href="{{ node.field_banner_final[3].value}}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
-						{{content.field_imagen_banner_final[3]}}
-					</a>
-					<a href="{{ node.field_banner_final[4].value}}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
-						{{content.field_imagen_banner_final[4]}}
-					</a>
+					<li class="splide__slide">
+						<a href="{{ node.field_banner_final[0].value}}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
+							{{content.field_imagen_banner_final[0]}}
+						</a>
+					</li>
+					<li class="splide__slide">
+						<a href="{{ node.field_banner_final[1].value}}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
+							{{content.field_imagen_banner_final[1]}}
+						</a>
+					</li>
+					<li class="splide__slide">
+						<a href="{{ node.field_banner_final[2].value}}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
+							{{content.field_imagen_banner_final[2]}}
+						</a>
+					</li>
+					<li class="splide__slide">
+						<a href="{{ node.field_banner_final[3].value}}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
+							{{content.field_imagen_banner_final[3]}}
+						</a>
+					</li>
+					<li class="splide__slide">
+						<a href="{{ node.field_banner_final[4].value}}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
+							{{content.field_imagen_banner_final[4]}}
+						</a>
+					</li>
 				</ul>
 			</div>
 		</section>
