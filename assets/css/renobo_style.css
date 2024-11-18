@@ -6485,4 +6485,8 @@ nav #search-block-form > div.form-item input::placeholder {
   gap: 20px;
 }
 
+.splide.bannerFinal li.splide__slide {
+  max-width: 100%;
+}
+
 /*# sourceMappingURL=renobo_style.css.map */
