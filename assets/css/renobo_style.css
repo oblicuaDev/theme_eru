@@ -193,14 +193,6 @@ body {
   text-decoration: underline;
 }
 
-footer {
-  background-color: #2E4C7E !important;
-}
-
-footer.page__footer_2 {
-  background-color: #2E4C7E !important;
-}
-
 footer .contact .basic__body ul {
   padding-left: 0;
 }
