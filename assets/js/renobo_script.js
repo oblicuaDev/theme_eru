@@ -27,6 +27,14 @@ setTimeout(() => {
   preloaderElement.classList.add("fadeOut");
 }, 1800);
 document.addEventListener("DOMContentLoaded", () => {
+  window.addEventListener("scroll", function () {
+    const menu = document.querySelector(".menu-principal");
+    if (window.scrollY > 50) {
+      menu.classList.add("scrolled");
+    } else {
+      menu.classList.remove("scrolled");
+    }
+  });
   document
     .querySelectorAll(".project-block .views-field-field-video-hover video")
     .forEach((video) => {
