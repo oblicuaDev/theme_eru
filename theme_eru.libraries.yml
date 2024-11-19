@@ -2,9 +2,9 @@ style:
   version: 4.5
   css:
     theme:
-      assets/css/renobo_style.css: {}
       assets/css/eru_radix.style.css: {}
       assets/css/font/fonts.css: {}
+      assets/css/renobo_style.css: {}
   js:
     node_modules/popper.js/dist/umd/popper.min.js: {}
     node_modules/bootstrap/dist/js/bootstrap.min.js: {}
