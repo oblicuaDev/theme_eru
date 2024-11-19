@@ -1716,6 +1716,26 @@ h3,
 .menu-principal .navbar-nav .nav-item {
   margin: 0 !important;
 }
+@media only screen and (max-width: 1023px) {
+  .menu-principal .navbar-nav .nav-item {
+    flex-direction: column;
+  }
+  .menu-principal .navbar-nav .nav-item .dropdown-menu {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: static;
+    box-shadow: none;
+    border: 0;
+    color: #595959;
+    font-weight: bold;
+  }
+  .menu-principal .navbar-nav .nav-item .dropdown-menu a {
+    color: #595959;
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
 
 .menu-principal .navbar-nav .nav-item.dropdown::before {
   content: "";
