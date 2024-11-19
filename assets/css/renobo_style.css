@@ -2202,6 +2202,7 @@ h3,
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  top: 40px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -5412,7 +5413,6 @@ nav #search-block-form > div.form-item input::placeholder {
   border-right: 2px solid #FFF;
 }
 .home-v2 .menu-principal .block.block--theme-eru-main-menu {
-  top: 40px;
   background: transparent !important;
 }
 .home-v2 .menu-principal .block.block--theme-eru-main-menu a.nav-link {
