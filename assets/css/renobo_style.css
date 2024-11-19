@@ -6495,6 +6495,11 @@ nav #search-block-form > div.form-item input::placeholder {
   border-bottom: 1px solid #DEE2EA;
   padding: 20px 0;
 }
+@media only screen and (max-width: 1023px) {
+  .liverenobo ul li {
+    grid-template-columns: 1fr;
+  }
+}
 .liverenobo ul li div.views-field-field-livefechahora {
   margin: 0 20px 20px 0;
   min-width: 120px;
@@ -6518,6 +6523,11 @@ nav #search-block-form > div.form-item input::placeholder {
 }
 .liverenobo ul li div.views-field-body {
   grid-column: 2;
+}
+@media only screen and (max-width: 1023px) {
+  .liverenobo ul li div.views-field-body {
+    grid-column: 1;
+  }
 }
 .liverenobo ul li div.views-field-body .field-content p {
   font-size: 14px;
