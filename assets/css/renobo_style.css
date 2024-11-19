@@ -6485,6 +6485,10 @@ nav #search-block-form > div.form-item input::placeholder {
   max-width: 100%;
 }
 
+.liverenobo {
+  max-width: 760px;
+  margin: 0 auto;
+}
 .liverenobo ul li {
   display: grid;
   grid-template-columns: auto 1fr;
