@@ -6493,6 +6493,12 @@ nav #search-block-form > div.form-item input::placeholder {
 }
 .liverenobo ul li > div time {
   font-size: 22px;
+  font-weight: 600;
+  font-display: swap;
+  background-color: #00C29D;
+  color: #FFF;
+  padding: 5px 10px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=renobo_style.css.map */
