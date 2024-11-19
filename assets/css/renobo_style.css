@@ -1801,8 +1801,19 @@ h3,
   content: none;
 }
 
+@media only screen and (max-width: 1023px) {
+  .menu-principal .block--theme-eru-main-menu a.nav-link {
+    color: #595959;
+  }
+}
+
 .menu-principal .block--theme-eru-main-menu a.nav-link:hover {
   opacity: 0.5;
+}
+@media only screen and (max-width: 1023px) {
+  .menu-principal .block--theme-eru-main-menu a.nav-link:hover {
+    opacity: 1;
+  }
 }
 
 .menu-principal form {
