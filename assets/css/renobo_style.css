@@ -5363,10 +5363,14 @@ nav #search-block-form > div.form-item input::placeholder {
 .menu-principal .menu-secundario {
   background: transparent;
 }
-.menu-principal .navbar-dark .navbar-nav .show > .nav-link,
-.menu-principal .navbar-dark .navbar-nav .active > .nav-link,
-.menu-principal .navbar-dark .navbar-nav .nav-link.show,
-.menu-principal .navbar-dark .navbar-nav .nav-link.active,
+.menu-principal .navbar-nav .show > .nav-link,
+.menu-principal .navbar-nav .active > .nav-link,
+.menu-principal .navbar-nav .nav-link.show,
+.menu-principal .navbar-nav .nav-link.active,
+.menu-principal .navbar-nav .show > .nav-link,
+.menu-principal .navbar-nav .active > .nav-link,
+.menu-principal .navbar-nav .nav-link.show,
+.menu-principal .navbar-nav .nav-link.active,
 .menu-principal .block--theme-eru-main-menu a.nav-link {
   color: #595959;
   font-weight: bold;
