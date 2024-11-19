@@ -6486,12 +6486,10 @@ nav #search-block-form > div.form-item input::placeholder {
 }
 
 .liverenobo ul li {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   border-bottom: 1px solid #DEE2EA;
   padding: 20px 0;
-}
-.liverenobo ul li div {
-  flex: 1;
 }
 .liverenobo ul li div.views-field-field-livefechahora {
   margin: 0 20px 20px 0;
@@ -6513,6 +6511,9 @@ nav #search-block-form > div.form-item input::placeholder {
   line-height: 1.5;
   font-weight: 700;
   margin-bottom: 20px;
+}
+.liverenobo ul li div.views-field-body {
+  grid-column: 2;
 }
 .liverenobo ul li div.views-field-body .field-content p {
   font-size: 14px;
