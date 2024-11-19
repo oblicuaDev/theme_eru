@@ -5963,6 +5963,16 @@ nav #search-block-form > div.form-item input::placeholder {
 .navbar-collapse.collapse.show .block.block--theme-eru-main-menu {
   left: 0;
 }
+@media only screen and (max-width: 1023px) {
+  .navbar-collapse.collapse.show .block.block--theme-eru-main-menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 60px 20px;
+    background-color: #FFF;
+  }
+}
 
 .page.landing-especiales.landing-prediosparavisvip #special-landings {
   padding-bottom: 0;
