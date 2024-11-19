@@ -3281,9 +3281,15 @@
                 .querySelector(".navbar-toggler")
                 .addEventListener("click", (e) => {
                   e.preventDefault();
-                  document
-                    .querySelector(".navbar-collapse")
-                    .classList.toggle("show");
+                  if (document.querySelector(".navbar-collapse.show")) {
+                    document
+                      .querySelector(".navbar-collapse.show")
+                      .classList.remove("show");
+                  } else {
+                    document
+                      .querySelector(".navbar-collapse")
+                      .classList.add("show");
+                  }
                 });
             },
           };
