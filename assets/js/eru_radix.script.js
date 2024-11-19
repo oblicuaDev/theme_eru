@@ -3277,10 +3277,14 @@
         alert('hola');
         }*/
               });
-              jQuery(".navbar-toggler", context).click(function (e) {
-                e.preventDefault();
-                jQuery(".navbar-collapse").toggleClass("show");
-              });
+              document
+                .querySelector(".navbar-toggler")
+                .addEventListener("click", (e) => {
+                  e.preventDefault();
+                  document
+                    .querySelector(".navbar-collapse")
+                    .classList.toggle("show");
+                });
             },
           };
           Drupal.behaviors.pageSearch = {
