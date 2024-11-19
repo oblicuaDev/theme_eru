@@ -6490,15 +6490,15 @@ nav #search-block-form > div.form-item input::placeholder {
   border-bottom: 1px solid #DEE2EA;
   padding: 20px 0;
 }
-.liverenobo ul li > div {
+.liverenobo ul li div {
   flex: 1;
 }
-.liverenobo ul li > div.views-field-field-livefechahora {
+.liverenobo ul li div.views-field-field-livefechahora {
   margin: 0 20px 20px 0;
   min-width: 120px;
   width: 120px;
 }
-.liverenobo ul li > div.views-field-field-livefechahora time {
+.liverenobo ul li div.views-field-field-livefechahora time {
   font-size: 22px;
   font-weight: 600;
   font-display: swap;
@@ -6507,18 +6507,18 @@ nav #search-block-form > div.form-item input::placeholder {
   padding: 5px 10px;
   text-align: center;
 }
-.liverenobo ul li > div.views-field-title span.field-content {
+.liverenobo ul li div.views-field-title span.field-content {
   font-size: 26px;
   letter-spacing: -0.5px;
   line-height: 1.5;
   font-weight: 700;
   margin-bottom: 20px;
 }
-.liverenobo ul li > div.views-field-body .field-content p {
+.liverenobo ul li div.views-field-body .field-content p {
   font-size: 14px;
   margin-bottom: 15px;
 }
-.liverenobo ul li > div.views-field-body .field-content p img {
+.liverenobo ul li div.views-field-body .field-content p img {
   max-width: 550px;
   width: 100%;
   margin-top: 10px;
