@@ -1802,6 +1802,10 @@ h3,
 }
 
 @media only screen and (max-width: 1023px) {
+  .navbar-dark .navbar-nav .show > .nav-link,
+  .navbar-dark .navbar-nav .active > .nav-link,
+  .navbar-dark .navbar-nav .nav-link.show,
+  .navbar-dark .navbar-nav .nav-link.active,
   .menu-principal .block--theme-eru-main-menu a.nav-link {
     color: #595959;
   }
