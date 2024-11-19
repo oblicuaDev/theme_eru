@@ -6507,5 +6507,22 @@ nav #search-block-form > div.form-item input::placeholder {
   padding: 5px 10px;
   text-align: center;
 }
+.liverenobo ul li > div.views-field-title span.field-content {
+  font-size: 26px;
+  letter-spacing: -0.5px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.liverenobo ul li > div.views-field-body .field-content p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.liverenobo ul li > div.views-field-body .field-content p img {
+  max-width: 550px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 /*# sourceMappingURL=renobo_style.css.map */
