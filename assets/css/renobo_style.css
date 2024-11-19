@@ -6485,4 +6485,14 @@ nav #search-block-form > div.form-item input::placeholder {
   max-width: 100%;
 }
 
+.liverenobo ul li {
+  display: flex;
+}
+.liverenobo ul li > div {
+  flex: 1;
+}
+.liverenobo ul li > div time {
+  font-size: 22px;
+}
+
 /*# sourceMappingURL=renobo_style.css.map */
