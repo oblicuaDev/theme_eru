@@ -864,7 +864,7 @@ label {
   line-height: 30px;
   margin-bottom: 10px;
   font-weight: normal;
-  color: #2E4C7E;
+  color: #006b60;
 }
 
 input,
@@ -872,7 +872,7 @@ input,
 select,
 .custom-select {
   background-color: #FFF;
-  color: #2E4C7E;
+  color: #006b60;
   font-family: "Montserrat", serif;
   font-weight: normal;
   font-size: 14px;
@@ -1249,8 +1249,8 @@ table tbody .views-field {
 li.page-item.pager__item.is-active.active a.page-link {
   z-index: 1;
   color: #fff !important;
-  background-color: #2E4C7E !important;
-  border-color: #2E4C7E !important;
+  background-color: #006b60 !important;
+  border-color: #006b60 !important;
 }
 
 .eru-medios .views-field-field-image-main img,
@@ -1282,7 +1282,7 @@ li.page-item.pager__item.is-active.active a.page-link {
 
 h3,
 #titulo-busqueda {
-  color: #2E4C7E;
+  color: #006b60;
   font-family: "Montserrat", serif;
 }
 
@@ -1646,7 +1646,7 @@ h3,
 }
 
 .link-proyecto:hover {
-  background-color: #2E4C7E !important;
+  background-color: #006b60 !important;
   color: #fff !important;
   cursor: pointer;
 }
@@ -5337,7 +5337,7 @@ nav #search-block-form > div.form-item input::placeholder {
 }
 .menu-principal .dropdown-item.active,
 .menu-principal .dropdown-item:active {
-  background-color: #2E4C7E;
+  background-color: #006b60;
 }
 .menu-principal .block--theme-eru-main-menu a.nav-link {
   color: #FFF;
@@ -5362,10 +5362,6 @@ nav #search-block-form > div.form-item input::placeholder {
 }
 .menu-principal .menu-secundario {
   background: transparent;
-}
-.menu-principal .dropdown-menu a:hover,
-.menu-principal .dropdown-menu a:focus {
-  background-color: #2E4C7E;
 }
 .menu-principal .block--theme-eru-main-menu a.nav-link {
   color: #595959;
@@ -5468,6 +5464,10 @@ nav #search-block-form > div.form-item input::placeholder {
 .home-v2 nav #search-block-form > div.form-item input {
   flex: 1;
   border-color: rgba(255, 255, 220, 0.22);
+  color: #FFF;
+}
+.home-v2 nav #search-block-form > div.form-item input::placeholder {
+  color: #FFF;
 }
 
 #home-v2 .page__content .more-link,
@@ -6085,7 +6085,7 @@ nav #search-block-form > div.form-item input::placeholder {
   background-color: #afe951;
   font-size: 120px;
   line-height: 125px;
-  color: #2E4C7E;
+  color: #006b60;
   border-radius: 5px;
   font-weight: bold;
 }
@@ -6098,7 +6098,7 @@ nav #search-block-form > div.form-item input::placeholder {
 .page.landing-especiales.landing-prediosparavisvip #special-landings .banner #secondPart {
   font-size: 120px;
   line-height: 125px;
-  background-color: #2E4C7E;
+  background-color: #006b60;
   color: #afe951;
   display: block;
   font-weight: bold;
@@ -6120,7 +6120,7 @@ nav #search-block-form > div.form-item input::placeholder {
 .page.landing-especiales.landing-prediosparavisvip #special-landings .description h1 {
   text-align: center;
   font-weight: bold;
-  color: #2E4C7E;
+  color: #006b60;
 }
 .page.landing-especiales.landing-prediosparavisvip #special-landings .description .desc-p {
   column-count: 2;
@@ -6301,7 +6301,7 @@ nav #search-block-form > div.form-item input::placeholder {
 .landing-reusayrevitaliza #special-landings h2,
 .landing-reusayrevitaliza #special-landings-v2 h2 {
   margin-bottom: 15px;
-  color: #2E4C7E;
+  color: #006b60;
 }
 .landing-reusayrevitaliza #special-landings .btns,
 .landing-reusayrevitaliza #special-landings-v2 .btns {
@@ -6509,7 +6509,7 @@ nav #search-block-form > div.form-item input::placeholder {
 }
 .landing-reusayrevitaliza .redes .container h2 {
   margin-bottom: 15px;
-  color: #2E4C7E;
+  color: #006b60;
   text-align: center;
 }
 .landing-reusayrevitaliza .landings-especiales__field-contenido-redes {
