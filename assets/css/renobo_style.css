@@ -6608,14 +6608,6 @@ header .news h2 {
   max-width: 100%;
 }
 
-a.descargar-ico {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  overflow: hidden;
-  padding: 0;
-  width: 0;
-}
-
 a.descargar-ico::before {
   content: "\f56d";
   color: #008476;
@@ -6625,15 +6617,6 @@ a.descargar-ico::before {
   font-size: 2em;
   font-family: "Font Awesome 5 Free";
   left: auto;
-}
-
-a.descargar-ico:hover::before,
-a.descargar-ico:focus::before {
-  color: #ffa800;
-}
-
-table a.descargar-ico {
-  height: 30px;
 }
 
 /*# sourceMappingURL=renobo_style.css.map */
