@@ -443,11 +443,11 @@ aside.aside {
   }
 }
 aside.aside .block.block--transparencia ul.nav li.nav-item {
-  border-bottom: 1px solid #ffffd7;
+  border-bottom: 1px solid #FFF;
 }
 
 aside.aside .block.block--transparencia ul.nav li.nav-item a.nav-link {
-  color: #ffffd7;
+  color: #FFF;
   font-size: 14px;
   font-weight: normal;
   line-height: 17px;
