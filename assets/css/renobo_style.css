@@ -997,17 +997,6 @@ thead .views-field {
     line-height: 12px;
   }
 }
-table .descargar-ico {
-  height: 60px;
-  width: 100%;
-  position: relative;
-  color: rgba(0, 0, 0, 0) !important;
-}
-
-table .descargar-ico:hover {
-  animation: wobble-hor-bottom 2s both;
-}
-
 table tr:nth-child(even) {
   background-color: #f6f6f6;
 }
