@@ -6630,4 +6630,14 @@ a.descargar-ico::before {
   gap: 50px;
 }
 
+.news-home.all-news.home .views-view-grid.horizontal.cols-2 .views-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.news-home.all-news.home .views-view-grid.horizontal.cols-2 .views-row .col-md-6.col-12.mb-5.views-col.col-1 {
+  max-width: 100%;
+  width: 100%;
+}
+
 /*# sourceMappingURL=renobo_style.css.map */
