@@ -917,6 +917,24 @@ select,
   border-color: #6550c8 !important;
 }
 
+.home li a.btn.btn-primary,
+.home li a.btn.btn-secondary,
+.container-project li a.btn.btn-primary,
+.container-project li a.btn.btn-secondary,
+.node.page.page--full li a.btn.btn-primary,
+.node.page.page--full li a.btn.btn-secondary,
+.news li a.btn.btn-primary,
+.news li a.btn.btn-secondary,
+.eru-medios li a.btn.btn-primary,
+.eru-medios li a.btn.btn-secondary,
+.news__body li a.btn.btn-primary,
+.news__body li a.btn.btn-secondary,
+.panel-panel-inner.date-social li a.btn.btn-primary,
+.panel-panel-inner.date-social li a.btn.btn-secondary,
+header li a.btn.btn-primary,
+header li a.btn.btn-secondary,
+a.btn.btn-secondary,
+a.btn.btn-primary,
 .btn.btn-secondary,
 .btn.btn-primary {
   z-index: 2;
