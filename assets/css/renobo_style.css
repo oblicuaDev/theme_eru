@@ -1008,21 +1008,6 @@ table .descargar-ico:hover {
   animation: wobble-hor-bottom 2s both;
 }
 
-table .descargar-ico::before {
-  content: "";
-  background-image: url("http://files.renobo.com.co/sites/default/files/2023-05/pdf.png");
-  width: 100%;
-  height: inherit;
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  margin-right: 5px;
-  font-weight: 900;
-  position: absolute;
-  font-size: 2em;
-  left: 0;
-}
-
 table tr:nth-child(even) {
   background-color: #f6f6f6;
 }
