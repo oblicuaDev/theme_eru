@@ -819,6 +819,7 @@ header li {
 .panel-panel-inner.date-social li a,
 header li a {
   color: #4D4D4D;
+  font-weight: 600;
 }
 
 .home li a:hover,
