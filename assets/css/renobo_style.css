@@ -6614,4 +6614,8 @@ nav #search-block-form > div.form-item input::placeholder {
   padding: 0;
 }
 
+header .news h2 {
+  margin: 0 0 30px;
+}
+
 /*# sourceMappingURL=renobo_style.css.map */
