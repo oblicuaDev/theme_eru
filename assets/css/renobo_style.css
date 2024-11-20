@@ -5409,7 +5409,6 @@ nav #search-block-form > div.form-item input::placeholder {
   background-color: #595959;
   position: absolute;
   bottom: 0;
-  left: calc(50% - 25px);
   transform: translateX(-50%);
 }
 @media only screen and (max-width: 1023px) {
@@ -5428,6 +5427,9 @@ nav #search-block-form > div.form-item input::placeholder {
   }
 }
 
+.home-v2 .logos::after {
+  left: calc(50% - 25px);
+}
 .home-v2 .breadcrumb {
   display: none;
 }
