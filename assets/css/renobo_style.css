@@ -5618,6 +5618,10 @@ nav #search-block-form > div.form-item input::placeholder {
     padding: 20px;
   }
 }
+#home-v2 .home-proyectos .container {
+  display: flex;
+  gap: 20px;
+}
 #home-v2 .home-proyectos--container {
   display: flex;
   align-items: center;
