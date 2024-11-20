@@ -6608,4 +6608,8 @@ a.descargar-ico::before {
   left: auto;
 }
 
+.row {
+  gap: 50px;
+}
+
 /*# sourceMappingURL=renobo_style.css.map */
