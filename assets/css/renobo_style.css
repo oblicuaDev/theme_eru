@@ -6623,6 +6623,7 @@ a.descargar-ico::before {
   font-weight: 900;
   position: absolute;
   font-size: 2em;
+  font-family: "Font Awesome 5 Free";
   left: auto;
 }
 
