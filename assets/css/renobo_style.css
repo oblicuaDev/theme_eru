@@ -2236,6 +2236,11 @@ h3,
   justify-content: space-between;
   top: 40px;
 }
+@media only screen and (max-width: 1530px) {
+  .block.block--theme-eru-main-menu {
+    flex-direction: column;
+  }
+}
 
 @media only screen and (max-width: 1200px) {
   .block.block--theme-eru-main-menu {
