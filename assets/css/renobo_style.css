@@ -5942,6 +5942,7 @@ nav #search-block-form > div.form-item input::placeholder {
 #home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-field-cover-img .field-content img {
   width: 100%;
   object-fit: cover;
+  aspect-ratio: 1/1;
 }
 #home-v2 .home-noticias--container .views-view-grid .grid-new > div .views-field-title {
   font-size: 18px;
