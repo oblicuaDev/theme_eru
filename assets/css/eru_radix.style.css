@@ -10002,7 +10002,6 @@ a.text-dark:focus {
 .breadcrumb-item + .breadcrumb-item::before,
 .icon-lists,
 .link-ico,
-.descargar-ico,
 .tag-ico,
 .site-map,
 .horario-ico,
@@ -10031,7 +10030,6 @@ a.text-dark:focus {
 
 .icon-lists,
 .link-ico,
-.descargar-ico,
 .tag-ico,
 .site-map,
 .youtube-ico,
@@ -15902,7 +15900,6 @@ readers do not read off random characters that represent icons */
 .breadcrumb-item + .breadcrumb-item::before,
 .icon-lists,
 .link-ico,
-.descargar-ico,
 .tag-ico,
 .site-map,
 .horario-ico,
@@ -16236,27 +16233,6 @@ readers do not read off random characters that represent icons */
   color: none;
 }
 
-.descargar-ico {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  overflow: hidden;
-  padding: 0;
-  width: 0;
-}
-.descargar-ico::before {
-  content: "\F56D";
-  color: #008476;
-  margin-right: 5px;
-  font-weight: 900;
-  position: absolute;
-  font-size: 2em;
-  left: auto;
-}
-.descargar-ico:hover::before,
-.descargar-ico:focus::before {
-  color: #ffa800;
-}
-
 .cloudDownload-ico {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -16526,9 +16502,6 @@ table tbody tr .views-field-field-file-download {
   width: 85%;
   place-items: center;
   justify-content: center;
-}
-table .descargar-ico {
-  height: 30px;
 }
 
 caption {
@@ -17126,7 +17099,6 @@ tr:nth-child(even) {
 .page__content .link-item .horario-ico,
 .page__content .link-item .site-map,
 .page__content .link-item .tag-ico,
-.page__content .link-item .descargar-ico,
 .page__content .link-item .cloudDownload-ico,
 .page__content .link-item .link-ico,
 .page__content .link-item .icon-lists,
