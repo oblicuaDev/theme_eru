@@ -5532,8 +5532,7 @@ nav #search-block-form > div.form-item input::placeholder {
   font-weight: 500;
   line-height: 19px;
   margin: 0;
-  max-width: 290px;
-  padding-right: 100px;
+  max-width: 340px;
   text-transform: none;
   position: relative;
 }
