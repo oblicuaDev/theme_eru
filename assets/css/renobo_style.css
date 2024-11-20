@@ -6618,4 +6618,8 @@ header .news h2 {
   margin: 0 0 30px;
 }
 
+.row .col-md-9.col-12 {
+  flex: 1;
+}
+
 /*# sourceMappingURL=renobo_style.css.map */
