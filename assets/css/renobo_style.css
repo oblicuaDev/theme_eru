@@ -6620,6 +6620,7 @@ header .news h2 {
 
 .row .col-md-9.col-12 {
   flex: 1;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=renobo_style.css.map */
