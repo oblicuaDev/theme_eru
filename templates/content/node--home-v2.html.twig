@@ -4,138 +4,154 @@ node.isPromoted() ? 'node--promoted', node.isSticky() ? 'node--sticky', not
 node.isPublished() ? 'node--unpublished', node.bundle|clean_class,
 node.bundle|clean_class ~ '--' ~ view_mode|clean_class, 'project' ] %}
 
- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-<link
-href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"/>
- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 <div id="home-v2">
 	{% block content %}
-		{% set title = node.title.value %}
+	{% set title = node.title.value %}
 
-		{% set banner_url = file_url(node.field_banner.entity.uri.value) %}
-		<section class="home-banner"><img src="{{banner_url}}" alt="banner"></section>
-		<div class="home_links">
-			<div class="home_links--container">
-				<a href="/es/transparencia/informacion-de-la-entidad/marco-estrategico">Conoce a nuestro equipo
-					<svg width="22" height="10" viewbox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M21.5 4.99L12.87 0V4.49H0.5C0.22 4.49 0 4.71 0 4.99C0 5.27 0.22 5.49 0.5 5.49H12.87V9.98L21.5 4.99Z" fill="white"/>
-					</svg>
-				</a>
-				<a href="/es/transparencia/informacion-de-la-entidad/marco-estrategico">Comunícate con nosotros
-					<svg width="22" height="10" viewbox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M21.5 4.99L12.87 0V4.49H0.5C0.22 4.49 0 4.71 0 4.99C0 5.27 0.22 5.49 0.5 5.49H12.87V9.98L21.5 4.99Z" fill="white"/>
-					</svg>
-				</a>
+	{% set banner_url = file_url(node.field_banner.entity.uri.value) %}
+	<section class="home-banner"><img src="{{banner_url}}" alt="banner"></section>
+	<div class="home_links">
+		<div class="home_links--container">
+			<a href="/es/transparencia/informacion-de-la-entidad/marco-estrategico">Conoce a nuestro equipo
+				<svg width="22" height="10" viewbox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M21.5 4.99L12.87 0V4.49H0.5C0.22 4.49 0 4.71 0 4.99C0 5.27 0.22 5.49 0.5 5.49H12.87V9.98L21.5 4.99Z"
+						fill="white" />
+				</svg>
+			</a>
+			<a href="/es/transparencia/informacion-de-la-entidad/marco-estrategico">Comunícate con nosotros
+				<svg width="22" height="10" viewbox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M21.5 4.99L12.87 0V4.49H0.5C0.22 4.49 0 4.71 0 4.99C0 5.27 0.22 5.49 0.5 5.49H12.87V9.98L21.5 4.99Z"
+						fill="white" />
+				</svg>
+			</a>
+		</div>
+
+	</div>
+	<section class="home-proposito">
+		<h3 class="home_title">Nuestro propósito</h3>
+		<div class="desc">
+			<h2 class="desc-title">
+				{{content.field_titulo_nuestro_proposito}}</h2>
+			<h2 class="desc-txt">{{content.field_subtitulo_nuestro_proposit}}</h2>
+		</div>
+	</section>
+	<section class="home-proyectos">
+		<div class="container">
+			<h3 class="home_title">Estamos impulsando varios proyectos importantes para Bogotá, te invitamos a
+				conocerlos</h3>
+			{# Renderiza la vista "contenido_destacado_home_v2". El primer parámetro es el nombre de la vista, y el
+			segundo es el display de la vista (p.ej. "block_1", "page_1", etc.) #}
+			<div class="pro-container">
+				{{ drupal_view('contenido_destacado_home_v2', 'block_1') }}
+				{{ drupal_view('contenido_destacado_home_v2', 'block_2') }}
 			</div>
 
 		</div>
-		<section class="home-proposito">
-			<h3 class="home_title">Nuestro propósito</h3>
-			<div class="desc">
-				<h2 class="desc-title">
-					{{content.field_titulo_nuestro_proposito}}</h2>
-				<h2 class="desc-txt">{{content.field_subtitulo_nuestro_proposit}}</h2>
-			</div>
-		</section>
-		<section class="home-proyectos">
-			<div class="container">
-				<h3 class="home_title">Estamos impulsando varios proyectos importantes para Bogotá, te invitamos a conocerlos</h3>
-				{# Renderiza la vista "contenido_destacado_home_v2". El primer parámetro es el nombre de la vista, y el
-																																																																																			segundo es el display de la vista (p.ej. "block_1", "page_1", etc.) #}
-				<div class="pro-container">
-					{{ drupal_view('contenido_destacado_home_v2', 'block_1') }}
-					{{ drupal_view('contenido_destacado_home_v2', 'block_2') }}
-				</div>
+	</section>
+	{% set imagen_url = file_url(node.field_imagen_nuestra_meta.entity.uri.value) %}
+	<section class="home-metas" style="background-image: url({{	imagen_url}});">
+		<div class="home-metas--container">
 
+			<div class="left">
+				<div class="metas_title">{{content.field_titulo_nuestras_metas}}</div>
+				<div class="metas_subtitle">{{content.field_subtitulo_nuestras_metas}}</div>
 			</div>
-		</section>
-		{% set imagen_url = file_url(node.field_imagen_nuestra_meta.entity.uri.value) %}
-		<section class="home-metas" style="background-image: url({{	imagen_url}});">
-			<div class="home-metas--container">
+			<div class="txt">
+				{{ content.field_descripcion_nuestras_metas}}
+			</div>
+		</div>
+	</section>
+	<section class="home-convocatorias">
+		<div class="home-convocatorias--container">
+			<h3 class="home_title">¿Estas interesado en unirte a nuestros proyectos? Aquí te presentamos nuestras
+				convocatorias</h3>
+			<div class="images">
+				{{ content.field_imagenes_convo}}
+			</div>
+			<div class="convocatorias">
+				{{ drupal_view('contenido_destacado_home_v2', 'block_3') }}
+			</div>
+		</div>
+	</section>
 
-				<div class="left">
-					<div class="metas_title">{{content.field_titulo_nuestras_metas}}</div>
-					<div class="metas_subtitle">{{content.field_subtitulo_nuestras_metas}}</div>
-				</div>
-				<div class="txt">
-					{{ content.field_descripcion_nuestras_metas}}
-				</div>
-			</div>
-		</section>
-		<section class="home-convocatorias">
-			<div class="home-convocatorias--container">
-				<h3 class="home_title">¿Estas interesado en unirte a nuestros proyectos? Aquí te presentamos nuestras
-																																																																																																																																																convocatorias</h3>
-				<div class="images">
-					{{ content.field_imagenes_convo}}
-				</div>
-				<div class="convocatorias">
-					{{ drupal_view('contenido_destacado_home_v2', 'block_3') }}
-				</div>
-			</div>
-		</section>
+	<section class="splide bannerFinal" aria-label="Splide Basic HTML Example">
+		<div class="splide__track">
+			<ul class="splide__list">
+				{% if content.field_imagen_banner_final[0] is not empty and node.field_banner_final[0].value is not
+				empty %}
+				<li class="splide__slide">
+					<a href="{{ node.field_banner_final[0].value }}"
+						style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
+						{{ content.field_imagen_banner_final[0] }}
+					</a>
+				</li>
+				{% endif %}
+				{% if content.field_imagen_banner_final[1] is not empty and node.field_banner_final[1].value is not
+				empty %}
+				<li class="splide__slide">
+					<a href="{{ node.field_banner_final[1].value }}"
+						style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
+						{{ content.field_imagen_banner_final[1] }}
+					</a>
+				</li>
+				{% endif %}
+				{% if content.field_imagen_banner_final[2] is not empty and node.field_banner_final[2].value is not
+				empty %}
+				<li class="splide__slide">
+					<a href="{{ node.field_banner_final[2].value }}"
+						style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
+						{{ content.field_imagen_banner_final[2] }}
+					</a>
+				</li>
+				{% endif %}
+				{% if content.field_imagen_banner_final[3] is not empty and node.field_banner_final[3].value is not
+				empty %}
+				<li class="splide__slide">
+					<a href="{{ node.field_banner_final[3].value }}"
+						style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
+						{{ content.field_imagen_banner_final[3] }}
+					</a>
+				</li>
+				{% endif %}
+				{% if content.field_imagen_banner_final[4] is not empty and node.field_banner_final[4].value is not
+				empty %}
+				<li class="splide__slide">
+					<a href="{{ node.field_banner_final[4].value }}"
+						style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
+						{{ content.field_imagen_banner_final[4] }}
+					</a>
+				</li>
+				{% endif %}
 
-		<section class="splide bannerFinal" aria-label="Splide Basic HTML Example">
-			<div class="splide__track">
-				<ul class="splide__list">
-					{% if content.field_imagen_banner_final[0] is not empty and node.field_banner_final[0].value is not empty %}
-						<li class="splide__slide">
-							<a href="{{ node.field_banner_final[0].value }}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
-								{{ content.field_imagen_banner_final[0] }}
-							</a>
-						</li>
-					{% endif %}
-					{% if content.field_imagen_banner_final[1] is not empty and node.field_banner_final[1].value is not empty %}
-						<li class="splide__slide">
-							<a href="{{ node.field_banner_final[1].value }}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
-								{{ content.field_imagen_banner_final[1] }}
-							</a>
-						</li>
-					{% endif %}
-					{% if content.field_imagen_banner_final[2] is not empty and node.field_banner_final[2].value is not empty %}
-						<li class="splide__slide">
-							<a href="{{ node.field_banner_final[2].value }}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
-								{{ content.field_imagen_banner_final[2] }}
-							</a>
-						</li>
-					{% endif %}
-					{% if content.field_imagen_banner_final[3] is not empty and node.field_banner_final[3].value is not empty %}
-						<li class="splide__slide">
-							<a href="{{ node.field_banner_final[3].value }}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
-								{{ content.field_imagen_banner_final[3] }}
-							</a>
-						</li>
-					{% endif %}
-					{% if content.field_imagen_banner_final[4] is not empty and node.field_banner_final[4].value is not empty %}
-						<li class="splide__slide">
-							<a href="{{ node.field_banner_final[4].value }}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
-								{{ content.field_imagen_banner_final[4] }}
-							</a>
-						</li>
-					{% endif %}
-
-				</ul>
-			</div>
-		</section>
-		<section class="home-noticias">
-			<div class="home-noticias--container">
-				<h3 class="home_title">Tenemos muchas noticias que contarte.
+			</ul>
+		</div>
+	</section>
+	<section class="home-noticias">
+		<div class="home-noticias--container">
+			<h3 class="home_title">Tenemos muchas noticias que contarte.
+				<a href="/es/noticias">
 					<strong>Conócelas aquí</strong>
-				</h3>
-				{{ drupal_view('contenido_destacado_home_v2', 'block_4') }}
-			</div>
-		</section>
+				</a>
+			</h3>
+			{{ drupal_view('contenido_destacado_home_v2', 'block_4') }}
+		</div>
+	</section>
 
-		<section class="home-video"></section>
+	<section class="home-video"></section>
 	{% endblock %}
 
 </div>
 
- <script>
-  new Splide( '.bannerFinal',{
-	 type: 'loop',
-	 autoplay:true,
-  perPage: 1,
-  } ).mount();
+<script>
+	new Splide('.bannerFinal', {
+		type: 'loop',
+		autoplay: true,
+		perPage: 1,
+	}).mount();
 </script>
