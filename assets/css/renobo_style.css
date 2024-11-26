@@ -6734,6 +6734,7 @@ footer .sdqs-footer img {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .transparencia-links a {
   position: relative;
@@ -6742,11 +6743,16 @@ footer .sdqs-footer img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 30%;
 }
 .transparencia-links a img {
   width: 80px;
   display: block;
   margin: 0 auto;
+}
+.transparencia-links a p {
+  margin: 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=renobo_style.css.map */
