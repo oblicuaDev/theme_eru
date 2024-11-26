@@ -6720,4 +6720,10 @@ a.descargar-ico::before {
   width: 100%;
 }
 
+footer .sdqs-footer img {
+  max-width: 160px !important;
+  height: 40px !important;
+  object-fit: contain;
+}
+
 /*# sourceMappingURL=renobo_style.css.map */
