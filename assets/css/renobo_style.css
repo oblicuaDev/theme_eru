@@ -574,7 +574,7 @@ header h3 {
   .news__body h3,
   .panel-panel-inner.date-social h3,
   header h3 {
-    font-size: 40px;
+    font-size: 22px;
     line-height: 32px !important;
     margin-bottom: 30px;
     font-weight: bold;
@@ -936,7 +936,6 @@ a.btn.btn-secondary,
 a.btn.btn-primary,
 .btn.btn-secondary,
 .btn.btn-primary {
-  z-index: 2;
   position: relative;
   display: flex;
   align-items: center;
@@ -947,7 +946,6 @@ a.btn.btn-primary,
   width: -moz-fit-content;
   width: fit-content;
   background-color: #00C29D !important;
-  margin: 10px 0 10px auto;
   color: #FFF;
   border-color: #00C29D !important;
 }
