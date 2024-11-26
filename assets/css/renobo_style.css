@@ -526,10 +526,11 @@ header h2::after {
 .news__body h2 span,
 .panel-panel-inner.date-social h2 span,
 header h2 span {
-  font-size: 29px !important;
-  line-height: 33px !important;
+  font-size: 60px;
+  line-height: 46px;
   margin-bottom: 30px;
   font-weight: bold;
+  color: #003435;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -541,11 +542,10 @@ header h2 span {
   .news__body h2 span,
   .panel-panel-inner.date-social h2 span,
   header h2 span {
-    font-size: 60px !important;
-    line-height: 46px !important;
+    font-size: 29px !important;
+    line-height: 33px !important;
     margin-bottom: 30px;
     font-weight: bold;
-    color: #003435;
   }
 }
 .home h3,
