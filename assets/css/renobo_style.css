@@ -526,11 +526,10 @@ header h2::after {
 .news__body h2 span,
 .panel-panel-inner.date-social h2 span,
 header h2 span {
-  font-size: 60px;
-  line-height: 46px;
+  font-size: 29px !important;
+  line-height: 33px !important;
   margin-bottom: 30px;
   font-weight: bold;
-  color: #003435;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -5528,6 +5527,11 @@ nav #search-block-form > div.form-item input::placeholder {
   justify-content: center;
   margin: 0 auto;
 }
+@media only screen and (max-width: 1023px) {
+  #home-v2 .home_links--container {
+    flex-direction: column;
+  }
+}
 #home-v2 .home_links a {
   color: #FFF;
   display: flex;
@@ -5634,6 +5638,11 @@ nav #search-block-form > div.form-item input::placeholder {
   display: flex;
   gap: 20px;
 }
+@media only screen and (max-width: 1023px) {
+  #home-v2 .home-proyectos .container {
+    flex-direction: column;
+  }
+}
 #home-v2 .home-proyectos--container {
   display: flex;
   align-items: center;
@@ -5719,6 +5728,7 @@ nav #search-block-form > div.form-item input::placeholder {
 @media only screen and (max-width: 1023px) {
   #home-v2 .home-metas {
     flex-direction: column;
+    height: auto;
   }
 }
 #home-v2 .home-metas--container {
@@ -5982,6 +5992,11 @@ nav #search-block-form > div.form-item input::placeholder {
   font-weight: 900;
   margin: 0 auto 60px;
 }
+@media only screen and (max-width: 1023px) {
+  #home-v2 .renobo-cifras h2 {
+    margin: 0 auto 60px !important;
+  }
+}
 #home-v2 .renobo-cifras ul {
   display: flex;
   align-items: center;
@@ -5990,6 +6005,12 @@ nav #search-block-form > div.form-item input::placeholder {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  padding: 0;
+}
+@media only screen and (max-width: 1023px) {
+  #home-v2 .renobo-cifras ul {
+    flex-direction: column;
+  }
 }
 #home-v2 .renobo-cifras ul li {
   display: flex !important;
