@@ -6731,7 +6731,22 @@ footer .sdqs-footer img {
 }
 
 .transparencia-links {
-  display: grid;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.transparencia-links a {
+  position: relative;
+  color: rgb(0, 48, 49);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.transparencia-links a img {
+  width: 80px;
+  display: block;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=renobo_style.css.map */
