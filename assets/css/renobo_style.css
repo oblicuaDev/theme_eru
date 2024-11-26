@@ -6720,6 +6720,10 @@ a.descargar-ico::before {
   width: 100%;
 }
 
+footer .sdqs-footer .col-3,
+footer .sdqs-footer .col-2 {
+  max-width: 100%;
+}
 footer .sdqs-footer img {
   max-width: 160px !important;
   height: 40px !important;
