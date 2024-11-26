@@ -5525,6 +5525,7 @@ nav #search-block-form > div.form-item input::placeholder {
   gap: 30px;
   max-width: 1360px;
   width: 100%;
+  justify-content: center;
   margin: 0 auto;
 }
 #home-v2 .home_links a {
@@ -5967,6 +5968,45 @@ nav #search-block-form > div.form-item input::placeholder {
   max-width: 1360px;
   width: 100%;
   margin: 0 auto;
+}
+#home-v2 .renobo-cifras {
+  background: #00c29d;
+  padding: 20px;
+}
+#home-v2 .renobo-cifras h2 {
+  text-align: center !important;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  color: #FFF;
+  font-weight: 900;
+  margin: 0 auto 60px;
+}
+#home-v2 .renobo-cifras ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+#home-v2 .renobo-cifras ul li {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 260px;
+  text-align: center;
+}
+#home-v2 .renobo-cifras ul li strong {
+  font-size: 70px;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+#home-v2 .renobo-cifras ul li p {
+  font-weight: 700;
+  color: #FFF;
 }
 
 .logos svg {
