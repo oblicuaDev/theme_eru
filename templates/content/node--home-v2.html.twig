@@ -44,9 +44,9 @@ href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.cs
 		<section class="home-proyectos">
 			<div class="container">
 				<h3 class="home_title">Estamos impulsando varios proyectos importantes para Bogotá, te invitamos a
-														conocerlos</h3>
+																			conocerlos</h3>
 				{# Renderiza la vista "contenido_destacado_home_v2". El primer parámetro es el nombre de la vista, y el
-											segundo es el display de la vista (p.ej. "block_1", "page_1", etc.) #}
+															segundo es el display de la vista (p.ej. "block_1", "page_1", etc.) #}
 				<div class="pro-container">
 					{{ drupal_view('contenido_destacado_home_v2', 'block_1') }}
 					{{ drupal_view('contenido_destacado_home_v2', 'block_2') }}
@@ -110,6 +110,46 @@ href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.cs
 							</a>
 						</li>
 					{% endif %}
+					{% if content.field_imagen_banner_final[5] is not empty and node.field_banner_final[5].value is not
+				empty %}
+						<li class="splide__slide">
+							<a href="{{ node.field_banner_final[5].value }}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
+								{{ content.field_imagen_banner_final[5] }}
+							</a>
+						</li>
+					{% endif %}
+					{% if content.field_imagen_banner_final[6] is not empty and node.field_banner_final[6].value is not
+				empty %}
+						<li class="splide__slide">
+							<a href="{{ node.field_banner_final[6].value }}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
+								{{ content.field_imagen_banner_final[6] }}
+							</a>
+						</li>
+					{% endif %}
+					{% if content.field_imagen_banner_final[7] is not empty and node.field_banner_final[7].value is not
+				empty %}
+						<li class="splide__slide">
+							<a href="{{ node.field_banner_final[7].value }}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
+								{{ content.field_imagen_banner_final[7] }}
+							</a>
+						</li>
+					{% endif %}
+					{% if content.field_imagen_banner_final[8] is not empty and node.field_banner_final[8].value is not
+				empty %}
+						<li class="splide__slide">
+							<a href="{{ node.field_banner_final[8].value }}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
+								{{ content.field_imagen_banner_final[8] }}
+							</a>
+						</li>
+					{% endif %}
+					{% if content.field_imagen_banner_final[9] is not empty and node.field_banner_final[9].value is not
+				empty %}
+						<li class="splide__slide">
+							<a href="{{ node.field_banner_final[9].value }}" style="text-align: center;padding: 0 20px 90px;display: block;" target="_blank">
+								{{ content.field_imagen_banner_final[9] }}
+							</a>
+						</li>
+					{% endif %}
 
 				</ul>
 			</div>
@@ -117,7 +157,7 @@ href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.cs
 		<section class="home-convocatorias">
 			<div class="home-convocatorias--container">
 				<h3 class="home_title">¿Estas interesado en unirte a nuestros proyectos? Aquí te presentamos nuestras
-														convocatorias</h3>
+																			convocatorias</h3>
 				<div class="images">
 					{{ content.field_imagenes_convo}}
 				</div>
