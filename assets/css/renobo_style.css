@@ -472,7 +472,7 @@ h2::after,
 .panel-panel-inner.date-social h2,
 header h2 {
   font-size: 30px;
-  line-height: 26px;
+  line-height: 32px;
   margin-bottom: 30px;
   font-weight: bold;
   max-width: 800px;
@@ -527,7 +527,7 @@ header h2::after {
 .panel-panel-inner.date-social h2 span,
 header h2 span {
   font-size: 30px;
-  line-height: 26px;
+  line-height: 32px;
   margin-bottom: 30px;
   font-weight: bold;
   color: #003435;
