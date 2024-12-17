@@ -6609,6 +6609,11 @@ nav #search-block-form > div.form-item input::placeholder {
   gap: 20px;
 }
 
+.splide.bannerFinal {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
 .splide.bannerFinal li.splide__slide {
   max-width: 100%;
 }
