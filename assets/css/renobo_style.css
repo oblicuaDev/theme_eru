@@ -6771,6 +6771,11 @@ footer .sdqs-footer img {
   display: flex;
   gap: 30px;
 }
+@media only screen and (max-width: 1023px) {
+  .predio-content .container {
+    flex-direction: column;
+  }
+}
 .predio-content .container .image {
   flex: 1;
 }
@@ -6794,6 +6799,7 @@ footer .sdqs-footer img {
   padding: 8px;
   align-items: center;
   justify-content: center;
+  margin: 10px 0;
 }
 .predio-content .container .horizontal {
   display: flex;
@@ -6801,11 +6807,18 @@ footer .sdqs-footer img {
   justify-content: space-between;
   gap: 20px;
 }
+@media only screen and (max-width: 1023px) {
+  .predio-content .container .horizontal {
+    flex-direction: column;
+  }
+}
 .predio-content .container .horizontal .predios-reuso__field-a,
 .predio-content .container .horizontal .predios-reuso__field-area-suelo,
 .predio-content .container .horizontal .predios-reuso__field-no-de-pisos {
   display: flex;
   flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
 }
 .predio-content .container .horizontal .predios-reuso__field-a .field__item,
 .predio-content .container .horizontal .predios-reuso__field-area-suelo .field__item,
