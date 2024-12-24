@@ -1,35 +1,49 @@
 {#
 /**
- * @file
- * Template for a Node.
- */
+* @file
+* Template for a Node.
+*/
 #}
 {%
-  set classes = [
-  'node',
-  node.isPromoted() ? 'node--promoted',
-  node.isSticky() ? 'node--sticky',
-  not node.isPublished() ? 'node--unpublished',
-  node.bundle|clean_class,
-  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
-  'normatividad'
+set classes = [
+'node',
+node.isPromoted() ? 'node--promoted',
+node.isSticky() ? 'node--sticky',
+not node.isPublished() ? 'node--unpublished',
+node.bundle|clean_class,
+node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+'normatividad'
 ]
 %}
 {% set createdDate = node.getCreatedTime|date('j/m/Y - H:i') %}
 {# {{ kint(content|keys)}} #}
 <article{{attributes.addClass(classes)}}>
-	{% block content %}
-		<div class="container">
-			{{content.field_image_main}}
-			{{content.field_barrio_catastral}}
-			{{content.field_ano_de_construccion}}
-			{{content.field_upl}}
-			{{content.field_bic}}
-			{{content.field_no_de_unidades_estimadas}}
-			{{content.field_ventas_estimadas}}
-			{{content.field_a}}
-			{{content.field_area_suelo}}
-			{{content.field_no_de_pisos}}
-		</div>
-	{% endblock %}
-</article>
+    {% block content %}
+    <div class="container">
+        <div class="image">
+            <a href="" class="back">Volver al listado de edificios</a>
+            {{content.field_image_main}}
+        </div>
+        <div class="txt">
+            <div class="title">
+                <h2>{{ node.label }}</h2>
+                {{content.field_id_del_predio}}
+            </div>
+            {{content.field_barrio_catastral}}
+            {{content.field_ano_de_construccion}}
+            {{content.field_upl}}
+            {{content.field_bic}}
+            {{content.field_no_de_unidades_estimadas}}
+            <div class="ventas">
+                {{content.field_ventas_estimadas}}
+            </div>
+            <div class="horizontal">
+                {{content.field_a}}
+                {{content.field_area_suelo}}
+                {{content.field_no_de_pisos}}
+            </div>
+            <a href="" class="btn-interes">Manifestar interés por este edificio</a>
+        </div>
+    </div>
+    {% endblock %}
+    </article>
