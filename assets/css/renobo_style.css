@@ -6760,6 +6760,9 @@ footer .sdqs-footer img {
   text-align: center;
 }
 
+.marketplace-reuso .block.block--theme-eru-breadcrumbs {
+  display: none;
+}
 .marketplace-reuso .container {
   max-width: 100%;
 }
