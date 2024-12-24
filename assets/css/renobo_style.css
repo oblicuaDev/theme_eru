@@ -6850,4 +6850,18 @@ footer .sdqs-footer img {
   font-size: 12px;
 }
 
+.prediosreuso.view-id-marketplace_reuso {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+@media only screen and (max-width: 1023px) {
+  .prediosreuso.view-id-marketplace_reuso {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.prediosreuso.view-id-marketplace_reuso a {
+  display: block;
+}
+
 /*# sourceMappingURL=renobo_style.css.map */
