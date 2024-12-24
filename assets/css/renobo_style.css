@@ -6766,29 +6766,30 @@ footer .sdqs-footer img {
 .marketplace-reuso #main-content .col-12 {
   padding: 0;
 }
-.marketplace-reuso .container {
+
+.predio-content .container {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-.marketplace-reuso .container .image a.back {
+.predio-content .container .image a.back {
   font-size: 12px;
   margin-bottom: 10px;
 }
-.marketplace-reuso .container .txt .title h2 {
+.predio-content .container .txt .title h2 {
   margin: 0;
 }
-.marketplace-reuso .container .ventas {
+.predio-content .container .ventas {
   background-color: #000;
   color: #FFF;
 }
-.marketplace-reuso .container .horizontal {
+.predio-content .container .horizontal {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
-.marketplace-reuso .container .btn-interes {
+.predio-content .container .btn-interes {
   background-color: #56E19E;
   display: flex;
   align-items: center;
