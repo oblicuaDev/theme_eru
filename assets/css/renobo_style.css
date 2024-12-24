@@ -6777,14 +6777,14 @@ footer .sdqs-footer img {
   }
 }
 .predio-content .container .image {
-  flex: 0.5;
+  flex: 1;
 }
 .predio-content .container .image a.back {
   font-size: 12px;
   margin-bottom: 10px;
 }
 .predio-content .container .txt {
-  flex: 1;
+  flex: 0.5;
 }
 .predio-content .container .txt .title {
   margin-bottom: 10px;
