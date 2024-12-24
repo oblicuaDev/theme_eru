@@ -6781,8 +6781,11 @@ footer .sdqs-footer img {
 .predio-content .container .txt {
   flex: 1;
 }
+.predio-content .container .txt .title {
+  margin-bottom: 10px;
+}
 .predio-content .container .txt .title h2 {
-  margin: 0;
+  margin: 0 !important;
 }
 .predio-content .container .ventas {
   background-color: #000;
@@ -6797,6 +6800,18 @@ footer .sdqs-footer img {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+}
+.predio-content .container .horizontal .predios-reuso__field-a,
+.predio-content .container .horizontal .predios-reuso__field-area-suelo,
+.predio-content .container .horizontal .predios-reuso__field-no-de-pisos {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.predio-content .container .horizontal .predios-reuso__field-a .field__item,
+.predio-content .container .horizontal .predios-reuso__field-area-suelo .field__item,
+.predio-content .container .horizontal .predios-reuso__field-no-de-pisos .field__item {
+  font-weight: bold;
+  font-size: 22px;
 }
 .predio-content .container .btn-interes {
   background-color: #56E19E;
