@@ -1,0 +1,28 @@
+{#
+    /**
+     * @file
+     * Template for a field.
+     */
+    #}
+<section class="splide splideSpeakers" aria-label="Splide Basic HTML Example">
+	<div class="splide__track">
+		<ul class="splide__list">
+			{% for item in items %}
+				<li class="splide__slide">{{item.content }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
+
+ <script>
+	document.addEventListener("DOMContentLoaded", function () {
+		var splide = new Splide('.splideSpeakers', {
+			type: 'loop',
+			arrows: true,
+            perPage: 1,
+           
+		});
+		splide.mount();
+    })
+
+</script>
