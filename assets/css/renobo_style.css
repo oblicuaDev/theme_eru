@@ -6850,23 +6850,23 @@ footer .sdqs-footer img {
   font-size: 12px;
 }
 
-.prediosreuso.view-id-marketplace_reuso {
+.more-marketplace {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 @media only screen and (max-width: 1023px) {
-  .prediosreuso.view-id-marketplace_reuso {
+  .more-marketplace {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.prediosreuso.view-id-marketplace_reuso .view-header {
+.more-marketplace .view-header {
   grid-column: 1/-1;
 }
-.prediosreuso.view-id-marketplace_reuso p {
+.more-marketplace p {
   font-size: 12px;
 }
-.prediosreuso.view-id-marketplace_reuso a {
+.more-marketplace a {
   display: block;
 }
 
