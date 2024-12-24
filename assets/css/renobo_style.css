@@ -6766,6 +6766,26 @@ footer .sdqs-footer img {
 .marketplace-reuso #main-content .col-12 {
   padding: 0;
 }
+.marketplace-reuso .container .txt .title h2 {
+  margin: 0;
+}
+.marketplace-reuso .container .ventas {
+  background-color: #000;
+  color: #FFF;
+}
+.marketplace-reuso .container .horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.marketplace-reuso .container .btn-interes {
+  background-color: #56E19E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
 
 .marketplace {
   display: grid;
