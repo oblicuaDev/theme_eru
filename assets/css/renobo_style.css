@@ -6760,4 +6760,18 @@ footer .sdqs-footer img {
   text-align: center;
 }
 
+.marketplace {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px 0;
+  gap: 20px;
+}
+.marketplace .marketplace-item {
+  display: flex;
+  flex-direction: column;
+}
+.marketplace .marketplace-item .views-field.views-field-body {
+  font-size: 12px;
+}
+
 /*# sourceMappingURL=renobo_style.css.map */
