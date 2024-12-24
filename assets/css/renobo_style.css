@@ -6769,12 +6769,17 @@ footer .sdqs-footer img {
 
 .predio-content .container {
   display: flex;
-  align-items: center;
   gap: 30px;
+}
+.predio-content .container .image {
+  flex: 1;
 }
 .predio-content .container .image a.back {
   font-size: 12px;
   margin-bottom: 10px;
+}
+.predio-content .container .txt {
+  flex: 1;
 }
 .predio-content .container .txt .title h2 {
   margin: 0;
@@ -6782,6 +6787,10 @@ footer .sdqs-footer img {
 .predio-content .container .ventas {
   background-color: #000;
   color: #FFF;
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
 }
 .predio-content .container .horizontal {
   display: flex;
@@ -6792,6 +6801,7 @@ footer .sdqs-footer img {
 .predio-content .container .btn-interes {
   background-color: #56E19E;
   display: flex;
+  font-weight: bold;
   align-items: center;
   justify-content: center;
   padding: 5px;
