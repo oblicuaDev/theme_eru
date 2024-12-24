@@ -6763,6 +6763,10 @@ footer .sdqs-footer img {
 .marketplace-reuso .container {
   max-width: 100%;
 }
+.marketplace-reuso .container img {
+  display: block;
+  width: 100%;
+}
 .marketplace-reuso #main-content {
   padding: 0;
 }
@@ -6845,7 +6849,7 @@ footer .sdqs-footer img {
   padding: 20px;
   gap: 20px;
   max-width: 1200px;
-  width: 100px;
+  width: 100%;
   margin: 0 auto;
 }
 .marketplace .marketplace-item {
