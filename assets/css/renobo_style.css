@@ -6777,7 +6777,7 @@ footer .sdqs-footer img {
   }
 }
 .predio-content .container .image {
-  flex: 1;
+  flex: 0.5;
 }
 .predio-content .container .image a.back {
   font-size: 12px;
@@ -6802,6 +6802,7 @@ footer .sdqs-footer img {
   margin: 10px 0;
 }
 .predio-content .container .horizontal {
+  margin: 10px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
