@@ -6760,10 +6760,17 @@ footer .sdqs-footer img {
   text-align: center;
 }
 
+.marketplace-reuso #main-content {
+  padding: 0;
+}
+.marketplace-reuso #main-content .col-12 {
+  padding: 0;
+}
+
 .marketplace {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 20px 0;
+  padding: 20px;
   gap: 20px;
 }
 .marketplace .marketplace-item {
