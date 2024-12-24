@@ -6803,7 +6803,7 @@ footer .sdqs-footer img {
   margin: 0 !important;
 }
 .predio-content .container .ventas {
-  background-color: #000;
+  background-color: #22365a;
   color: #FFF;
   display: flex;
   padding: 8px;
@@ -6858,9 +6858,27 @@ footer .sdqs-footer img {
 .marketplace .marketplace-item {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.marketplace .marketplace-item a {
+  overflow: hidden;
+}
+.marketplace .marketplace-item:hover img {
+  transform: scale(1.1);
 }
 .marketplace .marketplace-item .views-field.views-field-body {
   font-size: 12px;
+}
+.marketplace .marketplace-item .views-field-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  width: 100%;
+  background-color: rgba(15, 15, 15, 0.59);
+  color: #FFF;
+  display: flex;
+  align-items: center;
 }
 
 .more-marketplace {
