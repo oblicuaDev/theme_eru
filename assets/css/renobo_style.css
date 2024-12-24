@@ -6860,6 +6860,12 @@ footer .sdqs-footer img {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.prediosreuso.view-id-marketplace_reuso .view-header {
+  grid-column: 1/-1;
+}
+.prediosreuso.view-id-marketplace_reuso p {
+  font-size: 12px;
+}
 .prediosreuso.view-id-marketplace_reuso a {
   display: block;
 }
