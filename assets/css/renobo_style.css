@@ -6862,6 +6862,10 @@ footer .sdqs-footer img {
 }
 .marketplace .marketplace-item a {
   overflow: hidden;
+  display: block;
+}
+.marketplace .marketplace-item img {
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .marketplace .marketplace-item:hover img {
   transform: scale(1.1);
@@ -6879,6 +6883,9 @@ footer .sdqs-footer img {
   color: #FFF;
   display: flex;
   align-items: center;
+}
+.marketplace .marketplace-item .views-field-title a {
+  color: #FFF;
 }
 
 .more-marketplace {
